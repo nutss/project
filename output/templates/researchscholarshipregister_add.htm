@@ -1,0 +1,355 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel researchScholarshipRegister add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN researchRegisterNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterNo}  r-vertical-field" 
+	data-signal-error-for="researchRegisterNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="researchRegisterNo" data-fieldname="researchRegisterNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterNo}">
+		{BEGIN researchRegisterNo_label}{$label researchScholarshipRegister researchRegisterNo }{END researchRegisterNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterNo">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterNo }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterNo_fieldblock}
+											
+{BEGIN researchRegisterName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterName}  r-vertical-field" 
+	data-signal-error-for="researchRegisterName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="researchRegisterName" data-fieldname="researchRegisterName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterName}">
+		{BEGIN researchRegisterName_label}{$label researchScholarshipRegister researchRegisterName }{END researchRegisterName_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterName">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterName }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterName_fieldblock}
+											
+{BEGIN researchRegisterStartDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterStartDate}  r-vertical-field" 
+	data-signal-error-for="researchRegisterStartDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="researchRegisterStartDate" data-fieldname="researchRegisterStartDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterStartDate}">
+		{BEGIN researchRegisterStartDate_label}{$label researchScholarshipRegister researchRegisterStartDate }{END researchRegisterStartDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterStartDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterStartDate">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterStartDate }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterStartDate_fieldblock}
+											
+{BEGIN researchRegisterEndDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterEndDate}  r-vertical-field" 
+	data-signal-error-for="researchRegisterEndDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="researchRegisterEndDate" data-fieldname="researchRegisterEndDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterEndDate}">
+		{BEGIN researchRegisterEndDate_label}{$label researchScholarshipRegister researchRegisterEndDate }{END researchRegisterEndDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterEndDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterEndDate">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterEndDate }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterEndDate_fieldblock}
+											
+{BEGIN researchRegisterFile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterFile}  r-vertical-field" 
+	data-signal-error-for="researchRegisterFile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="researchRegisterFile" data-fieldname="researchRegisterFile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterFile}">
+		{BEGIN researchRegisterFile_label}{$label researchScholarshipRegister researchRegisterFile }{END researchRegisterFile_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterFile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterFile">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterFile }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterFile_fieldblock}
+											
+{BEGIN researchType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchType}  r-vertical-field" 
+	data-signal-error-for="researchType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="researchType" data-fieldname="researchType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchType}">
+		{BEGIN researchType_label}{$label researchScholarshipRegister researchType }{END researchType_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchType">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchType }		</div>
+	</div>
+</div>
+
+
+{END researchType_fieldblock}
+											
+{BEGIN researchRegisterStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterStatus}  r-vertical-field" 
+	data-signal-error-for="researchRegisterStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="researchRegisterStatus" data-fieldname="researchRegisterStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterStatus}">
+		{BEGIN researchRegisterStatus_label}{$label researchScholarshipRegister researchRegisterStatus }{END researchRegisterStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterStatus">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister researchRegisterStatus }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterStatus_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-vertical-field" 
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryUserName}">
+		{BEGIN entryUserName_label}{$label researchScholarshipRegister entryUserName }{END entryUserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryUserName">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister entryUserName }		</div>
+	</div>
+</div>
+
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-vertical-field" 
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryTime}">
+		{BEGIN entryTime_label}{$label researchScholarshipRegister entryTime }{END entryTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryTime">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipRegister entryTime }		</div>
+	</div>
+</div>
+
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

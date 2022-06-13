@@ -1,0 +1,376 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel researchProjectConsider add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN researchTypeID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchTypeID}  r-vertical-field" 
+	data-signal-error-for="researchTypeID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="researchTypeID" data-fieldname="researchTypeID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchTypeID}">
+		{BEGIN researchTypeID_label}{$label researchProjectConsider researchTypeID }{END researchTypeID_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchTypeID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchTypeID">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchTypeID }		</div>
+	</div>
+</div>
+
+
+{END researchTypeID_fieldblock}
+											
+{BEGIN researchProjectID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectID}  r-vertical-field" 
+	data-signal-error-for="researchProjectID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="researchProjectID" data-fieldname="researchProjectID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectID}">
+		{BEGIN researchProjectID_label}{$label researchProjectConsider researchProjectID }{END researchProjectID_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectID">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchProjectID }		</div>
+	</div>
+</div>
+
+
+{END researchProjectID_fieldblock}
+											
+{BEGIN researchConsiderNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderNumber}  r-vertical-field" 
+	data-signal-error-for="researchConsiderNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="researchConsiderNumber" data-fieldname="researchConsiderNumber" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchConsiderNumber}">
+		{BEGIN researchConsiderNumber_label}{$label researchProjectConsider researchConsiderNumber }{END researchConsiderNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchConsiderNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchConsiderNumber">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchConsiderNumber }		</div>
+	</div>
+</div>
+
+
+{END researchConsiderNumber_fieldblock}
+											
+{BEGIN processName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_processName}  r-vertical-field" 
+	data-signal-error-for="processName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="processName" data-fieldname="processName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_processName}">
+		{BEGIN processName_label}{$label researchProjectConsider processName }{END processName_label}
+	</label>
+	<div class="r-edit-field">
+		{$processName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="processName">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider processName }		</div>
+	</div>
+</div>
+
+
+{END processName_fieldblock}
+											
+{BEGIN stepName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_stepName}  r-vertical-field" 
+	data-signal-error-for="stepName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="stepName" data-fieldname="stepName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_stepName}">
+		{BEGIN stepName_label}{$label researchProjectConsider stepName }{END stepName_label}
+	</label>
+	<div class="r-edit-field">
+		{$stepName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="stepName">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider stepName }		</div>
+	</div>
+</div>
+
+
+{END stepName_fieldblock}
+											
+{BEGIN researchConsiderFile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderFile}  r-vertical-field" 
+	data-signal-error-for="researchConsiderFile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="researchConsiderFile" data-fieldname="researchConsiderFile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchConsiderFile}">
+		{BEGIN researchConsiderFile_label}{$label researchProjectConsider researchConsiderFile }{END researchConsiderFile_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchConsiderFile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchConsiderFile">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchConsiderFile }		</div>
+	</div>
+</div>
+
+
+{END researchConsiderFile_fieldblock}
+											
+{BEGIN researchRegisterDesc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterDesc}  r-vertical-field" 
+	data-signal-error-for="researchRegisterDesc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="researchRegisterDesc" data-fieldname="researchRegisterDesc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterDesc}">
+		{BEGIN researchRegisterDesc_label}{$label researchProjectConsider researchRegisterDesc }{END researchRegisterDesc_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchRegisterDesc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchRegisterDesc">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchRegisterDesc }		</div>
+	</div>
+</div>
+
+
+{END researchRegisterDesc_fieldblock}
+											
+{BEGIN researchConsiderName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderName}  r-vertical-field" 
+	data-signal-error-for="researchConsiderName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="researchConsiderName" data-fieldname="researchConsiderName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchConsiderName}">
+		{BEGIN researchConsiderName_label}{$label researchProjectConsider researchConsiderName }{END researchConsiderName_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchConsiderName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchConsiderName">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider researchConsiderName }		</div>
+	</div>
+</div>
+
+
+{END researchConsiderName_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-vertical-field" 
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryUserName}">
+		{BEGIN entryUserName_label}{$label researchProjectConsider entryUserName }{END entryUserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryUserName">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider entryUserName }		</div>
+	</div>
+</div>
+
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-vertical-field" 
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryTime}">
+		{BEGIN entryTime_label}{$label researchProjectConsider entryTime }{END entryTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryTime">
+		<div class="text-muted" >
+		{$tooltip researchProjectConsider entryTime }		</div>
+	</div>
+</div>
+
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

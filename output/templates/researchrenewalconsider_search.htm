@@ -1,0 +1,369 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel researchRenewalConsider search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label researchRenewalConsider id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN researchRenewalID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRenewalID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchRenewalID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="researchRenewalID" data-fieldname="researchRenewalID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchRenewalID}">
+		{$label researchRenewalConsider researchRenewalID }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchRenewalID}
+	</div>
+	<div class="r-search-field">
+		{$researchRenewalID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchRenewalID_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchRenewalID_fieldblock}
+											
+{BEGIN researchConsiderNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderNumber}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="researchConsiderNumber" data-fieldname="researchConsiderNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderNumber}">
+		{$label researchRenewalConsider researchConsiderNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderNumber}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderNumber_fieldblock}
+											
+{BEGIN processName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_processName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="processName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="processName" data-fieldname="processName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_processName}">
+		{$label researchRenewalConsider processName }	</label>
+	<div class="r-search-option">
+		{$searchtype_processName}
+	</div>
+	<div class="r-search-field">
+		{$processName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$processName_editcontrol1}
+	</div>
+	
+</div>
+
+{END processName_fieldblock}
+											
+{BEGIN stepName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_stepName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="stepName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="stepName" data-fieldname="stepName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_stepName}">
+		{$label researchRenewalConsider stepName }	</label>
+	<div class="r-search-option">
+		{$searchtype_stepName}
+	</div>
+	<div class="r-search-field">
+		{$stepName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$stepName_editcontrol1}
+	</div>
+	
+</div>
+
+{END stepName_fieldblock}
+											
+{BEGIN researchConsiderFile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderFile}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderFile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="researchConsiderFile" data-fieldname="researchConsiderFile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderFile}">
+		{$label researchRenewalConsider researchConsiderFile }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderFile}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderFile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderFile_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderFile_fieldblock}
+											
+{BEGIN researchRegisterDesc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterDesc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchRegisterDesc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="researchRegisterDesc" data-fieldname="researchRegisterDesc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchRegisterDesc}">
+		{$label researchRenewalConsider researchRegisterDesc }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchRegisterDesc}
+	</div>
+	<div class="r-search-field">
+		{$researchRegisterDesc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchRegisterDesc_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchRegisterDesc_fieldblock}
+											
+{BEGIN researchConsiderName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="researchConsiderName" data-fieldname="researchConsiderName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderName}">
+		{$label researchRenewalConsider researchConsiderName }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderName}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderName_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderName_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryUserName}">
+		{$label researchRenewalConsider entryUserName }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryUserName}
+	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryTime}">
+		{$label researchRenewalConsider entryTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryTime}
+	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

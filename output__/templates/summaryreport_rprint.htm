@@ -1,0 +1,254 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel SummaryReport rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #9CDFEB;
+		}
+		td.nbgroup_1{
+			background-color: #9CDFEB;
+		}
+		td.header_1 {
+			background-color: #9CDFEB; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>
+	{BEGIN grid_row}
+			{BEGIN projectStart_newgroup}
+				<tr class="group-headers">
+										<td class="blackshade {$fieldclass_projectStart}">{$label SummaryReport projectStart }</td>
+																																																																																											
+																	<td class="blackshade {$fieldclass_projectName}">{$label SummaryReport projectName }</td>
+														<td class="blackshade {$fieldclass_projectEnd}">{$label SummaryReport projectEnd }</td>
+														<td class="blackshade {$fieldclass_researchFundingType}">{$label SummaryReport researchFundingType }</td>
+														<td class="blackshade {$fieldclass_contactName}">{$label SummaryReport contactName }</td>
+														<td class="blackshade {$fieldclass_approveStatus}">{$label SummaryReport approveStatus }</td>
+														<td class="blackshade {$fieldclass_approveDate}">{$label SummaryReport approveDate }</td>
+														<td class="blackshade {$fieldclass_DocumentCheckStatus}">{$label SummaryReport DocumentCheckStatus }</td>
+														<td class="blackshade {$fieldclass_projectBudgetCost}">{$label SummaryReport projectBudgetCost }</td>
+														<td class="blackshade {$fieldclass_projectBudgetRemain}">{$label SummaryReport projectBudgetRemain }</td>
+														<td class="blackshade {$fieldclass_projectFile}">{$label SummaryReport projectFile }</td>
+														<td class="blackshade {$fieldclass_entryUserName}">{$label SummaryReport entryUserName }</td>
+														<td class="blackshade {$fieldclass_entryTime}">{$label SummaryReport entryTime }</td>
+									</tr>
+		
+		<tr class="group-spliter-1" {$rowattrs} >
+															<td colspan="13" class="header_1">
+				<font>
+				{$xprojectStart_grval}
+								<span data-itemtype="grid_field" data-field="projectStart" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectStart_grval}
+</span>				</font>
+			</td>
+														</tr>
+		{END projectStart_newgroup}
+	
+		<!--  data-->
+		{BEGIN row_data}
+		<tr>
+								<td class=" group_1" >&nbsp;</td>
+																		<td class="data {$fieldclass_projectName}">
+				{$xprojectName_value}
+								<span data-itemtype="grid_field" data-field="projectName" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectName_value}
+</span>			</td>
+											<td class="data {$fieldclass_projectEnd}">
+				{$xprojectEnd_value}
+								<span data-itemtype="grid_field" data-field="projectEnd" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectEnd_value}
+</span>			</td>
+											<td class="data {$fieldclass_researchFundingType}">
+				{$xresearchFundingType_value}
+								<span data-itemtype="grid_field" data-field="researchFundingType" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$researchFundingType_value}
+</span>			</td>
+											<td class="data {$fieldclass_contactName}">
+				{$xcontactName_value}
+								<span data-itemtype="grid_field" data-field="contactName" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$contactName_value}
+</span>			</td>
+											<td class="data {$fieldclass_approveStatus}">
+				{$xapproveStatus_value}
+								<span data-itemtype="grid_field" data-field="approveStatus" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$approveStatus_value}
+</span>			</td>
+											<td class="data {$fieldclass_approveDate}">
+				{$xapproveDate_value}
+								<span data-itemtype="grid_field" data-field="approveDate" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$approveDate_value}
+</span>			</td>
+											<td class="data {$fieldclass_DocumentCheckStatus}">
+				{$xDocumentCheckStatus_value}
+								<span data-itemtype="grid_field" data-field="DocumentCheckStatus" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$DocumentCheckStatus_value}
+</span>			</td>
+											<td class="data {$fieldclass_projectBudgetCost}">
+				{$xprojectBudgetCost_value}
+								<span data-itemtype="grid_field" data-field="projectBudgetCost" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectBudgetCost_value}
+</span>			</td>
+											<td class="data {$fieldclass_projectBudgetRemain}">
+				{$xprojectBudgetRemain_value}
+								<span data-itemtype="grid_field" data-field="projectBudgetRemain" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectBudgetRemain_value}
+</span>			</td>
+											<td class="data {$fieldclass_projectFile}">
+				{$xprojectFile_value}
+								<span data-itemtype="grid_field" data-field="projectFile" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$projectFile_value}
+</span>			</td>
+											<td class="data {$fieldclass_entryUserName}">
+				{$xentryUserName_value}
+								<span data-itemtype="grid_field" data-field="entryUserName" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$entryUserName_value}
+</span>			</td>
+											<td class="data {$fieldclass_entryTime}">
+				{$xentryTime_value}
+								<span data-itemtype="grid_field" data-field="entryTime" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$entryTime_value}
+</span>			</td>
+							</tr>
+		{END row_data}
+	
+				{BEGIN projectStart_endgroup}
+		<tr class="summaryrow"  >
+			
+										<td  class="group_1" colspan=13 >
+				{mlang_message SUMMARY_FOR}&nbsp;{$label SummaryReport projectStart }&nbsp;{$projectStart_grval}
+					- <span class="summary-1" data-type="summary">{$groupprojectStart_total_cnt}
+					</span> {mlang_message RECORDS_TOTAL}			</td>
+																																																																																													</tr>
+
+	
+	
+	
+	
+	{END projectStart_endgroup}
+			
+	{END grid_row}
+
+
+	
+
+
+    
+
+
+	</tbody>
+</table>
+
+
+			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

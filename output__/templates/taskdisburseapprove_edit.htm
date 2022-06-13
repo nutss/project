@@ -1,0 +1,399 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="full"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel taskDisburseApprove edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+		<a class="btn btn-sm btn-default" href="" {$view_page_button_attrs}>{mlang_message VIEW}</a>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN trackDisburseDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_trackDisburseDate}  r-vertical-field" 
+	data-signal-error-for="trackDisburseDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="trackDisburseDate" data-fieldname="trackDisburseDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_trackDisburseDate}">
+		{BEGIN trackDisburseDate_label}{$label taskDisburseApprove trackDisburseDate }{END trackDisburseDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$trackDisburseDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="trackDisburseDate">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove trackDisburseDate }		</div>
+	</div>
+</div>
+
+
+{END trackDisburseDate_fieldblock}
+											
+{BEGIN progressStep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_progressStep}  r-vertical-field" 
+	data-signal-error-for="progressStep{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="progressStep" data-fieldname="progressStep" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_progressStep}">
+		{BEGIN progressStep_label}{$label taskDisburseApprove progressStep }{END progressStep_label}
+	</label>
+	<div class="r-edit-field">
+		{$progressStep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="progressStep">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove progressStep }		</div>
+	</div>
+</div>
+
+
+{END progressStep_fieldblock}
+											
+{BEGIN disburseDesc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseDesc}  r-vertical-field" 
+	data-signal-error-for="disburseDesc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="disburseDesc" data-fieldname="disburseDesc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_disburseDesc}">
+		{BEGIN disburseDesc_label}{$label taskDisburseApprove disburseDesc }{END disburseDesc_label}
+	</label>
+	<div class="r-edit-field">
+		{$disburseDesc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="disburseDesc">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove disburseDesc }		</div>
+	</div>
+</div>
+
+
+{END disburseDesc_fieldblock}
+											
+{BEGIN disburseAttFille_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseAttFille}  r-vertical-field" 
+	data-signal-error-for="disburseAttFille{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="disburseAttFille" data-fieldname="disburseAttFille" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_disburseAttFille}">
+		{BEGIN disburseAttFille_label}{$label taskDisburseApprove disburseAttFille }{END disburseAttFille_label}
+	</label>
+	<div class="r-edit-field">
+		{$disburseAttFille_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="disburseAttFille">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove disburseAttFille }		</div>
+	</div>
+</div>
+
+
+{END disburseAttFille_fieldblock}
+											
+{BEGIN disburseAmount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseAmount}  r-vertical-field" 
+	data-signal-error-for="disburseAmount{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="disburseAmount" data-fieldname="disburseAmount" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_disburseAmount}">
+		{BEGIN disburseAmount_label}{$label taskDisburseApprove disburseAmount }{END disburseAmount_label}
+	</label>
+	<div class="r-edit-field">
+		{$disburseAmount_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="disburseAmount">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove disburseAmount }		</div>
+	</div>
+</div>
+
+
+{END disburseAmount_fieldblock}
+											
+{BEGIN approveDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveDate}  r-vertical-field" 
+	data-signal-error-for="approveDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="approveDate" data-fieldname="approveDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveDate}">
+		{BEGIN approveDate_label}{$label taskDisburseApprove approveDate }{END approveDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveDate">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove approveDate }		</div>
+	</div>
+</div>
+
+
+{END approveDate_fieldblock}
+											
+{BEGIN approveStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveStatus}  r-vertical-field" 
+	data-signal-error-for="approveStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="approveStatus" data-fieldname="approveStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveStatus}">
+		{BEGIN approveStatus_label}{$label taskDisburseApprove approveStatus }{END approveStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveStatus">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove approveStatus }		</div>
+	</div>
+</div>
+
+
+{END approveStatus_fieldblock}
+											
+{BEGIN approveReason_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveReason}  r-vertical-field" 
+	data-signal-error-for="approveReason{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="approveReason" data-fieldname="approveReason" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveReason}">
+		{BEGIN approveReason_label}{$label taskDisburseApprove approveReason }{END approveReason_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveReason_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveReason">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove approveReason }		</div>
+	</div>
+</div>
+
+
+{END approveReason_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-vertical-field" 
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryUserName}">
+		{BEGIN entryUserName_label}{$label taskDisburseApprove entryUserName }{END entryUserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryUserName">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove entryUserName }		</div>
+	</div>
+</div>
+
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-vertical-field" 
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryTime}">
+		{BEGIN entryTime_label}{$label taskDisburseApprove entryTime }{END entryTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryTime">
+		<div class="text-muted" >
+		{$tooltip taskDisburseApprove entryTime }		</div>
+	</div>
+</div>
+
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							{mlang_message CANCEL}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		{mlang_message RESET}		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

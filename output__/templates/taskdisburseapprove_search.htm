@@ -1,0 +1,391 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="full"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel taskDisburseApprove search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN projectID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="projectID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="projectID" data-fieldname="projectID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_projectID}">
+		{$label taskDisburseApprove projectID }	</label>
+	<div class="r-search-option">
+		{$searchtype_projectID}
+	</div>
+	<div class="r-search-field">
+		{$projectID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$projectID_editcontrol1}
+	</div>
+	
+</div>
+
+{END projectID_fieldblock}
+											
+{BEGIN trackDisburseDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_trackDisburseDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="trackDisburseDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="trackDisburseDate" data-fieldname="trackDisburseDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_trackDisburseDate}">
+		{$label taskDisburseApprove trackDisburseDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_trackDisburseDate}
+	</div>
+	<div class="r-search-field">
+		{$trackDisburseDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$trackDisburseDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END trackDisburseDate_fieldblock}
+											
+{BEGIN progressStep_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_progressStep}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="progressStep{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="progressStep" data-fieldname="progressStep" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_progressStep}">
+		{$label taskDisburseApprove progressStep }	</label>
+	<div class="r-search-option">
+		{$searchtype_progressStep}
+	</div>
+	<div class="r-search-field">
+		{$progressStep_editcontrol}	</div>
+	<div class="r-search-field">
+		{$progressStep_editcontrol1}
+	</div>
+	
+</div>
+
+{END progressStep_fieldblock}
+											
+{BEGIN disburseDesc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseDesc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="disburseDesc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="disburseDesc" data-fieldname="disburseDesc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_disburseDesc}">
+		{$label taskDisburseApprove disburseDesc }	</label>
+	<div class="r-search-option">
+		{$searchtype_disburseDesc}
+	</div>
+	<div class="r-search-field">
+		{$disburseDesc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$disburseDesc_editcontrol1}
+	</div>
+	
+</div>
+
+{END disburseDesc_fieldblock}
+											
+{BEGIN disburseAttFille_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseAttFille}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="disburseAttFille{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="disburseAttFille" data-fieldname="disburseAttFille" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_disburseAttFille}">
+		{$label taskDisburseApprove disburseAttFille }	</label>
+	<div class="r-search-option">
+		{$searchtype_disburseAttFille}
+	</div>
+	<div class="r-search-field">
+		{$disburseAttFille_editcontrol}	</div>
+	<div class="r-search-field">
+		{$disburseAttFille_editcontrol1}
+	</div>
+	
+</div>
+
+{END disburseAttFille_fieldblock}
+											
+{BEGIN disburseAmount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disburseAmount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="disburseAmount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="disburseAmount" data-fieldname="disburseAmount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_disburseAmount}">
+		{$label taskDisburseApprove disburseAmount }	</label>
+	<div class="r-search-option">
+		{$searchtype_disburseAmount}
+	</div>
+	<div class="r-search-field">
+		{$disburseAmount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$disburseAmount_editcontrol1}
+	</div>
+	
+</div>
+
+{END disburseAmount_fieldblock}
+											
+{BEGIN approveDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="approveDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="approveDate" data-fieldname="approveDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_approveDate}">
+		{$label taskDisburseApprove approveDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_approveDate}
+	</div>
+	<div class="r-search-field">
+		{$approveDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$approveDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END approveDate_fieldblock}
+											
+{BEGIN approveStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveStatus}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="approveStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="approveStatus" data-fieldname="approveStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_approveStatus}">
+		{$label taskDisburseApprove approveStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_approveStatus}
+	</div>
+	<div class="r-search-field">
+		{$approveStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$approveStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END approveStatus_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryUserName}">
+		{$label taskDisburseApprove entryUserName }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryUserName}
+	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryTime}">
+		{$label taskDisburseApprove entryTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryTime}
+	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryTime_fieldblock}
+											
+{BEGIN approveReason_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveReason}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="approveReason{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="approveReason" data-fieldname="approveReason" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_approveReason}">
+		{$label taskDisburseApprove approveReason }	</label>
+	<div class="r-search-option">
+		{$searchtype_approveReason}
+	</div>
+	<div class="r-search-field">
+		{$approveReason_editcontrol}	</div>
+	<div class="r-search-field">
+		{$approveReason_editcontrol1}
+	</div>
+	
+</div>
+
+{END approveReason_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

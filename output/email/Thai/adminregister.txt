@@ -1,0 +1,12 @@
+การแจ้งเกี่ยวกับการลงทะเบียน
+
+ผู้ใช้ลงทะเบียนที่ %url%
+
+Id: %id_value%
+ชื่อ: %staffFullName_value%
+รหัสผู้ใช้งาน: %staffUsername_value%
+แจ้งเตือน E-Mail: %staffEmail_value%
+สถานะ: %staffStatus_value%
+แจ้งเตือน E-Mail: %staffEmailNotify_value%
+ผู้บันทึกรายการ: %entryUserName_value%
+วันที่/เวลาบันทึกรายการ: %entryTime_value%

@@ -1,0 +1,186 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel researchProject export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$researchProjectNo_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$researchProjectGroupName_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$researchProjectNameThai_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$researchProjectNameEng_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$researchProjectPeriodYear_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$researchProjectPeriodMonth_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$researchProjectRequestedBudget_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$researchProjectDepartment_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$researchProjectMainField_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$researchProjectSubField_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$researchProjectHeadName_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$researchProjectAffiliationName_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$researchProjectSubAffiliationName_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$researchProjectAffiliationMobile_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$researchProjectAffiliationTelephone_pdfvalue},"hidden":"{$item_hide_export_field15}"},
+				
+				
+			{"text":{$researchProjectAffiliationEmail_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$researchProjectFile_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$researchProjectBankAccountName_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+				
+			{"text":{$researchProjectBankNo_pdfvalue},"hidden":"{$item_hide_export_field19}"},
+				
+				
+			{"text":{$researchProjectBankName_pdfvalue},"hidden":"{$item_hide_export_field20}"},
+				
+				
+			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_export_field21}"},
+				
+				
+			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_export_field22}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

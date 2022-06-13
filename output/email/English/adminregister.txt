@@ -1,0 +1,12 @@
+Notification on registering
+
+User registered at %url%
+
+Id: %id_value%
+Staff Full Name: %staffFullName_value%
+Staff Username: %staffUsername_value%
+Staff Email: %staffEmail_value%
+Staff Status: %staffStatus_value%
+Staff Email Notify: %staffEmailNotify_value%
+Entry User Name: %entryUserName_value%
+Entry Time: %entryTime_value%

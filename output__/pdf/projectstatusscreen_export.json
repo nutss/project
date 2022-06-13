@@ -1,0 +1,177 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel projectStatusScreen export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$projectName_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$projectStart_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$projectEnd_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$companyName_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$ProjectTypeName_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$approveStatus_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$approveDate_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$DocumentCheckStatus_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$projectBudgetCost_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$disbureAmounts_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+				
+			{"text":{$projectFile_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$screenDate_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$screenStatus_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$screenReason_pdfvalue},"hidden":"{$item_hide_export_field15}"},
+				
+				
+			{"text":{$approveReason_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$DocumentCheckDate_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$DocumentCheckReason_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

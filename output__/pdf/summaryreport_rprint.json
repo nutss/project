@@ -1,0 +1,401 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+						pagesummary: {
+		fillColor: '#ffffbb',
+	},
+	globalsummary: {
+		fillColor: '#ffe0b0',
+	},
+			group_1: {
+			fillColor: '#9CDFEB'
+		},
+		nbgroup_1: {
+			fillColor: '#9CDFEB'
+		},
+		header_1: {
+			fillColor: '#9CDFEB',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_projectStart: {
+			fillColor: '#9CDFEB',
+			fontSize: 15,
+			bold: true
+		},
+		group_projectStart: {
+			fillColor: '#9CDFEB'
+		},
+
+		
+	blackshade: {
+		fontSize: 15,
+	},
+	summarycell: {
+		border:[false, true, false, true ]
+	},
+/*
+		.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+	*/	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption SummaryReport}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 13,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c2',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel SummaryReport rprint}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{mlang_message PRINT_PAGES}","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+
+
+{BEGIN grid_row}
+	{BEGIN projectStart_newgroup}
+		[
+								{
+				text: '{$jslabel SummaryReport projectStart }',
+				style: "blackshade",
+				alignment: '{$projectStart_align}',
+			},
+																																																																	
+													{
+				text: '{$jslabel SummaryReport projectName }',
+				style: "blackshade",
+				alignment: '{$projectName_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport projectEnd }',
+				style: "blackshade",
+				alignment: '{$projectEnd_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport researchFundingType }',
+				style: "blackshade",
+				alignment: '{$researchFundingType_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport contactName }',
+				style: "blackshade",
+				alignment: '{$contactName_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport approveStatus }',
+				style: "blackshade",
+				alignment: '{$approveStatus_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport approveDate }',
+				style: "blackshade",
+				alignment: '{$approveDate_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport DocumentCheckStatus }',
+				style: "blackshade",
+				alignment: '{$DocumentCheckStatus_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport projectBudgetCost }',
+				style: "blackshade",
+				alignment: '{$projectBudgetCost_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport projectBudgetRemain }',
+				style: "blackshade",
+				alignment: '{$projectBudgetRemain_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport projectFile }',
+				style: "blackshade",
+				alignment: '{$projectFile_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport entryUserName }',
+				style: "blackshade",
+				alignment: '{$entryUserName_align}',
+			},
+											{
+				text: '{$jslabel SummaryReport entryTime }',
+				style: "blackshade",
+				alignment: '{$entryTime_align}',
+			},
+						],
+	
+	[
+													{
+					colSpan: 13,
+					text: {$projectStart_grval},
+					style:"header_1"
+				},
+										],
+	{END projectStart_newgroup}
+
+	{BEGIN row_data}
+	[
+			{
+			text: [
+									''
+							],
+			style: "group_1"
+		},
+									{
+			text: {$projectName_value},
+			alignment: '{$projectName_align}',
+		},
+							{
+			text: {$projectEnd_value},
+			alignment: '{$projectEnd_align}',
+		},
+							{
+			text: {$researchFundingType_value},
+			alignment: '{$researchFundingType_align}',
+		},
+							{
+			text: {$contactName_value},
+			alignment: '{$contactName_align}',
+		},
+							{
+			text: {$approveStatus_value},
+			alignment: '{$approveStatus_align}',
+		},
+							{
+			text: {$approveDate_value},
+			alignment: '{$approveDate_align}',
+		},
+							{
+			text: {$DocumentCheckStatus_value},
+			alignment: '{$DocumentCheckStatus_align}',
+		},
+							{
+			text: {$projectBudgetCost_value},
+			alignment: '{$projectBudgetCost_align}',
+		},
+							{
+			text: {$projectBudgetRemain_value},
+			alignment: '{$projectBudgetRemain_align}',
+		},
+							{
+			text: {$projectFile_value},
+			alignment: '{$projectFile_align}',
+		},
+							{
+			text: {$entryUserName_value},
+			alignment: '{$entryUserName_align}',
+		},
+							{
+			text: {$entryTime_value},
+			alignment: '{$entryTime_align}',
+		},
+				],
+	{END row_data}
+
+
+		{BEGIN projectStart_endgroup}
+
+		[
+		
+								{
+				colSpan: 13,
+				text: [
+					'{mlang_message SUMMARY_FOR} {$jslabel SummaryReport projectStart } ', 
+					{$projectStart_grval},
+					' - ', 
+					{$groupprojectStart_total_cnt}, 
+					' {mlang_message RECORDS_TOTAL}'
+				],
+				style: 'group_1',
+			},
+																																																																		],
+	
+	
+	
+	
+	
+	{END projectStart_endgroup}
+	
+{END grid_row}
+
+
+
+
+
+
+
+
+
+
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

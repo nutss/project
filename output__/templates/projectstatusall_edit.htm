@@ -1,0 +1,571 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="full"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel projectStatusAll edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+		<a class="btn btn-sm btn-default" href="" {$view_page_button_attrs}>{mlang_message VIEW}</a>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN projectName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectName}  r-vertical-field" 
+	data-signal-error-for="projectName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="projectName" data-fieldname="projectName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_projectName}">
+		{BEGIN projectName_label}{$label projectStatusAll projectName }{END projectName_label}
+	</label>
+	<div class="r-edit-field">
+		{$projectName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="projectName">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll projectName }		</div>
+	</div>
+</div>
+
+
+{END projectName_fieldblock}
+											
+{BEGIN projectStart_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectStart}  r-vertical-field" 
+	data-signal-error-for="projectStart{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="projectStart" data-fieldname="projectStart" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_projectStart}">
+		{BEGIN projectStart_label}{$label projectStatusAll projectStart }{END projectStart_label}
+	</label>
+	<div class="r-edit-field">
+		{$projectStart_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="projectStart">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll projectStart }		</div>
+	</div>
+</div>
+
+
+{END projectStart_fieldblock}
+											
+{BEGIN projectEnd_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectEnd}  r-vertical-field" 
+	data-signal-error-for="projectEnd{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="projectEnd" data-fieldname="projectEnd" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_projectEnd}">
+		{BEGIN projectEnd_label}{$label projectStatusAll projectEnd }{END projectEnd_label}
+	</label>
+	<div class="r-edit-field">
+		{$projectEnd_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="projectEnd">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll projectEnd }		</div>
+	</div>
+</div>
+
+
+{END projectEnd_fieldblock}
+											
+{BEGIN companyName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_companyName}  r-vertical-field" 
+	data-signal-error-for="companyName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="companyName" data-fieldname="companyName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_companyName}">
+		{BEGIN companyName_label}{$label projectStatusAll companyName }{END companyName_label}
+	</label>
+	<div class="r-edit-field">
+		{$companyName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="companyName">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll companyName }		</div>
+	</div>
+</div>
+
+
+{END companyName_fieldblock}
+											
+{BEGIN ProjectTypeName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProjectTypeName}  r-vertical-field" 
+	data-signal-error-for="ProjectTypeName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="ProjectTypeName" data-fieldname="ProjectTypeName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ProjectTypeName}">
+		{BEGIN ProjectTypeName_label}{$label projectStatusAll ProjectTypeName }{END ProjectTypeName_label}
+	</label>
+	<div class="r-edit-field">
+		{$ProjectTypeName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ProjectTypeName">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll ProjectTypeName }		</div>
+	</div>
+</div>
+
+
+{END ProjectTypeName_fieldblock}
+											
+{BEGIN projectBudgetCost_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectBudgetCost}  r-vertical-field" 
+	data-signal-error-for="projectBudgetCost{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="projectBudgetCost" data-fieldname="projectBudgetCost" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_projectBudgetCost}">
+		{BEGIN projectBudgetCost_label}{$label projectStatusAll projectBudgetCost }{END projectBudgetCost_label}
+	</label>
+	<div class="r-edit-field">
+		{$projectBudgetCost_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="projectBudgetCost">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll projectBudgetCost }		</div>
+	</div>
+</div>
+
+
+{END projectBudgetCost_fieldblock}
+											
+{BEGIN projectFile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectFile}  r-vertical-field" 
+	data-signal-error-for="projectFile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="projectFile" data-fieldname="projectFile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_projectFile}">
+		{BEGIN projectFile_label}{$label projectStatusAll projectFile }{END projectFile_label}
+	</label>
+	<div class="r-edit-field">
+		{$projectFile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="projectFile">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll projectFile }		</div>
+	</div>
+</div>
+
+
+{END projectFile_fieldblock}
+											
+{BEGIN DocumentCheckDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DocumentCheckDate}  r-vertical-field" 
+	data-signal-error-for="DocumentCheckDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="DocumentCheckDate" data-fieldname="DocumentCheckDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DocumentCheckDate}">
+		{BEGIN DocumentCheckDate_label}{$label projectStatusAll DocumentCheckDate }{END DocumentCheckDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$DocumentCheckDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DocumentCheckDate">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll DocumentCheckDate }		</div>
+	</div>
+</div>
+
+
+{END DocumentCheckDate_fieldblock}
+											
+{BEGIN DocumentCheckStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DocumentCheckStatus}  r-vertical-field" 
+	data-signal-error-for="DocumentCheckStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="DocumentCheckStatus" data-fieldname="DocumentCheckStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DocumentCheckStatus}">
+		{BEGIN DocumentCheckStatus_label}{$label projectStatusAll DocumentCheckStatus }{END DocumentCheckStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$DocumentCheckStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DocumentCheckStatus">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll DocumentCheckStatus }		</div>
+	</div>
+</div>
+
+
+{END DocumentCheckStatus_fieldblock}
+											
+{BEGIN DocumentCheckReason_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DocumentCheckReason}  r-vertical-field" 
+	data-signal-error-for="DocumentCheckReason{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="DocumentCheckReason" data-fieldname="DocumentCheckReason" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DocumentCheckReason}">
+		{BEGIN DocumentCheckReason_label}{$label projectStatusAll DocumentCheckReason }{END DocumentCheckReason_label}
+	</label>
+	<div class="r-edit-field">
+		{$DocumentCheckReason_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DocumentCheckReason">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll DocumentCheckReason }		</div>
+	</div>
+</div>
+
+
+{END DocumentCheckReason_fieldblock}
+											
+{BEGIN screenDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_screenDate}  r-vertical-field" 
+	data-signal-error-for="screenDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="screenDate" data-fieldname="screenDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_screenDate}">
+		{BEGIN screenDate_label}{$label projectStatusAll screenDate }{END screenDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$screenDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="screenDate">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll screenDate }		</div>
+	</div>
+</div>
+
+
+{END screenDate_fieldblock}
+											
+{BEGIN screenStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_screenStatus}  r-vertical-field" 
+	data-signal-error-for="screenStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="screenStatus" data-fieldname="screenStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_screenStatus}">
+		{BEGIN screenStatus_label}{$label projectStatusAll screenStatus }{END screenStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$screenStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="screenStatus">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll screenStatus }		</div>
+	</div>
+</div>
+
+
+{END screenStatus_fieldblock}
+											
+{BEGIN screenReason_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_screenReason}  r-vertical-field" 
+	data-signal-error-for="screenReason{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="screenReason" data-fieldname="screenReason" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_screenReason}">
+		{BEGIN screenReason_label}{$label projectStatusAll screenReason }{END screenReason_label}
+	</label>
+	<div class="r-edit-field">
+		{$screenReason_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="screenReason">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll screenReason }		</div>
+	</div>
+</div>
+
+
+{END screenReason_fieldblock}
+											
+{BEGIN approveDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveDate}  r-vertical-field" 
+	data-signal-error-for="approveDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="approveDate" data-fieldname="approveDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveDate}">
+		{BEGIN approveDate_label}{$label projectStatusAll approveDate }{END approveDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveDate">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll approveDate }		</div>
+	</div>
+</div>
+
+
+{END approveDate_fieldblock}
+											
+{BEGIN approveStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveStatus}  r-vertical-field" 
+	data-signal-error-for="approveStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="approveStatus" data-fieldname="approveStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveStatus}">
+		{BEGIN approveStatus_label}{$label projectStatusAll approveStatus }{END approveStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveStatus">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll approveStatus }		</div>
+	</div>
+</div>
+
+
+{END approveStatus_fieldblock}
+											
+{BEGIN approveReason_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approveReason}  r-vertical-field" 
+	data-signal-error-for="approveReason{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="approveReason" data-fieldname="approveReason" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_approveReason}">
+		{BEGIN approveReason_label}{$label projectStatusAll approveReason }{END approveReason_label}
+	</label>
+	<div class="r-edit-field">
+		{$approveReason_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="approveReason">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll approveReason }		</div>
+	</div>
+</div>
+
+
+{END approveReason_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-vertical-field" 
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryUserName}">
+		{BEGIN entryUserName_label}{$label projectStatusAll entryUserName }{END entryUserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryUserName">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll entryUserName }		</div>
+	</div>
+</div>
+
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-vertical-field" 
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryTime}">
+		{BEGIN entryTime_label}{$label projectStatusAll entryTime }{END entryTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryTime">
+		<div class="text-muted" >
+		{$tooltip projectStatusAll entryTime }		</div>
+	</div>
+</div>
+
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							{mlang_message CANCEL}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		{mlang_message RESET}		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
