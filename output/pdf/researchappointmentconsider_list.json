@@ -129,30 +129,7 @@ pdfDocument = {
 				
 				[
 																{
-	cellId: 'c1',
-	col:0,
-	row:0,
-		
-		
-	//	static colspan/rowspan
-		
-			
-	
-	
-			"text": [
-		
-				
-			{"text":"","hidden":"{$item_hide_breadcrumb}"},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-  },
-
-											],
-						[
-																{
-	cellId: 'c3',
+	cellId: 'c2',
 	col:0,
 	row:0,
 		
@@ -213,15 +190,6 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_inline_add}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_inline_save_all}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_inline_cancel_all}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_delete}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -312,10 +280,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"text":"","hidden":"{$item_hide_grid_checkbox_head}"},
-				
-		  ],
+				'',
+	  ],
   "border": [ true, true, true, true ],
               "alignment": 'left',
   },
@@ -339,7 +305,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchAppointmentConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchAppointmentConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -469,11 +435,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchAppointmentConsider researchConsiderName }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel researchAppointmentConsider researchConsiderValue }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_headcell_field5}
@@ -495,7 +461,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchAppointmentConsider entryUserName }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel researchAppointmentConsider entryUserName }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -521,7 +487,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchAppointmentConsider entryTime }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
+			{"text":"{$jslabel researchAppointmentConsider entryTime }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -556,10 +522,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"","hidden":"{$item_hide_grid_inline_edit}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_grid_inline_save}"},
+			{"text":"","hidden":"{$item_hide_grid_edit}"},
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
@@ -744,11 +707,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$researchConsiderName_pdfvalue},"hidden":"{$item_hide_simple_grid_field7}"},
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_cell_field5}

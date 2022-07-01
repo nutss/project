@@ -119,7 +119,7 @@ pdfDocument = {
 			{"text":{$researchRegisterDesc_pdfvalue},"hidden":"{$item_hide_export_field7}"},
 				
 				
-			{"text":{$researchConsiderName_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_export_field}"},
 				
 				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_export_field9}"},

@@ -6,8 +6,11 @@ $dalTableresearchDisburseConsider["researchConsiderNumber"] = array("type"=>200,
 $dalTableresearchDisburseConsider["processName"] = array("type"=>200,"varname"=>"processName", "name" => "processName");
 $dalTableresearchDisburseConsider["stepName"] = array("type"=>200,"varname"=>"stepName", "name" => "stepName");
 $dalTableresearchDisburseConsider["researchConsiderFile"] = array("type"=>201,"varname"=>"researchConsiderFile", "name" => "researchConsiderFile");
+$dalTableresearchDisburseConsider["researchConsiderFileCheck"] = array("type"=>200,"varname"=>"researchConsiderFileCheck", "name" => "researchConsiderFileCheck");
 $dalTableresearchDisburseConsider["researchRegisterDesc"] = array("type"=>201,"varname"=>"researchRegisterDesc", "name" => "researchRegisterDesc");
+$dalTableresearchDisburseConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchDisburseConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
+$dalTableresearchDisburseConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
 $dalTableresearchDisburseConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchDisburseConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchDisburseConsider["id"]["key"]=true;

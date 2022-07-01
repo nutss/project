@@ -1,737 +1,0 @@
-<!doctype html>
-<html  >
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<base href="">
-<LINK REL="stylesheet" href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/default.css" type="text/css" ruleindex="0">
-<!--BEGIN rtlCSS-->
-<LINK REL="stylesheet" href type="text/css" ruleindex="1">
-<!--END rtlCSS-->
-<!--BEGIN styleCSSFiles-->
-<LINK REL="stylesheet" href type="text/css" id="styleCss" ruleindex="2">
-<!--END styleCSSFiles-->
-<style>[data-cellid="grid_footcell_field"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_footcell_field1"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field1"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field1"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_footcell_field2"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field2"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field2"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_footcell_field3"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field3"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field3"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_footcell_field4"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field4"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field4"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_footcell_field5"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field5"][data-page="researchdisburse_list"][data-cellid="grid_footcell_field5"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_headcell_checkbox"][data-page="researchdisburse_list"][data-cellid="grid_headcell_checkbox"][data-page="researchdisburse_list"][data-cellid="grid_headcell_checkbox"][data-page="researchdisburse_list"] {
-			width: 30px;
-		}
-[data-cellid="grid_headcell_icons"][data-page="researchdisburse_list"][data-cellid="grid_headcell_icons"][data-page="researchdisburse_list"][data-cellid="grid_headcell_icons"][data-page="researchdisburse_list"] {
-			width: 30px;
-		}
-[data-cellid="grid_cell_icons"][data-page="researchdisburse_list"][data-cellid="grid_cell_icons"][data-page="researchdisburse_list"][data-cellid="grid_cell_icons"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-[data-cellid="grid_cell_details"][data-page="researchdisburse_list"][data-cellid="grid_cell_details"][data-page="researchdisburse_list"][data-cellid="grid_cell_details"][data-page="researchdisburse_list"] {
-			white-space: nowrap;
-		}
-</style>
-<script defer='defer'>
-                document.addEventListener("DOMContentLoaded", function() {
-                    if(!window.jQuery)
-                        return;
-
-                    window.showOptions = false;
-                    var toggleControls = function() {
-                        var controls = $(this).closest('.srchPanelRow').find('.rnr-searchcontrol');
-                        if(controls.length >= 2) {
-                            $(controls[0]).toggle(!window.showOptions || ($(this).val() != 'Empty' && $(this).val() != 'NOT Empty'));
-                            $(controls[1]).toggle(window.showOptions && ($(this).val() == 'Between' || $(this).val() == 'NOT Between'));
-                        }
-                        var searchtype = $(this).closest('.srchPanelRow').find('.rnr-searchtype');
-                        if(searchtype.length) {
-                            $(searchtype[0]).toggle(!!window.showOptions);
-                        }
-                    }
-
-                    $('.rnr-searchtype select').change(toggleControls);
-                    $('[id^=showHideSearchType] > a').click(function() {
-                        window.showOptions = !window.showOptions;
-                        $(this).text(window.showOptions ? 'Hide options': 'Show options');
-                        $('.rnr-searchtype select').each(function() {
-                            toggleControls.call(this);
-                        });
-                    });
-                });
-            </script>
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/editor.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/bootstrap/flatly/small/style.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/bs.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/font-awesome/css/font-awesome.min.css" type="text/css" temporary="">
-<style custombootstrapcss="" temporary=""></style>
-<script temporary="" src="file:///C:/Program%20Files/PHPRunner10.5/source/include/common/jquery.js"></script>
-<script temporary="" src="file:///C:/Program%20Files/PHPRunner10.5/source/include/common/bootstrap/js/bootstrap.min.js"></script>
-</head>
-<BODY class="function-list">
-<!--BEGIN body-->
-<SPAN class="field_black form-control input-sm" id='header' style='display: inline-block; width: 100px'>header</span>
-<style>
-			
-		</style>
-<DIV class="r-topbar-page">
-<DIV data-menu-width="full" class="r-topheader" data-resize-name="topbar" data-body-align="left">
-<!--BEGIN supertop_block-->
-<NAV class="navbar navbar-default" data-location="supertop" id="form_supertop_1" data-makeup="topbar" data-pageid="1">
-<SPAN data-cellId="supertop_c1" data-pageid="1" class="r-align-left navbar-header" data-itemid="logo">
-<!--BEGIN logo_block-->
-<A data-itemtype="logo" data-itemid="logo" data-pageid="1" class="navbar-brand" href data-pageid="1">
-<SPAN id='logo'>ระบบบริหารการขอรับทุน</SPAN>
-</A>
-<!--END logo_block-->
-<BUTTON data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	<SPAN class="sr-only">Toggle navigation</span>	<SPAN class="icon-bar"></span>	</button>	</span>
-<SPAN data-cellId="supertop_c1" data-pageid="1" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" data-pageid="1">
-<UL class="r-menu nav navbar-nav" data-menulevel="1"><!--BEGIN item1_menulink--><LI class=" "><a  title="การรับสมัครขอรับทุนวิจัย" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-window-maximize"></span> การรับสมัครขอรับทุนวิจัย</span></span></a></li><!--END item1_menulink--><!--BEGIN item2_menulink--><LI class=" "><a  title="การยื่นขอรับทุนวิจัย" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-group"></span> การยื่นขอรับทุนวิจัย</span></span></a></li><!--END item2_menulink--><!--BEGIN item3_menulink--><LI class=" "><a  title="บริหารโครงการรับสมัครขอรับทุนวิจัย" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-king"></span> บริหารโครงการรับสมัครขอรับทุนวิจัย</span></span></a></li><!--END item3_menulink--><!--BEGIN item4_menulink--><LI class=" "><a  title="บริหารโครงการยื่นขอรับทุนวิจัย" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-user-md"></span> บริหารโครงการยื่นขอรับทุนวิจัย</span></span></a></li><!--END item4_menulink--><!--BEGIN item5_menulink--><LI class=" "><a data-toggle="menu-collapse" data-target="#submenu5" aria-expanded="false" title="รายงาน" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-print"></span> รายงาน</span></span></a></li><!--END item5_menulink--><!--BEGIN item6_menulink--><LI class="dropdown"><a data-toggle="menu-collapse" data-target="#submenu6" aria-expanded="false" title="การตั้งค่า" 
-			data-menu-top
-			data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-gear"></span> การตั้งค่า</span><!--BEGIN item6_expand_icon--><SPAN class="r-menu-expand-icon glyphicon glyphicon-triangle-bottom"></span><SPAN class="r-menu-mobile-expand-icon fa fa-angle-left"></span><!--END item6_expand_icon--></span></a><UL class="dropdown-menu" id="submenu6" data-menulevel=2><!--BEGIN item7_menulink--><LI class=" "><a  title="ผู้ใช้งาน" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-user"></span> ผู้ใช้งาน</span></span></a></li><!--END item7_menulink--><!--BEGIN item8_menulink--><LI class=" "><a  title="กลุ่ม" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-users"></span> กลุ่ม</span></span></a></li><!--END item8_menulink--><!--BEGIN item9_menulink--><LI class=" "><a  title="ประเภททุน" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-bitcoin"></span> ประเภททุน</span></span></a></li><!--END item9_menulink--><!--BEGIN item10_menulink--><LI class=" "><a  title="ขั้นตอนการพิจารณา" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-console"></span> ขั้นตอนการพิจารณา</span></span></a></li><!--END item10_menulink--><!--BEGIN item11_menulink--><LI class=" "><a  title="การพิจารณา" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-export"></span> การพิจารณา</span></span></a></li><!--END item11_menulink--></ul></li><!--END item6_menulink--><!--BEGIN item12_menulink--><LI class="dropdown"><A data-toggle="menu-collapse" data-target="#submenu12" aria-expanded="true" class="r-menu-opened" title="เมนูย่อย" data-menu-top data-menu-h data-menu-link><SPAN class="r-menu-link"> <SPAN class="r-menu-title"> เมนูย่อย</span><!--BEGIN item12_expand_icon--><SPAN class="r-menu-expand-icon glyphicon glyphicon-triangle-bottom"></span><SPAN class="r-menu-mobile-expand-icon fa fa-angle-left"></span><!--END item12_expand_icon--></span></a><UL class="dropdown-menu in" id="submenu12" data-menulevel=2><!--BEGIN item13_menulink--><LI class=" "><a  title="การยื่นขอรับทุนวิจัย (งวดการดำเนินการ)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-tachometer"></span> การยื่นขอรับทุนวิจัย (งวดการดำเนินการ)</span></span></a></li><!--END item13_menulink--><!--BEGIN item14_menulink--><LI class=" "><a  title="บริหารโครงการยื่นขอรับทุนวิจัย (งวดการดำเนินการ)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-tags"></span> บริหารโครงการยื่นขอรับทุนวิจัย (งวดการดำเนินการ)</span></span></a></li><!--END item14_menulink--><!--BEGIN item15_menulink--><LI class="active"><a  title="บริหารโครงการยื่นขอรับทุนวิจัย (การเบิกจ่าย)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-resize-horizontal"></span> บริหารโครงการยื่นขอรับทุนวิจัย (การเบิกจ่าย)</span></span></a></li><!--END item15_menulink--><!--BEGIN item16_menulink--><LI class=" "><a  title="บริหารโครงการยื่นขอรับทุนวิจัย (การนัดหมาย)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-calendar-check-o"></span> บริหารโครงการยื่นขอรับทุนวิจัย (การนัดหมาย)</span></span></a></li><!--END item16_menulink--><!--BEGIN item17_menulink--><LI class=" "><a  title="บริหารโครงการยื่นขอรับทุนวิจัย (การขอขยายระยะเวลาโครงการ)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-time"></span> บริหารโครงการยื่นขอรับทุนวิจัย (การขอขยายระยะเวลาโครงการ)</span></span></a></li><!--END item17_menulink--><!--BEGIN item18_menulink--><LI class=" "><a  title="การพิจารณา (รับสมัครขอรับทุน)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-envelope-o"></span> การพิจารณา (รับสมัครขอรับทุน)</span></span></a></li><!--END item18_menulink--><!--BEGIN item19_menulink--><LI class=" "><a  title="การพิจารณา (การเบิกจ่าย)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-exchange"></span> การพิจารณา (การเบิกจ่าย)</span></span></a></li><!--END item19_menulink--><!--BEGIN item20_menulink--><LI class=" "><a  title="การพิจารณา (การนัดหมาย)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="fa fa-calendar"></span> การพิจารณา (การนัดหมาย)</span></span></a></li><!--END item20_menulink--><!--BEGIN item21_menulink--><LI class=" "><a  title="การพิจารณา (การขยายระยะเวลาโครงการ)" 
-				data-menu-h
-		data-menu-link
-><SPAN class="r-menu-link"> <SPAN class="r-menu-title"><SPAN class="menu-icon glyphicon glyphicon-time"></span> การพิจารณา (การขยายระยะเวลาโครงการ)</span></span></a></li><!--END item21_menulink--></ul></li><!--END item12_menulink--></ul>	</span>
-<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="simple_search" data-topcell-item-type="simple_search">
-<SPAN data-itemtype="simple_search" data-itemid="simple_search" data-pageid="1" class="form-group">
-<DIV class="input-group">
-<!--BEGIN searchform_text-->
-<INPUT type="search" class="form-control" placeholder="search" size="25" size="25">
-<!--END searchform_text-->
-<SPAN class="input-group-btn">
-<!--BEGIN searchform_showall-->
-<BUTTON class="btn btn-default" title="แสดงทั้งหมด">
-<SPAN class="glyphicon glyphicon-remove"></span>
-</button>
-<!--END searchform_showall-->
-<!--BEGIN searchform_search-->
-<BUTTON class="btn btn-primary">
-<SPAN class="glyphicon glyphicon-search"></span>
-</button>
-<!--END searchform_search-->
-</span>
-</div>
-</span>	</span>
-<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="list_options" data-topcell-item-type="list_options">
-<span data-itemtype="list_options" data-itemid="list_options"  data-pageid="1" data-small data-button-item>
-<SPAN class="dropdown">
-<BUTTON type="button" title class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	<SPAN class="glyphicon glyphicon-cog"></span>
-<SPAN class="caret"></span>
-</button>
-<UL class="dropdown-menu">
-<!--BEGIN editselected_link-->
-<li data-itemtype="edit_selected" data-itemid="edit_selected"  data-pageid="1" data-small >
-<a  href="#"    title="" >	การแก้ไขที่เลือก	</a>
-</li>
-<!--END editselected_link-->
-<!--BEGIN exportselected_link-->
-<li data-itemtype="export_selected" data-itemid="export_selected"  data-pageid="1" data-small >
-<a  href="#"    title="" >	เลือกนำออก	</a>
-</li>
-<!--END exportselected_link-->
-<!--BEGIN deleteselected_link-->
-<li data-itemtype="delete_selected" data-itemid="delete_selected"  data-pageid="1" data-small >
-<a  href="#"    title="" >	ลบรายการที่เลือก	</a>
-</li>
-<!--END deleteselected_link-->
-<LI role="separator" class="divider"></li>	<li data-itemtype="advsearch_link" data-itemid="advsearch_link"  data-pageid="1" data-small >
-<a   href="researchdisburse_search.php"   title="" >	ค้นหาขั้นสูง	</a>
-</li>
-<!--BEGIN searchPanelTopButtons-->
-<li data-itemtype="show_search_panel" data-itemid="show_search_panel"  data-pageid="1" data-small >
-<a  id="showOptPanel"  title="" >	Show search panel	</a>
-</li>
-<!--END searchPanelTopButtons-->
-<!--BEGIN searchPanelTopButtons-->
-<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel"  data-pageid="1" data-small >
-<a  id="hideOptPanel"  title="" >	Hide search panel	</a>
-</li>
-<!--END searchPanelTopButtons-->
-<LI role="separator" class="divider"></li>	<!--BEGIN export_link-->
-<li data-itemtype="export" data-itemid="export"  data-pageid="1" data-small >
-<a  href="#"   title="" >	ผลการนำออก	</a>
-</li>
-<!--END export_link-->
-<LI role="separator" class="divider"></li>	<!--BEGIN EnglishLANGLINK-->
-<li><A href="#" data-lang="English" class="rnr-langlink">	English</a></li>
-<!--END EnglishLANGLINK-->
-</ul>
-</span>
-</span>
-</span>
-<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="loginform_login" data-topcell-item-type="loginform_login">
-<!--BEGIN guestloginbutton-->
-<span data-itemtype="loginform_login" data-itemid="loginform_login"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-primary" href="#">	เข้าระบบ	</a>
-</span>
-<!--END guestloginbutton-->
-</span>
-<SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="1" data-itemid="username_button" data-topcell-item-type="username_button">
-<!--BEGIN loggedas_message-->
-<span data-itemtype="username_button" data-itemid="username_button"  data-pageid="1" data-small data-button-item>
-<SPAN class="dropdown">
-<BUTTON type="button" title class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	<!--BEGIN userbutton_icon-->	<SPAN class="glyphicon glyphicon-user"></span>
-<!--END userbutton_icon-->	admin	<SPAN class="caret"></span>
-</button>
-<UL class="dropdown-menu">
-<!--BEGIN logoutbutton-->
-<li data-itemtype="userinfo_link" data-itemid="userinfo_link"  data-pageid="1" data-small >
-<a  href="userinfo.php"  title="" >	ประวัติผู้ใช้	</a>
-</li>
-<!--END logoutbutton-->
-<!--BEGIN logoutbutton-->
-<li data-itemtype="logout_link" data-itemid="logout_link"  data-pageid="1" data-small >
-<a  href="#"   title="" >	ออกจากระบบ	</a>
-</li>
-<!--END logoutbutton-->
-<!--BEGIN adminarea_link-->
-<li data-itemtype="adminarea_link" data-itemid="adminarea_link"  data-pageid="1" data-small >
-<a  href="admin_rights_list.php"  title="" >	พื้นที่ผู้ดูแลระบบ	</a>
-</li>
-<!--END adminarea_link-->
-<!--BEGIN changepwd_link-->
-<li data-itemtype="changepassword_link" data-itemid="changepassword_link"  data-pageid="1" data-small >
-<a  href="changepwd.php"  id="changePasswordButton"  title="" >	เปลี่ยนรหัสผ่าน	</a>
-</li>
-<!--END changepwd_link-->
-</ul>
-</span>
-</span>
-<!--END loggedas_message-->
-</span>
-</nav>
-<!--END supertop_block-->
-</div>	<DIV data-body-align="left" data-body-width="full" class="r-body" data-resize-top="topbar">
-<DIV class="r-top">
-<!--BEGIN top_block-->
-<DIV class="r-form" data-location="top" id="form_top_1" data-makeup="topbar" data-pageid="1">	<DIV class="row">
-<DIV data-cellId="top_c1" data-pageid="1" class="r-ori-vert col-md-12">
-<OL class="breadcrumb">
-<li ><a href="#"><SPAN class="glyphicon glyphicon-home"></span></a></li>
-<LI class="dropdown">
-<A href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> การเบิกจ่าย
-<SPAN class="caret"></span>
-<UL class="dropdown-menu">
-<li><a href="#">ผู้ใช้งาน</a></li><li><a href="#">กระบวนการ</a></li><li><a href="#">การพิจารณา</a></li><li><a href="#">ประเภททุน</a></li><li><a href="#">กลุ่มข้อเสนอขอรับทุน</a></li><li><a href="#">งวดการดำเนินการ</a></li><li><a href="#">การนัดหมาย</a></li><li><a href="#">การเบิกจ่าย</a></li><li><a href="#">การขอขยายระยะเวลาโครงการ</a></li><li><a href="#">Admin Rights</a></li><li><a href="#">Admin Members</a></li><li><a href="#">Add/Edit users</a></li><li><a href="#">ขั้นตอนการพิจารณา</a></li><li><a href="#">การรับสมัครขอรับทุนวิจัย</a></li><li><a href="#">การยื่นขอรับทุนวิจัย</a></li><li><a href="#">การพิจารณา</a></li><li><a href="#">บริหารโครงการยื่นขอรับทุนวิจัย</a></li><li><a href="#">การพิจารณา</a></li><li><a href="#">การพิจารณา</a></li><li><a href="#">การพิจารณา</a></li><li><a href="#">งวดการดำเนินการ</a></li><li><a href="#">บริหารโครงการรับสมัครขอรับทุนวิจัย</a></li>
-</ul>
-</a>
-</li>
-</ol>
-</div>	</div>
-<DIV class="row">
-<DIV data-cellId="top_c3" data-pageid="1" class="r-ori-vert col-md-12">
-<!--BEGIN mastertable_block-->
-<div data-itemtype="master_info" data-itemid="master_info"  data-pageid="1">
-</div>
-<!--END mastertable_block-->	</div>	</div>
-</div>	<!--END top_block-->
-</div>
-<DIV class="r-content">
-<DIV class="r-left">
-<!--BEGIN left_block-->
-<TABLE class="r-fluid r-form" data-location="left" id="form_left_1" data-makeup="topbar" data-pageid="1">
-<tbody>
-<tr  >
-<TD class="r-ori-vert" data-cellId="left_c1" data-pageid="1">
-<!-- Begin Search panel content -->
-<DIV class="searchOptions panel panel-primary searchPanelContainer" data-itemtype="search_panel" data-itemid="search_panel" data-pageid="1">
-<DIV class="panel-heading">
-<DIV class="btn-group" id="addSearchFieldButton">
-<BUTTON id="showHideControlChooseMenu" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	Search in	<SPAN class="caret"></span>
-</button><UL class="list-group rnr-list controlChooseMenu dropdown-menu"><li><A href="#" class="rnr-button link" id="addSearchControl_entryTime">entryTime</a></li><li><A href="#" class="rnr-button link" id="addSearchControl_researchOperatingPeriodNo">researchOperatingPeriodNo</a></li><li><A href="#" class="rnr-button link" id="addSearchControl_researchOperatingPeriodEndDate">researchOperatingPeriodEndDate</a></li><li><A href="#" class="rnr-button link" id="addSearchControl_researchOperatingPeriodDisbursePercent">researchOperatingPeriodDisbursePercent</a></li><li><A href="#" class="rnr-button link" id="addSearchControl_researchOperatingPeriodDisburse">researchOperatingPeriodDisburse</a></li><li><A href="#" class="rnr-button link" id="addSearchControl_entryUserName">entryUserName</a></li></ul>
-</div>
-<DIV class="btn-group searchpanel-options" id="searchPanelOptions">
-<BUTTON type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<SPAN class="glyphicon glyphicon glyphicon-option-vertical"></span>
-</button>
-<UL class="dropdown-menu dropdown-left">
-<li id="showHideSearchType" ><a>Show options</a></li>
-<LI role="separator" class="divider"></li>
-<LI class="srchCritTop" style><a><input type="radio" name="srchType" id="radioAll" checked><label for="radioAll"><SPAN class="glyphicon">&nbsp;</span>all conditions</label></a></li>
-<LI class="srchCritTop" style><a><input type="radio" name="srchType" id="radioAny" ><label for="radioAny"><SPAN class="glyphicon">&nbsp;</span>any condition</label></a></li>
-<LI role="separator" class="divider"></li>
-<li><A class="close-button"><SPAN class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
-</ul>
-</div>
-</div>
-<DIV class="panel-body controlsBlock">
-<!--BEGIN searchCtrlBlock_entryTime-->
-<DIV class="form-group srchPanelRow">
-<label><span typeid="label" id1="researchDisburse" id2="entryTime">วันที่/เวลาบันทึกรายการ</span></label>
-<A class="searchPanelButton searchpanel-options" href="#" title="Delete control"><SPAN class="glyphicon glyphicon-remove"></span></a>
-<SPAN class="rnr-searchtype" style="display: none" """>
-<span id="searchType_entryTime">
-<SELECT class="form-control" size="1">
-<option value="Between">ระหว่าง</option><option value="Contains">ประกอบด้วย</option><option value="Empty">ว่าง</option><option value="Equals"selected="" data-default-option="true">เท่ากับ</option><option value="Less than">น้อยกว่า</option><option value="More than">มากกว่า</option><option value="NOT Empty">Is not empty</option><option value="Starts with">เริ่มด้วย</option>
-</select>
-</span>
-</span>
-<SPAN class="rnr-searchcontrol"><INPUT class="form-control" type="text" autocomplete="off" maxlength="10"></span>
-<SPAN class="rnr-searchcontrol" style="display: none"><INPUT class="form-control" type="text" autocomplete="off" maxlength="10"></span>
-</div>
-<!--END searchCtrlBlock_entryTime-->
-</div>
-<DIV class="panel-footer bottomSearchButt">
-<BUTTON class="btn btn-primary btn-sm" id="searchButton">ค้นหา</button>
-</div>
-</div>
-<!-- End Search panel content -->
-</td>
-</tr>
-</tbody>
-</table>
-<!--END left_block-->
-</div>
-<DIV class="r-data-block" data-body-width="full">
-<!--BEGIN above-grid_block-->
-<DIV class="r-form" data-location="above-grid" id="form_above-grid_1" data-makeup="topbar" data-pageid="1">	<DIV class="row">
-<DIV data-cellId="above-grid_c1" data-pageid="1" class="col-md-6">
-<!--BEGIN firstAboveGridCell-->
-<!--BEGIN inlineadd_link-->
-<span data-itemtype="inline_add" data-itemid="inline_add"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-primary">	เพิ่มใหม่	</a>
-</span>
-<!--END inlineadd_link-->
-<!--BEGIN saveall_link-->
-<span data-itemtype="inline_save_all" data-itemid="inline_save_all"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-primary">	บันทึกทั้งหมด	</a>
-</span>
-<!--END saveall_link-->
-<!--BEGIN cancelall_link-->
-<span data-itemtype="inline_cancel_all" data-itemid="inline_cancel_all"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-default">	ยกเลิกการแก้ไข	</a>
-</span>
-<!--END cancelall_link-->
-<!--BEGIN deleteselected_link-->
-<span data-itemtype="delete" data-itemid="delete"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-default" disabled>		ลบ	</a>
-</span>
-<!--END deleteselected_link-->
-<!--END firstAboveGridCell-->	</div>	<DIV data-cellId="above-grid_c2" data-pageid="1" class="r-align-right col-md-6">
-<span data-itemtype="details_found" data-itemid="details_found"  data-pageid="1" data-small >
-<span data-itemtype="details_found" data-itemid="details_found" data-pageid="1">Displaying <SPAN class="bs-number">1</span> - <SPAN class="bs-number">20</span> of <SPAN class="bs-number">55</span></span>
-</span>	<span data-itemtype="page_size" data-itemid="page_size"  data-pageid="1" >
-<SELECT class="form-control" id="recordspp1">
-<option value="10" >10</option>
-<option value="20" selected="">20</option>
-<option value="30" >30</option>
-<option value="50" >50</option>
-<option value="100" >100</option>
-<option value="500" >500</option>
-<option value="All" >All</option>
-</select>
-</span>	<!--BEGIN print_friendly-->
-<span id="printpanelblock"  data-pageid="1"  data-itemtype="print_panel" data-itemid="print_panel"  data-pageid="1">
-<BUTTON title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-<SPAN class="glyphicon glyphicon-print"></span>
-<SPAN class="caret"></span>
-</button>
-<UL class="dropdown-menu pull-right">
-<LI class="container-fluid">
-<div id="print_friendly_scope">
-<DIV class="row">
-<DIV class="col-md-4">	Scope:	</div>
-<!--BEGIN print_friendly_all-->
-<DIV class="col-md-8">
-<label for="printAll">
-<input type="radio" id="printAll" data-href="researchdisburse_print.php?all=1&amp;" name="printScope" >	Print all pages	</label>
-</div>
-<!--END print_friendly_all-->
-</div>
-<DIV class="row">
-<DIV class="col-md-4">&nbsp;</div>
-<DIV class="col-md-8">
-<label for="printPage">
-<input name="printScope" id="printPage" type="radio" checked data-href="researchdisburse_print.php?">	Print this page	</label>
-</div>
-</div>
-<DIV class="row">
-<DIV class="col-md-4">	&nbsp;
-</div>
-<DIV class="col-md-8">
-<label style="color: gray;" for="printSelection">
-<input name="printScope" disabled="disabled" id="printSelection" type="radio" >	Print selected	</label>
-</div>
-</div>
-</div>
-</li>
-<LI class="divider" role="separator"></li>
-<LI class="container-fluid">
-<!--BEGIN print_details-->
-<div>
-<label for="printDetailsToggler">
-<input type="checkbox" id="printDetailsToggler">	Print details	</label>
-<div  id="printdetailstables" style="display:none;">
-<!--BEGIN print_details_researchdisburseconsider-->
-<div>
-<label for="printDetailsresearchdisburseconsider">
-<input type="checkbox" value="researchdisburseconsider" id="printDetailsresearchdisburseconsider" checked>	การพิจารณา	</label>
-</div>
-<!--END print_details_researchdisburseconsider-->
-</div>
-</div>
-<!--END print_details-->
-</li>
-<LI class="divider" role="separator"></li>
-<LI class="container-fluid">
-<div>
-<label for="printPerPage">	รายการต่อหน้า	</label>
-<INPUT type="number" id="printPerPage" value class="rnr-printrecspp">	</div>
-</li>
-<LI class="divider" role="separator"></li>
-<LI class="container-fluid text-center">
-<span data-itemtype="print_button" data-itemid="print_button"  data-pageid="1" data-small data-button-item>
-<A type="button" title class="btn btn-primary" id="print_friendly_button">	Print	</a>
-</span>
-</li>
-</ul>
-</span>
-<!--END print_friendly-->
-</div>	</div>
-</div>	<!--END above-grid_block-->
-<DIV class="r-grid">
-<!--BEGIN grid_block-->
-<style>
-@media screen and (max-width: 767px) {
-				[data-pageid="1"][data-itemtype="grid_field"][data-field="researchOperatingPeriodNo"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodNo">งวดที่</span>";
-	}
-			[data-pageid="1"][data-itemtype="grid_field"][data-field="researchOperatingPeriodEndDate"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodEndDate">วันสิ้นสุดงวด</span>";
-	}
-			[data-pageid="1"][data-itemtype="grid_field"][data-field="researchOperatingPeriodDisburse"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodDisburse">ยอดเบิกจ่าย</span>";
-	}
-			[data-pageid="1"][data-itemtype="grid_field"][data-field="researchOperatingPeriodDisbursePercent"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodDisbursePercent">ร้อยละเบิกจ่าย</span>";
-	}
-			[data-pageid="1"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="entryUserName">ผู้บันทึกรายการ</span>";
-	}
-			[data-pageid="1"][data-itemtype="grid_field"][data-field="entryTime"]:before {
-		content: "<span typeid="label" id1="researchDisburse" id2="entryTime">วันที่/เวลาบันทึกรายการ</span>";
-	}
-	}
-</style>
-<TABLE data-location="grid" id="form_grid_1" data-makeup="topbar" data-pageid="1" class="table table-striped table-bordered r-horizontal-grid r-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" data-body-height="2">
-<thead>
-<!--BEGIN grid_header-->
-<TR class="r-gridrow">
-<!--BEGIN cellblock_grid_headcell_icons-->
-<TH class="r-ori-vert" data-cellId="grid_headcell_icons" data-pageid="1" data-record-id data-page="researchdisburse_list" data-control-cell>
-</th>
-<!--END cellblock_grid_headcell_icons-->
-<!--BEGIN cellblock_grid_headcell_checkbox-->
-<TH class="r-ori-vert" data-cellId="grid_headcell_checkbox" data-pageid="1" data-record-id data-page="researchdisburse_list" data-checkbox-cell>
-<!--BEGIN checkbox_column-->
-<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head"  data-pageid="1" data-record-id="" >
-<input type="checkbox" >
-</span>
-<!--END checkbox_column-->
-</th>
-<!--END cellblock_grid_headcell_checkbox-->
-<!--BEGIN cellblock_grid_headcell_details-->
-<TH class="r-ori-vert" data-cellId="grid_headcell_details" data-pageid="1" data-record-id>
-</th>
-<!--END cellblock_grid_headcell_details-->
-<!--BEGIN cellblock_grid_headcell_field-->
-<TH class="r-ori-vert" data-field="researchOperatingPeriodNo" data-cellId="grid_headcell_field" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodNo_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodNo" data-fieldname="researchOperatingPeriodNo">
-<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodNo">งวดที่</span>	</span>
-<!--END researchOperatingPeriodNo_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field-->
-<!--BEGIN cellblock_grid_headcell_field1-->
-<TH class="r-ori-vert" data-field="researchOperatingPeriodEndDate" data-cellId="grid_headcell_field1" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodEndDate_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field8"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodEndDate" data-fieldname="researchOperatingPeriodEndDate">
-<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodEndDate">วันสิ้นสุดงวด</span>	</span>
-<!--END researchOperatingPeriodEndDate_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field1-->
-<!--BEGIN cellblock_grid_headcell_field2-->
-<TH class="r-ori-vert" data-field="researchOperatingPeriodDisburse" data-cellId="grid_headcell_field2" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodDisburse_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodDisburse" data-fieldname="researchOperatingPeriodDisburse">
-<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodDisburse">ยอดเบิกจ่าย</span>	</span>
-<!--END researchOperatingPeriodDisburse_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field2-->
-<!--BEGIN cellblock_grid_headcell_field3-->
-<TH class="r-ori-vert" data-field="researchOperatingPeriodDisbursePercent" data-cellId="grid_headcell_field3" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodDisbursePercent_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodDisbursePercent" data-fieldname="researchOperatingPeriodDisbursePercent">
-<span typeid="label" id1="researchDisburse" id2="researchOperatingPeriodDisbursePercent">ร้อยละเบิกจ่าย</span>	</span>
-<!--END researchOperatingPeriodDisbursePercent_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field3-->
-<!--BEGIN cellblock_grid_headcell_field4-->
-<TH class="r-ori-vert" data-field="entryUserName" data-cellId="grid_headcell_field4" data-pageid="1" data-record-id>
-<!--BEGIN entryUserName_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11"  data-pageid="1" data-record-id="" data-field="entryUserName" data-fieldname="entryUserName">
-<span typeid="label" id1="researchDisburse" id2="entryUserName">ผู้บันทึกรายการ</span>	</span>
-<!--END entryUserName_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field4-->
-<!--BEGIN cellblock_grid_headcell_field5-->
-<TH class="r-ori-vert" data-field="entryTime" data-cellId="grid_headcell_field5" data-pageid="1" data-record-id>
-<!--BEGIN entryTime_fieldheadercolumn-->
-<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12"  data-pageid="1" data-record-id="" data-field="entryTime" data-fieldname="entryTime">
-<span typeid="label" id1="researchDisburse" id2="entryTime">วันที่/เวลาบันทึกรายการ</span>	</span>
-<!--END entryTime_fieldheadercolumn-->
-</th>
-<!--END cellblock_grid_headcell_field5-->
-</tr>
-<!--END grid_header-->
-</thead>
-<tbody>
-<!--BEGIN grid_row-->
-<TR class="r-gridrow">
-<!--BEGIN cellblock_grid_cell_icons-->
-<TD class="
-" data-cellId="grid_cell_icons" data-pageid="1" data-record-id data-page="researchdisburse_list" data-control-cell>
-<!--BEGIN inlineedit_column-->
-<!--BEGIN inlineedit_link-->
-<span data-itemtype="grid_inline_edit" data-itemid="grid_inline_edit"  data-pageid="1" data-record-id="" data-small data-button-item>
-<A type="button" title="แก้ไข" class="btn-link glyphicon glyphicon-edit" title="แก้ไข">	</a>
-</span>
-<!--END inlineedit_link-->
-<!--END inlineedit_column-->
-<!--BEGIN inline_save-->
-<span data-itemtype="grid_inline_save" data-itemid="grid_inline_save"  data-pageid="1" data-record-id="" data-small data-button-item>
-<A type="button" title="บันทึก" class="btn-link glyphicon glyphicon-ok" title="บันทึก">	</a>
-</span>
-<!--END inline_save-->
-<!--BEGIN inline_cancel-->
-<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel"  data-pageid="1" data-record-id="" data-small data-button-item>
-<A type="button" title="ยกเลิก" class="btn-link glyphicon glyphicon-remove" title="ยกเลิก">	</a>
-</span>
-<!--END inline_cancel-->
-</td>
-<!--END cellblock_grid_cell_icons-->
-<!--BEGIN cellblock_grid_cell_checkbox-->
-<TD class="r-ori-vert" data-cellId="grid_cell_checkbox" data-pageid="1" data-record-id data-control-cell data-checkbox-cell>
-<!--BEGIN checkbox_column-->
-<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox"  data-pageid="1" data-record-id="" >
-<input type="checkbox" 
-		>
-</span>	<!--END checkbox_column-->
-</td>
-<!--END cellblock_grid_cell_checkbox-->
-<!--BEGIN cellblock_grid_cell_details-->
-<TD class="r-ori-vert" data-cellId="grid_cell_details" data-pageid="1" data-record-id data-page="researchdisburse_list" data-control-cell>
-<!--BEGIN researchdisburseconsider_dtable_link-->
-<span data-itemtype="grid_details_link" data-itemid="grid_details_link"  data-pageid="1" data-record-id="">
-<a   data-short-details="researchdisburseconsider"
-		 
-					>	การพิจารณา	<span  dir="ltr">
-<!--BEGIN researchdisburseconsider_childcount-->(3)<!--END researchdisburseconsider_childcount-->
-</span>
-</a>
-</span>
-<!--END researchdisburseconsider_dtable_link-->
-</td>
-<!--END cellblock_grid_cell_details-->
-<!--BEGIN cellblock_grid_cell_field-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodNo" data-cellId="grid_cell_field" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodNo_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodNo" data-fieldname="researchOperatingPeriodNo" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_researchOperatingPeriodNo"><SPAN class="glyphicon glyphicon-text"></span>&nbsp;researchOperatingPeriodNo</div>
-</span>
-<!--END researchOperatingPeriodNo_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field-->
-<!--BEGIN cellblock_grid_cell_field1-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodEndDate" data-cellId="grid_cell_field1" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodEndDate_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodEndDate" data-fieldname="researchOperatingPeriodEndDate" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_researchOperatingPeriodEndDate"><SPAN class="glyphicon glyphicon-calendar"></span>&nbsp;researchOperatingPeriodEndDate</div>
-</span>
-<!--END researchOperatingPeriodEndDate_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field1-->
-<!--BEGIN cellblock_grid_cell_field2-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodDisburse" data-cellId="grid_cell_field2" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodDisburse_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodDisburse" data-fieldname="researchOperatingPeriodDisburse" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_researchOperatingPeriodDisburse"><SPAN class="glyphicon glyphicon-number"></span>&nbsp;researchOperatingPeriodDisburse</div>
-</span>
-<!--END researchOperatingPeriodDisburse_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field2-->
-<!--BEGIN cellblock_grid_cell_field3-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodDisbursePercent" data-cellId="grid_cell_field3" data-pageid="1" data-record-id>
-<!--BEGIN researchOperatingPeriodDisbursePercent_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5"  data-pageid="1" data-record-id="" data-field="researchOperatingPeriodDisbursePercent" data-fieldname="researchOperatingPeriodDisbursePercent" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_researchOperatingPeriodDisbursePercent"><SPAN class="glyphicon glyphicon-text"></span>&nbsp;researchOperatingPeriodDisbursePercent</div>
-</span>
-<!--END researchOperatingPeriodDisbursePercent_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field3-->
-<!--BEGIN cellblock_grid_cell_field4-->
-<TD class="r-ori-vert" data-field="entryUserName" data-cellId="grid_cell_field4" data-pageid="1" data-record-id>
-<!--BEGIN entryUserName_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6"  data-pageid="1" data-record-id="" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_entryUserName"><SPAN class="glyphicon glyphicon-text"></span>&nbsp;entryUserName</div>
-</span>
-<!--END entryUserName_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field4-->
-<!--BEGIN cellblock_grid_cell_field5-->
-<TD class="r-ori-vert" data-field="entryTime" data-cellId="grid_cell_field5" data-pageid="1" data-record-id>
-<!--BEGIN entryTime_fieldcolumn-->
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7"  data-pageid="1" data-record-id="" data-field="entryTime" data-fieldname="entryTime" data-default-width >
-<DIV class="field_black view-control form-control" typeid="view_entryTime"><SPAN class="glyphicon glyphicon-calendar"></span>&nbsp;entryTime</div>
-</span>
-<!--END entryTime_fieldcolumn-->	</td>
-<!--END cellblock_grid_cell_field5-->
-</tr>
-<TR class="
-">
-<!--BEGIN cellblock_grid_cell_dpreview-->
-<TD class="r-ori-vert" data-cellId="grid_cell_dpreview" data-pageid="1" data-record-id>
-<div data-itemtype="details_preview" data-itemid="details_preview"  data-pageid="1" data-record-id="" 
-	data-orders="researchdisburseconsider"
-			data-details-researchdisburseconsider	>
-<span data-details-inside data-short-table="researchdisburseconsider">
-</span>
-<div data-details-preview>
-</div>
-</div>
-</td>
-<!--END cellblock_grid_cell_dpreview-->
-</tr>
-<!--END grid_row-->
-</tbody>
-<tfoot>
-<TR class="r-gridrow">
-<!--BEGIN cellblock_grid_footcell_icons-->
-<TD class="r-ori-vert" data-cellId="grid_footcell_icons" data-pageid="1" data-record-id>
-</td>
-<!--END cellblock_grid_footcell_icons-->
-<!--BEGIN cellblock_grid_footcell_checkbox-->
-<TD class="r-ori-vert" data-cellId="grid_footcell_checkbox" data-pageid="1" data-record-id>
-</td>
-<!--END cellblock_grid_footcell_checkbox-->
-<!--BEGIN cellblock_grid_footcell_details-->
-<TD class="r-ori-vert" data-cellId="grid_footcell_details" data-pageid="1" data-record-id>
-</td>
-<!--END cellblock_grid_footcell_details-->
-<!--BEGIN cellblock_grid_footcell_field-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodNo" data-cellId="grid_footcell_field" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field-->
-<!--BEGIN cellblock_grid_footcell_field1-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodEndDate" data-cellId="grid_footcell_field1" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field1-->
-<!--BEGIN cellblock_grid_footcell_field2-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodDisburse" data-cellId="grid_footcell_field2" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field2-->
-<!--BEGIN cellblock_grid_footcell_field3-->
-<TD class="r-ori-vert" data-field="researchOperatingPeriodDisbursePercent" data-cellId="grid_footcell_field3" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field3-->
-<!--BEGIN cellblock_grid_footcell_field4-->
-<TD class="r-ori-vert" data-field="entryUserName" data-cellId="grid_footcell_field4" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field4-->
-<!--BEGIN cellblock_grid_footcell_field5-->
-<TD class="r-ori-vert" data-field="entryTime" data-cellId="grid_footcell_field5" data-pageid="1" data-record-id data-page="researchdisburse_list">
-</td>
-<!--END cellblock_grid_footcell_field5-->
-</tr>
-</tfoot>
-</table>
-<!--END grid_block-->
-</div>
-<!--BEGIN below-grid_block-->
-<DIV class="r-form" data-location="below-grid" id="form_below-grid_1" data-makeup="topbar" data-pageid="1">	<DIV class="row">
-<DIV data-cellId="below-grid_c1" data-pageid="1" class="r-align-center r-ori-vert col-md-12">
-<!--BEGIN pagination_block-->
-<span data-itemtype="pagination" data-itemid="pagination"  data-pageid="1" >
-<span data-itemtype="pagination" data-itemid="pagination" data-pageid="1">
-<NAV class="text-center"><UL class="pagination" data-function="pagination1"><LI class="active"><a href="#" pagenum="1">1</a></li><LI class><a href="#" pagenum="2">2</a></li><LI class><a href="#" pagenum="3">3</a></li></ul></nav>
-</span>
-</span>
-<!--END pagination_block-->
-</div>	</div>
-</div>	<!--END below-grid_block-->
-</div>
-</div>
-</div>
-</div>
-<SPAN class="field_black form-control input-sm" id='footer' style='display: inline-block; width: 100px'>footer</span>
-<!--END body-->
-</body>
-</html>

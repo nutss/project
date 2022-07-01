@@ -6,11 +6,11 @@ $tdataresearchconsider[".OwnerID"] = "";
 $tdataresearchconsider[".OriginalTable"] = "researchConsider";
 
 
-$tdataresearchconsider[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchconsider[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchconsider[".originalPagesByType"] = $tdataresearchconsider[".pagesByType"];
-$tdataresearchconsider[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchconsider[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchconsider[".originalPages"] = $tdataresearchconsider[".pages"];
-$tdataresearchconsider[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchconsider[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchconsider[".originalDefaultPages"] = $tdataresearchconsider[".defaultPages"];
 
 //	field labels
@@ -27,34 +27,34 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchconsider["English"] = array();
 	$fieldLabelsresearchconsider["English"]["id"] = "ID";
 	$fieldToolTipsresearchconsider["English"]["id"] = "";
-	$placeHoldersresearchconsider["English"]["id"] = "";
+	$placeHoldersresearchconsider["English"]["id"] = "ID";
 	$fieldLabelsresearchconsider["English"]["researchTypeID"] = "Research Type ID";
 	$fieldToolTipsresearchconsider["English"]["researchTypeID"] = "";
-	$placeHoldersresearchconsider["English"]["researchTypeID"] = "";
+	$placeHoldersresearchconsider["English"]["researchTypeID"] = "Research Type ID";
 	$fieldLabelsresearchconsider["English"]["researchConsiderNumber"] = "Research Consider Number";
 	$fieldToolTipsresearchconsider["English"]["researchConsiderNumber"] = "";
-	$placeHoldersresearchconsider["English"]["researchConsiderNumber"] = "";
+	$placeHoldersresearchconsider["English"]["researchConsiderNumber"] = "Research Consider Number";
 	$fieldLabelsresearchconsider["English"]["processName"] = "Process Name";
 	$fieldToolTipsresearchconsider["English"]["processName"] = "";
-	$placeHoldersresearchconsider["English"]["processName"] = "";
+	$placeHoldersresearchconsider["English"]["processName"] = "Process Name";
 	$fieldLabelsresearchconsider["English"]["stepName"] = "Step Name";
 	$fieldToolTipsresearchconsider["English"]["stepName"] = "";
-	$placeHoldersresearchconsider["English"]["stepName"] = "";
+	$placeHoldersresearchconsider["English"]["stepName"] = "Step Name";
 	$fieldLabelsresearchconsider["English"]["researchConsiderFile"] = "Research Consider File";
 	$fieldToolTipsresearchconsider["English"]["researchConsiderFile"] = "";
-	$placeHoldersresearchconsider["English"]["researchConsiderFile"] = "";
+	$placeHoldersresearchconsider["English"]["researchConsiderFile"] = "Research Consider File";
 	$fieldLabelsresearchconsider["English"]["researchRegisterDesc"] = "Research Register Desc";
 	$fieldToolTipsresearchconsider["English"]["researchRegisterDesc"] = "";
-	$placeHoldersresearchconsider["English"]["researchRegisterDesc"] = "";
+	$placeHoldersresearchconsider["English"]["researchRegisterDesc"] = "Research Register Desc";
 	$fieldLabelsresearchconsider["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchconsider["English"]["entryUserName"] = "";
-	$placeHoldersresearchconsider["English"]["entryUserName"] = "";
+	$placeHoldersresearchconsider["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchconsider["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchconsider["English"]["entryTime"] = "";
-	$placeHoldersresearchconsider["English"]["entryTime"] = "";
+	$placeHoldersresearchconsider["English"]["entryTime"] = "Entry Time";
 	$fieldLabelsresearchconsider["English"]["researchConsiderName"] = "Research Consider Name";
 	$fieldToolTipsresearchconsider["English"]["researchConsiderName"] = "";
-	$placeHoldersresearchconsider["English"]["researchConsiderName"] = "";
+	$placeHoldersresearchconsider["English"]["researchConsiderName"] = "Research Consider Name";
 	if (count($fieldToolTipsresearchconsider["English"]))
 		$tdataresearchconsider[".isUseToolTips"] = true;
 }
@@ -66,34 +66,34 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchconsider["Thai"] = array();
 	$fieldLabelsresearchconsider["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchconsider["Thai"]["id"] = "";
-	$placeHoldersresearchconsider["Thai"]["id"] = "";
+	$placeHoldersresearchconsider["Thai"]["id"] = "ID";
 	$fieldLabelsresearchconsider["Thai"]["researchConsiderNumber"] = "ขั้นตอนที่";
 	$fieldToolTipsresearchconsider["Thai"]["researchConsiderNumber"] = "";
-	$placeHoldersresearchconsider["Thai"]["researchConsiderNumber"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchConsiderNumber"] = "ขั้นตอนที่";
 	$fieldLabelsresearchconsider["Thai"]["processName"] = "กระบวนการ";
 	$fieldToolTipsresearchconsider["Thai"]["processName"] = "";
-	$placeHoldersresearchconsider["Thai"]["processName"] = "";
+	$placeHoldersresearchconsider["Thai"]["processName"] = "กระบวนการ";
 	$fieldLabelsresearchconsider["Thai"]["stepName"] = "ชื่อขั้นตอน";
 	$fieldToolTipsresearchconsider["Thai"]["stepName"] = "";
-	$placeHoldersresearchconsider["Thai"]["stepName"] = "";
+	$placeHoldersresearchconsider["Thai"]["stepName"] = "ชื่อขั้นตอน";
 	$fieldLabelsresearchconsider["Thai"]["researchConsiderFile"] = "เอกสารแนบ";
 	$fieldToolTipsresearchconsider["Thai"]["researchConsiderFile"] = "";
-	$placeHoldersresearchconsider["Thai"]["researchConsiderFile"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchConsiderFile"] = "เอกสารแนบ";
 	$fieldLabelsresearchconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
 	$fieldToolTipsresearchconsider["Thai"]["researchRegisterDesc"] = "";
-	$placeHoldersresearchconsider["Thai"]["researchRegisterDesc"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
 	$fieldLabelsresearchconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchconsider["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchconsider["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchconsider["Thai"]["entryTime"] = "";
-	$placeHoldersresearchconsider["Thai"]["entryTime"] = "";
+	$placeHoldersresearchconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldLabelsresearchconsider["Thai"]["researchTypeID"] = "ประเภททุน";
 	$fieldToolTipsresearchconsider["Thai"]["researchTypeID"] = "";
-	$placeHoldersresearchconsider["Thai"]["researchTypeID"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchTypeID"] = "ประเภททุน";
 	$fieldLabelsresearchconsider["Thai"]["researchConsiderName"] = "การพิจารณา";
 	$fieldToolTipsresearchconsider["Thai"]["researchConsiderName"] = "";
-	$placeHoldersresearchconsider["Thai"]["researchConsiderName"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchConsiderName"] = "การพิจารณา";
 	if (count($fieldToolTipsresearchconsider["Thai"]))
 		$tdataresearchconsider[".isUseToolTips"] = true;
 }
@@ -127,7 +127,7 @@ $tdataresearchconsider[".listAjax"] = false;
 //	temporary
 //$tdataresearchconsider[".listAjax"] = false;
 
-	$tdataresearchconsider[".audit"] = false;
+	$tdataresearchconsider[".audit"] = true;
 
 	$tdataresearchconsider[".locking"] = false;
 
@@ -145,7 +145,7 @@ if( $pages[PAGE_ADD] ) {
 $tdataresearchconsider[".add"] = true;
 $tdataresearchconsider[".afterAddAction"] = 1;
 $tdataresearchconsider[".closePopupAfterAdd"] = 1;
-$tdataresearchconsider[".afterAddActionDetTable"] = "";
+$tdataresearchconsider[".afterAddActionDetTable"] = "Detail tables not found!";
 }
 
 if( $pages[PAGE_LIST] ) {
@@ -199,7 +199,7 @@ $tdataresearchconsider[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchconsider[".buttonsAdded"] = false;
 
-$tdataresearchconsider[".addPageEvents"] = false;
+$tdataresearchconsider[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchconsider[".isUseTimeForSearch"] = false;
@@ -1078,14 +1078,12 @@ $tdataresearchconsider[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Document Download");
+	$vdata = array("ViewFormat" => "");
 
 	
 	
 	
-						$vdata["ShowFileSize"] = true;
-			$vdata["ShowIcon"] = true;
-		
+	
 	
 	
 	
@@ -1095,7 +1093,8 @@ $tdataresearchconsider[".hideMobileList"] = array();
 	
 		
 	
-	
+		$vdata["NeedEncode"] = true;
+
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1106,7 +1105,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Document upload");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1116,6 +1115,35 @@ $tdataresearchconsider[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "statusValue";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'researchConsiderFile'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1158,7 +1186,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1241,7 +1269,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1251,6 +1279,35 @@ $tdataresearchconsider[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "statusValue";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'researchRegisterDesc'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1265,9 +1322,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
-
+	
 	
 	
 		$edata["controlWidth"] = 200;
@@ -1298,7 +1353,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1393,21 +1448,22 @@ $tdataresearchconsider[".hideMobileList"] = array();
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "consider";
+	$edata["LookupTable"] = "optionSub";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 0;
 
 	
 		
-	$edata["LinkField"] = "considerName";
+	$edata["LinkField"] = "optionName";
 	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "considerName";
+	$edata["DisplayField"] = "optionName";
+
+				$edata["LookupWhere"] = "optionGroupID = 2";
+
 
 	
-
-	
-	$edata["LookupOrderBy"] = "considerName";
+	$edata["LookupOrderBy"] = "";
 
 	
 	
@@ -1692,8 +1748,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1714,7 +1769,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -2061,7 +2116,8 @@ $tdataresearchconsider[".sqlquery"] = $queryData_researchconsider;
 
 
 
-$tableEvents["researchConsider"] = new eventsBase;
-$tdataresearchconsider[".hasEvents"] = false;
+include_once(getabspath("include/researchconsider_events.php"));
+$tableEvents["researchConsider"] = new eventclass_researchconsider;
+$tdataresearchconsider[".hasEvents"] = true;
 
 ?>

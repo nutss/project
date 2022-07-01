@@ -93,50 +93,6 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN id_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="id{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_id}">
-		{$label researchScholarshipConsider id }	</label>
-	<div class="r-search-option">
-		{$searchtype_id}
-	</div>
-	<div class="r-search-field">
-		{$id_editcontrol}	</div>
-	<div class="r-search-field">
-		{$id_editcontrol1}
-	</div>
-	
-</div>
-
-{END id_fieldblock}
-											
-{BEGIN researchProjectID_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectID}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="researchProjectID{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="researchProjectID" data-fieldname="researchProjectID" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_researchProjectID}">
-		{$label researchScholarshipConsider researchProjectID }	</label>
-	<div class="r-search-option">
-		{$searchtype_researchProjectID}
-	</div>
-	<div class="r-search-field">
-		{$researchProjectID_editcontrol}	</div>
-	<div class="r-search-field">
-		{$researchProjectID_editcontrol1}
-	</div>
-	
-</div>
-
-{END researchProjectID_fieldblock}
-											
 {BEGIN researchConsiderNumber_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderNumber}  r-horizontal-field form-horizontal" 	
@@ -269,6 +225,28 @@
 
 {END researchConsiderName_fieldblock}
 											
+{BEGIN researchConsiderValue_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderValue}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderValue{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="researchConsiderValue" data-fieldname="researchConsiderValue" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderValue}">
+		{$label researchScholarshipConsider researchConsiderValue }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderValue}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderValue_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderValue_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderValue_fieldblock}
+											
 {BEGIN entryUserName_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
@@ -312,6 +290,50 @@
 </div>
 
 {END entryTime_fieldblock}
+											
+{BEGIN researchConsiderFileCheck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderFileCheck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderFileCheck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="researchConsiderFileCheck" data-fieldname="researchConsiderFileCheck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderFileCheck}">
+		{$label researchScholarshipConsider researchConsiderFileCheck }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderFileCheck}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderFileCheck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderFileCheck_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderFileCheck_fieldblock}
+											
+{BEGIN researchRegisterDescCheck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterDescCheck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchRegisterDescCheck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="researchRegisterDescCheck" data-fieldname="researchRegisterDescCheck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchRegisterDescCheck}">
+		{$label researchScholarshipConsider researchRegisterDescCheck }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchRegisterDescCheck}
+	</div>
+	<div class="r-search-field">
+		{$researchRegisterDescCheck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchRegisterDescCheck_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchRegisterDescCheck_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

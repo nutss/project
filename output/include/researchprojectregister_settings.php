@@ -6,11 +6,11 @@ $tdataresearchprojectregister[".OwnerID"] = "";
 $tdataresearchprojectregister[".OriginalTable"] = "researchScholarshipRegister";
 
 
-$tdataresearchprojectregister[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchprojectregister[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchprojectregister[".originalPagesByType"] = $tdataresearchprojectregister[".pagesByType"];
-$tdataresearchprojectregister[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchprojectregister[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchprojectregister[".originalPages"] = $tdataresearchprojectregister[".pages"];
-$tdataresearchprojectregister[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchprojectregister[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchprojectregister[".originalDefaultPages"] = $tdataresearchprojectregister[".defaultPages"];
 
 //	field labels
@@ -27,34 +27,34 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchprojectregister["English"] = array();
 	$fieldLabelsresearchprojectregister["English"]["id"] = "ID";
 	$fieldToolTipsresearchprojectregister["English"]["id"] = "";
-	$placeHoldersresearchprojectregister["English"]["id"] = "";
+	$placeHoldersresearchprojectregister["English"]["id"] = "ID";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterNo"] = "Research Register No";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterNo"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterNo"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterNo"] = "Research Register No";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterName"] = "Research Register Name";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterName"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterName"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterName"] = "Research Register Name";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterStartDate"] = "Research Register Start Date";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterStartDate"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterStartDate"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterStartDate"] = "Research Register Start Date";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterEndDate"] = "Research Register End Date";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterEndDate"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterEndDate"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterEndDate"] = "Research Register End Date";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterFile"] = "Research Register File";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterFile"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterFile"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterFile"] = "Research Register File";
 	$fieldLabelsresearchprojectregister["English"]["researchType"] = "Research Type";
 	$fieldToolTipsresearchprojectregister["English"]["researchType"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchType"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchType"] = "Research Type";
 	$fieldLabelsresearchprojectregister["English"]["researchRegisterStatus"] = "Research Register Status";
 	$fieldToolTipsresearchprojectregister["English"]["researchRegisterStatus"] = "";
-	$placeHoldersresearchprojectregister["English"]["researchRegisterStatus"] = "";
+	$placeHoldersresearchprojectregister["English"]["researchRegisterStatus"] = "Research Register Status";
 	$fieldLabelsresearchprojectregister["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchprojectregister["English"]["entryUserName"] = "";
-	$placeHoldersresearchprojectregister["English"]["entryUserName"] = "";
+	$placeHoldersresearchprojectregister["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchprojectregister["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchprojectregister["English"]["entryTime"] = "";
-	$placeHoldersresearchprojectregister["English"]["entryTime"] = "";
+	$placeHoldersresearchprojectregister["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchprojectregister["English"]))
 		$tdataresearchprojectregister[".isUseToolTips"] = true;
 }
@@ -66,34 +66,34 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchprojectregister["Thai"] = array();
 	$fieldLabelsresearchprojectregister["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchprojectregister["Thai"]["id"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["id"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["id"] = "ID";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterNo"] = "รหัสการรับสมัคร";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterNo"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterNo"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterNo"] = "รหัสการรับสมัคร";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterName"] = "ชื่อโครงการ";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterName"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterName"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterName"] = "ชื่อโครงการ";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterStartDate"] = "เริ่มต้นการรับสมัคร";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterStartDate"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterStartDate"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterStartDate"] = "เริ่มต้นการรับสมัคร";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterEndDate"] = "สิ้นสุดการรับสมัคร";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterEndDate"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterEndDate"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterEndDate"] = "สิ้นสุดการรับสมัคร";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterFile"] = "เอกสารโครงการ";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterFile"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterFile"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterFile"] = "เอกสารโครงการ";
 	$fieldLabelsresearchprojectregister["Thai"]["researchType"] = "ประเภททุน";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchType"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchType"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchType"] = "ประเภททุน";
 	$fieldLabelsresearchprojectregister["Thai"]["researchRegisterStatus"] = "สถานะ";
 	$fieldToolTipsresearchprojectregister["Thai"]["researchRegisterStatus"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["researchRegisterStatus"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["researchRegisterStatus"] = "สถานะ";
 	$fieldLabelsresearchprojectregister["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchprojectregister["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchprojectregister["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchprojectregister["Thai"]["entryTime"] = "";
-	$placeHoldersresearchprojectregister["Thai"]["entryTime"] = "";
+	$placeHoldersresearchprojectregister["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchprojectregister["Thai"]))
 		$tdataresearchprojectregister[".isUseToolTips"] = true;
 }
@@ -127,7 +127,7 @@ $tdataresearchprojectregister[".listAjax"] = false;
 //	temporary
 //$tdataresearchprojectregister[".listAjax"] = false;
 
-	$tdataresearchprojectregister[".audit"] = false;
+	$tdataresearchprojectregister[".audit"] = true;
 
 	$tdataresearchprojectregister[".locking"] = false;
 
@@ -199,7 +199,7 @@ $tdataresearchprojectregister[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchprojectregister[".buttonsAdded"] = false;
 
-$tdataresearchprojectregister[".addPageEvents"] = false;
+$tdataresearchprojectregister[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchprojectregister[".isUseTimeForSearch"] = false;
@@ -334,7 +334,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -349,8 +349,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 	
 		
 	
-		$vdata["NeedEncode"] = true;
-
+	
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1216,7 +1215,8 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "typeName";
 
-	
+				$edata["LookupWhere"] = "typeName IN (:session.typeName)";
+
 
 	
 	$edata["LookupOrderBy"] = "typeNumber";
@@ -1356,7 +1356,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1366,6 +1366,24 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+		$edata["LookupType"] = 0;
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+	
+		$edata["LookupValues"] = array();
+	$edata["LookupValues"][] = "ยังไม่เปิดรับสมัคร";
+	$edata["LookupValues"][] = "เปิดรับสมัคร";
+	$edata["LookupValues"][] = "ปิดรับสมัคร";
+	$edata["LookupValues"][] = "ยกเลิก";
+
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1381,11 +1399,8 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1411,7 +1426,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1642,8 +1657,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1664,7 +1678,7 @@ $tdataresearchprojectregister[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1993,7 +2007,22 @@ $tdataresearchprojectregister[".sqlquery"] = $queryData_researchprojectregister;
 
 
 
-$tableEvents["researchProjectRegister"] = new eventsBase;
-$tdataresearchprojectregister[".hasEvents"] = false;
+include_once(getabspath("include/researchprojectregister_events.php"));
+$tableEvents["researchProjectRegister"] = new eventclass_researchprojectregister;
+$tdataresearchprojectregister[".hasEvents"] = true;
 
+$query = &$queryData_researchprojectregister;
+$table = "researchProjectRegister";
+// here goes EVENT_INIT_TABLE event
+
+
+		if(strpos($_SESSION["GroupName"],"<Admin>") == ""){
+			$query->addWhere("`researchScholarshipRegister`.`researchType` IN (".$_SESSION["typeName"].")");
+		}
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;
+unset($query);
 ?>

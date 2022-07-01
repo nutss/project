@@ -332,7 +332,7 @@ class RegisterPage extends RunnerPage
 			$data[ GoodFieldName( $uf . "_value" ) ] = $this->regValues[ $uf ];
 		}
 		
-		$strEmail = "cloudflare@classicscan.co.th";
+		$strEmail = "admin@mac.in.th";
 
 		return RunnerPage::sendEmailByTemplate($strEmail, "adminregister", $data);
 	}

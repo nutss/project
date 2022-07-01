@@ -20,9 +20,7 @@ if( !Security::isAdmin() )
 $nonAdminTablesArr = array();
 $nonAdminTablesArr[] = "staffUsers";
 $nonAdminTablesArr[] = "process";
-$nonAdminTablesArr[] = "consider";
 $nonAdminTablesArr[] = "researchType";
-$nonAdminTablesArr[] = "researchProjectGroup";
 $nonAdminTablesArr[] = "researchOperatingPeriod";
 $nonAdminTablesArr[] = "researchAppointment";
 $nonAdminTablesArr[] = "researchDisburse";
@@ -37,6 +35,22 @@ $nonAdminTablesArr[] = "researchAppointmentConsider";
 $nonAdminTablesArr[] = "researchRenewalConsider";
 $nonAdminTablesArr[] = "researchPeriod";
 $nonAdminTablesArr[] = "researchProjectRegister";
+$nonAdminTablesArr[] = "missionFollow";
+$nonAdminTablesArr[] = "missionAssignment";
+$nonAdminTablesArr[] = "optionGroup";
+$nonAdminTablesArr[] = "optionSub";
+$nonAdminTablesArr[] = "project_audit";
+$nonAdminTablesArr[] = "considerChoice";
+$nonAdminTablesArr[] = "researchConsiderView";
+$nonAdminTablesArr[] = "project_uggroups";
+$nonAdminTablesArr[] = "statusType";
+$nonAdminTablesArr[] = "ReportProgress";
+$nonAdminTablesArr[] = "ReportMonitor";
+$nonAdminTablesArr[] = "ReportMonitorGraphTrackingStatus";
+$nonAdminTablesArr[] = "ReportMonitorProjectStatus1";
+$nonAdminTablesArr[] = "ReportMonitorProjectStatus2";
+$nonAdminTablesArr[] = "ReportMonitorProjectStatus3";
+$nonAdminTablesArr[] = "ReportMonitorProjectStatus4";
 
 $ug_connection = $cman->getForUserGroups();
 

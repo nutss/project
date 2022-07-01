@@ -125,6 +125,12 @@ pdfDocument = {
 									{BEGIN col_grid_0}
 						"*", 
 							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"*", 
+							{END col_grid_2}
 					 ],	
 		
 			heights: [
@@ -132,6 +138,11 @@ pdfDocument = {
 						
 			"%",
 						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
 			 
 				],
 	
@@ -156,31 +167,13 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel researchAppointmentConsider researchConsiderNumber }","bold":true},{"text":{$researchConsiderNumber_pdfvalue}}],"margin":[0,0,0,15]},
+			{"text":[{"text":"{$jslabel researchAppointmentConsider researchConsiderNumber }","bold":true}," ",{$researchConsiderNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field2}"},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel researchAppointmentConsider processName }","bold":true},{"text":{$processName_pdfvalue}}],"margin":[0,0,0,15]},
+			{"text":[{"text":"{$jslabel researchAppointmentConsider processName }","bold":true}," ",{$processName_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field3}"},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel researchAppointmentConsider stepName }","bold":true},{"text":{$stepName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel researchAppointmentConsider researchConsiderFile }","bold":true},{"text":{$researchConsiderFile_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel researchAppointmentConsider researchRegisterDesc }","bold":true},{"text":{$researchRegisterDesc_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel researchAppointmentConsider researchConsiderName }","bold":true},{"text":{$researchConsiderName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel researchAppointmentConsider entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel researchAppointmentConsider entryTime }","bold":true},{"text":{$entryTime_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel researchAppointmentConsider researchAppointmentID }","bold":true},{"text":{$researchAppointmentID_pdfvalue}}],"margin":[0,0,0,15]},
+			{"text":[{"text":"{$jslabel researchAppointmentConsider stepName }","bold":true}," ",{$stepName_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field4}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -188,8 +181,144 @@ pdfDocument = {
   },
 
 {END cellblock_grid_c3}
+																							{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+																							{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel researchAppointmentConsider researchConsiderFile }","bold":true}," ",{$researchConsiderFile_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+				
+			{"text":[{"text":"{$jslabel researchAppointmentConsider researchRegisterDesc }","bold":true}," ",{$researchRegisterDesc_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+				
+			{"text":[{"text":"{$jslabel researchAppointmentConsider researchConsiderValue }","bold":true}," ",{$researchConsiderValue_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
 											],
 				{END row_grid_0}
+						{BEGIN row_grid_1}
+				[
+																{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel researchAppointmentConsider entryUserName }","bold":true}," ",{$entryUserName_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+																							{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel researchAppointmentConsider researchConsiderFileCheck }","bold":true},{"text":{$researchConsiderFileCheck_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel researchAppointmentConsider researchRegisterDescCheck }","bold":true},{"text":{$researchRegisterDescCheck_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c6}
+																							{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel researchAppointmentConsider entryTime }","bold":true}," ",{$entryTime_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
+											],
+				{END row_grid_1}
 		
 		]
 	}

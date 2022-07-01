@@ -228,10 +228,37 @@ pdfDocument = {
 			{"text":{$researchProjectBankName_pdfvalue},"hidden":"{$item_hide_integrated_search_field21}"},
 				
 				
+			{"text":{$researchProjectStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field24}"},
+				
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_integrated_search_field22}"},
 				
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field23}"},
+				
+				
+			{"text":{$trackingProjectDesc_pdfvalue},"hidden":"{$item_hide_integrated_search_field25}"},
+				
+				
+			{"text":{$trackingProjectDescResult_pdfvalue},"hidden":"{$item_hide_integrated_search_field26}"},
+				
+				
+			{"text":{$contractSignDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field27}"},
+				
+				
+			{"text":{$contractSignFile_pdfvalue},"hidden":"{$item_hide_integrated_search_field28}"},
+				
+				
+			{"text":{$projectStatusDesc_pdfvalue},"hidden":"{$item_hide_integrated_search_field29}"},
+				
+				
+			{"text":{$projectStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field30}"},
+				
+				
+			{"text":{$researchOperatingPeriodEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field31}"},
+				
+				
+			{"text":{$researchProjectEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field32}"},
 				
 		  ],
   "border": [ false, false, false, false ],

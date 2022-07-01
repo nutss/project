@@ -27,19 +27,19 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchtype["English"] = array();
 	$fieldLabelsresearchtype["English"]["id"] = "ID";
 	$fieldToolTipsresearchtype["English"]["id"] = "";
-	$placeHoldersresearchtype["English"]["id"] = "";
+	$placeHoldersresearchtype["English"]["id"] = "ID";
 	$fieldLabelsresearchtype["English"]["typeNumber"] = "Type Number";
 	$fieldToolTipsresearchtype["English"]["typeNumber"] = "";
-	$placeHoldersresearchtype["English"]["typeNumber"] = "";
+	$placeHoldersresearchtype["English"]["typeNumber"] = "Type Number";
 	$fieldLabelsresearchtype["English"]["typeName"] = "Type Name";
 	$fieldToolTipsresearchtype["English"]["typeName"] = "";
-	$placeHoldersresearchtype["English"]["typeName"] = "";
+	$placeHoldersresearchtype["English"]["typeName"] = "Type Name";
 	$fieldLabelsresearchtype["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchtype["English"]["entryUserName"] = "";
-	$placeHoldersresearchtype["English"]["entryUserName"] = "";
+	$placeHoldersresearchtype["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchtype["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchtype["English"]["entryTime"] = "";
-	$placeHoldersresearchtype["English"]["entryTime"] = "";
+	$placeHoldersresearchtype["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchtype["English"]))
 		$tdataresearchtype[".isUseToolTips"] = true;
 }
@@ -51,19 +51,19 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchtype["Thai"] = array();
 	$fieldLabelsresearchtype["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchtype["Thai"]["id"] = "";
-	$placeHoldersresearchtype["Thai"]["id"] = "";
+	$placeHoldersresearchtype["Thai"]["id"] = "ID";
 	$fieldLabelsresearchtype["Thai"]["typeNumber"] = "ลำดับประเภททุน";
 	$fieldToolTipsresearchtype["Thai"]["typeNumber"] = "";
-	$placeHoldersresearchtype["Thai"]["typeNumber"] = "";
+	$placeHoldersresearchtype["Thai"]["typeNumber"] = "ลำดับประเภททุน";
 	$fieldLabelsresearchtype["Thai"]["typeName"] = "ชื่อประเภททุน";
 	$fieldToolTipsresearchtype["Thai"]["typeName"] = "";
-	$placeHoldersresearchtype["Thai"]["typeName"] = "";
+	$placeHoldersresearchtype["Thai"]["typeName"] = "ชื่อประเภททุน";
 	$fieldLabelsresearchtype["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchtype["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchtype["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchtype["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchtype["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchtype["Thai"]["entryTime"] = "";
-	$placeHoldersresearchtype["Thai"]["entryTime"] = "";
+	$placeHoldersresearchtype["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchtype["Thai"]))
 		$tdataresearchtype[".isUseToolTips"] = true;
 }
@@ -97,7 +97,7 @@ $tdataresearchtype[".listAjax"] = false;
 //	temporary
 //$tdataresearchtype[".listAjax"] = false;
 
-	$tdataresearchtype[".audit"] = false;
+	$tdataresearchtype[".audit"] = true;
 
 	$tdataresearchtype[".locking"] = false;
 
@@ -169,7 +169,7 @@ $tdataresearchtype[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchtype[".buttonsAdded"] = false;
 
-$tdataresearchtype[".addPageEvents"] = false;
+$tdataresearchtype[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchtype[".isUseTimeForSearch"] = false;
@@ -892,8 +892,7 @@ $tdataresearchtype[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -914,7 +913,7 @@ $tdataresearchtype[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1198,7 +1197,21 @@ $tdataresearchtype[".sqlquery"] = $queryData_researchtype;
 
 
 
-$tableEvents["researchType"] = new eventsBase;
-$tdataresearchtype[".hasEvents"] = false;
+include_once(getabspath("include/researchtype_events.php"));
+$tableEvents["researchType"] = new eventclass_researchtype;
+$tdataresearchtype[".hasEvents"] = true;
 
+$query = &$queryData_researchtype;
+$table = "researchType";
+// here goes EVENT_INIT_TABLE event
+
+		if(strpos($_SESSION["GroupName"],"<Admin>") == ""){
+			$query->addWhere("`researchType`.`typeName` IN (".$_SESSION["typeName"].")");
+		}
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;
+unset($query);
 ?>

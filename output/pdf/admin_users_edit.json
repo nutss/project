@@ -168,9 +168,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel admin_users staffEmail }","bold":true},{"text":{$staffEmail_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel admin_users staffStatus }","bold":true},{"text":{$staffStatus_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel admin_users staffEmailNotify }","bold":true},{"text":{$staffEmailNotify_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
@@ -180,7 +177,7 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel admin_users entryTime }","bold":true},{"text":{$entryTime_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel admin_users apikey }","bold":true},{"text":{$apikey_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel admin_users staffStatus }","bold":true},{"text":{$staffStatus_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

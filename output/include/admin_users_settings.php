@@ -27,34 +27,34 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesadmin_users["English"] = array();
 	$fieldLabelsadmin_users["English"]["id"] = "Id";
 	$fieldToolTipsadmin_users["English"]["id"] = "";
-	$placeHoldersadmin_users["English"]["id"] = "";
+	$placeHoldersadmin_users["English"]["id"] = "Id";
 	$fieldLabelsadmin_users["English"]["staffFullName"] = "Staff Full Name";
 	$fieldToolTipsadmin_users["English"]["staffFullName"] = "";
-	$placeHoldersadmin_users["English"]["staffFullName"] = "";
+	$placeHoldersadmin_users["English"]["staffFullName"] = "Staff Full Name";
 	$fieldLabelsadmin_users["English"]["staffUsername"] = "Staff Username";
 	$fieldToolTipsadmin_users["English"]["staffUsername"] = "";
-	$placeHoldersadmin_users["English"]["staffUsername"] = "";
+	$placeHoldersadmin_users["English"]["staffUsername"] = "Staff Username";
 	$fieldLabelsadmin_users["English"]["staffPassword"] = "Staff Password";
 	$fieldToolTipsadmin_users["English"]["staffPassword"] = "";
-	$placeHoldersadmin_users["English"]["staffPassword"] = "";
+	$placeHoldersadmin_users["English"]["staffPassword"] = "Staff Password";
 	$fieldLabelsadmin_users["English"]["staffEmail"] = "Staff Email";
 	$fieldToolTipsadmin_users["English"]["staffEmail"] = "";
-	$placeHoldersadmin_users["English"]["staffEmail"] = "";
+	$placeHoldersadmin_users["English"]["staffEmail"] = "Staff Email";
 	$fieldLabelsadmin_users["English"]["staffStatus"] = "Staff Status";
 	$fieldToolTipsadmin_users["English"]["staffStatus"] = "";
-	$placeHoldersadmin_users["English"]["staffStatus"] = "";
+	$placeHoldersadmin_users["English"]["staffStatus"] = "Staff Status";
 	$fieldLabelsadmin_users["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldToolTipsadmin_users["English"]["staffEmailNotify"] = "";
-	$placeHoldersadmin_users["English"]["staffEmailNotify"] = "";
+	$placeHoldersadmin_users["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldLabelsadmin_users["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsadmin_users["English"]["entryUserName"] = "";
-	$placeHoldersadmin_users["English"]["entryUserName"] = "";
+	$placeHoldersadmin_users["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsadmin_users["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsadmin_users["English"]["entryTime"] = "";
-	$placeHoldersadmin_users["English"]["entryTime"] = "";
+	$placeHoldersadmin_users["English"]["entryTime"] = "Entry Time";
 	$fieldLabelsadmin_users["English"]["apikey"] = "Apikey";
 	$fieldToolTipsadmin_users["English"]["apikey"] = "";
-	$placeHoldersadmin_users["English"]["apikey"] = "";
+	$placeHoldersadmin_users["English"]["apikey"] = "Apikey";
 	if (count($fieldToolTipsadmin_users["English"]))
 		$tdataadmin_users[".isUseToolTips"] = true;
 }
@@ -64,36 +64,36 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldToolTipsadmin_users["Thai"] = array();
 	$placeHoldersadmin_users["Thai"] = array();
 	$pageTitlesadmin_users["Thai"] = array();
-	$fieldLabelsadmin_users["Thai"]["id"] = "Id";
+	$fieldLabelsadmin_users["Thai"]["id"] = "ID";
 	$fieldToolTipsadmin_users["Thai"]["id"] = "";
-	$placeHoldersadmin_users["Thai"]["id"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffFullName"] = "Staff Full Name";
+	$placeHoldersadmin_users["Thai"]["id"] = "Id";
+	$fieldLabelsadmin_users["Thai"]["staffFullName"] = "ชื่อ-นามสกุล";
 	$fieldToolTipsadmin_users["Thai"]["staffFullName"] = "";
-	$placeHoldersadmin_users["Thai"]["staffFullName"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffUsername"] = "Staff Username";
+	$placeHoldersadmin_users["Thai"]["staffFullName"] = "Staff Full Name";
+	$fieldLabelsadmin_users["Thai"]["staffUsername"] = "Username";
 	$fieldToolTipsadmin_users["Thai"]["staffUsername"] = "";
-	$placeHoldersadmin_users["Thai"]["staffUsername"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffPassword"] = "Staff Password";
+	$placeHoldersadmin_users["Thai"]["staffUsername"] = "Staff Username";
+	$fieldLabelsadmin_users["Thai"]["staffPassword"] = "รหัสผ่าน";
 	$fieldToolTipsadmin_users["Thai"]["staffPassword"] = "";
-	$placeHoldersadmin_users["Thai"]["staffPassword"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffEmail"] = "Staff Email";
+	$placeHoldersadmin_users["Thai"]["staffPassword"] = "Staff Password";
+	$fieldLabelsadmin_users["Thai"]["staffEmail"] = "E-Mail";
 	$fieldToolTipsadmin_users["Thai"]["staffEmail"] = "";
-	$placeHoldersadmin_users["Thai"]["staffEmail"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffStatus"] = "Staff Status";
+	$placeHoldersadmin_users["Thai"]["staffEmail"] = "Staff Email";
+	$fieldLabelsadmin_users["Thai"]["staffStatus"] = "สถานะใช้งาน";
 	$fieldToolTipsadmin_users["Thai"]["staffStatus"] = "";
-	$placeHoldersadmin_users["Thai"]["staffStatus"] = "";
-	$fieldLabelsadmin_users["Thai"]["staffEmailNotify"] = "Staff Email Notify";
+	$placeHoldersadmin_users["Thai"]["staffStatus"] = "Staff Status";
+	$fieldLabelsadmin_users["Thai"]["staffEmailNotify"] = "แจ้งเตือน E-Mail";
 	$fieldToolTipsadmin_users["Thai"]["staffEmailNotify"] = "";
-	$placeHoldersadmin_users["Thai"]["staffEmailNotify"] = "";
-	$fieldLabelsadmin_users["Thai"]["entryUserName"] = "Entry User Name";
+	$placeHoldersadmin_users["Thai"]["staffEmailNotify"] = "Staff Email Notify";
+	$fieldLabelsadmin_users["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsadmin_users["Thai"]["entryUserName"] = "";
-	$placeHoldersadmin_users["Thai"]["entryUserName"] = "";
-	$fieldLabelsadmin_users["Thai"]["entryTime"] = "Entry Time";
+	$placeHoldersadmin_users["Thai"]["entryUserName"] = "Entry User Name";
+	$fieldLabelsadmin_users["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsadmin_users["Thai"]["entryTime"] = "";
-	$placeHoldersadmin_users["Thai"]["entryTime"] = "";
+	$placeHoldersadmin_users["Thai"]["entryTime"] = "Entry Time";
 	$fieldLabelsadmin_users["Thai"]["apikey"] = "Apikey";
 	$fieldToolTipsadmin_users["Thai"]["apikey"] = "";
-	$placeHoldersadmin_users["Thai"]["apikey"] = "";
+	$placeHoldersadmin_users["Thai"]["apikey"] = "Apikey";
 	if (count($fieldToolTipsadmin_users["Thai"]))
 		$tdataadmin_users[".isUseToolTips"] = true;
 }
@@ -127,7 +127,7 @@ $tdataadmin_users[".listAjax"] = false;
 //	temporary
 //$tdataadmin_users[".listAjax"] = false;
 
-	$tdataadmin_users[".audit"] = false;
+	$tdataadmin_users[".audit"] = true;
 
 	$tdataadmin_users[".locking"] = false;
 
@@ -199,7 +199,7 @@ $tdataadmin_users[".ajaxCodeSnippetAdded"] = false;
 
 $tdataadmin_users[".buttonsAdded"] = false;
 
-$tdataadmin_users[".addPageEvents"] = false;
+$tdataadmin_users[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataadmin_users[".isUseTimeForSearch"] = false;
@@ -935,7 +935,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Password");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -960,8 +960,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
+	
 		$edata["EditParams"] = "";
 			$edata["EditParams"].= " maxlength=255";
 
@@ -1211,7 +1210,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1221,6 +1220,35 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'staffStatus'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 		$edata["IsRequired"] = true;
@@ -1237,17 +1265,14 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 						$edata["validateAs"]["basicValidate"][] = "IsRequired";
 		
 	
@@ -1268,7 +1293,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1351,7 +1376,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1361,6 +1386,35 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "statusValue";
+	$edata["LinkFieldType"] = 200;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'staffEmailNotify'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1376,11 +1430,8 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1406,7 +1457,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1416,7 +1467,8 @@ $tdataadmin_users[".hideMobileList"] = array();
 //Filters settings
 	$fdata["filterTotals"] = 0;
 		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+		$fdata["filterTotalFields"] = "id";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;
@@ -1489,7 +1541,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1514,11 +1566,8 @@ $tdataadmin_users[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1526,7 +1575,8 @@ $tdataadmin_users[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 	
-	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -1627,10 +1677,10 @@ $tdataadmin_users[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Readonly");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -1639,8 +1689,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1651,10 +1700,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 100;
-
+	
 	
 	
 	
@@ -1664,9 +1710,9 @@ $tdataadmin_users[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
 	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -2131,7 +2177,8 @@ $tdataadmin_users[".sqlquery"] = $queryData_admin_users;
 
 
 
-$tableEvents["admin_users"] = new eventsBase;
-$tdataadmin_users[".hasEvents"] = false;
+include_once(getabspath("include/admin_users_events.php"));
+$tableEvents["admin_users"] = new eventclass_admin_users;
+$tdataadmin_users[".hasEvents"] = true;
 
 ?>

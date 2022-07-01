@@ -27,25 +27,25 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchappointment["English"] = array();
 	$fieldLabelsresearchappointment["English"]["id"] = "ID";
 	$fieldToolTipsresearchappointment["English"]["id"] = "";
-	$placeHoldersresearchappointment["English"]["id"] = "";
+	$placeHoldersresearchappointment["English"]["id"] = "ID";
 	$fieldLabelsresearchappointment["English"]["researchProjectID"] = "Research Project ID";
 	$fieldToolTipsresearchappointment["English"]["researchProjectID"] = "";
-	$placeHoldersresearchappointment["English"]["researchProjectID"] = "";
+	$placeHoldersresearchappointment["English"]["researchProjectID"] = "Research Project ID";
 	$fieldLabelsresearchappointment["English"]["researchAppointmentNo"] = "Research Appointment No";
 	$fieldToolTipsresearchappointment["English"]["researchAppointmentNo"] = "";
-	$placeHoldersresearchappointment["English"]["researchAppointmentNo"] = "";
+	$placeHoldersresearchappointment["English"]["researchAppointmentNo"] = "Research Appointment No";
 	$fieldLabelsresearchappointment["English"]["researchAppointmentPeriod"] = "Research Appointment Period";
 	$fieldToolTipsresearchappointment["English"]["researchAppointmentPeriod"] = "";
-	$placeHoldersresearchappointment["English"]["researchAppointmentPeriod"] = "";
+	$placeHoldersresearchappointment["English"]["researchAppointmentPeriod"] = "Research Appointment Period";
 	$fieldLabelsresearchappointment["English"]["researchAppointmentDate"] = "Research Appointment Date";
 	$fieldToolTipsresearchappointment["English"]["researchAppointmentDate"] = "";
-	$placeHoldersresearchappointment["English"]["researchAppointmentDate"] = "";
+	$placeHoldersresearchappointment["English"]["researchAppointmentDate"] = "Research Appointment Date";
 	$fieldLabelsresearchappointment["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchappointment["English"]["entryUserName"] = "";
-	$placeHoldersresearchappointment["English"]["entryUserName"] = "";
+	$placeHoldersresearchappointment["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchappointment["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchappointment["English"]["entryTime"] = "";
-	$placeHoldersresearchappointment["English"]["entryTime"] = "";
+	$placeHoldersresearchappointment["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchappointment["English"]))
 		$tdataresearchappointment[".isUseToolTips"] = true;
 }
@@ -57,25 +57,25 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchappointment["Thai"] = array();
 	$fieldLabelsresearchappointment["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchappointment["Thai"]["id"] = "";
-	$placeHoldersresearchappointment["Thai"]["id"] = "";
+	$placeHoldersresearchappointment["Thai"]["id"] = "ID";
 	$fieldLabelsresearchappointment["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldToolTipsresearchappointment["Thai"]["researchProjectID"] = "";
-	$placeHoldersresearchappointment["Thai"]["researchProjectID"] = "";
+	$placeHoldersresearchappointment["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldLabelsresearchappointment["Thai"]["researchAppointmentNo"] = "ครั้งที่";
 	$fieldToolTipsresearchappointment["Thai"]["researchAppointmentNo"] = "";
-	$placeHoldersresearchappointment["Thai"]["researchAppointmentNo"] = "";
+	$placeHoldersresearchappointment["Thai"]["researchAppointmentNo"] = "ครั้งที่";
 	$fieldLabelsresearchappointment["Thai"]["researchAppointmentPeriod"] = "งวดที่";
 	$fieldToolTipsresearchappointment["Thai"]["researchAppointmentPeriod"] = "";
-	$placeHoldersresearchappointment["Thai"]["researchAppointmentPeriod"] = "";
+	$placeHoldersresearchappointment["Thai"]["researchAppointmentPeriod"] = "งวดที่";
 	$fieldLabelsresearchappointment["Thai"]["researchAppointmentDate"] = "วันที่นัดหมาย";
 	$fieldToolTipsresearchappointment["Thai"]["researchAppointmentDate"] = "";
-	$placeHoldersresearchappointment["Thai"]["researchAppointmentDate"] = "";
+	$placeHoldersresearchappointment["Thai"]["researchAppointmentDate"] = "วันที่นัดหมาย";
 	$fieldLabelsresearchappointment["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchappointment["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchappointment["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchappointment["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchappointment["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchappointment["Thai"]["entryTime"] = "";
-	$placeHoldersresearchappointment["Thai"]["entryTime"] = "";
+	$placeHoldersresearchappointment["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchappointment["Thai"]))
 		$tdataresearchappointment[".isUseToolTips"] = true;
 }
@@ -109,7 +109,7 @@ $tdataresearchappointment[".listAjax"] = false;
 //	temporary
 //$tdataresearchappointment[".listAjax"] = false;
 
-	$tdataresearchappointment[".audit"] = false;
+	$tdataresearchappointment[".audit"] = true;
 
 	$tdataresearchappointment[".locking"] = false;
 
@@ -181,7 +181,7 @@ $tdataresearchappointment[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchappointment[".buttonsAdded"] = false;
 
-$tdataresearchappointment[".addPageEvents"] = false;
+$tdataresearchappointment[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchappointment[".isUseTimeForSearch"] = false;
@@ -1184,8 +1184,7 @@ $tdataresearchappointment[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1206,7 +1205,7 @@ $tdataresearchappointment[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation

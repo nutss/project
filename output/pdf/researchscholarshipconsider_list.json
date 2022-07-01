@@ -82,12 +82,6 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
-										{BEGIN col_grid_8}
-					"%",
-					{END col_grid_8}
-										{BEGIN col_grid_9}
-					"%",
-					{END col_grid_9}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -129,30 +123,7 @@ pdfDocument = {
 				
 				[
 																{
-	cellId: 'c1',
-	col:0,
-	row:0,
-		
-		
-	//	static colspan/rowspan
-		
-			
-	
-	
-			"text": [
-		
-				
-			{"text":"","hidden":"{$item_hide_breadcrumb}"},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-  },
-
-											],
-						[
-																{
-	cellId: 'c3',
+	cellId: 'c2',
 	col:0,
 	row:0,
 		
@@ -213,15 +184,6 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_inline_add}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_inline_save_all}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_inline_cancel_all}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_delete}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -339,7 +301,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -365,7 +327,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider processName }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider processName }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -391,7 +353,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider stepName }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider stepName }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -417,11 +379,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchConsiderFile }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider researchConsiderValue }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderFile_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_headcell_field3}
@@ -443,11 +405,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchRegisterDesc }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider entryUserName }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchRegisterDesc_align}',
+              "alignment": '{$entryUserName_align}',
   },
 
 {END cellblock_grid_headcell_field4}
@@ -469,66 +431,14 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchConsiderName }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
-  },
-
-{END cellblock_grid_headcell_field5}
-																							{BEGIN cellblock_grid_headcell_field6}
-{
-	cellId: 'headcell_field6',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipConsider entryUserName }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$entryUserName_align}',
-  },
-
-{END cellblock_grid_headcell_field6}
-																							{BEGIN cellblock_grid_headcell_field7}
-{
-	cellId: 'headcell_field7',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipConsider entryTime }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider entryTime }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_headcell_field7}
+{END cellblock_grid_headcell_field5}
 											],
 				{END row_grid_0}
 		
@@ -556,16 +466,10 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"","hidden":"{$item_hide_grid_inline_edit}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_grid_inline_save}"},
+			{"text":"","hidden":"{$item_hide_grid_edit}"},
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_grid_view}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -695,69 +599,17 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$researchConsiderFile_pdfvalue},"hidden":"{$item_hide_simple_grid_field6}"},
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderFile_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_cell_field3}
 																							{BEGIN cellblock_grid_cell_field4}
 {
 	cellId: 'cell_field4',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$researchRegisterDesc_pdfvalue},"hidden":"{$item_hide_simple_grid_field7}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchRegisterDesc_align}',
-  },
-
-{END cellblock_grid_cell_field4}
-																							{BEGIN cellblock_grid_cell_field5}
-{
-	cellId: 'cell_field5',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$researchConsiderName_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
-  },
-
-{END cellblock_grid_cell_field5}
-																							{BEGIN cellblock_grid_cell_field6}
-{
-	cellId: 'cell_field6',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -780,10 +632,10 @@ pdfDocument = {
               "alignment": '{$entryUserName_align}',
   },
 
-{END cellblock_grid_cell_field6}
-																							{BEGIN cellblock_grid_cell_field7}
+{END cellblock_grid_cell_field4}
+																							{BEGIN cellblock_grid_cell_field5}
 {
-	cellId: 'cell_field7',
+	cellId: 'cell_field5',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -806,7 +658,7 @@ pdfDocument = {
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_cell_field7}
+{END cellblock_grid_cell_field5}
 											],
 				{END row_grid_1}
 		
@@ -1008,54 +860,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field5}
-																							{BEGIN cellblock_grid_footcell_field6}
-{
-	cellId: 'footcell_field6',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field6}
-																							{BEGIN cellblock_grid_footcell_field7}
-{
-	cellId: 'footcell_field7',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field7}
 											],
 				{END row_grid_2}
 		

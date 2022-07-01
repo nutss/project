@@ -93,28 +93,6 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN id_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="id{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_id}">
-		{$label researchAppointmentConsider id }	</label>
-	<div class="r-search-option">
-		{$searchtype_id}
-	</div>
-	<div class="r-search-field">
-		{$id_editcontrol}	</div>
-	<div class="r-search-field">
-		{$id_editcontrol1}
-	</div>
-	
-</div>
-
-{END id_fieldblock}
-											
 {BEGIN researchConsiderNumber_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderNumber}  r-horizontal-field form-horizontal" 	
@@ -247,6 +225,28 @@
 
 {END researchConsiderName_fieldblock}
 											
+{BEGIN researchConsiderValue_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderValue}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderValue{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="researchConsiderValue" data-fieldname="researchConsiderValue" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderValue}">
+		{$label researchAppointmentConsider researchConsiderValue }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchConsiderValue}
+	</div>
+	<div class="r-search-field">
+		{$researchConsiderValue_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchConsiderValue_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchConsiderValue_fieldblock}
+											
 {BEGIN entryUserName_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
@@ -291,27 +291,49 @@
 
 {END entryTime_fieldblock}
 											
-{BEGIN researchAppointmentID_fieldblock}
+{BEGIN researchConsiderFileCheck_fieldblock}
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchAppointmentID}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="researchAppointmentID{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="researchAppointmentID" data-fieldname="researchAppointmentID" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderFileCheck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchConsiderFileCheck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="researchConsiderFileCheck" data-fieldname="researchConsiderFileCheck" >
 
 
-	<label class="r-search-label control-label" for="{$labelfor_researchAppointmentID}">
-		{$label researchAppointmentConsider researchAppointmentID }	</label>
+	<label class="r-search-label control-label" for="{$labelfor_researchConsiderFileCheck}">
+		{$label researchAppointmentConsider researchConsiderFileCheck }	</label>
 	<div class="r-search-option">
-		{$searchtype_researchAppointmentID}
+		{$searchtype_researchConsiderFileCheck}
 	</div>
 	<div class="r-search-field">
-		{$researchAppointmentID_editcontrol}	</div>
+		{$researchConsiderFileCheck_editcontrol}	</div>
 	<div class="r-search-field">
-		{$researchAppointmentID_editcontrol1}
+		{$researchConsiderFileCheck_editcontrol1}
 	</div>
 	
 </div>
 
-{END researchAppointmentID_fieldblock}
+{END researchConsiderFileCheck_fieldblock}
+											
+{BEGIN researchRegisterDescCheck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterDescCheck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchRegisterDescCheck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="researchRegisterDescCheck" data-fieldname="researchRegisterDescCheck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchRegisterDescCheck}">
+		{$label researchAppointmentConsider researchRegisterDescCheck }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchRegisterDescCheck}
+	</div>
+	<div class="r-search-field">
+		{$researchRegisterDescCheck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchRegisterDescCheck_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchRegisterDescCheck_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

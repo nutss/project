@@ -106,6 +106,29 @@ pdfDocument = {
   },
 
 											],
+						[
+																{
+	cellId: 'c2',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_breadcrumb}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
 		
 		]
 	}
@@ -125,6 +148,12 @@ pdfDocument = {
 									{BEGIN col_grid_0}
 						"*", 
 							{END col_grid_0}
+												{BEGIN col_grid_1}
+						30, 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"*", 
+							{END col_grid_2}
 					 ],	
 		
 			heights: [
@@ -132,6 +161,16 @@ pdfDocument = {
 						
 			"%",
 						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
 			 
 				],
 	
@@ -162,13 +201,79 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectNo }","bold":true},{"text":{$researchProjectNo_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectGroupName }","bold":true},{"text":{$researchProjectGroupName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectNameThai }","bold":true},{"text":{$researchProjectNameThai_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectNameEng }","bold":true},{"text":{$researchProjectNameEng_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectMainField }","bold":true},{"text":{$researchProjectMainField_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationMobile }","bold":true},{"text":{$researchProjectAffiliationMobile_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationTelephone }","bold":true},{"text":{$researchProjectAffiliationTelephone_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationEmail }","bold":true},{"text":{$researchProjectAffiliationEmail_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankAccountName }","bold":true},{"text":{$researchProjectBankAccountName_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankName }","bold":true},{"text":{$researchProjectBankName_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankNo }","bold":true},{"text":{$researchProjectBankNo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+																							{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+																							{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectGroupName }","bold":true},{"text":{$researchProjectGroupName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectPeriodYear }","bold":true},{"text":{$researchProjectPeriodYear_pdfvalue}}],"margin":[0,0,0,15]},
@@ -183,47 +288,129 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectDepartment }","bold":true},{"text":{$researchProjectDepartment_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectMainField }","bold":true},{"text":{$researchProjectMainField_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectSubField }","bold":true},{"text":{$researchProjectSubField_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectHeadName }","bold":true},{"text":{$researchProjectHeadName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationName }","bold":true},{"text":{$researchProjectAffiliationName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectSubAffiliationName }","bold":true},{"text":{$researchProjectSubAffiliationName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationMobile }","bold":true},{"text":{$researchProjectAffiliationMobile_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationTelephone }","bold":true},{"text":{$researchProjectAffiliationTelephone_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationEmail }","bold":true},{"text":{$researchProjectAffiliationEmail_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationName }","bold":true},{"text":{$researchProjectAffiliationName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectFile }","bold":true},{"text":{$researchProjectFile_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankAccountName }","bold":true},{"text":{$researchProjectBankAccountName_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectStatus }","bold":true},{"text":{$researchProjectStatus_pdfvalue}}],"margin":[0,0,0,15]},
 				
-				
-			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankNo }","bold":true},{"text":{$researchProjectBankNo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel researchScholarshipProposal researchProjectBankName }","bold":true},{"text":{$researchProjectBankName_pdfvalue}}],"margin":[0,0,0,15]},
-				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+											],
+				{END row_grid_0}
+						{BEGIN row_grid_1}
+				[
+																{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
 				
 			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel researchScholarshipProposal entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
 				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+																							{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c6}
+																							{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
 				
 			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel researchScholarshipProposal entryTime }","bold":true},{"text":{$entryTime_pdfvalue}}],"margin":[0,0,0,15]},
 				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
+											],
+				{END row_grid_1}
+						{BEGIN row_grid_2}
+				[
+																{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c8}
+			colSpan: {$colspan_grid_c8},
+			{END colspan_grid_c8}
+		
+						
+	
+	
+	
+			"stack": [
+		
 				
 			 {BEGIN details_researchoperatingperiod}
 			{$displayDetailTable_researchoperatingperiod }
@@ -239,9 +426,21 @@ pdfDocument = {
               "alignment": 'left',
   },
 
-{END cellblock_grid_c3}
-											],
-				{END row_grid_0}
+{END cellblock_grid_c8}
+																		{ 
+				cellId: 'c8',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c8',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_grid_2}
 		
 		]
 	}

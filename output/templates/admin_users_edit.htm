@@ -189,27 +189,6 @@
 
 {END staffEmail_fieldblock}
 											
-{BEGIN staffStatus_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_staffStatus}  r-vertical-field" 
-	data-signal-error-for="staffStatus{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="staffStatus" data-fieldname="staffStatus" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_staffStatus}">
-		{BEGIN staffStatus_label}{$label admin_users staffStatus }{END staffStatus_label}
-	</label>
-	<div class="r-edit-field">
-		{$staffStatus_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="staffStatus">
-		<div class="text-muted" >
-		{$tooltip admin_users staffStatus }		</div>
-	</div>
-</div>
-
-
-{END staffStatus_fieldblock}
-											
 {BEGIN staffEmailNotify_fieldblock}
 
 
@@ -273,26 +252,26 @@
 
 {END entryTime_fieldblock}
 											
-{BEGIN apikey_fieldblock}
+{BEGIN staffStatus_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_apikey}  r-vertical-field" 
-	data-signal-error-for="apikey{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="apikey" data-fieldname="apikey" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_staffStatus}  r-vertical-field" 
+	data-signal-error-for="staffStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="staffStatus" data-fieldname="staffStatus" >
 
-	<label class="r-edit-label control-label" for="{$labelfor_apikey}">
-		{BEGIN apikey_label}{$label admin_users apikey }{END apikey_label}
+	<label class="r-edit-label control-label" for="{$labelfor_staffStatus}">
+		{BEGIN staffStatus_label}{$label admin_users staffStatus }{END staffStatus_label}
 	</label>
 	<div class="r-edit-field">
-		{$apikey_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="apikey">
+		{$staffStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="staffStatus">
 		<div class="text-muted" >
-		{$tooltip admin_users apikey }		</div>
+		{$tooltip admin_users staffStatus }		</div>
 	</div>
 </div>
 
 
-{END apikey_fieldblock}
+{END staffStatus_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

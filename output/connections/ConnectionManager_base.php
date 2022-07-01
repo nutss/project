@@ -145,7 +145,7 @@ class ConnectionManager_Base
 	 */
 	public function getForAudit()
 	{
-		return $this->getDefault();
+		return $this->byId( "mc_at_192_168_1_111" );
 	}
 
 	/**
@@ -241,9 +241,7 @@ class ConnectionManager_Base
 		$connectionsIds = array();
 		$connectionsIds["staffUsers"] = "mc_at_192_168_1_111";
 		$connectionsIds["process"] = "mc_at_192_168_1_111";
-		$connectionsIds["consider"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchType"] = "mc_at_192_168_1_111";
-		$connectionsIds["researchProjectGroup"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchOperatingPeriod"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchAppointment"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchDisburse"] = "mc_at_192_168_1_111";
@@ -261,6 +259,21 @@ class ConnectionManager_Base
 		$connectionsIds["researchRenewalConsider"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchPeriod"] = "mc_at_192_168_1_111";
 		$connectionsIds["researchProjectRegister"] = "mc_at_192_168_1_111";
+		$connectionsIds["missionFollow"] = "mc_at_192_168_1_111";
+		$connectionsIds["missionAssignment"] = "mc_at_192_168_1_111";
+		$connectionsIds["optionGroup"] = "mc_at_192_168_1_111";
+		$connectionsIds["optionSub"] = "mc_at_192_168_1_111";
+		$connectionsIds["project_audit"] = "mc_at_192_168_1_111";
+		$connectionsIds["considerChoice"] = "mc_at_192_168_1_111";
+		$connectionsIds["researchConsiderView"] = "mc_at_192_168_1_111";
+		$connectionsIds["project_uggroups"] = "mc_at_192_168_1_111";
+		$connectionsIds["statusType"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportProgress"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorGraphTrackingStatus"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus1"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus2"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus3"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus4"] = "mc_at_192_168_1_111";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

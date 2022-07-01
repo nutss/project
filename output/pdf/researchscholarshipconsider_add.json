@@ -156,9 +156,6 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel researchScholarshipConsider researchProjectID }","bold":true},{"text":{$researchProjectID_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel researchScholarshipConsider researchConsiderNumber }","bold":true},{"text":{$researchConsiderNumber_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
@@ -174,7 +171,7 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel researchScholarshipConsider researchRegisterDesc }","bold":true},{"text":{$researchRegisterDesc_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel researchScholarshipConsider researchConsiderName }","bold":true},{"text":{$researchConsiderName_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel researchScholarshipConsider researchConsiderValue }","bold":true},{"text":{$researchConsiderValue_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel researchScholarshipConsider entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},

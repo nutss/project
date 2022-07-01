@@ -91,6 +91,7 @@ $custom_labels["English"] = array();
 		$custom_labels["English"]['TASK_DISBURSE_APPROVE'] = "Task Disburse Approve";
 		$custom_labels["English"]['____________________1'] = "Opinion Status";
 		$custom_labels["English"]['____________________2'] = "Approve Status";
+		$custom_labels["English"]['____________1'] = "Research Project Group";
 	$custom_labels["Thai"] = array();
 		$custom_labels["Thai"]['____________'] = "ระบบยื่นคําขอรับทุนวิจัย (สถานะโครงการ)";
 		$custom_labels["Thai"]['_______'] = "ทุนทั้งหมด";
@@ -102,7 +103,7 @@ $custom_labels["English"] = array();
 		$custom_labels["Thai"]['PROJECT_STATUS_APPROVE'] = "สถานะอนุมัติทุนวิจัย";
 		$custom_labels["Thai"]['PROJECT_STATUS_REJECT'] = "สถานะไม่อนุมัติทุนวิจัย";
 		$custom_labels["Thai"]['_____________'] = "ประเภททุนวิจัย";
-		$custom_labels["Thai"]['______'] = "ผู้ใช้งาน";
+		$custom_labels["Thai"]['______'] = "0.3 จัดการผู้ใช้งาน และ สิทธ์การเข้าถึง";
 		$custom_labels["Thai"]['TASK_PROGRESS'] = "สถานะความคืบหน้า";
 		$custom_labels["Thai"]['TASK_DISBURSE'] = "การเบิกจ่าย";
 		$custom_labels["Thai"]['_____________________'] = "ระบบนัดหมายการติดตามงาน (สถานะงานตามงวด)";
@@ -111,8 +112,8 @@ $custom_labels["English"] = array();
 		$custom_labels["Thai"]['TASK_TRACK_LIST'] = "สถานะงานตามงวดทั้งหมด";
 		$custom_labels["Thai"]['______________'] = "สถานะเบิกจ่ายทั้งหมด";
 		$custom_labels["Thai"]['______________1'] = "ระบบยื่นคําขอขยายระยะเวลาโครงการที่ล่าช้า (สถานะคำขอขยายเวลา)";
-		$custom_labels["Thai"]['__________'] = "การตั้งค่า";
-		$custom_labels["Thai"]['______1'] = "รายงาน";
+		$custom_labels["Thai"]['__________'] = "0. การตั้งค่า";
+		$custom_labels["Thai"]['______1'] = "4. รายงาน";
 		$custom_labels["Thai"]['______________2'] = "ระบบการขออนุมัติการเบิกจ่าย (สถานะอนุมัติเบิกจ่าย)";
 		$custom_labels["Thai"]['_________'] = "ระบบยื่นคําขอรับทุนวิจัย (ประเภททุน)";
 		$custom_labels["Thai"]['___________________'] = "สถานะรออนุมัติการเบิกจ่าย";
@@ -134,6 +135,7 @@ $custom_labels["English"] = array();
 		$custom_labels["Thai"]['TASK_DISBURSE_APPROVE'] = "สถานะเบิกจ่ายทั้งหมด";
 		$custom_labels["Thai"]['____________________1'] = "สถานะเห็นชอบคำขอขยาย";
 		$custom_labels["Thai"]['____________________2'] = "สถานะอนุมัติคำขอขยาย";
+		$custom_labels["Thai"]['____________1'] = "0.3 จัดการกลุ่มโครงการ";
 
 define('GLOBAL_PAGES_SHORT', ".global");
 define('GLOBAL_PAGES', "<global>");
@@ -657,11 +659,11 @@ $globalSettings["isDynamicPerm"] = true;
 
 
 
-$globalSettings["LandingPageType"] = 0;
-$globalSettings["LandingTable"] = "";
-$globalSettings["LandingPage"] = "";
+$globalSettings["LandingPageType"] = 1;
+$globalSettings["LandingTable"] = "researchScholarshipRegister";
+$globalSettings["LandingPage"] = "list";
 $globalSettings["LandingURL"] = "";
-$globalSettings["LandingPageId"] = "";
+$globalSettings["LandingPageId"] = "list";
 
 $globalSettings["ProjectLogo"] = array();
 $globalSettings["ProjectLogo"]["English"] = "Ministry of Higher Education, Science, Research, and Innovation";
@@ -732,8 +734,8 @@ $globalSettings["CaptchaSettings"]["secretKey"] = "";
 $globalSettings["CaptchaSettings"]["captchaPassesCount"] = "5";
 
 
-$bsProjectTheme = "flatly";
-$bsProjectSize = "small";
+$bsProjectTheme = "project";
+$bsProjectSize = "normal";
 
 $wr_pagestylepath = "OfficeOffice";
 $wr_is_standalone = false;
@@ -786,9 +788,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "500_1654886033";
+$projectBuildKey = "1026_1656587607";
 $wizardBuildKey = "37251";
-$projectBuildNumber = "500";
+$projectBuildNumber = "1026";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -813,9 +815,7 @@ $tableCaptions["English"] = array();
 $tableCaptions["English"][""] = "";
 $tableCaptions["English"]["staffUsers"] = "Staff Users";
 $tableCaptions["English"]["process"] = "Process";
-$tableCaptions["English"]["consider"] = "Consider";
 $tableCaptions["English"]["researchType"] = "Research Type";
-$tableCaptions["English"]["researchProjectGroup"] = "Research Project Group";
 $tableCaptions["English"]["researchOperatingPeriod"] = "Research Operating Period";
 $tableCaptions["English"]["researchAppointment"] = "Research Appointment";
 $tableCaptions["English"]["researchDisburse"] = "Research Disburse";
@@ -833,13 +833,27 @@ $tableCaptions["English"]["researchAppointmentConsider"] = "Research Appointment
 $tableCaptions["English"]["researchRenewalConsider"] = "Research Renewal Consider";
 $tableCaptions["English"]["researchPeriod"] = "Research Period";
 $tableCaptions["English"]["researchProjectRegister"] = "Research Project Register";
+$tableCaptions["English"]["missionFollow"] = "Mission Follow";
+$tableCaptions["English"]["missionAssignment"] = "Mission Assignment";
+$tableCaptions["English"]["optionGroup"] = "Option Group";
+$tableCaptions["English"]["optionSub"] = "Option Sub";
+$tableCaptions["English"]["project_audit"] = "Project Audit";
+$tableCaptions["English"]["considerChoice"] = "Consider Choice";
+$tableCaptions["English"]["researchConsiderView"] = "Research Consider View";
+$tableCaptions["English"]["project_uggroups"] = "Project Uggroups";
+$tableCaptions["English"]["statusType"] = "Status Type";
+$tableCaptions["English"]["ReportProgress"] = "Report Progress";
+$tableCaptions["English"]["ReportMonitorGraphTrackingStatus"] = "Report Monitor Graph Tracking Status";
+$tableCaptions["English"]["ReportMonitor"] = "Report Monitor";
+$tableCaptions["English"]["ReportMonitorProjectStatus1"] = "End Project";
+$tableCaptions["English"]["ReportMonitorProjectStatus2"] = "Report Monitor Project Status2";
+$tableCaptions["English"]["ReportMonitorProjectStatus3"] = "Report Monitor Project Status3";
+$tableCaptions["English"]["ReportMonitorProjectStatus4"] = "Report Monitor Project Status4";
 $tableCaptions["Thai"] = array();
 $tableCaptions["Thai"][""] = "";
 $tableCaptions["Thai"]["staffUsers"] = "ผู้ใช้งาน";
 $tableCaptions["Thai"]["process"] = "กระบวนการ";
-$tableCaptions["Thai"]["consider"] = "การพิจารณา";
 $tableCaptions["Thai"]["researchType"] = "ประเภททุน";
-$tableCaptions["Thai"]["researchProjectGroup"] = "กลุ่มข้อเสนอขอรับทุน";
 $tableCaptions["Thai"]["researchOperatingPeriod"] = "งวดการดำเนินการ";
 $tableCaptions["Thai"]["researchAppointment"] = "การนัดหมาย";
 $tableCaptions["Thai"]["researchDisburse"] = "การเบิกจ่าย";
@@ -848,7 +862,7 @@ $tableCaptions["Thai"]["admin_rights"] = "Admin Rights";
 $tableCaptions["Thai"]["admin_members"] = "Admin Members";
 $tableCaptions["Thai"]["admin_users"] = "Add/Edit users";
 $tableCaptions["Thai"]["researchConsider"] = "ขั้นตอนการพิจารณา";
-$tableCaptions["Thai"]["researchScholarshipRegister"] = "การรับสมัครขอรับทุนวิจัย";
+$tableCaptions["Thai"]["researchScholarshipRegister"] = "การเปิดรับสมัครข้อเสนอขอรับทุนวิจัย";
 $tableCaptions["Thai"]["researchScholarshipProposal"] = "การยื่นขอรับทุนวิจัย";
 $tableCaptions["Thai"]["researchScholarshipConsider"] = "การพิจารณา";
 $tableCaptions["Thai"]["researchProjectProposal"] = "บริหารโครงการยื่นขอรับทุนวิจัย";
@@ -857,6 +871,22 @@ $tableCaptions["Thai"]["researchAppointmentConsider"] = "การพิจา�
 $tableCaptions["Thai"]["researchRenewalConsider"] = "การพิจารณา";
 $tableCaptions["Thai"]["researchPeriod"] = "งวดการดำเนินการ";
 $tableCaptions["Thai"]["researchProjectRegister"] = "บริหารโครงการรับสมัครขอรับทุนวิจัย";
+$tableCaptions["Thai"]["missionFollow"] = "ติดตามการกิจ";
+$tableCaptions["Thai"]["missionAssignment"] = "การหมอบหมายงาน";
+$tableCaptions["Thai"]["optionGroup"] = "ตัวเลือกในระบบ";
+$tableCaptions["Thai"]["optionSub"] = "กลุ่มตัวเลือก";
+$tableCaptions["Thai"]["project_audit"] = "การตรวจสอบความปลอดภัย";
+$tableCaptions["Thai"]["considerChoice"] = "Consider Choice";
+$tableCaptions["Thai"]["researchConsiderView"] = "ขั้นตอนการพิจารณา";
+$tableCaptions["Thai"]["project_uggroups"] = "กลุ่มผู้ใช้งานระบบ และ ประเภททุน";
+$tableCaptions["Thai"]["statusType"] = "Status Type";
+$tableCaptions["Thai"]["ReportProgress"] = "รายงานความคืบหน้า";
+$tableCaptions["Thai"]["ReportMonitor"] = "รายงานสถานะการดำเนินโครงการ";
+$tableCaptions["Thai"]["ReportMonitorGraphTrackingStatus"] = "สถานะการดำเนินการโครงการ";
+$tableCaptions["Thai"]["ReportMonitorProjectStatus1"] = "โครงการสิ้นสุด";
+$tableCaptions["Thai"]["ReportMonitorProjectStatus2"] = "อยู่ระหว่างการดำเนินการ";
+$tableCaptions["Thai"]["ReportMonitorProjectStatus3"] = "อยู่ระหว่างการขยายเวลา";
+$tableCaptions["Thai"]["ReportMonitorProjectStatus4"] = "ยกเลิกโครงการ";
 
 
 $globalEvents = new class_GlobalEvents;

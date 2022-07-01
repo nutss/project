@@ -1,7 +1,7 @@
 <?php
 class AuditTrailTable
 {
-	var $logTableName="";
+	var $logTableName="project_audit";
 	var $params;
 
 	var $strLogin="login";
@@ -40,6 +40,8 @@ class AuditTrailTable
 		global $auditMaxFieldLength;
 
 		$this->connection = $cman->getForAudit();
+		$this->attLogin=3;
+		$this->timeLogin=5;
 		$userid="";
 		if( Security::getUserName())
 			$userid = Security::getUserName();
@@ -51,18 +53,70 @@ class AuditTrailTable
 
     function LogLogin($pUsername)
     {
+		global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$this->params[1]=$pUsername;
+		$arr=array();
+		$this->params=array($_SERVER["REMOTE_ADDR"], Security::getUserName() );
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strLogin, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$this->insert(now(), $this->params[0], $this->params[1], $table, $this->strLogin, "");
+		}
+		return $retval;
     }
 
     function LogLoginFailed($pUsername)
     {
+		global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$this->params[1]=$pUsername;
+		$arr=array();
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strFailLogin, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$this->insert(now(), $this->params[0], $this->params[1], $table, $this->strFailLogin, "");
+		}
+		$this->params=array($_SERVER["REMOTE_ADDR"],"");
+		return $retval;
     }
 
     function LogLogout()
     {
+	global $globalEvents;
+	if( Security::getUserName() !="" )
+	{
+		$retval=true;
+		$table="staffUsers";
+		$arr=array();
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strLogout, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$this->insert(now(), $this->params[0], $this->params[1], $table, $this->strLogout, "");
+		}
+		return $retval;
+	}
     }
 
     function LogChPassword( $username )
     {
+		global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$arr=array();
+		$this->params[ 1 ] = $username;
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strChPass, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$this->insert(now(), $this->params[0], $this->params[1], $table, $this->strChPass, "");
+		}
+		return $retval;
     }
 
     function LogAdd($str_table,$values,$keys)
@@ -358,91 +412,147 @@ class AuditTrailTable
 	{
 		if($table=="staffUsers")
 		{
-			return false;
+			return true;
 		}
 		if($table=="process")
 		{
-			return false;
-		}
-		if($table=="consider")
-		{
-			return false;
+			return true;
 		}
 		if($table=="researchType")
 		{
-			return false;
-		}
-		if($table=="researchProjectGroup")
-		{
-			return false;
+			return true;
 		}
 		if($table=="researchOperatingPeriod")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchAppointment")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchDisburse")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchRenewal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_rights")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_members")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_users")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipRegister")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipProposal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchProjectProposal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchDisburseConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchAppointmentConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchRenewalConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchPeriod")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchProjectRegister")
 		{
+			return true;
+		}
+		if($table=="missionFollow")
+		{
+			return true;
+		}
+		if($table=="missionAssignment")
+		{
+			return true;
+		}
+		if($table=="optionGroup")
+		{
+			return true;
+		}
+		if($table=="optionSub")
+		{
+			return true;
+		}
+		if($table=="project_audit")
+		{
 			return false;
+		}
+		if($table=="considerChoice")
+		{
+			return false;
+		}
+		if($table=="researchConsiderView")
+		{
+			return true;
+		}
+		if($table=="project_uggroups")
+		{
+			return false;
+		}
+		if($table=="statusType")
+		{
+			return false;
+		}
+		if($table=="ReportProgress")
+		{
+			return true;
+		}
+		if($table=="ReportMonitor")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorProjectStatus1")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus2")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus3")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus4")
+		{
+			return true;
 		}
 	}
 
@@ -516,18 +626,72 @@ class AuditTrailFile
 
     function LogLogin($pUsername)
     {
-		    }
+				global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$this->params[1]=$pUsername;
+		$arr=array();
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strLogin, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$str=format_datetime_custom(db2time(now()),"MMM dd,yyyy").chr(9).format_datetime_custom(db2time(now()),"HH:mm:ss").chr(9).$this->params[0].chr(9).$this->params[1].chr(9).$table.chr(9).$this->strLogin."\r\n";
+			$this->writeToLogFile( $str );
+		}
+		return $retval;
+    }
 
     function LogLoginFailed($pUsername)
     {
-		    }
+				global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$this->params[1]=$pUsername;
+		$arr=array();
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strFailLogin, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$str=format_datetime_custom(db2time(now()),"MMM dd,yyyy").chr(9).format_datetime_custom(db2time(now()),"HH:mm:ss").chr(9).$this->params[0].chr(9).$this->params[1].chr(9).$table.chr(9).$this->strFailLogin."\r\n";
+			$this->writeToLogFile( $str );
+		}
+		return $retval;
+    }
 
     function LogLogout()
     {
+		global $globalEvents;
+		if(Security::getUserName() != "" )
+		{
+			$retval=true;
+			$table="staffUsers";
+			$arr=array();
+			if($globalEvents->exists("OnAuditLog"))
+				$retval=$globalEvents->OnAuditLog($this->strLogout, $this->params, $table, $arr, $arr, $arr);
+			if($retval)
+			{
+				$str=format_datetime_custom(db2time(now()),"MMM dd,yyyy").chr(9).format_datetime_custom(db2time(now()),"HH:mm:ss").chr(9).$this->params[0].chr(9).$this->params[1].chr(9).$table.chr(9).$this->strLogout."\r\n";
+				$this->writeToLogFile( $str );
+			}
+			return $retval;
+		}
     }
 
     function LogChPassword( $username )
     {
+		global $globalEvents;
+		$retval=true;
+		$table="staffUsers";
+		$arr=array();
+		$this->params[ 1 ] = $username;
+		if($globalEvents->exists("OnAuditLog"))
+			$retval=$globalEvents->OnAuditLog($this->strChPass, $this->params, $table, $arr, $arr, $arr);
+		if($retval)
+		{
+			$str=format_datetime_custom(db2time(now()),"MMM dd,yyyy").chr(9).format_datetime_custom(db2time(now()),"HH:mm:ss").chr(9).$this->params[0].chr(9).$this->params[1].chr(9).$table.chr(9).$this->strChPass."\r\n";
+			$this->writeToLogFile( $str );
+		}
+		return $retval;
     }
 
     function LogAdd($str_table,$values,$keys)
@@ -754,91 +918,147 @@ class AuditTrailFile
 	{
 		if($table=="staffUsers")
 		{
-			return false;
+			return true;
 		}
 		if($table=="process")
 		{
-			return false;
-		}
-		if($table=="consider")
-		{
-			return false;
+			return true;
 		}
 		if($table=="researchType")
 		{
-			return false;
-		}
-		if($table=="researchProjectGroup")
-		{
-			return false;
+			return true;
 		}
 		if($table=="researchOperatingPeriod")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchAppointment")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchDisburse")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchRenewal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_rights")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_members")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_users")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipRegister")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipProposal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchScholarshipConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchProjectProposal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchDisburseConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchAppointmentConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchRenewalConsider")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchPeriod")
 		{
-			return false;
+			return true;
 		}
 		if($table=="researchProjectRegister")
 		{
+			return true;
+		}
+		if($table=="missionFollow")
+		{
+			return true;
+		}
+		if($table=="missionAssignment")
+		{
+			return true;
+		}
+		if($table=="optionGroup")
+		{
+			return true;
+		}
+		if($table=="optionSub")
+		{
+			return true;
+		}
+		if($table=="project_audit")
+		{
 			return false;
+		}
+		if($table=="considerChoice")
+		{
+			return false;
+		}
+		if($table=="researchConsiderView")
+		{
+			return true;
+		}
+		if($table=="project_uggroups")
+		{
+			return false;
+		}
+		if($table=="statusType")
+		{
+			return false;
+		}
+		if($table=="ReportProgress")
+		{
+			return true;
+		}
+		if($table=="ReportMonitor")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorProjectStatus1")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus2")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus3")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus4")
+		{
+			return true;
 		}
 	}
 

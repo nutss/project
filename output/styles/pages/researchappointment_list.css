@@ -13,14 +13,14 @@
 [data-cellid="grid_footcell_field4"][data-page="researchappointment_list"][data-cellid="grid_footcell_field4"][data-page="researchappointment_list"][data-cellid="grid_footcell_field4"][data-page="researchappointment_list"] {
   white-space: nowrap;
 }
-[data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"][data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"][data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"] {
-  width: 30px;
-}
 [data-cellid="grid_headcell_icons"][data-page="researchappointment_list"][data-cellid="grid_headcell_icons"][data-page="researchappointment_list"][data-cellid="grid_headcell_icons"][data-page="researchappointment_list"] {
   width: 30px;
 }
 [data-cellid="grid_cell_icons"][data-page="researchappointment_list"][data-cellid="grid_cell_icons"][data-page="researchappointment_list"][data-cellid="grid_cell_icons"][data-page="researchappointment_list"] {
   white-space: nowrap;
+}
+[data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"][data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"][data-cellid="grid_headcell_checkbox"][data-page="researchappointment_list"] {
+  width: 30px;
 }
 [data-cellid="grid_cell_details"][data-page="researchappointment_list"][data-cellid="grid_cell_details"][data-page="researchappointment_list"][data-cellid="grid_cell_details"][data-page="researchappointment_list"] {
   white-space: nowrap;

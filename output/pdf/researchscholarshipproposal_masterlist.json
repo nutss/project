@@ -270,11 +270,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal id }","hidden":"{$item_hide_simple_grid_field24}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchRegisterID }","hidden":"{$item_hide_simple_grid_field}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$id_align}',
+              "alignment": '{$researchRegisterID_align}',
   },
 
 {END cellblock_grid_headcell_field}
@@ -296,11 +296,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchRegisterID }","hidden":"{$item_hide_simple_grid_field25}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectNo }","hidden":"{$item_hide_simple_grid_field25}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchRegisterID_align}',
+              "alignment": '{$researchProjectNo_align}',
   },
 
 {END cellblock_grid_headcell_field1}
@@ -322,11 +322,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectNo }","hidden":"{$item_hide_simple_grid_field26}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectGroupName }","hidden":"{$item_hide_simple_grid_field26}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNo_align}',
+              "alignment": '{$researchProjectGroupName_align}',
   },
 
 {END cellblock_grid_headcell_field2}
@@ -348,11 +348,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectGroupName }","hidden":"{$item_hide_simple_grid_field27}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectNameThai }","hidden":"{$item_hide_simple_grid_field27}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectGroupName_align}',
+              "alignment": '{$researchProjectNameThai_align}',
   },
 
 {END cellblock_grid_headcell_field3}
@@ -374,11 +374,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectNameThai }","hidden":"{$item_hide_simple_grid_field28}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectNameEng }","hidden":"{$item_hide_simple_grid_field28}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNameThai_align}',
+              "alignment": '{$researchProjectNameEng_align}',
   },
 
 {END cellblock_grid_headcell_field4}
@@ -400,11 +400,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectNameEng }","hidden":"{$item_hide_simple_grid_field29}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectPeriodYear }","hidden":"{$item_hide_simple_grid_field29}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNameEng_align}',
+              "alignment": '{$researchProjectPeriodYear_align}',
   },
 
 {END cellblock_grid_headcell_field5}
@@ -426,11 +426,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectPeriodYear }","hidden":"{$item_hide_simple_grid_field30}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectPeriodMonth }","hidden":"{$item_hide_simple_grid_field30}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectPeriodYear_align}',
+              "alignment": '{$researchProjectPeriodMonth_align}',
   },
 
 {END cellblock_grid_headcell_field6}
@@ -452,11 +452,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectPeriodMonth }","hidden":"{$item_hide_simple_grid_field31}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectRequestedBudget }","hidden":"{$item_hide_simple_grid_field31}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectPeriodMonth_align}',
+              "alignment": '{$researchProjectRequestedBudget_align}',
   },
 
 {END cellblock_grid_headcell_field7}
@@ -478,11 +478,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectRequestedBudget }","hidden":"{$item_hide_simple_grid_field32}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectDepartment }","hidden":"{$item_hide_simple_grid_field32}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectRequestedBudget_align}',
+              "alignment": '{$researchProjectDepartment_align}',
   },
 
 {END cellblock_grid_headcell_field8}
@@ -504,11 +504,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectDepartment }","hidden":"{$item_hide_simple_grid_field33}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectMainField }","hidden":"{$item_hide_simple_grid_field33}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectDepartment_align}',
+              "alignment": '{$researchProjectMainField_align}',
   },
 
 {END cellblock_grid_headcell_field9}
@@ -530,11 +530,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectMainField }","hidden":"{$item_hide_simple_grid_field34}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectSubField }","hidden":"{$item_hide_simple_grid_field34}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectMainField_align}',
+              "alignment": '{$researchProjectSubField_align}',
   },
 
 {END cellblock_grid_headcell_field10}
@@ -556,11 +556,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectSubField }","hidden":"{$item_hide_simple_grid_field35}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectHeadName }","hidden":"{$item_hide_simple_grid_field35}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectSubField_align}',
+              "alignment": '{$researchProjectHeadName_align}',
   },
 
 {END cellblock_grid_headcell_field11}
@@ -582,11 +582,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectHeadName }","hidden":"{$item_hide_simple_grid_field36}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationName }","hidden":"{$item_hide_simple_grid_field36}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectHeadName_align}',
+              "alignment": '{$researchProjectAffiliationName_align}',
   },
 
 {END cellblock_grid_headcell_field12}
@@ -608,11 +608,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationName }","hidden":"{$item_hide_simple_grid_field37}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectSubAffiliationName }","hidden":"{$item_hide_simple_grid_field37}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectAffiliationName_align}',
+              "alignment": '{$researchProjectSubAffiliationName_align}',
   },
 
 {END cellblock_grid_headcell_field13}
@@ -634,11 +634,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectSubAffiliationName }","hidden":"{$item_hide_simple_grid_field38}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationMobile }","hidden":"{$item_hide_simple_grid_field38}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectSubAffiliationName_align}',
+              "alignment": '{$researchProjectAffiliationMobile_align}',
   },
 
 {END cellblock_grid_headcell_field14}
@@ -660,11 +660,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationMobile }","hidden":"{$item_hide_simple_grid_field39}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationTelephone }","hidden":"{$item_hide_simple_grid_field39}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectAffiliationMobile_align}',
+              "alignment": '{$researchProjectAffiliationTelephone_align}',
   },
 
 {END cellblock_grid_headcell_field15}
@@ -686,11 +686,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationTelephone }","hidden":"{$item_hide_simple_grid_field40}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationEmail }","hidden":"{$item_hide_simple_grid_field40}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectAffiliationTelephone_align}',
+              "alignment": '{$researchProjectAffiliationEmail_align}',
   },
 
 {END cellblock_grid_headcell_field16}
@@ -712,11 +712,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectAffiliationEmail }","hidden":"{$item_hide_simple_grid_field41}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectFile }","hidden":"{$item_hide_simple_grid_field41}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectAffiliationEmail_align}',
+              "alignment": '{$researchProjectFile_align}',
   },
 
 {END cellblock_grid_headcell_field17}
@@ -738,11 +738,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectFile }","hidden":"{$item_hide_simple_grid_field42}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectBankAccountName }","hidden":"{$item_hide_simple_grid_field42}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectFile_align}',
+              "alignment": '{$researchProjectBankAccountName_align}',
   },
 
 {END cellblock_grid_headcell_field18}
@@ -764,11 +764,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectBankAccountName }","hidden":"{$item_hide_simple_grid_field43}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectBankNo }","hidden":"{$item_hide_simple_grid_field43}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectBankAccountName_align}',
+              "alignment": '{$researchProjectBankNo_align}',
   },
 
 {END cellblock_grid_headcell_field19}
@@ -790,11 +790,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectBankNo }","hidden":"{$item_hide_simple_grid_field44}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectBankName }","hidden":"{$item_hide_simple_grid_field44}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectBankNo_align}',
+              "alignment": '{$researchProjectBankName_align}',
   },
 
 {END cellblock_grid_headcell_field20}
@@ -816,11 +816,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipProposal researchProjectBankName }","hidden":"{$item_hide_simple_grid_field45}","bold":true},
+			{"text":"{$jslabel researchScholarshipProposal researchProjectStatus }","hidden":"{$item_hide_simple_grid_field45}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectBankName_align}',
+              "alignment": '{$researchProjectStatus_align}',
   },
 
 {END cellblock_grid_headcell_field21}
@@ -903,32 +903,6 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$id_align}',
-  },
-
-{END cellblock_grid_cell_field}
-																							{BEGIN cellblock_grid_cell_field1}
-{
-	cellId: 'cell_field1',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
 			{"text":{$researchRegisterID_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
 				
 		  ],
@@ -936,10 +910,10 @@ pdfDocument = {
               "alignment": '{$researchRegisterID_align}',
   },
 
-{END cellblock_grid_cell_field1}
-																							{BEGIN cellblock_grid_cell_field2}
+{END cellblock_grid_cell_field}
+																							{BEGIN cellblock_grid_cell_field1}
 {
-	cellId: 'cell_field2',
+	cellId: 'cell_field1',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -962,10 +936,10 @@ pdfDocument = {
               "alignment": '{$researchProjectNo_align}',
   },
 
-{END cellblock_grid_cell_field2}
-																							{BEGIN cellblock_grid_cell_field3}
+{END cellblock_grid_cell_field1}
+																							{BEGIN cellblock_grid_cell_field2}
 {
-	cellId: 'cell_field3',
+	cellId: 'cell_field2',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -988,10 +962,10 @@ pdfDocument = {
               "alignment": '{$researchProjectGroupName_align}',
   },
 
-{END cellblock_grid_cell_field3}
-																							{BEGIN cellblock_grid_cell_field4}
+{END cellblock_grid_cell_field2}
+																							{BEGIN cellblock_grid_cell_field3}
 {
-	cellId: 'cell_field4',
+	cellId: 'cell_field3',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1014,10 +988,10 @@ pdfDocument = {
               "alignment": '{$researchProjectNameThai_align}',
   },
 
-{END cellblock_grid_cell_field4}
-																							{BEGIN cellblock_grid_cell_field5}
+{END cellblock_grid_cell_field3}
+																							{BEGIN cellblock_grid_cell_field4}
 {
-	cellId: 'cell_field5',
+	cellId: 'cell_field4',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1040,10 +1014,10 @@ pdfDocument = {
               "alignment": '{$researchProjectNameEng_align}',
   },
 
-{END cellblock_grid_cell_field5}
-																							{BEGIN cellblock_grid_cell_field6}
+{END cellblock_grid_cell_field4}
+																							{BEGIN cellblock_grid_cell_field5}
 {
-	cellId: 'cell_field6',
+	cellId: 'cell_field5',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1066,10 +1040,10 @@ pdfDocument = {
               "alignment": '{$researchProjectPeriodYear_align}',
   },
 
-{END cellblock_grid_cell_field6}
-																							{BEGIN cellblock_grid_cell_field7}
+{END cellblock_grid_cell_field5}
+																							{BEGIN cellblock_grid_cell_field6}
 {
-	cellId: 'cell_field7',
+	cellId: 'cell_field6',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1092,10 +1066,10 @@ pdfDocument = {
               "alignment": '{$researchProjectPeriodMonth_align}',
   },
 
-{END cellblock_grid_cell_field7}
-																							{BEGIN cellblock_grid_cell_field8}
+{END cellblock_grid_cell_field6}
+																							{BEGIN cellblock_grid_cell_field7}
 {
-	cellId: 'cell_field8',
+	cellId: 'cell_field7',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1118,10 +1092,10 @@ pdfDocument = {
               "alignment": '{$researchProjectRequestedBudget_align}',
   },
 
-{END cellblock_grid_cell_field8}
-																							{BEGIN cellblock_grid_cell_field9}
+{END cellblock_grid_cell_field7}
+																							{BEGIN cellblock_grid_cell_field8}
 {
-	cellId: 'cell_field9',
+	cellId: 'cell_field8',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1144,10 +1118,10 @@ pdfDocument = {
               "alignment": '{$researchProjectDepartment_align}',
   },
 
-{END cellblock_grid_cell_field9}
-																							{BEGIN cellblock_grid_cell_field10}
+{END cellblock_grid_cell_field8}
+																							{BEGIN cellblock_grid_cell_field9}
 {
-	cellId: 'cell_field10',
+	cellId: 'cell_field9',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1170,10 +1144,10 @@ pdfDocument = {
               "alignment": '{$researchProjectMainField_align}',
   },
 
-{END cellblock_grid_cell_field10}
-																							{BEGIN cellblock_grid_cell_field11}
+{END cellblock_grid_cell_field9}
+																							{BEGIN cellblock_grid_cell_field10}
 {
-	cellId: 'cell_field11',
+	cellId: 'cell_field10',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1196,10 +1170,10 @@ pdfDocument = {
               "alignment": '{$researchProjectSubField_align}',
   },
 
-{END cellblock_grid_cell_field11}
-																							{BEGIN cellblock_grid_cell_field12}
+{END cellblock_grid_cell_field10}
+																							{BEGIN cellblock_grid_cell_field11}
 {
-	cellId: 'cell_field12',
+	cellId: 'cell_field11',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1222,10 +1196,10 @@ pdfDocument = {
               "alignment": '{$researchProjectHeadName_align}',
   },
 
-{END cellblock_grid_cell_field12}
-																							{BEGIN cellblock_grid_cell_field13}
+{END cellblock_grid_cell_field11}
+																							{BEGIN cellblock_grid_cell_field12}
 {
-	cellId: 'cell_field13',
+	cellId: 'cell_field12',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1248,10 +1222,10 @@ pdfDocument = {
               "alignment": '{$researchProjectAffiliationName_align}',
   },
 
-{END cellblock_grid_cell_field13}
-																							{BEGIN cellblock_grid_cell_field14}
+{END cellblock_grid_cell_field12}
+																							{BEGIN cellblock_grid_cell_field13}
 {
-	cellId: 'cell_field14',
+	cellId: 'cell_field13',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1274,10 +1248,10 @@ pdfDocument = {
               "alignment": '{$researchProjectSubAffiliationName_align}',
   },
 
-{END cellblock_grid_cell_field14}
-																							{BEGIN cellblock_grid_cell_field15}
+{END cellblock_grid_cell_field13}
+																							{BEGIN cellblock_grid_cell_field14}
 {
-	cellId: 'cell_field15',
+	cellId: 'cell_field14',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1300,10 +1274,10 @@ pdfDocument = {
               "alignment": '{$researchProjectAffiliationMobile_align}',
   },
 
-{END cellblock_grid_cell_field15}
-																							{BEGIN cellblock_grid_cell_field16}
+{END cellblock_grid_cell_field14}
+																							{BEGIN cellblock_grid_cell_field15}
 {
-	cellId: 'cell_field16',
+	cellId: 'cell_field15',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1326,10 +1300,10 @@ pdfDocument = {
               "alignment": '{$researchProjectAffiliationTelephone_align}',
   },
 
-{END cellblock_grid_cell_field16}
-																							{BEGIN cellblock_grid_cell_field17}
+{END cellblock_grid_cell_field15}
+																							{BEGIN cellblock_grid_cell_field16}
 {
-	cellId: 'cell_field17',
+	cellId: 'cell_field16',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1352,10 +1326,10 @@ pdfDocument = {
               "alignment": '{$researchProjectAffiliationEmail_align}',
   },
 
-{END cellblock_grid_cell_field17}
-																							{BEGIN cellblock_grid_cell_field18}
+{END cellblock_grid_cell_field16}
+																							{BEGIN cellblock_grid_cell_field17}
 {
-	cellId: 'cell_field18',
+	cellId: 'cell_field17',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1378,10 +1352,10 @@ pdfDocument = {
               "alignment": '{$researchProjectFile_align}',
   },
 
-{END cellblock_grid_cell_field18}
-																							{BEGIN cellblock_grid_cell_field19}
+{END cellblock_grid_cell_field17}
+																							{BEGIN cellblock_grid_cell_field18}
 {
-	cellId: 'cell_field19',
+	cellId: 'cell_field18',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1404,10 +1378,10 @@ pdfDocument = {
               "alignment": '{$researchProjectBankAccountName_align}',
   },
 
-{END cellblock_grid_cell_field19}
-																							{BEGIN cellblock_grid_cell_field20}
+{END cellblock_grid_cell_field18}
+																							{BEGIN cellblock_grid_cell_field19}
 {
-	cellId: 'cell_field20',
+	cellId: 'cell_field19',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1430,10 +1404,10 @@ pdfDocument = {
               "alignment": '{$researchProjectBankNo_align}',
   },
 
-{END cellblock_grid_cell_field20}
-																							{BEGIN cellblock_grid_cell_field21}
+{END cellblock_grid_cell_field19}
+																							{BEGIN cellblock_grid_cell_field20}
 {
-	cellId: 'cell_field21',
+	cellId: 'cell_field20',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1454,6 +1428,32 @@ pdfDocument = {
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$researchProjectBankName_align}',
+  },
+
+{END cellblock_grid_cell_field20}
+																							{BEGIN cellblock_grid_cell_field21}
+{
+	cellId: 'cell_field21',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$researchProjectStatus_pdfvalue},"hidden":"{$item_hide_simple_grid_field24}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchProjectStatus_align}',
   },
 
 {END cellblock_grid_cell_field21}

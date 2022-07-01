@@ -14,25 +14,21 @@
 	<link REL="stylesheet" href="{$stylepath}" type="text/css">
 	{END styleCSSFiles}
 	</head>
+
 	<body class="{$stylename} function-list" {$bodyattrs}>
 	{BEGIN body}
-		{$header}
 		<style>
-			{$containerCss}
+		{$containerCss}
 		</style>
-		<div class="r-topbar-page">
-			<div data-menu-width="full" 
-				 
-				class="r-topheader" 
-				data-resize-name="topbar"
-				data-body-align="left"
-			>
-								{BEGIN supertop_block}
-<nav class="navbar navbar-default" 
-	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
-			 
-							 
-				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+		<div class="r-vbar-page">
+			<div data-width="340px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
 				{BEGIN logo_block}
 	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
 		{$logo}
@@ -42,224 +38,30 @@
 					<span class="sr-only">Toggle navigation</span>	
 					<span class="icon-bar"></span>					
 				</button>				
-			</span>
-		 
-				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
-				{$menu main horizontal}			</span>
-							 
-							 
-				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
-				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
-
-<div  class="input-group">
-{BEGIN searchform_text}
-	<input type="search" class="form-control" {$searchfor_attrs} size="25">
-{END searchform_text}
-	<span class="input-group-btn">
-	{BEGIN searchform_showall}
-				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="{mlang_message SHOW_ALL}">
-			<span class="glyphicon glyphicon-remove"></span>
-		</button>
-	{END searchform_showall}
-
-	{BEGIN searchform_search}
-	<button {$searchbutton_attrs} class="btn btn-primary" >
-		<span class="glyphicon glyphicon-search"></span>
-	</button>
-	{END searchform_search}
-	</span>
-</div>
+			</div>
 		
-</span>			</span>
-		 
-				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
-				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
-	<span class="dropdown ">
-		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
-										<span class="glyphicon glyphicon-cog"></span>
-												<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu">
-							{BEGIN exportselected_link}
-	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
-				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
-				
-		{mlang_message EXPORT_SELECTED}		
-		</a>
-	</li>
-{END exportselected_link}
-							{BEGIN deleteselected_link}
-	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
-				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
-				
-		{mlang_message DELETE_SELECTED}		
-		</a>
-	</li>
-{END deleteselected_link}
-							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
-				<a   href="researchprojectproposal_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
-				
-		{mlang_message ADVANCED_SEARCH}		
-		</a>
-	</li>
-							{BEGIN searchPanelTopButtons}
-	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
-				<a  id="showOptPanel{$id}"  title="" >
-				
-		{mlang_message SHOW_SEARCH_PANEL}		
-		</a>
-	</li>
-{END searchPanelTopButtons}
-							{BEGIN searchPanelTopButtons}
-	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
-				<a  id="hideOptPanel{$id}"  title="" >
-				
-		{mlang_message HIDE_SEARCH_PANEL}		
-		</a>
-	</li>
-{END searchPanelTopButtons}
-							<li role="separator" class="divider"></li>							{BEGIN export_link}
-	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
-				<a  href="#" {$exportlink_attrs}  title="" >
-				
-		{mlang_message EXPORT_RESULTS}		
-		</a>
-	</li>
-{END export_link}
-							<li role="separator" class="divider"></li>								{BEGIN EnglishLANGLINK}
-	<li><a href="#" data-lang="English" class="rnr-langlink">
-		{BEGIN EnglishLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END EnglishLANGLINK_ACTIVE}
-		English</a></li>
-	{END EnglishLANGLINK}
-	{BEGIN ThaiLANGLINK}
-	<li><a href="#" data-lang="Thai" class="rnr-langlink">
-		{BEGIN ThaiLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END ThaiLANGLINK_ACTIVE}
-		ไทย</a></li>
-	{END ThaiLANGLINK}
-					</ul>
-	</span>
-</span>
-			</span>
-		 
-				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
-				{BEGIN guestloginbutton}
-<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" href="#" {$guestloginlink_attrs} >
-							{mlang_message LOGIN}			</a>
-</span>
-{END guestloginbutton}
-			</span>
-		 
-				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
-				{BEGIN loggedas_message}
-<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
-	<span class="dropdown ">
-		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
-			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
-						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu">
-							{BEGIN logoutbutton}
-	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
-				<a  href="userinfo.php"  title="" >
-				
-		{mlang_message USERINFO}		
-		</a>
-	</li>
-{END logoutbutton}
-							{BEGIN logoutbutton}
-	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
-				<a  href="#" {$logoutlink_attrs}  title="" >
-				
-		{mlang_message LOG_OUT}		
-		</a>
-	</li>
-{END logoutbutton}
-							{BEGIN adminarea_link}
-	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
-				<a  href="admin_rights_list.php"  title="" >
-				
-		{mlang_message AA_ADMINAREA}		
-		</a>
-	</li>
-{END adminarea_link}
-							{BEGIN changepwd_link}
-	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
-				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
-				
-		{mlang_message CHANGE_PASSWORD}		
-		</a>
-	</li>
-{END changepwd_link}
-					</ul>
-	</span>
-</span>
-{END loggedas_message}
-			</span>
-								</nav>
-{END supertop_block}
-					{$locking}
-			</div>	
-			<div data-body-align="left"  data-body-width="full" class="r-body" data-resize-top="topbar" >
-				<div class="r-top">
-								{BEGIN top_block}
-<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
-	 
-		<div class="row">
-			 
-				<div 
-	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
-	class=" r-ori-vert			col-md-12
-	
-">
-		 
-		{BEGIN breadcrumb}
-<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
-<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
-{BEGIN crumb}
-  <li class="{$crumb_item_class}">
-{BEGIN crumb_title_link}
-	<a {$crumb_attrs}>{$crumb_title}</a>
-{END crumb_title_link}
-{BEGIN crumb_title_span}
-	<span {$crumb_attrs}>{$crumb_title}</span>
-{END crumb_title_span}	
-	{$crumb_dropdown}
-  </li>
-{END crumb}
-</ol>
-{END breadcrumb}		</div>					</div>
-	 
-		<div class="row">
-			 
-				<div 
-	data-cellId="top_c3" data-pageid="{$pageid}"	{$cell_top_c3}
-	class=" r-ori-vert			col-md-12
-	
-">
-		 
-		{BEGIN mastertable_block}
-<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
-	{$showmasterfile}
-</div>
-{END mastertable_block}		</div>					</div>
-	</div>		
-{END top_block}
-					</div>
-				<div class="r-content">
-										<div class="r-left" {$blockattr_left} {$form_left} >
-										{BEGIN left_block}
-<table class="r-fluid r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
-						<tbody>
-			
-								<tr {$row_left_0} >
-									<td 
-	class=" r-ori-vert			"
-			 
-	data-cellId="left_c1" data-pageid="{$pageid}">
  
-<!-- Begin Search panel content -->
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message EXPAND}" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
 <div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
 
 	<div class="panel-heading">
@@ -311,6 +113,97 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_entryTime}</span>
 						</div>
 		{END searchCtrlBlock_entryTime}
+																{BEGIN searchCtrlBlock_projectStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_projectStatus}" {$filterRow_attrs_projectStatus}>
+			<label>{$label researchProjectProposal projectStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_projectStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_projectStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_projectStatus}</span>
+						</div>
+		{END searchCtrlBlock_projectStatus}
+																{BEGIN searchCtrlBlock_projectStatusDesc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_projectStatusDesc}" {$filterRow_attrs_projectStatusDesc}>
+			<label>{$label researchProjectProposal projectStatusDesc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_projectStatusDesc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_projectStatusDesc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_projectStatusDesc}</span>
+						</div>
+		{END searchCtrlBlock_projectStatusDesc}
+																{BEGIN searchCtrlBlock_contractSignFile}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractSignFile}" {$filterRow_attrs_contractSignFile}>
+			<label>{$label researchProjectProposal contractSignFile }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractSignFile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractSignFile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractSignFile}</span>
+						</div>
+		{END searchCtrlBlock_contractSignFile}
+																{BEGIN searchCtrlBlock_contractSignDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractSignDate}" {$filterRow_attrs_contractSignDate}>
+			<label>{$label researchProjectProposal contractSignDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractSignDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractSignDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractSignDate}</span>
+						</div>
+		{END searchCtrlBlock_contractSignDate}
+																{BEGIN searchCtrlBlock_trackingProjectDescResult}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_trackingProjectDescResult}" {$filterRow_attrs_trackingProjectDescResult}>
+			<label>{$label researchProjectProposal trackingProjectDescResult }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_trackingProjectDescResult}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_trackingProjectDescResult}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_trackingProjectDescResult}</span>
+						</div>
+		{END searchCtrlBlock_trackingProjectDescResult}
+																{BEGIN searchCtrlBlock_trackingProjectDesc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_trackingProjectDesc}" {$filterRow_attrs_trackingProjectDesc}>
+			<label>{$label researchProjectProposal trackingProjectDesc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_trackingProjectDesc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_trackingProjectDesc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_trackingProjectDesc}</span>
+						</div>
+		{END searchCtrlBlock_trackingProjectDesc}
+																{BEGIN searchCtrlBlock_researchProjectStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_researchProjectStatus}" {$filterRow_attrs_researchProjectStatus}>
+			<label>{$label researchProjectProposal researchProjectStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_researchProjectStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_researchProjectStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_researchProjectStatus}</span>
+						</div>
+		{END searchCtrlBlock_researchProjectStatus}
 																{BEGIN searchCtrlBlock_researchRegisterID}
 
 
@@ -608,43 +501,284 @@
 	</div>
 </div>
 <!-- End Search panel content -->
-</td>
-							</tr>
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="filter_panel" {$item_filter_panel} data-topcell-item-type="filter_panel" >
+				<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}">
+	<!-- Begin Filter panel content -->
+
+
+
+			
 					
-					</tbody>
-				</table>
-{END left_block}
+		
+		{BEGIN filter_control_contractSignFile}
+		<div class="panel panel-info filter-field filter-contractSignFile-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+			
+				{BEGIN clearLink_contractSignFile}
+				<a href="#" class="filter-clear filter-clear-contractSignFile" title="{mlang_message FILTER_CLEAR}" data-icon="remove" >
+				</a>
+				{END clearLink_contractSignFile}
+				{$label researchProjectProposal contractSignFile }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_contractSignFile}
+				<li class="list-group-item filter-values filter-values-contractSignFile {$collapsedClass_contractSignFile} {$visibilityClass_contractSignFile}">
+					{$contractSignFile_filter}
+								
+							</li>
+				{END filterCtrlBlock_contractSignFile}
+
+							{BEGIN filter_button_showmore_contractSignFile}
+				<li class="list-group-item filter-show-more {$collapsedClass_contractSignFile} {$showMoreBtnClass_contractSignFile}">
+					<a class="filter-show-more-link filterShowMore_contractSignFile" href="#">{$show_n_more_contractSignFile}</a>
+				</li>
+				{END filter_button_showmore_contractSignFile}
+			
+
+
+			
+
+			
+			</ul>
+		</div>
+		{END filter_control_contractSignFile}
+		<!-- End Filter panel content -->
+	</div>
+</div>			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message COLLAPSE}" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message SHOW_MENU}" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="{mlang_message SHOW_ALL}">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		{mlang_message EXPORT_SELECTED}		
+		</a>
+	</li>
+{END exportselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="researchprojectproposal_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		{mlang_message ADVANCED_SEARCH}		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		{mlang_message SHOW_SEARCH_PANEL}		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		{mlang_message HIDE_SEARCH_PANEL}		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		{mlang_message EXPORT_RESULTS}		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>								{BEGIN EnglishLANGLINK}
+	<li><a href="#" data-lang="English" class="rnr-langlink">
+		{BEGIN EnglishLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END EnglishLANGLINK_ACTIVE}
+		English</a></li>
+	{END EnglishLANGLINK}
+	{BEGIN ThaiLANGLINK}
+	<li><a href="#" data-lang="Thai" class="rnr-langlink">
+		{BEGIN ThaiLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END ThaiLANGLINK_ACTIVE}
+		ไทย</a></li>
+	{END ThaiLANGLINK}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							{mlang_message LOGIN}			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		{mlang_message USERINFO}		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		{mlang_message LOG_OUT}		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		{mlang_message AA_ADMINAREA}		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		{mlang_message CHANGE_PASSWORD}		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="full">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+	</div>		
+{END top_block}
 						</div>
-										<div class="r-data-block" data-body-width="full" >
-						
+					<div class="r-above">
 										{BEGIN above-grid_block}
-<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
 	 
 		<div class="row">
 			 
 				<div 
 	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
-	class="			col-md-6
+	class=" r-ori-vert			col-md-6
 	
 ">
 		{BEGIN firstAboveGridCell}
-		 
-		{BEGIN add_link}
-<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" {$addlink_attrs} href="researchprojectproposal_add.php{$stateLink_full}" data-popup >
-							{mlang_message ADD_NEW}			</a>
-</span>
-{END add_link}
-	 
-		{BEGIN deleteselected_link}
-<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-default   
-	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
-							{mlang_message DELETE}			</a>
-</span>
-{END deleteselected_link}
-			{END firstAboveGridCell}	
+				{END firstAboveGridCell}	
 	</div>			 
 				<div 
 	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
@@ -737,8 +871,8 @@
 		</div>					</div>
 	</div>		
 {END above-grid_block}
-							
-						<div class="r-grid">
+						</div>
+					<div class="r-grid">
 										{BEGIN grid_block}
 {BEGIN grid_tabs}
   <ul class="nav nav-tabs bsgrid_tabs">
@@ -767,7 +901,10 @@
 						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectHeadName"]:before {
 		content: "{$label researchProjectProposal researchProjectHeadName}";
 	}
-												[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
+														[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectStatus"]:before {
+		content: "{$label researchProjectProposal researchProjectStatus}";
+	}
+									[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
 		content: "{$label researchProjectProposal entryUserName}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryTime"]:before {
@@ -775,7 +912,7 @@
 	}
 	}
 </style>
-<table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
 	data-body-height="1"
 >
@@ -845,9 +982,11 @@
 
 	 
 		{BEGIN researchRegisterID_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID">
-	{$label researchProjectProposal researchRegisterID }	</span>
+	{BEGIN researchRegisterID_fieldheader}
+	<SPAN {$researchRegisterID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID">
+	{$label researchProjectProposal researchRegisterID }	{$arrow_icon_researchRegisterID}
+	</SPAN>
+	{END researchRegisterID_fieldheader}
 {END researchRegisterID_fieldheadercolumn}
 
 	
@@ -860,20 +999,22 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNo_class}
+		 r-ori-vert				{$researchProjectStatus_class}
 			"
 
-			data-field="researchProjectNo"
+			data-field="researchProjectStatus"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNo_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo">
-	{$label researchProjectProposal researchProjectNo }	</span>
-{END researchProjectNo_fieldheadercolumn}
+		{BEGIN researchProjectStatus_fieldheadercolumn}
+	{BEGIN researchProjectStatus_fieldheader}
+	<SPAN {$researchProjectStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectStatus" data-fieldname="researchProjectStatus">
+	{$label researchProjectProposal researchProjectStatus }	{$arrow_icon_researchProjectStatus}
+	</SPAN>
+	{END researchProjectStatus_fieldheader}
+{END researchProjectStatus_fieldheadercolumn}
 
 	
 	</th>
@@ -885,20 +1026,22 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNameThai_class}
+		 r-ori-vert				{$researchProjectNo_class}
 			"
 
-			data-field="researchProjectNameThai"
+			data-field="researchProjectNo"
 	
 	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNameThai_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai">
-	{$label researchProjectProposal researchProjectNameThai }	</span>
-{END researchProjectNameThai_fieldheadercolumn}
+		{BEGIN researchProjectNo_fieldheadercolumn}
+	{BEGIN researchProjectNo_fieldheader}
+	<SPAN {$researchProjectNo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo">
+	{$label researchProjectProposal researchProjectNo }	{$arrow_icon_researchProjectNo}
+	</SPAN>
+	{END researchProjectNo_fieldheader}
+{END researchProjectNo_fieldheadercolumn}
 
 	
 	</th>
@@ -910,20 +1053,22 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNameEng_class}
+		 r-ori-vert				{$researchProjectNameThai_class}
 			"
 
-			data-field="researchProjectNameEng"
+			data-field="researchProjectNameThai"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNameEng_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng">
-	{$label researchProjectProposal researchProjectNameEng }	</span>
-{END researchProjectNameEng_fieldheadercolumn}
+		{BEGIN researchProjectNameThai_fieldheadercolumn}
+	{BEGIN researchProjectNameThai_fieldheader}
+	<SPAN {$researchProjectNameThai_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai">
+	{$label researchProjectProposal researchProjectNameThai }	{$arrow_icon_researchProjectNameThai}
+	</SPAN>
+	{END researchProjectNameThai_fieldheader}
+{END researchProjectNameThai_fieldheadercolumn}
 
 	
 	</th>
@@ -935,20 +1080,22 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectRequestedBudget_class}
+		 r-ori-vert				{$researchProjectNameEng_class}
 			"
 
-			data-field="researchProjectRequestedBudget"
+			data-field="researchProjectNameEng"
 	
 	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectRequestedBudget_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectRequestedBudget" data-fieldname="researchProjectRequestedBudget">
-	{$label researchProjectProposal researchProjectRequestedBudget }	</span>
-{END researchProjectRequestedBudget_fieldheadercolumn}
+		{BEGIN researchProjectNameEng_fieldheadercolumn}
+	{BEGIN researchProjectNameEng_fieldheader}
+	<SPAN {$researchProjectNameEng_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng">
+	{$label researchProjectProposal researchProjectNameEng }	{$arrow_icon_researchProjectNameEng}
+	</SPAN>
+	{END researchProjectNameEng_fieldheader}
+{END researchProjectNameEng_fieldheadercolumn}
 
 	
 	</th>
@@ -970,9 +1117,11 @@
 
 	 
 		{BEGIN researchProjectHeadName_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName">
-	{$label researchProjectProposal researchProjectHeadName }	</span>
+	{BEGIN researchProjectHeadName_fieldheader}
+	<SPAN {$researchProjectHeadName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName">
+	{$label researchProjectProposal researchProjectHeadName }	{$arrow_icon_researchProjectHeadName}
+	</SPAN>
+	{END researchProjectHeadName_fieldheader}
 {END researchProjectHeadName_fieldheadercolumn}
 
 	
@@ -985,20 +1134,22 @@
 	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchProjectRequestedBudget_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchProjectRequestedBudget"
 	
 	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label researchProjectProposal entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
+		{BEGIN researchProjectRequestedBudget_fieldheadercolumn}
+	{BEGIN researchProjectRequestedBudget_fieldheader}
+	<SPAN {$researchProjectRequestedBudget_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectRequestedBudget" data-fieldname="researchProjectRequestedBudget">
+	{$label researchProjectProposal researchProjectRequestedBudget }	{$arrow_icon_researchProjectRequestedBudget}
+	</SPAN>
+	{END researchProjectRequestedBudget_fieldheader}
+{END researchProjectRequestedBudget_fieldheadercolumn}
 
 	
 	</th>
@@ -1010,24 +1161,53 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryTime_class}
+		 r-ori-vert				{$entryUserName_class}
 			"
 
-			data-field="entryTime"
+			data-field="entryUserName"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryTime_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label researchProjectProposal entryTime }	</span>
-{END entryTime_fieldheadercolumn}
+		{BEGIN entryUserName_fieldheadercolumn}
+	{BEGIN entryUserName_fieldheader}
+	<SPAN {$entryUserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	{$label researchProjectProposal entryUserName }	{$arrow_icon_entryUserName}
+	</SPAN>
+	{END entryUserName_fieldheader}
+{END entryUserName_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$entryTime_class}
+			"
+
+			data-field="entryTime"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN entryTime_fieldheadercolumn}
+	{BEGIN entryTime_fieldheader}
+	<SPAN {$entryTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	{$label researchProjectProposal entryTime }	{$arrow_icon_entryTime}
+	</SPAN>
+	{END entryTime_fieldheader}
+{END entryTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
 							</tr>
 					 
 					 
@@ -1062,7 +1242,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
 	<a type="button" title="{mlang_message EDIT}" class="btn-link   
-	 glyphicon glyphicon-pencil" href="researchprojectproposal_edit.php?{$editlink}" {$editlink_attrs} title="{mlang_message EDIT}" data-popup >		
+	 glyphicon glyphicon-pencil" href="researchprojectproposal_edit.php?{$editlink}" {$editlink_attrs} title="{mlang_message EDIT}" data-popup data-popupwidth="1400" >		
 				
 								</a>
 </span>
@@ -1126,20 +1306,20 @@
 	{$cell_grid_cell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNo_class}
+		 r-ori-vert				{$researchProjectStatus_class}
 			"
 
-			data-field="researchProjectNo"
+			data-field="researchProjectStatus"
 	
 	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo" data-default-width >
-{$researchProjectNo_value}
+		{BEGIN researchProjectStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectStatus" data-fieldname="researchProjectStatus" data-default-width >
+{$researchProjectStatus_value}
 </span>
-{END researchProjectNo_fieldcolumn}	
+{END researchProjectStatus_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
 				 
@@ -1149,20 +1329,20 @@
 	{$cell_grid_cell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNameThai_class}
+		 r-ori-vert				{$researchProjectNo_class}
 			"
 
-			data-field="researchProjectNameThai"
+			data-field="researchProjectNo"
 	
 	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNameThai_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai" data-default-width >
-{$researchProjectNameThai_value}
+		{BEGIN researchProjectNo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo" data-default-width >
+{$researchProjectNo_value}
 </span>
-{END researchProjectNameThai_fieldcolumn}	
+{END researchProjectNo_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field2}
 				 
@@ -1172,20 +1352,20 @@
 	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNameEng_class}
+		 r-ori-vert				{$researchProjectNameThai_class}
 			"
 
-			data-field="researchProjectNameEng"
+			data-field="researchProjectNameThai"
 	
 	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNameEng_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng" data-default-width >
-{$researchProjectNameEng_value}
+		{BEGIN researchProjectNameThai_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai" data-default-width >
+{$researchProjectNameThai_value}
 </span>
-{END researchProjectNameEng_fieldcolumn}	
+{END researchProjectNameThai_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
 				 
@@ -1195,20 +1375,20 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectRequestedBudget_class}
+		 r-ori-vert				{$researchProjectNameEng_class}
 			"
 
-			data-field="researchProjectRequestedBudget"
+			data-field="researchProjectNameEng"
 	
 	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectRequestedBudget_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectRequestedBudget" data-fieldname="researchProjectRequestedBudget" data-default-width >
-{$researchProjectRequestedBudget_value}
+		{BEGIN researchProjectNameEng_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng" data-default-width >
+{$researchProjectNameEng_value}
 </span>
-{END researchProjectRequestedBudget_fieldcolumn}	
+{END researchProjectNameEng_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
 				 
@@ -1241,20 +1421,20 @@
 	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchProjectRequestedBudget_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchProjectRequestedBudget"
 	
 	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
+		{BEGIN researchProjectRequestedBudget_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectRequestedBudget" data-fieldname="researchProjectRequestedBudget" data-default-width >
+{$researchProjectRequestedBudget_value}
 </span>
-{END entryUserName_fieldcolumn}	
+{END researchProjectRequestedBudget_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
 				 
@@ -1264,12 +1444,35 @@
 	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$entryUserName_class}
+			"
+
+			data-field="entryUserName"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN entryUserName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
+{$entryUserName_value}
+</span>
+{END entryUserName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$entryTime_class}
 			"
 
 			data-field="entryTime"
 	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1279,7 +1482,7 @@
 </span>
 {END entryTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -1455,15 +1658,31 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchprojectproposal_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>
 				</table>
 {END grid_block}
-							</div>
-						
+						</div>
+					<div class="r-below">
 										{BEGIN below-grid_block}
-<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
 	 
 		<div class="row">
 			 
@@ -1481,12 +1700,13 @@
 		</div>					</div>
 	</div>		
 {END below-grid_block}
-							
-					</div>
-				</div>
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
 			</div>
 		</div>
-		{$footer}
 	{END body}
 	</body>
 </html>

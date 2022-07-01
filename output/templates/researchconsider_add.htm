@@ -84,11 +84,7 @@
 
  
 	 
-												{BEGIN mastertable_block}
-<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
-	{$showmasterfile}
-</div>
-{END mastertable_block}											<table 
+												<table 
 	data-body-align="center"
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
@@ -114,27 +110,6 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN researchRegisterID_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchRegisterID}  r-vertical-field" 
-	data-signal-error-for="researchRegisterID{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="researchRegisterID" data-fieldname="researchRegisterID" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchRegisterID}">
-		{BEGIN researchRegisterID_label}{$label researchConsider researchRegisterID }{END researchRegisterID_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchRegisterID_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchRegisterID">
-		<div class="text-muted" >
-		{$tooltip researchConsider researchRegisterID }		</div>
-	</div>
-</div>
-
-
-{END researchRegisterID_fieldblock}
-											
 {BEGIN researchConsiderNumber_fieldblock}
 
 
@@ -240,26 +215,26 @@
 
 {END researchRegisterDesc_fieldblock}
 											
-{BEGIN researchConsiderApprove_fieldblock}
+{BEGIN researchConsiderName_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderApprove}  r-vertical-field" 
-	data-signal-error-for="researchConsiderApprove{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="researchConsiderApprove" data-fieldname="researchConsiderApprove" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchConsiderName}  r-vertical-field" 
+	data-signal-error-for="researchConsiderName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="researchConsiderName" data-fieldname="researchConsiderName" >
 
-	<label class="r-edit-label control-label" for="{$labelfor_researchConsiderApprove}">
-		{BEGIN researchConsiderApprove_label}{$label researchConsider researchConsiderApprove }{END researchConsiderApprove_label}
+	<label class="r-edit-label control-label" for="{$labelfor_researchConsiderName}">
+		{BEGIN researchConsiderName_label}{$label researchConsider researchConsiderName }{END researchConsiderName_label}
 	</label>
 	<div class="r-edit-field">
-		{$researchConsiderApprove_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchConsiderApprove">
+		{$researchConsiderName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchConsiderName">
 		<div class="text-muted" >
-		{$tooltip researchConsider researchConsiderApprove }		</div>
+		{$tooltip researchConsider researchConsiderName }		</div>
 	</div>
 </div>
 
 
-{END researchConsiderApprove_fieldblock}
+{END researchConsiderName_fieldblock}
 											
 {BEGIN entryUserName_fieldblock}
 

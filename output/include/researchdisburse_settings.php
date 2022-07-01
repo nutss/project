@@ -27,28 +27,28 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchdisburse["English"] = array();
 	$fieldLabelsresearchdisburse["English"]["id"] = "ID";
 	$fieldToolTipsresearchdisburse["English"]["id"] = "";
-	$placeHoldersresearchdisburse["English"]["id"] = "";
+	$placeHoldersresearchdisburse["English"]["id"] = "ID";
 	$fieldLabelsresearchdisburse["English"]["researchProjectID"] = "Research Project ID";
 	$fieldToolTipsresearchdisburse["English"]["researchProjectID"] = "";
-	$placeHoldersresearchdisburse["English"]["researchProjectID"] = "";
+	$placeHoldersresearchdisburse["English"]["researchProjectID"] = "Research Project ID";
 	$fieldLabelsresearchdisburse["English"]["researchOperatingPeriodNo"] = "Research Operating Period No";
 	$fieldToolTipsresearchdisburse["English"]["researchOperatingPeriodNo"] = "";
-	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodNo"] = "";
+	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodNo"] = "Research Operating Period No";
 	$fieldLabelsresearchdisburse["English"]["researchOperatingPeriodEndDate"] = "Research Operating Period End Date";
 	$fieldToolTipsresearchdisburse["English"]["researchOperatingPeriodEndDate"] = "";
-	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodEndDate"] = "";
+	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodEndDate"] = "Research Operating Period End Date";
 	$fieldLabelsresearchdisburse["English"]["researchOperatingPeriodDisburse"] = "Research Operating Period Disburse";
 	$fieldToolTipsresearchdisburse["English"]["researchOperatingPeriodDisburse"] = "";
-	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodDisburse"] = "";
+	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodDisburse"] = "Research Operating Period Disburse";
 	$fieldLabelsresearchdisburse["English"]["researchOperatingPeriodDisbursePercent"] = "Research Operating Period Disburse Percent";
 	$fieldToolTipsresearchdisburse["English"]["researchOperatingPeriodDisbursePercent"] = "";
-	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodDisbursePercent"] = "";
+	$placeHoldersresearchdisburse["English"]["researchOperatingPeriodDisbursePercent"] = "Research Operating Period Disburse Percent";
 	$fieldLabelsresearchdisburse["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchdisburse["English"]["entryUserName"] = "";
-	$placeHoldersresearchdisburse["English"]["entryUserName"] = "";
+	$placeHoldersresearchdisburse["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchdisburse["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchdisburse["English"]["entryTime"] = "";
-	$placeHoldersresearchdisburse["English"]["entryTime"] = "";
+	$placeHoldersresearchdisburse["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchdisburse["English"]))
 		$tdataresearchdisburse[".isUseToolTips"] = true;
 }
@@ -60,28 +60,28 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchdisburse["Thai"] = array();
 	$fieldLabelsresearchdisburse["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchdisburse["Thai"]["id"] = "";
-	$placeHoldersresearchdisburse["Thai"]["id"] = "";
+	$placeHoldersresearchdisburse["Thai"]["id"] = "ID";
 	$fieldLabelsresearchdisburse["Thai"]["researchOperatingPeriodNo"] = "งวดที่";
 	$fieldToolTipsresearchdisburse["Thai"]["researchOperatingPeriodNo"] = "";
-	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodNo"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodNo"] = "งวดที่";
 	$fieldLabelsresearchdisburse["Thai"]["researchOperatingPeriodEndDate"] = "วันสิ้นสุดงวด";
 	$fieldToolTipsresearchdisburse["Thai"]["researchOperatingPeriodEndDate"] = "";
-	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodEndDate"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodEndDate"] = "วันสิ้นสุดงวด";
 	$fieldLabelsresearchdisburse["Thai"]["researchOperatingPeriodDisburse"] = "ยอดเบิกจ่าย";
 	$fieldToolTipsresearchdisburse["Thai"]["researchOperatingPeriodDisburse"] = "";
-	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodDisburse"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodDisburse"] = "ยอดเบิกจ่าย";
 	$fieldLabelsresearchdisburse["Thai"]["researchOperatingPeriodDisbursePercent"] = "ร้อยละเบิกจ่าย";
 	$fieldToolTipsresearchdisburse["Thai"]["researchOperatingPeriodDisbursePercent"] = "";
-	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodDisbursePercent"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchOperatingPeriodDisbursePercent"] = "ร้อยละเบิกจ่าย";
 	$fieldLabelsresearchdisburse["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchdisburse["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchdisburse["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchdisburse["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchdisburse["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchdisburse["Thai"]["entryTime"] = "";
-	$placeHoldersresearchdisburse["Thai"]["entryTime"] = "";
+	$placeHoldersresearchdisburse["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldLabelsresearchdisburse["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldToolTipsresearchdisburse["Thai"]["researchProjectID"] = "";
-	$placeHoldersresearchdisburse["Thai"]["researchProjectID"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchProjectID"] = "PROJECT_ID";
 	if (count($fieldToolTipsresearchdisburse["Thai"]))
 		$tdataresearchdisburse[".isUseToolTips"] = true;
 }
@@ -115,7 +115,7 @@ $tdataresearchdisburse[".listAjax"] = false;
 //	temporary
 //$tdataresearchdisburse[".listAjax"] = false;
 
-	$tdataresearchdisburse[".audit"] = false;
+	$tdataresearchdisburse[".audit"] = true;
 
 	$tdataresearchdisburse[".locking"] = false;
 
@@ -187,7 +187,7 @@ $tdataresearchdisburse[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchdisburse[".buttonsAdded"] = false;
 
-$tdataresearchdisburse[".addPageEvents"] = false;
+$tdataresearchdisburse[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchdisburse[".isUseTimeForSearch"] = false;
@@ -1330,8 +1330,7 @@ $tdataresearchdisburse[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1352,7 +1351,7 @@ $tdataresearchdisburse[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation

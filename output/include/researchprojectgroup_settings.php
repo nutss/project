@@ -6,11 +6,11 @@ $tdataresearchprojectgroup[".OwnerID"] = "";
 $tdataresearchprojectgroup[".OriginalTable"] = "researchProjectGroup";
 
 
-$tdataresearchprojectgroup[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdataresearchprojectgroup[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchprojectgroup[".originalPagesByType"] = $tdataresearchprojectgroup[".pagesByType"];
-$tdataresearchprojectgroup[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdataresearchprojectgroup[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchprojectgroup[".originalPages"] = $tdataresearchprojectgroup[".pages"];
-$tdataresearchprojectgroup[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdataresearchprojectgroup[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchprojectgroup[".originalDefaultPages"] = $tdataresearchprojectgroup[".defaultPages"];
 
 //	field labels
@@ -27,16 +27,16 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchprojectgroup["English"] = array();
 	$fieldLabelsresearchprojectgroup["English"]["id"] = "Id";
 	$fieldToolTipsresearchprojectgroup["English"]["id"] = "";
-	$placeHoldersresearchprojectgroup["English"]["id"] = "";
+	$placeHoldersresearchprojectgroup["English"]["id"] = "Id";
 	$fieldLabelsresearchprojectgroup["English"]["researchProjectGroupName"] = "Research Project Group Name";
 	$fieldToolTipsresearchprojectgroup["English"]["researchProjectGroupName"] = "";
-	$placeHoldersresearchprojectgroup["English"]["researchProjectGroupName"] = "";
+	$placeHoldersresearchprojectgroup["English"]["researchProjectGroupName"] = "Research Project Group Name";
 	$fieldLabelsresearchprojectgroup["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchprojectgroup["English"]["entryUserName"] = "";
-	$placeHoldersresearchprojectgroup["English"]["entryUserName"] = "";
+	$placeHoldersresearchprojectgroup["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchprojectgroup["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchprojectgroup["English"]["entryTime"] = "";
-	$placeHoldersresearchprojectgroup["English"]["entryTime"] = "";
+	$placeHoldersresearchprojectgroup["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchprojectgroup["English"]))
 		$tdataresearchprojectgroup[".isUseToolTips"] = true;
 }
@@ -48,16 +48,16 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchprojectgroup["Thai"] = array();
 	$fieldLabelsresearchprojectgroup["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchprojectgroup["Thai"]["id"] = "";
-	$placeHoldersresearchprojectgroup["Thai"]["id"] = "";
+	$placeHoldersresearchprojectgroup["Thai"]["id"] = "ID";
 	$fieldLabelsresearchprojectgroup["Thai"]["researchProjectGroupName"] = "กลุ่มข้อเสนอขอรับทุน";
 	$fieldToolTipsresearchprojectgroup["Thai"]["researchProjectGroupName"] = "";
-	$placeHoldersresearchprojectgroup["Thai"]["researchProjectGroupName"] = "";
+	$placeHoldersresearchprojectgroup["Thai"]["researchProjectGroupName"] = "กลุ่มข้อเสนอขอรับทุน";
 	$fieldLabelsresearchprojectgroup["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchprojectgroup["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchprojectgroup["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchprojectgroup["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchprojectgroup["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchprojectgroup["Thai"]["entryTime"] = "";
-	$placeHoldersresearchprojectgroup["Thai"]["entryTime"] = "";
+	$placeHoldersresearchprojectgroup["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchprojectgroup["Thai"]))
 		$tdataresearchprojectgroup[".isUseToolTips"] = true;
 }
@@ -91,7 +91,7 @@ $tdataresearchprojectgroup[".listAjax"] = false;
 //	temporary
 //$tdataresearchprojectgroup[".listAjax"] = false;
 
-	$tdataresearchprojectgroup[".audit"] = false;
+	$tdataresearchprojectgroup[".audit"] = true;
 
 	$tdataresearchprojectgroup[".locking"] = false;
 
@@ -163,7 +163,7 @@ $tdataresearchprojectgroup[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchprojectgroup[".buttonsAdded"] = false;
 
-$tdataresearchprojectgroup[".addPageEvents"] = false;
+$tdataresearchprojectgroup[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchprojectgroup[".isUseTimeForSearch"] = false;
@@ -745,8 +745,7 @@ $tdataresearchprojectgroup[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -767,7 +766,7 @@ $tdataresearchprojectgroup[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1006,7 +1005,8 @@ $tdataresearchprojectgroup[".sqlquery"] = $queryData_researchprojectgroup;
 
 
 
-$tableEvents["researchProjectGroup"] = new eventsBase;
-$tdataresearchprojectgroup[".hasEvents"] = false;
+include_once(getabspath("include/researchprojectgroup_events.php"));
+$tableEvents["researchProjectGroup"] = new eventclass_researchprojectgroup;
+$tdataresearchprojectgroup[".hasEvents"] = true;
 
 ?>

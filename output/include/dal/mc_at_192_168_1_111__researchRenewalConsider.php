@@ -6,8 +6,11 @@ $dalTableresearchRenewalConsider["researchConsiderNumber"] = array("type"=>200,"
 $dalTableresearchRenewalConsider["processName"] = array("type"=>200,"varname"=>"processName", "name" => "processName");
 $dalTableresearchRenewalConsider["stepName"] = array("type"=>200,"varname"=>"stepName", "name" => "stepName");
 $dalTableresearchRenewalConsider["researchConsiderFile"] = array("type"=>201,"varname"=>"researchConsiderFile", "name" => "researchConsiderFile");
+$dalTableresearchRenewalConsider["researchConsiderFileCheck"] = array("type"=>200,"varname"=>"researchConsiderFileCheck", "name" => "researchConsiderFileCheck");
 $dalTableresearchRenewalConsider["researchRegisterDesc"] = array("type"=>201,"varname"=>"researchRegisterDesc", "name" => "researchRegisterDesc");
+$dalTableresearchRenewalConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchRenewalConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
+$dalTableresearchRenewalConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
 $dalTableresearchRenewalConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchRenewalConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchRenewalConsider["id"]["key"]=true;

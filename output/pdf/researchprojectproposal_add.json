@@ -219,6 +219,9 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel researchProjectProposal researchProjectBankName }","bold":true},{"text":{$researchProjectBankName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel researchProjectProposal researchProjectStatus }","bold":true},{"text":{$researchProjectStatus_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel researchProjectProposal entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				

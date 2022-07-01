@@ -14,6 +14,10 @@
 	// fill list of events
 		$this->events["AfterAdd"]=true;
 
+		$this->events["AfterEdit"]=true;
+
+
+
 
 	}
 
@@ -41,12 +45,237 @@ function AfterAdd(&$values, &$keys, $inline, $pageObject)
 		
 
 		ScholarshipConsiderInsert($values["id"],$values["researchRegisterID"]);
-
+		
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 ;		
 } // function AfterAdd
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
+{
+
+					
+		ScholarshipProposalUpdateStatus($values["id"]);
+
+
+
+
+
+		if ($values["projectStatus"] <> $oldvalues["projectStatus"]){
+
+			if ($values["projectStatus"] == "สิ้นสุดโครงการ"){
+
+				global $dal;
+				$tblresearchScholarshipProposal = $dal->Table("researchScholarshipProposal");
+				$tblresearchScholarshipProposal->Param["id"]=$values["id"];
+				$tblresearchScholarshipProposal->Value["researchProjectEndDate"]=$values["researchOperatingPeriodEndDate"];
+				$tblresearchScholarshipProposal->Update();
+
+			}
+
+		}
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -45,34 +45,57 @@ function AfterSuccessfulLogin($username, $password, &$data, $pageObject)
 {
 
 		
-/*
 		$SQLCommand = "SELECT ";
 		$SQLCommand .= "project_ugmembers.UserName, ";
 		$SQLCommand .= "project_uggroups.GroupID, ";
+		$SQLCommand .= "project_uggroups.typeName, ";
 		$SQLCommand .= "project_uggroups.Label  ";
 		$SQLCommand .= "FROM project_uggroups ";
-		$SQLCommand .= "INNER JOIN project_ugmembers ON project_uggroups.GroupID = project_ugmembers.GroupID ";
-		$SQLCommand .= "WHERE ( project_ugmembers.UserName = '".$_SESSION["UserID"]."') ";
+		$SQLCommand .= "RIGHT JOIN project_ugmembers ON project_uggroups.GroupID = project_ugmembers.GroupID ";
+		$SQLCommand .= "WHERE (project_ugmembers.UserName = '".trim($_SESSION["UserID"])."')";
 		$SQLCommand .= "ORDER BY FIELD(project_uggroups.Label,\"คณะกรรมการบริหารโครงการ\",\"ปลัดฯ\",\"คณะกรรมการ\",\"คณะกลั่นกรอง\",\"เจ้าหน้าที่\") ";
-		$SQLCommand .= "LIMIT 1 ";
+
 
 			$RS1 = CustomQuery($SQLCommand);
-			$data = db_fetch_array($RS1);
+			while ($RS1_DATA = db_fetch_array($RS1)) {
 
-			if ($data["GroupID"]=="-1") {
+				if ($RS1_DATA["GroupID"]=="") {
+					
+					$_SESSION["GroupName"].="'<Admin>'".",";
 
-				$_SESSION["GroupName"]="<Admin>";
-				$pageObject->setProxyValue("GroupName", "<Admin>");
+					$SQLCommand = "SELECT * FROM researchType";	
+				
+						$RS2 = CustomQuery($SQLCommand);
+						while ($RS2_DATA = db_fetch_array($RS2)) {
+								$_SESSION["typeName"].="'".$RS2_DATA["typeName"]."',";
+						}
+
+				}
+
+				elseif ($RS1_DATA["typeName"]=="") {
+					
+
+					$SQLCommand = "SELECT * FROM researchType";	
+				
+						$RS2 = CustomQuery($SQLCommand);
+						while ($RS2_DATA = db_fetch_array($RS2)) {
+								$_SESSION["typeName"].="'".$RS2_DATA["typeName"]."',";
+						}
+
+				}
+
+				else{
+					$_SESSION["GroupName"].="'".$RS1_DATA["Label"]."',";
+					$_SESSION["typeName"].="'".$RS1_DATA["typeName"]."',";
+					//$pageObject->setProxyValue("GroupName", $data["Label"]);
+				}
+
 			}
-			else{
 
-				$_SESSION["GroupName"]=$data["Label"];
-				$pageObject->setProxyValue("GroupName", $data["Label"]);
-			}
+			$_SESSION["GroupName"] = substr($_SESSION["GroupName"],0,-1);
+			$_SESSION["typeName"] = substr($_SESSION["typeName"],0,-1);
 
 
-
-*/
 
 // Place event code here.
 // Use "Add Action" button to add code snippets.

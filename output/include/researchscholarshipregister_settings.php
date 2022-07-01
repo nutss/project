@@ -27,34 +27,34 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchscholarshipregister["English"] = array();
 	$fieldLabelsresearchscholarshipregister["English"]["id"] = "ID";
 	$fieldToolTipsresearchscholarshipregister["English"]["id"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["id"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["id"] = "ID";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterNo"] = "Research Register No";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterNo"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterNo"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterNo"] = "Research Register No";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterName"] = "Research Register Name";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterName"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterName"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterName"] = "Research Register Name";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterStartDate"] = "Research Register Start Date";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterStartDate"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterStartDate"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterStartDate"] = "Research Register Start Date";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterEndDate"] = "Research Register End Date";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterEndDate"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterEndDate"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterEndDate"] = "Research Register End Date";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterFile"] = "Research Register File";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterFile"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterFile"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterFile"] = "Research Register File";
 	$fieldLabelsresearchscholarshipregister["English"]["researchType"] = "Research Type";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchType"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchType"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchType"] = "Research Type";
 	$fieldLabelsresearchscholarshipregister["English"]["researchRegisterStatus"] = "Research Register Status";
 	$fieldToolTipsresearchscholarshipregister["English"]["researchRegisterStatus"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["researchRegisterStatus"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["researchRegisterStatus"] = "Research Register Status";
 	$fieldLabelsresearchscholarshipregister["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchscholarshipregister["English"]["entryUserName"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["entryUserName"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchscholarshipregister["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchscholarshipregister["English"]["entryTime"] = "";
-	$placeHoldersresearchscholarshipregister["English"]["entryTime"] = "";
+	$placeHoldersresearchscholarshipregister["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchscholarshipregister["English"]))
 		$tdataresearchscholarshipregister[".isUseToolTips"] = true;
 }
@@ -66,34 +66,34 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchscholarshipregister["Thai"] = array();
 	$fieldLabelsresearchscholarshipregister["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["id"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["id"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["id"] = "ID";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterNo"] = "รหัสการรับสมัคร";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterNo"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterNo"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterNo"] = "รหัสการรับสมัคร";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterName"] = "ชื่อโครงการ";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterName"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterName"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterName"] = "ชื่อโครงการ";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterStartDate"] = "เริ่มต้นการรับสมัคร";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterStartDate"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterStartDate"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterStartDate"] = "เริ่มต้นการรับสมัคร";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterEndDate"] = "สิ้นสุดการรับสมัคร";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterEndDate"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterEndDate"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterEndDate"] = "สิ้นสุดการรับสมัคร";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterFile"] = "เอกสารโครงการ";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterFile"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterFile"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterFile"] = "เอกสารโครงการ";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchType"] = "ประเภททุน";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchType"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchType"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchType"] = "ประเภททุน";
 	$fieldLabelsresearchscholarshipregister["Thai"]["researchRegisterStatus"] = "สถานะ";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["researchRegisterStatus"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterStatus"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["researchRegisterStatus"] = "สถานะ";
 	$fieldLabelsresearchscholarshipregister["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchscholarshipregister["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchscholarshipregister["Thai"]["entryTime"] = "";
-	$placeHoldersresearchscholarshipregister["Thai"]["entryTime"] = "";
+	$placeHoldersresearchscholarshipregister["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchscholarshipregister["Thai"]))
 		$tdataresearchscholarshipregister[".isUseToolTips"] = true;
 }
@@ -127,7 +127,7 @@ $tdataresearchscholarshipregister[".listAjax"] = false;
 //	temporary
 //$tdataresearchscholarshipregister[".listAjax"] = false;
 
-	$tdataresearchscholarshipregister[".audit"] = false;
+	$tdataresearchscholarshipregister[".audit"] = true;
 
 	$tdataresearchscholarshipregister[".locking"] = false;
 
@@ -199,7 +199,7 @@ $tdataresearchscholarshipregister[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchscholarshipregister[".buttonsAdded"] = false;
 
-$tdataresearchscholarshipregister[".addPageEvents"] = false;
+$tdataresearchscholarshipregister[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchscholarshipregister[".isUseTimeForSearch"] = false;
@@ -334,7 +334,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -349,8 +349,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 	
 		
 	
-		$vdata["NeedEncode"] = true;
-
+	
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1216,7 +1215,8 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "typeName";
 
-	
+				$edata["LookupWhere"] = "typeName IN (:session.typeName)";
+
 
 	
 	$edata["LookupOrderBy"] = "typeNumber";
@@ -1356,7 +1356,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1366,6 +1366,24 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+		$edata["LookupType"] = 0;
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+	
+		$edata["LookupValues"] = array();
+	$edata["LookupValues"][] = "ยังไม่เปิดรับสมัคร";
+	$edata["LookupValues"][] = "เปิดรับสมัคร";
+	$edata["LookupValues"][] = "ปิดรับสมัคร";
+	$edata["LookupValues"][] = "ยกเลิก";
+
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1381,11 +1399,8 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1411,7 +1426,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1485,9 +1500,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 		$vdata["NeedEncode"] = true;
 
 	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
+	
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 
@@ -1642,8 +1655,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1664,7 +1676,7 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1993,7 +2005,22 @@ $tdataresearchscholarshipregister[".sqlquery"] = $queryData_researchscholarshipr
 
 
 
-$tableEvents["researchScholarshipRegister"] = new eventsBase;
-$tdataresearchscholarshipregister[".hasEvents"] = false;
+include_once(getabspath("include/researchscholarshipregister_events.php"));
+$tableEvents["researchScholarshipRegister"] = new eventclass_researchscholarshipregister;
+$tdataresearchscholarshipregister[".hasEvents"] = true;
 
+$query = &$queryData_researchscholarshipregister;
+$table = "researchScholarshipRegister";
+// here goes EVENT_INIT_TABLE event
+		
+
+		if(strpos($_SESSION["GroupName"],"<Admin>") == ""){
+			$query->addWhere("`researchScholarshipRegister`.`researchType` IN (".$_SESSION["typeName"].")");
+		}
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;
+unset($query);
 ?>

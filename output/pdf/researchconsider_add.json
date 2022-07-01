@@ -156,14 +156,6 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{BEGIN mastertable_block}
-			{$showmasterfile}
-		{END mastertable_block},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel researchConsider researchRegisterID }","bold":true},{"text":{$researchRegisterID_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel researchConsider researchConsiderNumber }","bold":true},{"text":{$researchConsiderNumber_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
@@ -179,7 +171,7 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel researchConsider researchRegisterDesc }","bold":true},{"text":{$researchRegisterDesc_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel researchConsider researchConsiderApprove }","bold":true},{"text":{$researchConsiderApprove_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel researchConsider researchConsiderName }","bold":true},{"text":{$researchConsiderName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel researchConsider entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},

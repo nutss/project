@@ -27,16 +27,16 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesadmin_rights["English"] = array();
 	$fieldLabelsadmin_rights["English"]["TableName"] = "Table Name";
 	$fieldToolTipsadmin_rights["English"]["TableName"] = "";
-	$placeHoldersadmin_rights["English"]["TableName"] = "";
+	$placeHoldersadmin_rights["English"]["TableName"] = "Table Name";
 	$fieldLabelsadmin_rights["English"]["GroupID"] = "Group ID";
 	$fieldToolTipsadmin_rights["English"]["GroupID"] = "";
-	$placeHoldersadmin_rights["English"]["GroupID"] = "";
+	$placeHoldersadmin_rights["English"]["GroupID"] = "Group ID";
 	$fieldLabelsadmin_rights["English"]["AccessMask"] = "Access Mask";
 	$fieldToolTipsadmin_rights["English"]["AccessMask"] = "";
-	$placeHoldersadmin_rights["English"]["AccessMask"] = "";
+	$placeHoldersadmin_rights["English"]["AccessMask"] = "Access Mask";
 	$fieldLabelsadmin_rights["English"]["Page"] = "Page";
 	$fieldToolTipsadmin_rights["English"]["Page"] = "";
-	$placeHoldersadmin_rights["English"]["Page"] = "";
+	$placeHoldersadmin_rights["English"]["Page"] = "Page";
 	if (count($fieldToolTipsadmin_rights["English"]))
 		$tdataadmin_rights[".isUseToolTips"] = true;
 }
@@ -48,16 +48,16 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesadmin_rights["Thai"] = array();
 	$fieldLabelsadmin_rights["Thai"]["TableName"] = "Table Name";
 	$fieldToolTipsadmin_rights["Thai"]["TableName"] = "";
-	$placeHoldersadmin_rights["Thai"]["TableName"] = "";
+	$placeHoldersadmin_rights["Thai"]["TableName"] = "Table Name";
 	$fieldLabelsadmin_rights["Thai"]["GroupID"] = "Group ID";
 	$fieldToolTipsadmin_rights["Thai"]["GroupID"] = "";
-	$placeHoldersadmin_rights["Thai"]["GroupID"] = "";
+	$placeHoldersadmin_rights["Thai"]["GroupID"] = "Group ID";
 	$fieldLabelsadmin_rights["Thai"]["AccessMask"] = "Access Mask";
 	$fieldToolTipsadmin_rights["Thai"]["AccessMask"] = "";
-	$placeHoldersadmin_rights["Thai"]["AccessMask"] = "";
+	$placeHoldersadmin_rights["Thai"]["AccessMask"] = "Access Mask";
 	$fieldLabelsadmin_rights["Thai"]["Page"] = "Page";
 	$fieldToolTipsadmin_rights["Thai"]["Page"] = "";
-	$placeHoldersadmin_rights["Thai"]["Page"] = "";
+	$placeHoldersadmin_rights["Thai"]["Page"] = "Page";
 	if (count($fieldToolTipsadmin_rights["Thai"]))
 		$tdataadmin_rights[".isUseToolTips"] = true;
 }
@@ -91,7 +91,7 @@ $tdataadmin_rights[".listAjax"] = false;
 //	temporary
 //$tdataadmin_rights[".listAjax"] = false;
 
-	$tdataadmin_rights[".audit"] = false;
+	$tdataadmin_rights[".audit"] = true;
 
 	$tdataadmin_rights[".locking"] = false;
 

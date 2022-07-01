@@ -920,6 +920,148 @@ function CustomExpression($value, $data, $field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+				if($table=="researchScholarshipRegister" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"researchscholarshipproposal_list.php?q=(researchRegisterID~equals~".$data["id"].")\"> ";
+$value .= "</a>";;
+		return $value;
+	}
+				if($table=="researchScholarshipProposal" && $field=="researchProjectStatus")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectStatus"]);
+
+$value  = $data["researchProjectStatus"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="researchProjectProposal" && $field=="researchProjectStatus")
+	{
+		$researchProjectStatusValues = explode(" ",$data["researchProjectStatus"]);
+
+$value  = $data["researchProjectStatus"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="researchProjectRegister" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"researchprojectproposal_list.php?q=(researchRegisterID~equals~".$data["id"].")\"> ";
+$value .= "</a>";;
+		return $value;
+	}
+				if($table=="missionFollow" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"missionassignmentview_list.php?q=(missionFollowID~equals~".$data["id"].")\"> ";
+$value .= "</a>";;
+		return $value;
+	}
+				if($table=="missionFollow" && $field=="missionFollowStatus")
+	{
+		// Put your code here.
+
+$missionFollowStatusValues = explode(" ",$data["missionFollowStatus"]);
+
+$value  = $data["missionFollowStatus"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$missionFollowStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="project_audit" && $field=="id")
+	{
+			if ($data["action"] == "delete") {
+
+		$value  = "<a type=\"button\" title=\"กู้คืนค่า\" class=\"btn-link glyphicon glyphicon-repeat\" ";
+		$value .= "onclick=\"return confirm('คุณต้องการคืนค่ารายการที่ถูกลบไป ใช่ไหม ?');\"  ";
+		$value .= "href=\"researchscholarshipproposal_list.php?q=(researchRegisterID~equals~".$data["id"].")\"> ";
+		$value .= "</a>";
+
+	}
+	else{
+
+		$value  = "";
+
+	};
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectAppointmentStatus"]);
+
+$value  = $data["researchProjectAppointmentStatus"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectDisburseStatus"]);
+
+$value  = $data["researchProjectDisburseStatus"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="UseTime")
+	{
+		// Put your code here.
+
+		$value = abs($data["UseTime"]);
+		$value .= " วัน";
+
+;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="overdueTime")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["overdueTime"]);
+
+$value  = $data["overdueTime"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";
+
+
+if ($data["overdueTime"] > 0){
+		
+		$value  = "เกินกำหนดมาแล้ว<BR>";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน";
+
+}
+
+elseif ($data["overdueTime"] == 0){
+		
+		$value  = "ครบกำหนด<BR>";
+
+
+}
+
+else{
+
+		$value  = "อีก ";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน <BR>จะครบกำหนด";
+
+};
+		return $value;
+	}
 	return $value;
 }
 
@@ -931,17 +1073,17 @@ function CustomExpression($value, $data, $field, $ptype, $table="")
 function fileCustomExpression($file, $data, $field, $ptype, $table )
 {
 	$value = "";
-				if($table=="researchConsider" && $field=="researchConsiderFile")
-	{
-		;
-		return $value;
-	}
 				if($table=="researchScholarshipRegister" && $field=="researchRegisterFile")
 	{
 		;
 		return $value;
 	}
 				if($table=="researchScholarshipConsider" && $field=="researchConsiderFile")
+	{
+		;
+		return $value;
+	}
+				if($table=="researchProjectProposal" && $field=="contractSignFile")
 	{
 		;
 		return $value;
@@ -962,6 +1104,16 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		return $value;
 	}
 				if($table=="researchProjectRegister" && $field=="researchRegisterFile")
+	{
+		;
+		return $value;
+	}
+				if($table=="missionAssignment" && $field=="missionAssignmentFile")
+	{
+		;
+		return $value;
+	}
+				if($table=="researchConsiderView" && $field=="researchConsiderFile")
 	{
 		;
 		return $value;
@@ -1006,27 +1158,11 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="consider" && $field=="entryUserName")
-	{
-		return $_SESSION["UserName"];
-	}
-				if($table=="consider" && $field=="entryTime")
-	{
-		return strftime("%Y-%m-%d %H:%M:%S");
-	}
 				if($table=="researchType" && $field=="entryUserName")
 	{
 		return $_SESSION["UserName"];
 	}
 				if($table=="researchType" && $field=="entryTime")
-	{
-		return strftime("%Y-%m-%d %H:%M:%S");
-	}
-				if($table=="researchProjectGroup" && $field=="entryUserName")
-	{
-		return $_SESSION["UserName"];
-	}
-				if($table=="researchProjectGroup" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1071,6 +1207,14 @@ function GetDefaultValue($field, $ptype, $table="")
 		return $_SESSION["UserName"];
 	}
 				if($table=="researchRenewal" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="admin_users" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="admin_users" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1190,6 +1334,54 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
+				if($table=="missionFollow" && $field=="missionFollowStartDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="missionFollow" && $field=="missionFollowEndDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="missionFollow" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="missionFollow" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="missionAssignment" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="missionAssignment" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="optionGroup" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="optionGroup" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="optionSub" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="optionSub" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchConsiderView" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchConsiderView" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
 	return "";
 }
 
@@ -1217,27 +1409,11 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="consider" && $field=="entryUserName")
-	{
-		return $_SESSION["UserName"];
-	}
-				if($table=="consider" && $field=="entryTime")
-	{
-		return strftime("%Y-%m-%d %H:%M:%S");
-	}
 				if($table=="researchType" && $field=="entryUserName")
 	{
 		return $_SESSION["UserName"];
 	}
 				if($table=="researchType" && $field=="entryTime")
-	{
-		return strftime("%Y-%m-%d %H:%M:%S");
-	}
-				if($table=="researchProjectGroup" && $field=="entryUserName")
-	{
-		return $_SESSION["UserName"];
-	}
-				if($table=="researchProjectGroup" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1270,6 +1446,14 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return $_SESSION["UserName"];
 	}
 				if($table=="researchRenewal" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="admin_users" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="admin_users" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1350,6 +1534,46 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return $_SESSION["UserName"];
 	}
 				if($table=="researchProjectRegister" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="missionFollow" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="missionFollow" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="missionAssignment" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="missionAssignment" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="optionGroup" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="optionGroup" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="optionSub" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="optionSub" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchConsiderView" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchConsiderView" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}

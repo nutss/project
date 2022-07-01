@@ -162,9 +162,6 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
-				
-				
 			{"text":{$researchConsiderNumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
 				
 				
@@ -183,13 +180,19 @@ pdfDocument = {
 			{"text":{$researchConsiderName_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
 				
 				
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_integrated_search_field10}"},
+				
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
 				
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
 				
 				
-			{"text":{$researchAppointmentID_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
+			{"text":{$researchConsiderFileCheck_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+				
+				
+			{"text":{$researchRegisterDescCheck_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
 				
 		  ],
   "border": [ false, false, false, false ],

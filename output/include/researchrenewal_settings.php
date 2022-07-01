@@ -27,25 +27,25 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchrenewal["English"] = array();
 	$fieldLabelsresearchrenewal["English"]["id"] = "ID";
 	$fieldToolTipsresearchrenewal["English"]["id"] = "";
-	$placeHoldersresearchrenewal["English"]["id"] = "";
+	$placeHoldersresearchrenewal["English"]["id"] = "ID";
 	$fieldLabelsresearchrenewal["English"]["researchProjectID"] = "PROJECT_ID";
 	$fieldToolTipsresearchrenewal["English"]["researchProjectID"] = "";
-	$placeHoldersresearchrenewal["English"]["researchProjectID"] = "";
+	$placeHoldersresearchrenewal["English"]["researchProjectID"] = "PROJECT_ID";
 	$fieldLabelsresearchrenewal["English"]["researchRenewalNo"] = "Research Renewal No";
 	$fieldToolTipsresearchrenewal["English"]["researchRenewalNo"] = "";
-	$placeHoldersresearchrenewal["English"]["researchRenewalNo"] = "";
+	$placeHoldersresearchrenewal["English"]["researchRenewalNo"] = "Research Renewal No";
 	$fieldLabelsresearchrenewal["English"]["researchRenewalPeriod"] = "Research Renewal Period";
 	$fieldToolTipsresearchrenewal["English"]["researchRenewalPeriod"] = "";
-	$placeHoldersresearchrenewal["English"]["researchRenewalPeriod"] = "";
+	$placeHoldersresearchrenewal["English"]["researchRenewalPeriod"] = "Research Renewal Period";
 	$fieldLabelsresearchrenewal["English"]["researchAppointmentDay"] = "Research Appointment Day";
 	$fieldToolTipsresearchrenewal["English"]["researchAppointmentDay"] = "";
-	$placeHoldersresearchrenewal["English"]["researchAppointmentDay"] = "";
+	$placeHoldersresearchrenewal["English"]["researchAppointmentDay"] = "Research Appointment Day";
 	$fieldLabelsresearchrenewal["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchrenewal["English"]["entryUserName"] = "";
-	$placeHoldersresearchrenewal["English"]["entryUserName"] = "";
+	$placeHoldersresearchrenewal["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchrenewal["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchrenewal["English"]["entryTime"] = "";
-	$placeHoldersresearchrenewal["English"]["entryTime"] = "";
+	$placeHoldersresearchrenewal["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsresearchrenewal["English"]))
 		$tdataresearchrenewal[".isUseToolTips"] = true;
 }
@@ -57,25 +57,25 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchrenewal["Thai"] = array();
 	$fieldLabelsresearchrenewal["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchrenewal["Thai"]["id"] = "";
-	$placeHoldersresearchrenewal["Thai"]["id"] = "";
+	$placeHoldersresearchrenewal["Thai"]["id"] = "ID";
 	$fieldLabelsresearchrenewal["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldToolTipsresearchrenewal["Thai"]["researchProjectID"] = "";
-	$placeHoldersresearchrenewal["Thai"]["researchProjectID"] = "";
+	$placeHoldersresearchrenewal["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldLabelsresearchrenewal["Thai"]["researchRenewalNo"] = "ครั้งที่";
 	$fieldToolTipsresearchrenewal["Thai"]["researchRenewalNo"] = "";
-	$placeHoldersresearchrenewal["Thai"]["researchRenewalNo"] = "";
+	$placeHoldersresearchrenewal["Thai"]["researchRenewalNo"] = "ครั้งที่";
 	$fieldLabelsresearchrenewal["Thai"]["researchRenewalPeriod"] = "งวดที่";
 	$fieldToolTipsresearchrenewal["Thai"]["researchRenewalPeriod"] = "";
-	$placeHoldersresearchrenewal["Thai"]["researchRenewalPeriod"] = "";
+	$placeHoldersresearchrenewal["Thai"]["researchRenewalPeriod"] = "งวดที่";
 	$fieldLabelsresearchrenewal["Thai"]["researchAppointmentDay"] = "จำนวนวัน";
 	$fieldToolTipsresearchrenewal["Thai"]["researchAppointmentDay"] = "";
-	$placeHoldersresearchrenewal["Thai"]["researchAppointmentDay"] = "";
+	$placeHoldersresearchrenewal["Thai"]["researchAppointmentDay"] = "จำนวนวัน";
 	$fieldLabelsresearchrenewal["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchrenewal["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchrenewal["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchrenewal["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchrenewal["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchrenewal["Thai"]["entryTime"] = "";
-	$placeHoldersresearchrenewal["Thai"]["entryTime"] = "";
+	$placeHoldersresearchrenewal["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsresearchrenewal["Thai"]))
 		$tdataresearchrenewal[".isUseToolTips"] = true;
 }
@@ -109,7 +109,7 @@ $tdataresearchrenewal[".listAjax"] = false;
 //	temporary
 //$tdataresearchrenewal[".listAjax"] = false;
 
-	$tdataresearchrenewal[".audit"] = false;
+	$tdataresearchrenewal[".audit"] = true;
 
 	$tdataresearchrenewal[".locking"] = false;
 
@@ -1182,8 +1182,7 @@ $tdataresearchrenewal[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1204,7 +1203,7 @@ $tdataresearchrenewal[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation

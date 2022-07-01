@@ -88,6 +88,9 @@ pdfDocument = {
 										{BEGIN col_grid_9}
 					"%",
 					{END col_grid_9}
+										{BEGIN col_grid_10}
+					"%",
+					{END col_grid_10}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -129,30 +132,7 @@ pdfDocument = {
 				
 				[
 																{
-	cellId: 'c1',
-	col:0,
-	row:0,
-		
-		
-	//	static colspan/rowspan
-		
-			
-	
-	
-			"text": [
-		
-				
-			{"text":"","hidden":"{$item_hide_breadcrumb}"},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-  },
-
-											],
-						[
-																{
-	cellId: 'c3',
+	cellId: 'c2',
 	col:0,
 	row:0,
 		
@@ -211,13 +191,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"text":"","hidden":"{$item_hide_add}"},
-				
-				
-			{"text":"","hidden":"{$item_hide_delete}"},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
   },
@@ -333,7 +308,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchProjectProposal researchRegisterID }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchProjectProposal researchRegisterID }","hidden":"{$item_hide_simple_grid_field3}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -359,11 +334,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchProjectProposal researchProjectNo }","hidden":"{$item_hide_simple_grid_field3}","bold":true},
+			{"text":"{$jslabel researchProjectProposal researchProjectStatus }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNo_align}',
+              "alignment": '{$researchProjectStatus_align}',
   },
 
 {END cellblock_grid_headcell_field1}
@@ -385,11 +360,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchProjectProposal researchProjectNameThai }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel researchProjectProposal researchProjectNo }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNameThai_align}',
+              "alignment": '{$researchProjectNo_align}',
   },
 
 {END cellblock_grid_headcell_field2}
@@ -411,11 +386,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchProjectProposal researchProjectNameEng }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
+			{"text":"{$jslabel researchProjectProposal researchProjectNameThai }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectNameEng_align}',
+              "alignment": '{$researchProjectNameThai_align}',
   },
 
 {END cellblock_grid_headcell_field3}
@@ -437,11 +412,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchProjectProposal researchProjectRequestedBudget }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
+			{"text":"{$jslabel researchProjectProposal researchProjectNameEng }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectRequestedBudget_align}',
+              "alignment": '{$researchProjectNameEng_align}',
   },
 
 {END cellblock_grid_headcell_field4}
@@ -489,6 +464,32 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"text":"{$jslabel researchProjectProposal researchProjectRequestedBudget }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchProjectRequestedBudget_align}',
+  },
+
+{END cellblock_grid_headcell_field6}
+																							{BEGIN cellblock_grid_headcell_field7}
+{
+	cellId: 'headcell_field7',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
 			{"text":"{$jslabel researchProjectProposal entryUserName }","hidden":"{$item_hide_simple_grid_field24}","bold":true},
 				
 		  ],
@@ -496,10 +497,10 @@ pdfDocument = {
               "alignment": '{$entryUserName_align}',
   },
 
-{END cellblock_grid_headcell_field6}
-																							{BEGIN cellblock_grid_headcell_field7}
+{END cellblock_grid_headcell_field7}
+																							{BEGIN cellblock_grid_headcell_field8}
 {
-	cellId: 'headcell_field7',
+	cellId: 'headcell_field8',
 	col:0,
 	row:0,
 			style: 'headcell',
@@ -522,7 +523,7 @@ pdfDocument = {
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_headcell_field7}
+{END cellblock_grid_headcell_field8}
 											],
 				{END row_grid_0}
 		
@@ -628,6 +629,32 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"text":{$researchProjectStatus_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchProjectStatus_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+																							{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
 			{"text":{$researchProjectNo_pdfvalue},"hidden":"{$item_hide_simple_grid_field2}"},
 				
 		  ],
@@ -635,10 +662,10 @@ pdfDocument = {
               "alignment": '{$researchProjectNo_align}',
   },
 
-{END cellblock_grid_cell_field1}
-																							{BEGIN cellblock_grid_cell_field2}
+{END cellblock_grid_cell_field2}
+																							{BEGIN cellblock_grid_cell_field3}
 {
-	cellId: 'cell_field2',
+	cellId: 'cell_field3',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -661,10 +688,10 @@ pdfDocument = {
               "alignment": '{$researchProjectNameThai_align}',
   },
 
-{END cellblock_grid_cell_field2}
-																							{BEGIN cellblock_grid_cell_field3}
+{END cellblock_grid_cell_field3}
+																							{BEGIN cellblock_grid_cell_field4}
 {
-	cellId: 'cell_field3',
+	cellId: 'cell_field4',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -685,32 +712,6 @@ pdfDocument = {
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$researchProjectNameEng_align}',
-  },
-
-{END cellblock_grid_cell_field3}
-																							{BEGIN cellblock_grid_cell_field4}
-{
-	cellId: 'cell_field4',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$researchProjectRequestedBudget_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchProjectRequestedBudget_align}',
   },
 
 {END cellblock_grid_cell_field4}
@@ -758,6 +759,32 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"text":{$researchProjectRequestedBudget_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchProjectRequestedBudget_align}',
+  },
+
+{END cellblock_grid_cell_field6}
+																							{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_simple_grid_field22}"},
 				
 		  ],
@@ -765,10 +792,10 @@ pdfDocument = {
               "alignment": '{$entryUserName_align}',
   },
 
-{END cellblock_grid_cell_field6}
-																							{BEGIN cellblock_grid_cell_field7}
+{END cellblock_grid_cell_field7}
+																							{BEGIN cellblock_grid_cell_field8}
 {
-	cellId: 'cell_field7',
+	cellId: 'cell_field8',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -791,7 +818,7 @@ pdfDocument = {
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_cell_field7}
+{END cellblock_grid_cell_field8}
 											],
 				{END row_grid_1}
 		
@@ -1041,6 +1068,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field7}
+																							{BEGIN cellblock_grid_footcell_field8}
+{
+	cellId: 'footcell_field8',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field8}
 											],
 				{END row_grid_2}
 		

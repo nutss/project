@@ -27,34 +27,34 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesadmin_members["English"] = array();
 	$fieldLabelsadmin_members["English"]["id"] = "Id";
 	$fieldToolTipsadmin_members["English"]["id"] = "";
-	$placeHoldersadmin_members["English"]["id"] = "";
+	$placeHoldersadmin_members["English"]["id"] = "Id";
 	$fieldLabelsadmin_members["English"]["staffFullName"] = "Staff Full Name";
 	$fieldToolTipsadmin_members["English"]["staffFullName"] = "";
-	$placeHoldersadmin_members["English"]["staffFullName"] = "";
+	$placeHoldersadmin_members["English"]["staffFullName"] = "Staff Full Name";
 	$fieldLabelsadmin_members["English"]["staffUsername"] = "Staff Username";
 	$fieldToolTipsadmin_members["English"]["staffUsername"] = "";
-	$placeHoldersadmin_members["English"]["staffUsername"] = "";
+	$placeHoldersadmin_members["English"]["staffUsername"] = "Staff Username";
 	$fieldLabelsadmin_members["English"]["staffPassword"] = "Staff Password";
 	$fieldToolTipsadmin_members["English"]["staffPassword"] = "";
-	$placeHoldersadmin_members["English"]["staffPassword"] = "";
+	$placeHoldersadmin_members["English"]["staffPassword"] = "Staff Password";
 	$fieldLabelsadmin_members["English"]["staffEmail"] = "Staff Email";
 	$fieldToolTipsadmin_members["English"]["staffEmail"] = "";
-	$placeHoldersadmin_members["English"]["staffEmail"] = "";
+	$placeHoldersadmin_members["English"]["staffEmail"] = "Staff Email";
 	$fieldLabelsadmin_members["English"]["staffStatus"] = "Staff Status";
 	$fieldToolTipsadmin_members["English"]["staffStatus"] = "";
-	$placeHoldersadmin_members["English"]["staffStatus"] = "";
+	$placeHoldersadmin_members["English"]["staffStatus"] = "Staff Status";
 	$fieldLabelsadmin_members["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldToolTipsadmin_members["English"]["staffEmailNotify"] = "";
-	$placeHoldersadmin_members["English"]["staffEmailNotify"] = "";
+	$placeHoldersadmin_members["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldLabelsadmin_members["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsadmin_members["English"]["entryUserName"] = "";
-	$placeHoldersadmin_members["English"]["entryUserName"] = "";
+	$placeHoldersadmin_members["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsadmin_members["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsadmin_members["English"]["entryTime"] = "";
-	$placeHoldersadmin_members["English"]["entryTime"] = "";
+	$placeHoldersadmin_members["English"]["entryTime"] = "Entry Time";
 	$fieldLabelsadmin_members["English"]["apikey"] = "Apikey";
 	$fieldToolTipsadmin_members["English"]["apikey"] = "";
-	$placeHoldersadmin_members["English"]["apikey"] = "";
+	$placeHoldersadmin_members["English"]["apikey"] = "Apikey";
 	if (count($fieldToolTipsadmin_members["English"]))
 		$tdataadmin_members[".isUseToolTips"] = true;
 }
@@ -66,34 +66,34 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesadmin_members["Thai"] = array();
 	$fieldLabelsadmin_members["Thai"]["id"] = "Id";
 	$fieldToolTipsadmin_members["Thai"]["id"] = "";
-	$placeHoldersadmin_members["Thai"]["id"] = "";
+	$placeHoldersadmin_members["Thai"]["id"] = "Id";
 	$fieldLabelsadmin_members["Thai"]["staffFullName"] = "Staff Full Name";
 	$fieldToolTipsadmin_members["Thai"]["staffFullName"] = "";
-	$placeHoldersadmin_members["Thai"]["staffFullName"] = "";
+	$placeHoldersadmin_members["Thai"]["staffFullName"] = "Staff Full Name";
 	$fieldLabelsadmin_members["Thai"]["staffUsername"] = "Staff Username";
 	$fieldToolTipsadmin_members["Thai"]["staffUsername"] = "";
-	$placeHoldersadmin_members["Thai"]["staffUsername"] = "";
+	$placeHoldersadmin_members["Thai"]["staffUsername"] = "Staff Username";
 	$fieldLabelsadmin_members["Thai"]["staffPassword"] = "Staff Password";
 	$fieldToolTipsadmin_members["Thai"]["staffPassword"] = "";
-	$placeHoldersadmin_members["Thai"]["staffPassword"] = "";
+	$placeHoldersadmin_members["Thai"]["staffPassword"] = "Staff Password";
 	$fieldLabelsadmin_members["Thai"]["staffEmail"] = "Staff Email";
 	$fieldToolTipsadmin_members["Thai"]["staffEmail"] = "";
-	$placeHoldersadmin_members["Thai"]["staffEmail"] = "";
+	$placeHoldersadmin_members["Thai"]["staffEmail"] = "Staff Email";
 	$fieldLabelsadmin_members["Thai"]["staffStatus"] = "Staff Status";
 	$fieldToolTipsadmin_members["Thai"]["staffStatus"] = "";
-	$placeHoldersadmin_members["Thai"]["staffStatus"] = "";
+	$placeHoldersadmin_members["Thai"]["staffStatus"] = "Staff Status";
 	$fieldLabelsadmin_members["Thai"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldToolTipsadmin_members["Thai"]["staffEmailNotify"] = "";
-	$placeHoldersadmin_members["Thai"]["staffEmailNotify"] = "";
+	$placeHoldersadmin_members["Thai"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldLabelsadmin_members["Thai"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsadmin_members["Thai"]["entryUserName"] = "";
-	$placeHoldersadmin_members["Thai"]["entryUserName"] = "";
+	$placeHoldersadmin_members["Thai"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsadmin_members["Thai"]["entryTime"] = "Entry Time";
 	$fieldToolTipsadmin_members["Thai"]["entryTime"] = "";
-	$placeHoldersadmin_members["Thai"]["entryTime"] = "";
+	$placeHoldersadmin_members["Thai"]["entryTime"] = "Entry Time";
 	$fieldLabelsadmin_members["Thai"]["apikey"] = "Apikey";
 	$fieldToolTipsadmin_members["Thai"]["apikey"] = "";
-	$placeHoldersadmin_members["Thai"]["apikey"] = "";
+	$placeHoldersadmin_members["Thai"]["apikey"] = "Apikey";
 	if (count($fieldToolTipsadmin_members["Thai"]))
 		$tdataadmin_members[".isUseToolTips"] = true;
 }
@@ -127,7 +127,7 @@ $tdataadmin_members[".listAjax"] = false;
 //	temporary
 //$tdataadmin_members[".listAjax"] = false;
 
-	$tdataadmin_members[".audit"] = false;
+	$tdataadmin_members[".audit"] = true;
 
 	$tdataadmin_members[".locking"] = false;
 

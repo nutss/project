@@ -230,7 +230,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider researchConsiderNumber }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -360,11 +360,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider researchConsiderName }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider researchConsiderValue }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_headcell_field5}
@@ -386,7 +386,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider entryUserName }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider entryUserName }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -412,7 +412,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipConsider entryTime }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel researchScholarshipConsider entryTime }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -577,11 +577,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$researchConsiderName_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchConsiderName_align}',
+              "alignment": '{$researchConsiderValue_align}',
   },
 
 {END cellblock_grid_cell_field5}

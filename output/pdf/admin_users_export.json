@@ -119,9 +119,6 @@ pdfDocument = {
 			{"text":{$staffEmail_pdfvalue},"hidden":"{$item_hide_export_field4}"},
 				
 				
-			{"text":{$staffStatus_pdfvalue},"hidden":"{$item_hide_export_field5}"},
-				
-				
 			{"text":{$staffEmailNotify_pdfvalue},"hidden":"{$item_hide_export_field6}"},
 				
 				
@@ -131,7 +128,7 @@ pdfDocument = {
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_export_field8}"},
 				
 				
-			{"text":{$apikey_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+			{"text":{$staffStatus_pdfvalue},"hidden":"{$item_hide_export_field5}"},
 				
 		  ],
   "border": [ false, false, false, false ],

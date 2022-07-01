@@ -123,30 +123,7 @@ pdfDocument = {
 				
 				[
 																{
-	cellId: 'c1',
-	col:0,
-	row:0,
-		
-		
-	//	static colspan/rowspan
-		
-			
-	
-	
-			"text": [
-		
-				
-			{"text":"","hidden":"{$item_hide_breadcrumb}"},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-  },
-
-											],
-						[
-																{
-	cellId: 'c3',
+	cellId: 'c2',
 	col:0,
 	row:0,
 		
@@ -306,10 +283,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"text":"","hidden":"{$item_hide_grid_checkbox_head}"},
-				
-		  ],
+				'',
+	  ],
   "border": [ true, true, true, true ],
               "alignment": 'left',
   },

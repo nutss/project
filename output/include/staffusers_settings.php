@@ -27,31 +27,31 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesstaffusers["English"] = array();
 	$fieldLabelsstaffusers["English"]["id"] = "Id";
 	$fieldToolTipsstaffusers["English"]["id"] = "";
-	$placeHoldersstaffusers["English"]["id"] = "";
+	$placeHoldersstaffusers["English"]["id"] = "Id";
 	$fieldLabelsstaffusers["English"]["staffFullName"] = "Staff Full Name";
 	$fieldToolTipsstaffusers["English"]["staffFullName"] = "";
-	$placeHoldersstaffusers["English"]["staffFullName"] = "";
+	$placeHoldersstaffusers["English"]["staffFullName"] = "Staff Full Name";
 	$fieldLabelsstaffusers["English"]["staffUsername"] = "Staff Username";
 	$fieldToolTipsstaffusers["English"]["staffUsername"] = "";
-	$placeHoldersstaffusers["English"]["staffUsername"] = "";
+	$placeHoldersstaffusers["English"]["staffUsername"] = "Staff Username";
 	$fieldLabelsstaffusers["English"]["staffPassword"] = "Staff Password";
 	$fieldToolTipsstaffusers["English"]["staffPassword"] = "";
-	$placeHoldersstaffusers["English"]["staffPassword"] = "";
+	$placeHoldersstaffusers["English"]["staffPassword"] = "Staff Password";
 	$fieldLabelsstaffusers["English"]["staffEmail"] = "Staff Email";
 	$fieldToolTipsstaffusers["English"]["staffEmail"] = "";
-	$placeHoldersstaffusers["English"]["staffEmail"] = "";
+	$placeHoldersstaffusers["English"]["staffEmail"] = "Staff Email";
 	$fieldLabelsstaffusers["English"]["staffStatus"] = "Staff Status";
 	$fieldToolTipsstaffusers["English"]["staffStatus"] = "";
-	$placeHoldersstaffusers["English"]["staffStatus"] = "";
+	$placeHoldersstaffusers["English"]["staffStatus"] = "Staff Status";
 	$fieldLabelsstaffusers["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldToolTipsstaffusers["English"]["staffEmailNotify"] = "";
-	$placeHoldersstaffusers["English"]["staffEmailNotify"] = "";
+	$placeHoldersstaffusers["English"]["staffEmailNotify"] = "Staff Email Notify";
 	$fieldLabelsstaffusers["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsstaffusers["English"]["entryUserName"] = "";
-	$placeHoldersstaffusers["English"]["entryUserName"] = "";
+	$placeHoldersstaffusers["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsstaffusers["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsstaffusers["English"]["entryTime"] = "";
-	$placeHoldersstaffusers["English"]["entryTime"] = "";
+	$placeHoldersstaffusers["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsstaffusers["English"]))
 		$tdatastaffusers[".isUseToolTips"] = true;
 }
@@ -63,31 +63,31 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesstaffusers["Thai"] = array();
 	$fieldLabelsstaffusers["Thai"]["id"] = "Id";
 	$fieldToolTipsstaffusers["Thai"]["id"] = "";
-	$placeHoldersstaffusers["Thai"]["id"] = "";
+	$placeHoldersstaffusers["Thai"]["id"] = "Id";
 	$fieldLabelsstaffusers["Thai"]["staffFullName"] = "ชื่อ";
 	$fieldToolTipsstaffusers["Thai"]["staffFullName"] = "";
-	$placeHoldersstaffusers["Thai"]["staffFullName"] = "";
-	$fieldLabelsstaffusers["Thai"]["staffUsername"] = "รหัสผู้ใช้งาน";
+	$placeHoldersstaffusers["Thai"]["staffFullName"] = "ชื่อ";
+	$fieldLabelsstaffusers["Thai"]["staffUsername"] = "Username";
 	$fieldToolTipsstaffusers["Thai"]["staffUsername"] = "";
-	$placeHoldersstaffusers["Thai"]["staffUsername"] = "";
+	$placeHoldersstaffusers["Thai"]["staffUsername"] = "รหัสผู้ใช้งาน";
 	$fieldLabelsstaffusers["Thai"]["staffPassword"] = "รหัสผ่าน";
 	$fieldToolTipsstaffusers["Thai"]["staffPassword"] = "";
-	$placeHoldersstaffusers["Thai"]["staffPassword"] = "";
-	$fieldLabelsstaffusers["Thai"]["staffEmail"] = "แจ้งเตือน E-Mail";
+	$placeHoldersstaffusers["Thai"]["staffPassword"] = "รหัสผ่าน";
+	$fieldLabelsstaffusers["Thai"]["staffEmail"] = "E-Mail";
 	$fieldToolTipsstaffusers["Thai"]["staffEmail"] = "";
-	$placeHoldersstaffusers["Thai"]["staffEmail"] = "";
+	$placeHoldersstaffusers["Thai"]["staffEmail"] = "แจ้งเตือน E-Mail";
 	$fieldLabelsstaffusers["Thai"]["staffStatus"] = "สถานะ";
 	$fieldToolTipsstaffusers["Thai"]["staffStatus"] = "";
-	$placeHoldersstaffusers["Thai"]["staffStatus"] = "";
+	$placeHoldersstaffusers["Thai"]["staffStatus"] = "สถานะ";
 	$fieldLabelsstaffusers["Thai"]["staffEmailNotify"] = "แจ้งเตือน E-Mail";
 	$fieldToolTipsstaffusers["Thai"]["staffEmailNotify"] = "";
-	$placeHoldersstaffusers["Thai"]["staffEmailNotify"] = "";
+	$placeHoldersstaffusers["Thai"]["staffEmailNotify"] = "แจ้งเตือน E-Mail";
 	$fieldLabelsstaffusers["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsstaffusers["Thai"]["entryUserName"] = "";
-	$placeHoldersstaffusers["Thai"]["entryUserName"] = "";
+	$placeHoldersstaffusers["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsstaffusers["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsstaffusers["Thai"]["entryTime"] = "";
-	$placeHoldersstaffusers["Thai"]["entryTime"] = "";
+	$placeHoldersstaffusers["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsstaffusers["Thai"]))
 		$tdatastaffusers[".isUseToolTips"] = true;
 }
@@ -121,7 +121,7 @@ $tdatastaffusers[".listAjax"] = false;
 //	temporary
 //$tdatastaffusers[".listAjax"] = false;
 
-	$tdatastaffusers[".audit"] = false;
+	$tdatastaffusers[".audit"] = true;
 
 	$tdatastaffusers[".locking"] = false;
 
@@ -193,7 +193,7 @@ $tdatastaffusers[".ajaxCodeSnippetAdded"] = false;
 
 $tdatastaffusers[".buttonsAdded"] = false;
 
-$tdatastaffusers[".addPageEvents"] = false;
+$tdatastaffusers[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdatastaffusers[".isUseTimeForSearch"] = false;
@@ -1024,7 +1024,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Checkbox");
+	$vdata = array("ViewFormat" => "");
 
 	
 	
@@ -1039,7 +1039,8 @@ $tdatastaffusers[".hideMobileList"] = array();
 	
 		
 	
-	
+		$vdata["NeedEncode"] = true;
+
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1050,7 +1051,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Checkbox");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1060,6 +1061,35 @@ $tdatastaffusers[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "statusValue";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'staffStatus'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1158,7 +1188,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Checkbox");
+	$vdata = array("ViewFormat" => "");
 
 	
 	
@@ -1173,7 +1203,8 @@ $tdatastaffusers[".hideMobileList"] = array();
 	
 		
 	
-	
+		$vdata["NeedEncode"] = true;
+
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1184,7 +1215,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Checkbox");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1194,6 +1225,35 @@ $tdatastaffusers[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "statusType";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "statusValue";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "statusName";
+
+				$edata["LookupWhere"] = "statusType = 'staffEmailNotify'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1467,8 +1527,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1489,7 +1548,7 @@ $tdatastaffusers[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 					//	End validation
@@ -1804,7 +1863,8 @@ $tdatastaffusers[".sqlquery"] = $queryData_staffusers;
 
 
 
-$tableEvents["staffUsers"] = new eventsBase;
-$tdatastaffusers[".hasEvents"] = false;
+include_once(getabspath("include/staffusers_events.php"));
+$tableEvents["staffUsers"] = new eventclass_staffusers;
+$tdatastaffusers[".hasEvents"] = true;
 
 ?>

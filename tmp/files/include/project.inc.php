@@ -56,9 +56,12 @@ function Mail2ProjectAlert($MailSettings,$Project) {
 function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 
 
+	$ChoiceValue = array("true", "false");
+
 		$SQLCommand = "SELECT * FROM researchScholarshipRegister WHERE (id = ".$REGISTER_ID.")";
 	
 		$RS1 = CustomQuery($SQLCommand);
+
 		if ($RS1_DATA = db_fetch_array($RS1)) {
 
 
@@ -81,7 +84,9 @@ function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 					$SQLCommand .= "processName,";
 					$SQLCommand .= "stepName,";
 					$SQLCommand .= "researchConsiderFile,";
+					$SQLCommand .= "researchConsiderFileCheck,";
 					$SQLCommand .= "researchRegisterDesc,";
+					$SQLCommand .= "researchRegisterDescCheck,";
 					$SQLCommand .= "researchConsiderName,";
 					$SQLCommand .= "entryUserName,";
 					$SQLCommand .= "entryTime ";					
@@ -91,13 +96,63 @@ function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 					$SQLCommand .= "'".$RS3_DATA["researchConsiderNumber"]."',";
 					$SQLCommand .= "'".$RS3_DATA["processName"]."',";
 					$SQLCommand .= "'".$RS3_DATA["stepName"]."',";
+					$SQLCommand .= "'',";
 					$SQLCommand .= "'".$RS3_DATA["researchConsiderFile"]."',";
+					$SQLCommand .= "'',";
 					$SQLCommand .= "'".$RS3_DATA["researchRegisterDesc"]."',";
-					$SQLCommand .= "'".$RS3_DATA["researchConsiderName"]."',";
-					$SQLCommand .= "'".$RS3_DATA["entryUserName"]."',";
-					$SQLCommand .= "'".$RS3_DATA["entryTime"]."');";
 
-					CustomQuery($SQLCommand);		
+					$SQLCommand .= "'".$RS3_DATA["researchConsiderName"]."',";
+
+					$SQLCommand .= "'".$_SESSION["UserName"]."',";
+					$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+
+					CustomQuery($SQLCommand);
+
+					$ICount = 0;
+					
+
+					$SQLCommand = "SELECT LAST_INSERT_ID() As 'LastID';";
+	
+					$RS4 = CustomQuery($SQLCommand);
+
+						if ($RS4_DATA = db_fetch_array($RS4)) {
+							
+							$researchConsiderNameData = explode("/", $RS3_DATA["researchConsiderName"]);
+
+							foreach ($researchConsiderNameData as $value) {
+
+								$SQLCommand = "INSERT INTO considerChoice ( ";
+								$SQLCommand .= "ConsiderID,";
+								$SQLCommand .= "ChoiceType,";
+								$SQLCommand .= "ChoiceNameGroup,";
+								$SQLCommand .= "ChoiceName,";
+								$SQLCommand .= "ChoiceValue,";
+								$SQLCommand .= "entryUserName,";
+								$SQLCommand .= "entryTime ";					
+							
+								$SQLCommand .= ") VALUES (";
+								$SQLCommand .= "'".$RS4_DATA["LastID"]."',";
+								$SQLCommand .= "'researchScholarshipConsider',";
+								$SQLCommand .= "'".$RS3_DATA["researchConsiderName"]."',";
+								$SQLCommand .= "'".$value."',";
+								$SQLCommand .= "'".$ChoiceValue[$ICount]."',";
+
+								$SQLCommand .= "'".$_SESSION["UserName"]."',";
+								$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+								
+
+								$ICount++;
+								
+
+								CustomQuery($SQLCommand);
+								
+
+							}
+
+								
+						}
+
+
 					
 				}
 
@@ -111,6 +166,8 @@ function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 
 
 function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
+
+	$ChoiceValue = array("true", "false");
 
 
 		$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = ".$PROJECT_ID.")";
@@ -144,7 +201,9 @@ function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
 						$SQLCommand .= "processName,";
 						$SQLCommand .= "stepName,";
 						$SQLCommand .= "researchConsiderFile,";
+						$SQLCommand .= "researchConsiderFileCheck,";
 						$SQLCommand .= "researchRegisterDesc,";
+						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
@@ -154,13 +213,65 @@ function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderNumber"]."',";
 						$SQLCommand .= "'".$RS4_DATA["processName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["stepName"]."',";
-						$SQLCommand .= "'".$RS4_DATA["researchConsiderFile"]."',";
-						$SQLCommand .= "'".$RS4_DATA["researchRegisterDesc"]."',";
-						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
-						$SQLCommand .= "'".$RS4_DATA["entryUserName"]."',";
-						$SQLCommand .= "'".$RS4_DATA["entryTime"]."');";
 
-						CustomQuery($SQLCommand);		
+						$SQLCommand .= "'',";
+						$SQLCommand .= "'".$RS4_DATA["researchConsiderFile"]."',";
+						$SQLCommand .= "'',";
+						$SQLCommand .= "'".$RS4_DATA["researchRegisterDesc"]."',";
+
+						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+						$SQLCommand .= "'".$_SESSION["UserName"]."',";
+						$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+
+						CustomQuery($SQLCommand);
+						
+						$ICount = 0;
+
+
+						$SQLCommand = "SELECT LAST_INSERT_ID() As 'LastID';";
+		
+						$RS5 = CustomQuery($SQLCommand);
+
+							if ($RS5_DATA = db_fetch_array($RS5)) {
+								
+								$researchConsiderNameData = explode("/", $RS4_DATA["researchConsiderName"]);
+
+								foreach ($researchConsiderNameData as $value) {
+
+									$SQLCommand = "INSERT INTO considerChoice ( ";
+									$SQLCommand .= "ConsiderID,";
+									$SQLCommand .= "ChoiceType,";
+									$SQLCommand .= "ChoiceNameGroup,";
+									$SQLCommand .= "ChoiceName,";
+									$SQLCommand .= "ChoiceValue,";
+									$SQLCommand .= "entryUserName,";
+									$SQLCommand .= "entryTime ";					
+								
+									$SQLCommand .= ") VALUES (";
+									$SQLCommand .= "'".$RS5_DATA["LastID"]."',";
+									$SQLCommand .= "'researchDisburseConsider',";
+									$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+									$SQLCommand .= "'".$value."',";
+
+									$SQLCommand .= "'".$ChoiceValue[$ICount]."',";
+
+
+									$SQLCommand .= "'".$_SESSION["UserName"]."',";
+									$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+									
+
+									$ICount++;
+
+									CustomQuery($SQLCommand);
+									
+
+								}
+
+
+							}
+
+
+
 						
 					}
 				}
@@ -175,6 +286,7 @@ function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
 
 function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 
+	$ChoiceValue = array("true", "false");
 
 		$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = ".$PROJECT_ID.")";
 	
@@ -207,7 +319,9 @@ function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 						$SQLCommand .= "processName,";
 						$SQLCommand .= "stepName,";
 						$SQLCommand .= "researchConsiderFile,";
+						$SQLCommand .= "researchConsiderFileCheck,";
 						$SQLCommand .= "researchRegisterDesc,";
+						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
@@ -217,14 +331,65 @@ function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderNumber"]."',";
 						$SQLCommand .= "'".$RS4_DATA["processName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["stepName"]."',";
+
+						$SQLCommand .= "'',";
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderFile"]."',";
+						$SQLCommand .= "'',";
 						$SQLCommand .= "'".$RS4_DATA["researchRegisterDesc"]."',";
+
+
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
-						$SQLCommand .= "'".$RS4_DATA["entryUserName"]."',";
-						$SQLCommand .= "'".$RS4_DATA["entryTime"]."');";
+						$SQLCommand .= "'".$_SESSION["UserName"]."',";
+						$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
 
 						CustomQuery($SQLCommand);		
 						
+						$ICount = 0;
+
+
+						$SQLCommand = "SELECT LAST_INSERT_ID() As 'LastID';";
+		
+						$RS5 = CustomQuery($SQLCommand);
+
+							if ($RS5_DATA = db_fetch_array($RS5)) {
+								
+								$researchConsiderNameData = explode("/", $RS4_DATA["researchConsiderName"]);
+
+								foreach ($researchConsiderNameData as $value) {
+
+									$SQLCommand = "INSERT INTO considerChoice ( ";
+									$SQLCommand .= "ConsiderID,";
+									$SQLCommand .= "ChoiceType,";
+									$SQLCommand .= "ChoiceNameGroup,";
+									$SQLCommand .= "ChoiceName,";
+									$SQLCommand .= "ChoiceValue,";
+									$SQLCommand .= "entryUserName,";
+									$SQLCommand .= "entryTime ";					
+								
+									$SQLCommand .= ") VALUES (";
+									$SQLCommand .= "'".$RS5_DATA["LastID"]."',";
+									$SQLCommand .= "'researchAppointmentConsider',";
+									$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+									$SQLCommand .= "'".$value."',";
+
+									$SQLCommand .= "'".$ChoiceValue[$ICount]."',";
+
+
+									$SQLCommand .= "'".$_SESSION["UserName"]."',";
+									$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+									
+
+									$ICount++;
+
+									CustomQuery($SQLCommand);
+									
+
+								}
+
+
+							}
+					
+					
 					}
 				}
 
@@ -237,6 +402,9 @@ function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 
 
 function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
+
+
+	$ChoiceValue = array("true", "false");
 
 
 		$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = ".$PROJECT_ID.")";
@@ -270,7 +438,9 @@ function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
 						$SQLCommand .= "processName,";
 						$SQLCommand .= "stepName,";
 						$SQLCommand .= "researchConsiderFile,";
+						$SQLCommand .= "researchConsiderFileCheck,";
 						$SQLCommand .= "researchRegisterDesc,";
+						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
@@ -280,13 +450,67 @@ function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderNumber"]."',";
 						$SQLCommand .= "'".$RS4_DATA["processName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["stepName"]."',";
+
+
+						$SQLCommand .= "'',";
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderFile"]."',";
+						$SQLCommand .= "'',";
 						$SQLCommand .= "'".$RS4_DATA["researchRegisterDesc"]."',";
+
+
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["entryUserName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["entryTime"]."');";
 
-						CustomQuery($SQLCommand);		
+						CustomQuery($SQLCommand);
+
+						$ICount = 0;
+
+
+
+						$SQLCommand = "SELECT LAST_INSERT_ID() As 'LastID';";
+		
+						$RS5 = CustomQuery($SQLCommand);
+
+							if ($RS5_DATA = db_fetch_array($RS5)) {
+								
+								$researchConsiderNameData = explode("/", $RS4_DATA["researchConsiderName"]);
+
+								foreach ($researchConsiderNameData as $value) {
+
+									$SQLCommand = "INSERT INTO considerChoice ( ";
+									$SQLCommand .= "ConsiderID,";
+									$SQLCommand .= "ChoiceType,";
+									$SQLCommand .= "ChoiceNameGroup,";
+									$SQLCommand .= "ChoiceName,";
+									$SQLCommand .= "ChoiceValue,";
+									$SQLCommand .= "entryUserName,";
+									$SQLCommand .= "entryTime ";					
+								
+									$SQLCommand .= ") VALUES (";
+									$SQLCommand .= "'".$RS5_DATA["LastID"]."',";
+									$SQLCommand .= "'researchRenewalConsider',";
+									$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+									$SQLCommand .= "'".$value."',";
+
+									$SQLCommand .= "'".$ChoiceValue[$ICount]."',";
+
+
+									$SQLCommand .= "'".$_SESSION["UserName"]."',";
+									$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+									
+
+									$ICount++;
+
+									CustomQuery($SQLCommand);
+									
+
+								}
+
+
+							}
+
+
 						
 					}
 				}
@@ -299,14 +523,345 @@ function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
 }
 
 
+function optionSubChoiceInsert($optionSubID,$process){
+
+
+	$ChoiceValue = array("true", "false");
+	
+		
+		if ($process == "DELETE") {
+		
+			$SQLCommand = "DELETE FROM considerChoice WHERE (ConsiderID='".$optionSubID."') AND (ChoiceType = 'optionSub')";
+			CustomQuery($SQLCommand);	
+		}
 
 
 
+		$SQLCommand = "SELECT * FROM optionSub WHERE (id='".$optionSubID."') AND (optionGroupID = 2)";
+	
+		$RS1 = CustomQuery($SQLCommand);
+		while ($RS1_DATA = db_fetch_array($RS1)) {
+
+			$optionNameData = explode("/", $RS1_DATA["optionName"]);
+			$ICount = 0;
+
+			foreach ($optionNameData as $value) {
+
+				$SQLCommand = "INSERT INTO considerChoice ( ";
+				$SQLCommand .= "ConsiderID,";
+				$SQLCommand .= "ChoiceType,";
+				$SQLCommand .= "ChoiceNameGroup,";
+				$SQLCommand .= "ChoiceName,";
+				$SQLCommand .= "ChoiceValue,";
+				$SQLCommand .= "entryUserName,";
+				$SQLCommand .= "entryTime ";					
+
+				$SQLCommand .= ") VALUES (";
+				$SQLCommand .= "'".$optionSubID."',";
+				$SQLCommand .= "'optionSub',";
+				$SQLCommand .= "'".$RS1_DATA["optionName"]."',";
+				$SQLCommand .= "'".$value."',";
+
+				$SQLCommand .= "'".$ChoiceValue[$ICount]."',";
+
+
+				$SQLCommand .= "'".$_SESSION["UserName"]."',";
+				$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
+				
+
+				$ICount++;
+
+				CustomQuery($SQLCommand);	
+						
+			}
+
+		}
+		
+	
+}
+
+
+function ScholarshipProposalUpdateStatus($ProjectID) {
+	
+
+			$researchScholarshipConsiderArr = ProposalCalStatus($ProjectID);
+			$ScholarshipPercentSuccess = ($researchScholarshipConsiderArr[1]*100)/$researchScholarshipConsiderArr[0];
+
+			$researchDisburseConsiderArr = DisburseCalStatus($ProjectID);
+			$DisbursePercentSuccess = ($researchDisburseConsiderArr[1]*100)/$researchDisburseConsiderArr[0];
+
+			$researchAppointmentConsiderArr = AppointmentCalStatus($ProjectID);
+			$AppointmentPercentSuccess = ($researchAppointmentConsiderArr[1]*100)/$researchAppointmentConsiderArr[0];
+
+
+			$ScholarshipFinishStatus = ScholarshipProposalFinishStatus($ProjectID);
+
+
+			if ($DisbursePercentSuccess > 0 ){
+
+				$SQLCommand  = "UPDATE researchScholarshipProposal SET ";
+				$SQLCommand .= "researchProjectStatus = '".$researchDisburseConsiderArr[2]." ".number_format($DisbursePercentSuccess,2)."%', ";
+				$SQLCommand .= "researchProjectDisburseStatus = '".$researchDisburseConsiderArr[2]." ".number_format($DisbursePercentSuccess,2)."%', ";
+				$SQLCommand .= "ScholarshipProposalFinishStatus = '".$ScholarshipFinishStatus."', ";
+
+				$SQLCommand .= "researchOperatingPeriodEndDate = '".$researchDisburseConsiderArr[3]."' ";
+				$SQLCommand .= "WHERE (id = ".$ProjectID.")";
+
+				CustomQuery($SQLCommand);		
+			
+			}
+			else{
+			
+				$SQLCommand  = "UPDATE researchScholarshipProposal SET ";
+				$SQLCommand .= "researchProjectStatus = '".$researchScholarshipConsiderArr[2]." ".number_format($ScholarshipPercentSuccess,2)."%', ";
+				$SQLCommand .= "researchProjectDisburseStatus = '".$researchDisburseConsiderArr[2]." ".number_format($DisbursePercentSuccess,2)."%', ";
+				$SQLCommand .= "ScholarshipProposalFinishStatus = '".$ScholarshipFinishStatus."', ";
+
+				$SQLCommand .= "researchOperatingPeriodEndDate = '".$researchDisburseConsiderArr[3]."' ";
+				$SQLCommand .= "WHERE (id = ".$ProjectID.")";
+
+				CustomQuery($SQLCommand);
+			}
+
+
+			
+			if ($researchAppointmentConsiderArr[0] > 0){
+
+
+				$SQLCommand  = "UPDATE researchScholarshipProposal SET ";
+				$SQLCommand .= "researchProjectAppointmentStatus = '".$researchAppointmentConsiderArr[2]." ".number_format($AppointmentPercentSuccess,2)."%', ";
+
+				$SQLCommand .= "researchOperatingPeriodEndDate = '".$researchDisburseConsiderArr[3]."' ";
+				$SQLCommand .= "WHERE (id = ".$ProjectID.")";
+
+				CustomQuery($SQLCommand);
+			}
+
+}
+
+		
+function ScholarshipProposalFinishStatus($ProjectID) {
+	
+
+		$SQLCommand = "SELECT * FROM researchScholarshipConsider WHERE (researchProjectID='".$ProjectID."') ORDER BY researchConsiderNumber DESC LIMIT 1";
+	
+		$RS1 = CustomQuery($SQLCommand);
+		if ($RS1_DATA = db_fetch_array($RS1)) {
+
+			$SQLCommand = "SELECT * FROM considerChoice ";
+			$SQLCommand .= "WHERE (ChoiceName = '".$RS1_DATA["researchConsiderValue"]."') ";
+			$SQLCommand .= "AND   (ConsiderID = '".$RS1_DATA["id"]."') ";
+			$SQLCommand .= "AND   (ChoiceType = 'researchScholarshipConsider') ";
+			$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$ScholarshipFinishStatus = "true";
+
+			}
+			else{
+				$ScholarshipFinishStatus = "false";
+			}
+
+
+		}
+
+		return $ScholarshipFinishStatus;
+	
+
+}
+
+function ProposalCalStatus($ProjectID) {
+	
+	$ConsiderArray = [];
+	$ICount = 0;
+	$RCount = 0;
+
+
+		$SQLCommand = "SELECT * FROM researchScholarshipConsider WHERE (researchProjectID='".$ProjectID."') ORDER BY researchConsiderNumber";
+	
+		$RS1 = CustomQuery($SQLCommand);
+		while ($RS1_DATA = db_fetch_array($RS1)) {
+
+			$SQLCommand = "SELECT * FROM considerChoice ";
+			$SQLCommand .= "WHERE (ChoiceName = '".$RS1_DATA["researchConsiderValue"]."') ";
+			$SQLCommand .= "AND   (ConsiderID = '".$RS1_DATA["id"]."') ";
+			$SQLCommand .= "AND   (ChoiceType = 'researchScholarshipConsider') ";
+			$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$ICount = $ICount +1;
+
+			}
+
+			$RCount = $RCount +1;
+			$stepName = $RS1_DATA["stepName"];
+		}
+	
+		
+
+		array_push($ConsiderArray, strval($RCount));
+		array_push($ConsiderArray, strval($ICount));
+		array_push($ConsiderArray, $stepName);
+		return $ConsiderArray;
+	
+
+}
+
+
+function DisburseCalStatus($ProjectID) {
+	
+	$ConsiderArray = [];
+	$ICount = 0;
+	$RCount = 0;
 
 
 
+		$SQLCommand = "SELECT * FROM researchOperatingPeriod WHERE (researchProjectID='".$ProjectID."') ORDER BY researchOperatingPeriodEndDate ASC";
+		
+		$RS1 = CustomQuery($SQLCommand);
+		while ($RS1_DATA = db_fetch_array($RS1)) {
 
 
+			$SQLCommand = "SELECT * FROM researchDisburseConsider WHERE (researchDisburseID='".$RS1_DATA["id"]."') ORDER BY researchConsiderNumber";
+
+			$RS2 = CustomQuery($SQLCommand);
+			while ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$SQLCommand = "SELECT * FROM considerChoice ";
+				$SQLCommand .= "WHERE (ChoiceName = '".$RS2_DATA["researchConsiderValue"]."') ";
+				$SQLCommand .= "AND   (ConsiderID = '".$RS2_DATA["id"]."') ";
+				$SQLCommand .= "AND   (ChoiceType = 'researchDisburseConsider') ";
+				$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+				$RS3 = CustomQuery($SQLCommand);
+				if ($RS3_DATA = db_fetch_array($RS3)) {
+
+					$ICount = $ICount +1;
+
+				}
+
+				$RCount = $RCount +1;
+				$stepName = $RS2_DATA["stepName"];
+			}
+
+				$researchOperatingPeriodEndDate = $RS1_DATA["researchOperatingPeriodEndDate"];
+		}
+		
+
+		array_push($ConsiderArray, strval($RCount));
+		array_push($ConsiderArray, strval($ICount));
+		array_push($ConsiderArray, $stepName);
+		array_push($ConsiderArray, $researchOperatingPeriodEndDate);
+
+		return $ConsiderArray;
+
+}
+
+
+function AppointmentCalStatus($ProjectID) {
+	
+	$ConsiderArray = [];
+	$ICount = 0;
+	$RCount = 0;
+
+
+
+		$SQLCommand = "SELECT * FROM researchAppointment WHERE (researchProjectID='".$ProjectID."') ORDER BY researchAppointmentNo ASC";
+		
+		$RS1 = CustomQuery($SQLCommand);
+		while ($RS1_DATA = db_fetch_array($RS1)) {
+
+
+			$SQLCommand = "SELECT * FROM researchAppointmentConsider WHERE (researchAppointmentID='".$RS1_DATA["id"]."') ORDER BY researchConsiderNumber";
+
+			$RS2 = CustomQuery($SQLCommand);
+			while ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$SQLCommand = "SELECT * FROM considerChoice ";
+				$SQLCommand .= "WHERE (ChoiceName = '".$RS2_DATA["researchConsiderValue"]."') ";
+				$SQLCommand .= "AND   (ConsiderID = '".$RS2_DATA["id"]."') ";
+				$SQLCommand .= "AND   (ChoiceType = 'researchDisburseConsider') ";
+				$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+				$RS3 = CustomQuery($SQLCommand);
+				if ($RS3_DATA = db_fetch_array($RS3)) {
+
+					$ICount = $ICount +1;
+
+				}
+
+				$RCount = $RCount +1;
+				$stepName = $RS2_DATA["stepName"];
+			}
+
+		}
+		
+
+		array_push($ConsiderArray, strval($RCount));
+		array_push($ConsiderArray, strval($ICount));
+		array_push($ConsiderArray, $stepName);
+
+		return $ConsiderArray;
+
+}
+
+function missionCalStatus($missionFollowID) {
+	
+	$ConsiderArray = [];
+	$ICount = 0;
+	$RCount = 0;
+
+
+		$SQLCommand = "SELECT * FROM missionAssignment WHERE (missionFollowID='".$missionFollowID."') ORDER BY missionAssignmentNo";
+	
+		$RS1 = CustomQuery($SQLCommand);
+		while ($RS1_DATA = db_fetch_array($RS1)) {
+
+			$SQLCommand = "SELECT * FROM considerChoice ";
+			$SQLCommand .= "WHERE (ChoiceName = '".$RS1_DATA["missionAssignmentConsiderValue"]."') ";
+			$SQLCommand .= "AND   (ChoiceType = 'optionSub') ";
+			$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$ICount = $ICount +1;
+
+			}
+
+			$RCount = $RCount +1;
+			$ChoiceName = $RS2_DATA["ChoiceName"];
+		}
+	
+		
+
+		array_push($ConsiderArray, strval($RCount));
+		array_push($ConsiderArray, strval($ICount));
+		array_push($ConsiderArray, $ChoiceName);
+		return $ConsiderArray;
+	
+
+}
+
+function missionCalUpdateStatus($missionFollowID) {
+	
+
+			$missionCalConsiderArr = missionCalStatus($missionFollowID);
+			$missionPercentSuccess = ($missionCalConsiderArr[1]*100)/$missionCalConsiderArr[0];
+			
+				$SQLCommand  = "UPDATE missionFollow SET ";
+				$SQLCommand .= "missionFollowStatus = '".$missionCalConsiderArr[2]." ".number_format($missionPercentSuccess,2)."%' ";
+				$SQLCommand .= "WHERE (id = ".$missionFollowID.")";
+
+				CustomQuery($SQLCommand);			
+
+
+}
+	
 /*
 function SendMailProjectAlert($PROJECT_ID) {
 	

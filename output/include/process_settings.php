@@ -27,16 +27,16 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesprocess["English"] = array();
 	$fieldLabelsprocess["English"]["id"] = "Id";
 	$fieldToolTipsprocess["English"]["id"] = "";
-	$placeHoldersprocess["English"]["id"] = "";
+	$placeHoldersprocess["English"]["id"] = "Id";
 	$fieldLabelsprocess["English"]["processName"] = "Process Name";
 	$fieldToolTipsprocess["English"]["processName"] = "";
-	$placeHoldersprocess["English"]["processName"] = "";
+	$placeHoldersprocess["English"]["processName"] = "Process Name";
 	$fieldLabelsprocess["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsprocess["English"]["entryUserName"] = "";
-	$placeHoldersprocess["English"]["entryUserName"] = "";
+	$placeHoldersprocess["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsprocess["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsprocess["English"]["entryTime"] = "";
-	$placeHoldersprocess["English"]["entryTime"] = "";
+	$placeHoldersprocess["English"]["entryTime"] = "Entry Time";
 	if (count($fieldToolTipsprocess["English"]))
 		$tdataprocess[".isUseToolTips"] = true;
 }
@@ -48,16 +48,16 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesprocess["Thai"] = array();
 	$fieldLabelsprocess["Thai"]["id"] = "Id";
 	$fieldToolTipsprocess["Thai"]["id"] = "";
-	$placeHoldersprocess["Thai"]["id"] = "";
+	$placeHoldersprocess["Thai"]["id"] = "Id";
 	$fieldLabelsprocess["Thai"]["processName"] = "ชื่อกระบวนการ";
 	$fieldToolTipsprocess["Thai"]["processName"] = "";
-	$placeHoldersprocess["Thai"]["processName"] = "";
+	$placeHoldersprocess["Thai"]["processName"] = "ชื่อกระบวนการ";
 	$fieldLabelsprocess["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsprocess["Thai"]["entryUserName"] = "";
-	$placeHoldersprocess["Thai"]["entryUserName"] = "";
+	$placeHoldersprocess["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsprocess["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsprocess["Thai"]["entryTime"] = "";
-	$placeHoldersprocess["Thai"]["entryTime"] = "";
+	$placeHoldersprocess["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	if (count($fieldToolTipsprocess["Thai"]))
 		$tdataprocess[".isUseToolTips"] = true;
 }
@@ -91,7 +91,7 @@ $tdataprocess[".listAjax"] = false;
 //	temporary
 //$tdataprocess[".listAjax"] = false;
 
-	$tdataprocess[".audit"] = false;
+	$tdataprocess[".audit"] = true;
 
 	$tdataprocess[".locking"] = false;
 
@@ -745,8 +745,7 @@ $tdataprocess[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -767,7 +766,7 @@ $tdataprocess[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation

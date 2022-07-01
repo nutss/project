@@ -99,7 +99,7 @@
 	 
 		{BEGIN id_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
 	{$label admin_users id }	</span>
 {END id_fieldheadercolumn}
 
@@ -124,7 +124,7 @@
 	 
 		{BEGIN staffFullName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffFullName" data-fieldname="staffFullName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffFullName" data-fieldname="staffFullName">
 	{$label admin_users staffFullName }	</span>
 {END staffFullName_fieldheadercolumn}
 
@@ -149,7 +149,7 @@
 	 
 		{BEGIN staffUsername_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffUsername" data-fieldname="staffUsername">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffUsername" data-fieldname="staffUsername">
 	{$label admin_users staffUsername }	</span>
 {END staffUsername_fieldheadercolumn}
 
@@ -174,7 +174,7 @@
 	 
 		{BEGIN staffPassword_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffPassword" data-fieldname="staffPassword">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffPassword" data-fieldname="staffPassword">
 	{$label admin_users staffPassword }	</span>
 {END staffPassword_fieldheadercolumn}
 
@@ -199,7 +199,7 @@
 	 
 		{BEGIN staffEmail_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffEmail" data-fieldname="staffEmail">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffEmail" data-fieldname="staffEmail">
 	{$label admin_users staffEmail }	</span>
 {END staffEmail_fieldheadercolumn}
 
@@ -213,20 +213,20 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$staffStatus_class}
+		 r-ori-vert				{$staffEmailNotify_class}
 			"
 
-			data-field="staffStatus"
+			data-field="staffEmailNotify"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN staffStatus_fieldheadercolumn}
+		{BEGIN staffEmailNotify_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffStatus" data-fieldname="staffStatus">
-	{$label admin_users staffStatus }	</span>
-{END staffStatus_fieldheadercolumn}
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffEmailNotify" data-fieldname="staffEmailNotify">
+	{$label admin_users staffEmailNotify }	</span>
+{END staffEmailNotify_fieldheadercolumn}
 
 	
 	</th>
@@ -238,20 +238,20 @@
 	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$staffEmailNotify_class}
+		 r-ori-vert				{$entryUserName_class}
 			"
 
-			data-field="staffEmailNotify"
+			data-field="entryUserName"
 	
 	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN staffEmailNotify_fieldheadercolumn}
+		{BEGIN entryUserName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffEmailNotify" data-fieldname="staffEmailNotify">
-	{$label admin_users staffEmailNotify }	</span>
-{END staffEmailNotify_fieldheadercolumn}
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	{$label admin_users entryUserName }	</span>
+{END entryUserName_fieldheadercolumn}
 
 	
 	</th>
@@ -263,20 +263,20 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$entryTime_class}
 			"
 
-			data-field="entryUserName"
+			data-field="entryTime"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldheadercolumn}
+		{BEGIN entryTime_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label admin_users entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	{$label admin_users entryTime }	</span>
+{END entryTime_fieldheadercolumn}
 
 	
 	</th>
@@ -288,49 +288,24 @@
 	{$cell_grid_headcell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryTime_class}
+		 r-ori-vert				{$staffStatus_class}
 			"
 
-			data-field="entryTime"
+			data-field="staffStatus"
 	
 	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryTime_fieldheadercolumn}
+		{BEGIN staffStatus_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label admin_users entryTime }	</span>
-{END entryTime_fieldheadercolumn}
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffStatus" data-fieldname="staffStatus">
+	{$label admin_users staffStatus }	</span>
+{END staffStatus_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field8}
-				 
-					{BEGIN cellblock_grid_headcell_field9}
-	<th
-	
-	{$cell_grid_headcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$apikey_class}
-			"
-
-			data-field="apikey"
-	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN apikey_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apikey" data-fieldname="apikey">
-	{$label admin_users apikey }	</span>
-{END apikey_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field9}
 							</tr>
 					 
 					 
@@ -468,35 +443,12 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$staffStatus_class}
-			"
-
-			data-field="staffStatus"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN staffStatus_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffStatus" data-fieldname="staffStatus" data-default-width >
-{$staffStatus_value}
-</span>
-{END staffStatus_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$staffEmailNotify_class}
 			"
 
 			data-field="staffEmailNotify"
 	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -506,12 +458,12 @@
 </span>
 {END staffEmailNotify_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field6}
+	{END cellblock_grid_cell_field5}
 				 
-					{BEGIN cellblock_grid_cell_field7}
+					{BEGIN cellblock_grid_cell_field6}
 	<td
 	
-	{$cell_grid_cell_field7}
+	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$entryUserName_class}
@@ -519,7 +471,7 @@
 
 			data-field="entryUserName"
 	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -529,12 +481,12 @@
 </span>
 {END entryUserName_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field6}
 				 
-					{BEGIN cellblock_grid_cell_field8}
+					{BEGIN cellblock_grid_cell_field7}
 	<td
 	
-	{$cell_grid_cell_field8}
+	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$entryTime_class}
@@ -542,7 +494,7 @@
 
 			data-field="entryTime"
 	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -552,30 +504,30 @@
 </span>
 {END entryTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field8}
+	{END cellblock_grid_cell_field7}
 				 
-					{BEGIN cellblock_grid_cell_field9}
+					{BEGIN cellblock_grid_cell_field8}
 	<td
 	
-	{$cell_grid_cell_field9}
+	{$cell_grid_cell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$apikey_class}
+		 r-ori-vert				{$staffStatus_class}
 			"
 
-			data-field="apikey"
+			data-field="staffStatus"
 	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN apikey_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apikey" data-fieldname="apikey" data-default-width >
-{$apikey_value}
+		{BEGIN staffStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="staffStatus" data-fieldname="staffStatus" data-default-width >
+{$staffStatus_value}
 </span>
-{END apikey_fieldcolumn}	
+{END staffStatus_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field9}
+	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -735,22 +687,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field8}
-				 
-					{BEGIN cellblock_grid_footcell_field9}
-	<td
-	
-	{$cell_grid_footcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_print"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field9}
 							</tr>
 					
 					</tfoot>

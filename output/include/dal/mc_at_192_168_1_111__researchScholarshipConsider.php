@@ -6,8 +6,11 @@ $dalTableresearchScholarshipConsider["researchConsiderNumber"] = array("type"=>2
 $dalTableresearchScholarshipConsider["processName"] = array("type"=>200,"varname"=>"processName", "name" => "processName");
 $dalTableresearchScholarshipConsider["stepName"] = array("type"=>200,"varname"=>"stepName", "name" => "stepName");
 $dalTableresearchScholarshipConsider["researchConsiderFile"] = array("type"=>201,"varname"=>"researchConsiderFile", "name" => "researchConsiderFile");
+$dalTableresearchScholarshipConsider["researchConsiderFileCheck"] = array("type"=>200,"varname"=>"researchConsiderFileCheck", "name" => "researchConsiderFileCheck");
 $dalTableresearchScholarshipConsider["researchRegisterDesc"] = array("type"=>201,"varname"=>"researchRegisterDesc", "name" => "researchRegisterDesc");
+$dalTableresearchScholarshipConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchScholarshipConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
+$dalTableresearchScholarshipConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
 $dalTableresearchScholarshipConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchScholarshipConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchScholarshipConsider["id"]["key"]=true;

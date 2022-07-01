@@ -15,6 +15,7 @@
 		$this->events["AfterAdd"]=true;
 
 
+
 	}
 
 //	handlers
@@ -47,6 +48,71 @@ function AfterAdd(&$values, &$keys, $inline, $pageObject)
 ;		
 } // function AfterAdd
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -3313,12 +3313,8 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "staffusers" ] = "staffUsers";
 	$projectEntities[ "process" ] = array( "url" => "process", "type" => 0 );
 	$projectEntitiesReverse[ "process" ] = "process";
-	$projectEntities[ "consider" ] = array( "url" => "consider", "type" => 0 );
-	$projectEntitiesReverse[ "consider" ] = "consider";
 	$projectEntities[ "researchType" ] = array( "url" => "researchtype", "type" => 0 );
 	$projectEntitiesReverse[ "researchtype" ] = "researchType";
-	$projectEntities[ "researchProjectGroup" ] = array( "url" => "researchprojectgroup", "type" => 0 );
-	$projectEntitiesReverse[ "researchprojectgroup" ] = "researchProjectGroup";
 	$projectEntities[ "researchOperatingPeriod" ] = array( "url" => "researchoperatingperiod", "type" => 0 );
 	$projectEntitiesReverse[ "researchoperatingperiod" ] = "researchOperatingPeriod";
 	$projectEntities[ "researchAppointment" ] = array( "url" => "researchappointment", "type" => 0 );
@@ -3353,6 +3349,38 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "researchperiod" ] = "researchPeriod";
 	$projectEntities[ "researchProjectRegister" ] = array( "url" => "researchprojectregister", "type" => 1 );
 	$projectEntitiesReverse[ "researchprojectregister" ] = "researchProjectRegister";
+	$projectEntities[ "missionFollow" ] = array( "url" => "missionfollow", "type" => 0 );
+	$projectEntitiesReverse[ "missionfollow" ] = "missionFollow";
+	$projectEntities[ "missionAssignment" ] = array( "url" => "missionassignment", "type" => 0 );
+	$projectEntitiesReverse[ "missionassignment" ] = "missionAssignment";
+	$projectEntities[ "optionGroup" ] = array( "url" => "optiongroup", "type" => 0 );
+	$projectEntitiesReverse[ "optiongroup" ] = "optionGroup";
+	$projectEntities[ "optionSub" ] = array( "url" => "optionsub", "type" => 0 );
+	$projectEntitiesReverse[ "optionsub" ] = "optionSub";
+	$projectEntities[ "project_audit" ] = array( "url" => "project_audit", "type" => 0 );
+	$projectEntitiesReverse[ "project_audit" ] = "project_audit";
+	$projectEntities[ "considerChoice" ] = array( "url" => "considerchoice", "type" => 0 );
+	$projectEntitiesReverse[ "considerchoice" ] = "considerChoice";
+	$projectEntities[ "researchConsiderView" ] = array( "url" => "researchconsiderview", "type" => 1 );
+	$projectEntitiesReverse[ "researchconsiderview" ] = "researchConsiderView";
+	$projectEntities[ "project_uggroups" ] = array( "url" => "project_uggroups", "type" => 0 );
+	$projectEntitiesReverse[ "project_uggroups" ] = "project_uggroups";
+	$projectEntities[ "statusType" ] = array( "url" => "statustype", "type" => 0 );
+	$projectEntitiesReverse[ "statustype" ] = "statusType";
+	$projectEntities[ "ReportProgress" ] = array( "url" => "reportprogress", "type" => 1 );
+	$projectEntitiesReverse[ "reportprogress" ] = "ReportProgress";
+	$projectEntities[ "ReportMonitor" ] = array( "url" => "reportmonitor", "type" => 4 );
+	$projectEntitiesReverse[ "reportmonitor" ] = "ReportMonitor";
+	$projectEntities[ "ReportMonitorGraphTrackingStatus" ] = array( "url" => "reportmonitorgraphtrackingstatus", "type" => 3 );
+	$projectEntitiesReverse[ "reportmonitorgraphtrackingstatus" ] = "ReportMonitorGraphTrackingStatus";
+	$projectEntities[ "ReportMonitorProjectStatus1" ] = array( "url" => "reportmonitorprojectstatus1", "type" => 1 );
+	$projectEntitiesReverse[ "reportmonitorprojectstatus1" ] = "ReportMonitorProjectStatus1";
+	$projectEntities[ "ReportMonitorProjectStatus2" ] = array( "url" => "reportmonitorprojectstatus2", "type" => 1 );
+	$projectEntitiesReverse[ "reportmonitorprojectstatus2" ] = "ReportMonitorProjectStatus2";
+	$projectEntities[ "ReportMonitorProjectStatus3" ] = array( "url" => "reportmonitorprojectstatus3", "type" => 1 );
+	$projectEntitiesReverse[ "reportmonitorprojectstatus3" ] = "ReportMonitorProjectStatus3";
+	$projectEntities[ "ReportMonitorProjectStatus4" ] = array( "url" => "reportmonitorprojectstatus4", "type" => 1 );
+	$projectEntitiesReverse[ "reportmonitorprojectstatus4" ] = "ReportMonitorProjectStatus4";
 }
 
 function findTable( $table ) {

@@ -228,6 +228,9 @@ pdfDocument = {
 			{"text":{$researchProjectBankName_pdfvalue},"hidden":"{$item_hide_integrated_search_field21}"},
 				
 				
+			{"text":{$researchProjectStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field24}"},
+				
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_integrated_search_field22}"},
 				
 				

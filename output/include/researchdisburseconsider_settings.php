@@ -6,11 +6,11 @@ $tdataresearchdisburseconsider[".OwnerID"] = "";
 $tdataresearchdisburseconsider[".OriginalTable"] = "researchDisburseConsider";
 
 
-$tdataresearchdisburseconsider[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchdisburseconsider[".pagesByType"] = my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchdisburseconsider[".originalPagesByType"] = $tdataresearchdisburseconsider[".pagesByType"];
-$tdataresearchdisburseconsider[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchdisburseconsider[".pages"] = types2pages( my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchdisburseconsider[".originalPages"] = $tdataresearchdisburseconsider[".pages"];
-$tdataresearchdisburseconsider[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchdisburseconsider[".defaultPages"] = my_json_decode( "{\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchdisburseconsider[".originalDefaultPages"] = $tdataresearchdisburseconsider[".defaultPages"];
 
 //	field labels
@@ -27,34 +27,43 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchdisburseconsider["English"] = array();
 	$fieldLabelsresearchdisburseconsider["English"]["id"] = "ID";
 	$fieldToolTipsresearchdisburseconsider["English"]["id"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["id"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["id"] = "ID";
 	$fieldLabelsresearchdisburseconsider["English"]["researchDisburseID"] = "Research Disburse ID";
 	$fieldToolTipsresearchdisburseconsider["English"]["researchDisburseID"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["researchDisburseID"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchDisburseID"] = "Research Disburse ID";
 	$fieldLabelsresearchdisburseconsider["English"]["researchConsiderNumber"] = "Research Consider Number";
 	$fieldToolTipsresearchdisburseconsider["English"]["researchConsiderNumber"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["researchConsiderNumber"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchConsiderNumber"] = "Research Consider Number";
 	$fieldLabelsresearchdisburseconsider["English"]["processName"] = "Process Name";
 	$fieldToolTipsresearchdisburseconsider["English"]["processName"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["processName"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["processName"] = "Process Name";
 	$fieldLabelsresearchdisburseconsider["English"]["stepName"] = "Step Name";
 	$fieldToolTipsresearchdisburseconsider["English"]["stepName"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["stepName"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["stepName"] = "Step Name";
 	$fieldLabelsresearchdisburseconsider["English"]["researchConsiderFile"] = "Research Consider File";
 	$fieldToolTipsresearchdisburseconsider["English"]["researchConsiderFile"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["researchConsiderFile"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchConsiderFile"] = "Research Consider File";
 	$fieldLabelsresearchdisburseconsider["English"]["researchRegisterDesc"] = "Research Register Desc";
 	$fieldToolTipsresearchdisburseconsider["English"]["researchRegisterDesc"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["researchRegisterDesc"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchRegisterDesc"] = "Research Register Desc";
 	$fieldLabelsresearchdisburseconsider["English"]["researchConsiderName"] = "Research Consider Name";
 	$fieldToolTipsresearchdisburseconsider["English"]["researchConsiderName"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["researchConsiderName"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchConsiderName"] = "Research Consider Name";
 	$fieldLabelsresearchdisburseconsider["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchdisburseconsider["English"]["entryUserName"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["entryUserName"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchdisburseconsider["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchdisburseconsider["English"]["entryTime"] = "";
-	$placeHoldersresearchdisburseconsider["English"]["entryTime"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["entryTime"] = "Entry Time";
+	$fieldLabelsresearchdisburseconsider["English"]["researchConsiderValue"] = "Research Consider Value";
+	$fieldToolTipsresearchdisburseconsider["English"]["researchConsiderValue"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchConsiderValue"] = "Research Consider Value";
+	$fieldLabelsresearchdisburseconsider["English"]["researchConsiderFileCheck"] = "Research Consider File Check";
+	$fieldToolTipsresearchdisburseconsider["English"]["researchConsiderFileCheck"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchConsiderFileCheck"] = "";
+	$fieldLabelsresearchdisburseconsider["English"]["researchRegisterDescCheck"] = "Research Register Desc Check";
+	$fieldToolTipsresearchdisburseconsider["English"]["researchRegisterDescCheck"] = "";
+	$placeHoldersresearchdisburseconsider["English"]["researchRegisterDescCheck"] = "";
 	if (count($fieldToolTipsresearchdisburseconsider["English"]))
 		$tdataresearchdisburseconsider[".isUseToolTips"] = true;
 }
@@ -66,34 +75,43 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchdisburseconsider["Thai"] = array();
 	$fieldLabelsresearchdisburseconsider["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["id"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["id"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["id"] = "ID";
 	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderNumber"] = "ขั้นตอนที่";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["researchConsiderNumber"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderNumber"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderNumber"] = "ขั้นตอนที่";
 	$fieldLabelsresearchdisburseconsider["Thai"]["processName"] = "กระบวนการ";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["processName"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["processName"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["processName"] = "กระบวนการ";
 	$fieldLabelsresearchdisburseconsider["Thai"]["stepName"] = "ชื่อขั้นตอน";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["stepName"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["stepName"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["stepName"] = "ชื่อขั้นตอน";
 	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderFile"] = "เอกสารแนบ";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["researchConsiderFile"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderFile"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderFile"] = "เอกสารแนบ";
 	$fieldLabelsresearchdisburseconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["researchRegisterDesc"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["researchRegisterDesc"] = "";
-	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderName"] = "การพิจารณา";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
+	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["researchConsiderName"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderName"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
 	$fieldLabelsresearchdisburseconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchdisburseconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["entryTime"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["entryTime"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldLabelsresearchdisburseconsider["Thai"]["researchDisburseID"] = "DISBURSE_ID";
 	$fieldToolTipsresearchdisburseconsider["Thai"]["researchDisburseID"] = "";
-	$placeHoldersresearchdisburseconsider["Thai"]["researchDisburseID"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchDisburseID"] = "DISBURSE_ID";
+	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderValue"] = "การพิจารณา";
+	$fieldToolTipsresearchdisburseconsider["Thai"]["researchConsiderValue"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderValue"] = "ค่าการพิจารณา";
+	$fieldLabelsresearchdisburseconsider["Thai"]["researchConsiderFileCheck"] = "ตรวจสอบเอกสารแนบ";
+	$fieldToolTipsresearchdisburseconsider["Thai"]["researchConsiderFileCheck"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchConsiderFileCheck"] = "";
+	$fieldLabelsresearchdisburseconsider["Thai"]["researchRegisterDescCheck"] = "ตรวจสอบหมายเหตุ";
+	$fieldToolTipsresearchdisburseconsider["Thai"]["researchRegisterDescCheck"] = "";
+	$placeHoldersresearchdisburseconsider["Thai"]["researchRegisterDescCheck"] = "";
 	if (count($fieldToolTipsresearchdisburseconsider["Thai"]))
 		$tdataresearchdisburseconsider[".isUseToolTips"] = true;
 }
@@ -127,7 +145,7 @@ $tdataresearchdisburseconsider[".listAjax"] = false;
 //	temporary
 //$tdataresearchdisburseconsider[".listAjax"] = false;
 
-	$tdataresearchdisburseconsider[".audit"] = false;
+	$tdataresearchdisburseconsider[".audit"] = true;
 
 	$tdataresearchdisburseconsider[".locking"] = false;
 
@@ -138,7 +156,7 @@ if( $pages[PAGE_EDIT] ) {
 	$tdataresearchdisburseconsider[".edit"] = true;
 	$tdataresearchdisburseconsider[".afterEditAction"] = 1;
 	$tdataresearchdisburseconsider[".closePopupAfterEdit"] = 1;
-	$tdataresearchdisburseconsider[".afterEditActionDetTable"] = "";
+	$tdataresearchdisburseconsider[".afterEditActionDetTable"] = "Detail tables not found!";
 }
 
 if( $pages[PAGE_ADD] ) {
@@ -199,7 +217,7 @@ $tdataresearchdisburseconsider[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchdisburseconsider[".buttonsAdded"] = false;
 
-$tdataresearchdisburseconsider[".addPageEvents"] = false;
+$tdataresearchdisburseconsider[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchdisburseconsider[".isUseTimeForSearch"] = false;
@@ -219,8 +237,11 @@ $tdataresearchdisburseconsider[".googleLikeFields"][] = "researchConsiderNumber"
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "processName";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "stepName";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "researchConsiderFile";
+$tdataresearchdisburseconsider[".googleLikeFields"][] = "researchConsiderFileCheck";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "researchRegisterDesc";
+$tdataresearchdisburseconsider[".googleLikeFields"][] = "researchRegisterDescCheck";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "researchConsiderName";
+$tdataresearchdisburseconsider[".googleLikeFields"][] = "researchConsiderValue";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "entryUserName";
 $tdataresearchdisburseconsider[".googleLikeFields"][] = "entryTime";
 
@@ -256,7 +277,7 @@ $tdataresearchdisburseconsider[".strOrderBy"] = $tstrOrderBy;
 $tdataresearchdisburseconsider[".orderindexes"] = array();
 
 
-$tdataresearchdisburseconsider[".sqlHead"] = "SELECT id,  	researchDisburseID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	entryUserName,  	entryTime";
+$tdataresearchdisburseconsider[".sqlHead"] = "SELECT id,  	researchDisburseID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
 $tdataresearchdisburseconsider[".sqlFrom"] = "FROM researchDisburseConsider";
 $tdataresearchdisburseconsider[".sqlWhereExpr"] = "";
 $tdataresearchdisburseconsider[".sqlTail"] = "";
@@ -641,7 +662,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -666,11 +687,8 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -914,7 +932,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -939,11 +957,8 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1019,7 +1034,8 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 		$fdata["isSQLExpression"] = true;
 	$fdata["FullName"] = "researchConsiderFile";
 
-	
+		$fdata["DeleteAssociatedFile"] = true;
+
 	
 				$fdata["UploadFolder"] = "files";
 
@@ -1133,10 +1149,148 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 
 	$tdataresearchdisburseconsider["researchConsiderFile"] = $fdata;
 		$tdataresearchdisburseconsider[".searchableFields"][] = "researchConsiderFile";
-//	researchRegisterDesc
+//	researchConsiderFileCheck
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 7;
+	$fdata["strName"] = "researchConsiderFileCheck";
+	$fdata["GoodName"] = "researchConsiderFileCheck";
+	$fdata["ownerTable"] = "researchDisburseConsider";
+	$fdata["Label"] = GetFieldLabel("researchDisburseConsider","researchConsiderFileCheck");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchConsiderFileCheck";
+
+		$fdata["sourceSingle"] = "researchConsiderFileCheck";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchConsiderFileCheck";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchdisburseconsider["researchConsiderFileCheck"] = $fdata;
+		$tdataresearchdisburseconsider[".searchableFields"][] = "researchConsiderFileCheck";
+//	researchRegisterDesc
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "researchRegisterDesc";
 	$fdata["GoodName"] = "researchRegisterDesc";
 	$fdata["ownerTable"] = "researchDisburseConsider";
@@ -1273,10 +1427,148 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 
 	$tdataresearchdisburseconsider["researchRegisterDesc"] = $fdata;
 		$tdataresearchdisburseconsider[".searchableFields"][] = "researchRegisterDesc";
+//	researchRegisterDescCheck
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 9;
+	$fdata["strName"] = "researchRegisterDescCheck";
+	$fdata["GoodName"] = "researchRegisterDescCheck";
+	$fdata["ownerTable"] = "researchDisburseConsider";
+	$fdata["Label"] = GetFieldLabel("researchDisburseConsider","researchRegisterDescCheck");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchRegisterDescCheck";
+
+		$fdata["sourceSingle"] = "researchRegisterDescCheck";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchRegisterDescCheck";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchdisburseconsider["researchRegisterDescCheck"] = $fdata;
+		$tdataresearchdisburseconsider[".searchableFields"][] = "researchRegisterDescCheck";
 //	researchConsiderName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "researchConsiderName";
 	$fdata["GoodName"] = "researchConsiderName";
 	$fdata["ownerTable"] = "researchDisburseConsider";
@@ -1341,21 +1633,22 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "consider";
+	$edata["LookupTable"] = "optionSub";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 0;
 
 	
 		
-	$edata["LinkField"] = "considerName";
+	$edata["LinkField"] = "optionName";
 	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "considerName";
+	$edata["DisplayField"] = "optionName";
+
+				$edata["LookupWhere"] = "optionGroupID = 2";
+
 
 	
-
-	
-	$edata["LookupOrderBy"] = "considerName";
+	$edata["LookupOrderBy"] = "optionName";
 
 	
 	
@@ -1438,10 +1731,174 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 
 	$tdataresearchdisburseconsider["researchConsiderName"] = $fdata;
 		$tdataresearchdisburseconsider[".searchableFields"][] = "researchConsiderName";
+//	researchConsiderValue
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 11;
+	$fdata["strName"] = "researchConsiderValue";
+	$fdata["GoodName"] = "researchConsiderValue";
+	$fdata["ownerTable"] = "researchDisburseConsider";
+	$fdata["Label"] = GetFieldLabel("researchDisburseConsider","researchConsiderValue");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchConsiderValue";
+
+		$fdata["sourceSingle"] = "researchConsiderValue";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchConsiderValue";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "considerChoice";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "ChoiceName";
+	$edata["LinkFieldType"] = 200;
+	$edata["DisplayField"] = "ChoiceName";
+
+				$edata["LookupWhere"] = "(ChoiceType='researchDisburseConsider') AND (ConsiderID = ':id')";
+
+
+	
+	$edata["LookupOrderBy"] = "ChoiceName";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchdisburseconsider["researchConsiderValue"] = $fdata;
+		$tdataresearchdisburseconsider[".searchableFields"][] = "researchConsiderValue";
 //	entryUserName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchDisburseConsider";
@@ -1577,7 +2034,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchDisburseConsider";
@@ -1603,7 +2060,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "Short Date");
+	$vdata = array("ViewFormat" => "Datetime");
 
 	
 	
@@ -1642,8 +2099,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1664,7 +2120,7 @@ $tdataresearchdisburseconsider[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1770,7 +2226,7 @@ function createSqlQuery_researchdisburseconsider()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchDisburseID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	researchDisburseID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchDisburseConsider";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1896,12 +2352,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchRegisterDesc",
+	"m_strName" => "researchConsiderFileCheck",
 	"m_strTable" => "researchDisburseConsider",
 	"m_srcTableName" => "researchDisburseConsider"
 ));
 
-$proto18["m_sql"] = "researchRegisterDesc";
+$proto18["m_sql"] = "researchConsiderFileCheck";
 $proto18["m_srcTableName"] = "researchDisburseConsider";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -1910,12 +2366,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchConsiderName",
+	"m_strName" => "researchRegisterDesc",
 	"m_strTable" => "researchDisburseConsider",
 	"m_srcTableName" => "researchDisburseConsider"
 ));
 
-$proto20["m_sql"] = "researchConsiderName";
+$proto20["m_sql"] = "researchRegisterDesc";
 $proto20["m_srcTableName"] = "researchDisburseConsider";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -1924,12 +2380,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchRegisterDescCheck",
 	"m_strTable" => "researchDisburseConsider",
 	"m_srcTableName" => "researchDisburseConsider"
 ));
 
-$proto22["m_sql"] = "entryUserName";
+$proto22["m_sql"] = "researchRegisterDescCheck";
 $proto22["m_srcTableName"] = "researchDisburseConsider";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -1938,58 +2394,103 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "researchConsiderName",
 	"m_strTable" => "researchDisburseConsider",
 	"m_srcTableName" => "researchDisburseConsider"
 ));
 
-$proto24["m_sql"] = "entryTime";
+$proto24["m_sql"] = "researchConsiderName";
 $proto24["m_srcTableName"] = "researchDisburseConsider";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
 $obj = new SQLFieldListItem($proto24);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "researchDisburseConsider";
-$proto27["m_srcTableName"] = "researchDisburseConsider";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "id";
-$proto27["m_columns"][] = "researchDisburseID";
-$proto27["m_columns"][] = "researchConsiderNumber";
-$proto27["m_columns"][] = "processName";
-$proto27["m_columns"][] = "stepName";
-$proto27["m_columns"][] = "researchConsiderFile";
-$proto27["m_columns"][] = "researchRegisterDesc";
-$proto27["m_columns"][] = "researchConsiderName";
-$proto27["m_columns"][] = "entryUserName";
-$proto27["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto27);
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "researchConsiderValue",
+	"m_strTable" => "researchDisburseConsider",
+	"m_srcTableName" => "researchDisburseConsider"
+));
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "researchDisburseConsider";
-$proto26["m_alias"] = "";
+$proto26["m_sql"] = "researchConsiderValue";
 $proto26["m_srcTableName"] = "researchDisburseConsider";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto28=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryUserName",
+	"m_strTable" => "researchDisburseConsider",
+	"m_srcTableName" => "researchDisburseConsider"
+));
+
+$proto28["m_sql"] = "entryUserName";
+$proto28["m_srcTableName"] = "researchDisburseConsider";
+$proto28["m_expr"]=$obj;
+$proto28["m_alias"] = "";
+$obj = new SQLFieldListItem($proto28);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto30=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchDisburseConsider",
+	"m_srcTableName" => "researchDisburseConsider"
+));
+
+$proto30["m_sql"] = "entryTime";
+$proto30["m_srcTableName"] = "researchDisburseConsider";
+$proto30["m_expr"]=$obj;
+$proto30["m_alias"] = "";
+$obj = new SQLFieldListItem($proto30);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto32=array();
+$proto32["m_link"] = "SQLL_MAIN";
+			$proto33=array();
+$proto33["m_strName"] = "researchDisburseConsider";
+$proto33["m_srcTableName"] = "researchDisburseConsider";
+$proto33["m_columns"] = array();
+$proto33["m_columns"][] = "id";
+$proto33["m_columns"][] = "researchDisburseID";
+$proto33["m_columns"][] = "researchConsiderNumber";
+$proto33["m_columns"][] = "processName";
+$proto33["m_columns"][] = "stepName";
+$proto33["m_columns"][] = "researchConsiderFile";
+$proto33["m_columns"][] = "researchConsiderFileCheck";
+$proto33["m_columns"][] = "researchRegisterDesc";
+$proto33["m_columns"][] = "researchRegisterDescCheck";
+$proto33["m_columns"][] = "researchConsiderName";
+$proto33["m_columns"][] = "researchConsiderValue";
+$proto33["m_columns"][] = "entryUserName";
+$proto33["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto33);
+
+$proto32["m_table"] = $obj;
+$proto32["m_sql"] = "researchDisburseConsider";
+$proto32["m_alias"] = "";
+$proto32["m_srcTableName"] = "researchDisburseConsider";
+$proto34=array();
+$proto34["m_sql"] = "";
+$proto34["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto34["m_column"]=$obj;
+$proto34["m_contained"] = array();
+$proto34["m_strCase"] = "";
+$proto34["m_havingmode"] = false;
+$proto34["m_inBrackets"] = false;
+$proto34["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto34);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto32["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto32);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2005,13 +2506,14 @@ $queryData_researchdisburseconsider = createSqlQuery_researchdisburseconsider();
 	
 				;
 
-										
+													
 
 $tdataresearchdisburseconsider[".sqlquery"] = $queryData_researchdisburseconsider;
 
 
 
-$tableEvents["researchDisburseConsider"] = new eventsBase;
-$tdataresearchdisburseconsider[".hasEvents"] = false;
+include_once(getabspath("include/researchdisburseconsider_events.php"));
+$tableEvents["researchDisburseConsider"] = new eventclass_researchdisburseconsider;
+$tdataresearchdisburseconsider[".hasEvents"] = true;
 
 ?>

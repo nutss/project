@@ -382,11 +382,7 @@ class Chart
 			return true;
 		if("process" == $this->chrt_array['tables'][0])
 			return true;
-		if("consider" == $this->chrt_array['tables'][0])
-			return true;
 		if("researchType" == $this->chrt_array['tables'][0])
-			return true;
-		if("researchProjectGroup" == $this->chrt_array['tables'][0])
 			return true;
 		if("researchOperatingPeriod" == $this->chrt_array['tables'][0])
 			return true;
@@ -421,6 +417,38 @@ class Chart
 		if("researchOperatingPeriod" == $this->chrt_array['tables'][0])
 			return true;
 		if("researchScholarshipRegister" == $this->chrt_array['tables'][0])
+			return true;
+		if("missionFollow" == $this->chrt_array['tables'][0])
+			return true;
+		if("missionAssignment" == $this->chrt_array['tables'][0])
+			return true;
+		if("optionGroup" == $this->chrt_array['tables'][0])
+			return true;
+		if("optionSub" == $this->chrt_array['tables'][0])
+			return true;
+		if("project_audit" == $this->chrt_array['tables'][0])
+			return true;
+		if("considerChoice" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchConsider" == $this->chrt_array['tables'][0])
+			return true;
+		if("project_uggroups" == $this->chrt_array['tables'][0])
+			return true;
+		if("statusType" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

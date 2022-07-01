@@ -28,7 +28,7 @@
 		>
 							{BEGIN top_block}
 <div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
-		data-v-width="4"
+		data-v-width="5"
 	data-v-margin="0"
 	
 >		
@@ -46,7 +46,7 @@
 {END top_block}
 									{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
-		data-v-width="4"
+		data-v-width="5"
 	data-v-margin="0"
 	
 >		
@@ -75,6 +75,30 @@
 </div>
 </div>
 {END message_block}	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}	</div>					</div>
 	</div>		
 {END above-grid_block}
 									{BEGIN grid_block}
@@ -89,9 +113,9 @@
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
 	{$grid_hiddenattr} 
-		data-form-width="1"
+		data-form-width="3"
 		
-		data-v-width="4"
+		data-v-width="5"
 	>
 	<tbody>
 										<tr {$row_grid_0} >
@@ -102,10 +126,9 @@
 	{$cell_grid_c3}
 	class=" r-ori-vert"
 	
-				data-fullwidth
-		
+			
 			data-cellId="grid_c3" data-pageid="{$pageid}"
-		data-v-cell="4"
+		data-v-cell="2"
 		
 >
 	<div edit-form-cell class="clearfix">
@@ -152,27 +175,6 @@
 
 {END researchProjectNo_fieldblock}
 											
-{BEGIN researchProjectGroupName_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectGroupName}  r-vertical-field" 
-	data-signal-error-for="researchProjectGroupName{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="researchProjectGroupName" data-fieldname="researchProjectGroupName" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectGroupName}">
-		{BEGIN researchProjectGroupName_label}{$label researchScholarshipProposal researchProjectGroupName }{END researchProjectGroupName_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectGroupName_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectGroupName">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectGroupName }		</div>
-	</div>
-</div>
-
-
-{END researchProjectGroupName_fieldblock}
-											
 {BEGIN researchProjectNameThai_fieldblock}
 
 
@@ -214,6 +216,209 @@
 
 
 {END researchProjectNameEng_fieldblock}
+											
+{BEGIN researchProjectMainField_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectMainField}  r-vertical-field" 
+	data-signal-error-for="researchProjectMainField{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="researchProjectMainField" data-fieldname="researchProjectMainField" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectMainField}">
+		{BEGIN researchProjectMainField_label}{$label researchScholarshipProposal researchProjectMainField }{END researchProjectMainField_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectMainField_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectMainField">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectMainField }		</div>
+	</div>
+</div>
+
+
+{END researchProjectMainField_fieldblock}
+											
+{BEGIN researchProjectAffiliationMobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationMobile}  r-vertical-field" 
+	data-signal-error-for="researchProjectAffiliationMobile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="researchProjectAffiliationMobile" data-fieldname="researchProjectAffiliationMobile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationMobile}">
+		{BEGIN researchProjectAffiliationMobile_label}{$label researchScholarshipProposal researchProjectAffiliationMobile }{END researchProjectAffiliationMobile_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectAffiliationMobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationMobile">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectAffiliationMobile }		</div>
+	</div>
+</div>
+
+
+{END researchProjectAffiliationMobile_fieldblock}
+											
+{BEGIN researchProjectAffiliationTelephone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationTelephone}  r-vertical-field" 
+	data-signal-error-for="researchProjectAffiliationTelephone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="researchProjectAffiliationTelephone" data-fieldname="researchProjectAffiliationTelephone" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationTelephone}">
+		{BEGIN researchProjectAffiliationTelephone_label}{$label researchScholarshipProposal researchProjectAffiliationTelephone }{END researchProjectAffiliationTelephone_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectAffiliationTelephone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationTelephone">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectAffiliationTelephone }		</div>
+	</div>
+</div>
+
+
+{END researchProjectAffiliationTelephone_fieldblock}
+											
+{BEGIN researchProjectAffiliationEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationEmail}  r-vertical-field" 
+	data-signal-error-for="researchProjectAffiliationEmail{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="researchProjectAffiliationEmail" data-fieldname="researchProjectAffiliationEmail" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationEmail}">
+		{BEGIN researchProjectAffiliationEmail_label}{$label researchScholarshipProposal researchProjectAffiliationEmail }{END researchProjectAffiliationEmail_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectAffiliationEmail_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationEmail">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectAffiliationEmail }		</div>
+	</div>
+</div>
+
+
+{END researchProjectAffiliationEmail_fieldblock}
+											
+{BEGIN researchProjectBankAccountName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankAccountName}  r-vertical-field" 
+	data-signal-error-for="researchProjectBankAccountName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="researchProjectBankAccountName" data-fieldname="researchProjectBankAccountName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankAccountName}">
+		{BEGIN researchProjectBankAccountName_label}{$label researchScholarshipProposal researchProjectBankAccountName }{END researchProjectBankAccountName_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectBankAccountName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectBankAccountName">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectBankAccountName }		</div>
+	</div>
+</div>
+
+
+{END researchProjectBankAccountName_fieldblock}
+											
+{BEGIN researchProjectBankName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankName}  r-vertical-field" 
+	data-signal-error-for="researchProjectBankName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="researchProjectBankName" data-fieldname="researchProjectBankName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankName}">
+		{BEGIN researchProjectBankName_label}{$label researchScholarshipProposal researchProjectBankName }{END researchProjectBankName_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectBankName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectBankName">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectBankName }		</div>
+	</div>
+</div>
+
+
+{END researchProjectBankName_fieldblock}
+											
+{BEGIN researchProjectBankNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankNo}  r-vertical-field" 
+	data-signal-error-for="researchProjectBankNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="researchProjectBankNo" data-fieldname="researchProjectBankNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankNo}">
+		{BEGIN researchProjectBankNo_label}{$label researchScholarshipProposal researchProjectBankNo }{END researchProjectBankNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectBankNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectBankNo">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectBankNo }		</div>
+	</div>
+</div>
+
+
+{END researchProjectBankNo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}" data-page="researchscholarshipproposal_add"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN researchProjectGroupName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectGroupName}  r-vertical-field" 
+	data-signal-error-for="researchProjectGroupName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="researchProjectGroupName" data-fieldname="researchProjectGroupName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectGroupName}">
+		{BEGIN researchProjectGroupName_label}{$label researchScholarshipProposal researchProjectGroupName }{END researchProjectGroupName_label}
+	</label>
+	<div class="r-edit-field">
+		{$researchProjectGroupName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectGroupName">
+		<div class="text-muted" >
+		{$tooltip researchScholarshipProposal researchProjectGroupName }		</div>
+	</div>
+</div>
+
+
+{END researchProjectGroupName_fieldblock}
 											
 {BEGIN researchProjectPeriodYear_fieldblock}
 
@@ -299,27 +504,6 @@
 
 {END researchProjectDepartment_fieldblock}
 											
-{BEGIN researchProjectMainField_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectMainField}  r-vertical-field" 
-	data-signal-error-for="researchProjectMainField{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="researchProjectMainField" data-fieldname="researchProjectMainField" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectMainField}">
-		{BEGIN researchProjectMainField_label}{$label researchScholarshipProposal researchProjectMainField }{END researchProjectMainField_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectMainField_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectMainField">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectMainField }		</div>
-	</div>
-</div>
-
-
-{END researchProjectMainField_fieldblock}
-											
 {BEGIN researchProjectSubField_fieldblock}
 
 
@@ -362,27 +546,6 @@
 
 {END researchProjectHeadName_fieldblock}
 											
-{BEGIN researchProjectAffiliationName_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationName}  r-vertical-field" 
-	data-signal-error-for="researchProjectAffiliationName{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="researchProjectAffiliationName" data-fieldname="researchProjectAffiliationName" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationName}">
-		{BEGIN researchProjectAffiliationName_label}{$label researchScholarshipProposal researchProjectAffiliationName }{END researchProjectAffiliationName_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectAffiliationName_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationName">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectAffiliationName }		</div>
-	</div>
-</div>
-
-
-{END researchProjectAffiliationName_fieldblock}
-											
 {BEGIN researchProjectSubAffiliationName_fieldblock}
 
 
@@ -404,68 +567,26 @@
 
 {END researchProjectSubAffiliationName_fieldblock}
 											
-{BEGIN researchProjectAffiliationMobile_fieldblock}
+{BEGIN researchProjectAffiliationName_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationMobile}  r-vertical-field" 
-	data-signal-error-for="researchProjectAffiliationMobile{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="researchProjectAffiliationMobile" data-fieldname="researchProjectAffiliationMobile" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationName}  r-vertical-field" 
+	data-signal-error-for="researchProjectAffiliationName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="researchProjectAffiliationName" data-fieldname="researchProjectAffiliationName" >
 
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationMobile}">
-		{BEGIN researchProjectAffiliationMobile_label}{$label researchScholarshipProposal researchProjectAffiliationMobile }{END researchProjectAffiliationMobile_label}
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationName}">
+		{BEGIN researchProjectAffiliationName_label}{$label researchScholarshipProposal researchProjectAffiliationName }{END researchProjectAffiliationName_label}
 	</label>
 	<div class="r-edit-field">
-		{$researchProjectAffiliationMobile_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationMobile">
+		{$researchProjectAffiliationName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationName">
 		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectAffiliationMobile }		</div>
+		{$tooltip researchScholarshipProposal researchProjectAffiliationName }		</div>
 	</div>
 </div>
 
 
-{END researchProjectAffiliationMobile_fieldblock}
-											
-{BEGIN researchProjectAffiliationTelephone_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationTelephone}  r-vertical-field" 
-	data-signal-error-for="researchProjectAffiliationTelephone{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="researchProjectAffiliationTelephone" data-fieldname="researchProjectAffiliationTelephone" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationTelephone}">
-		{BEGIN researchProjectAffiliationTelephone_label}{$label researchScholarshipProposal researchProjectAffiliationTelephone }{END researchProjectAffiliationTelephone_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectAffiliationTelephone_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationTelephone">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectAffiliationTelephone }		</div>
-	</div>
-</div>
-
-
-{END researchProjectAffiliationTelephone_fieldblock}
-											
-{BEGIN researchProjectAffiliationEmail_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationEmail}  r-vertical-field" 
-	data-signal-error-for="researchProjectAffiliationEmail{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="researchProjectAffiliationEmail" data-fieldname="researchProjectAffiliationEmail" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectAffiliationEmail}">
-		{BEGIN researchProjectAffiliationEmail_label}{$label researchScholarshipProposal researchProjectAffiliationEmail }{END researchProjectAffiliationEmail_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectAffiliationEmail_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectAffiliationEmail">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectAffiliationEmail }		</div>
-	</div>
-</div>
-
-
-{END researchProjectAffiliationEmail_fieldblock}
+{END researchProjectAffiliationName_fieldblock}
 											
 {BEGIN researchProjectFile_fieldblock}
 
@@ -488,69 +609,48 @@
 
 {END researchProjectFile_fieldblock}
 											
-{BEGIN researchProjectBankAccountName_fieldblock}
+{BEGIN researchProjectStatus_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankAccountName}  r-vertical-field" 
-	data-signal-error-for="researchProjectBankAccountName{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="researchProjectBankAccountName" data-fieldname="researchProjectBankAccountName" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectStatus}  r-vertical-field" 
+	data-signal-error-for="researchProjectStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="researchProjectStatus" data-fieldname="researchProjectStatus" >
 
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankAccountName}">
-		{BEGIN researchProjectBankAccountName_label}{$label researchScholarshipProposal researchProjectBankAccountName }{END researchProjectBankAccountName_label}
+	<label class="r-edit-label control-label" for="{$labelfor_researchProjectStatus}">
+		{BEGIN researchProjectStatus_label}{$label researchScholarshipProposal researchProjectStatus }{END researchProjectStatus_label}
 	</label>
 	<div class="r-edit-field">
-		{$researchProjectBankAccountName_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectBankAccountName">
+		{$researchProjectStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="researchProjectStatus">
 		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectBankAccountName }		</div>
+		{$tooltip researchScholarshipProposal researchProjectStatus }		</div>
 	</div>
 </div>
 
 
-{END researchProjectBankAccountName_fieldblock}
-											
-{BEGIN researchProjectBankNo_fieldblock}
+{END researchProjectStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
 
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankNo}  r-vertical-field" 
-	data-signal-error-for="researchProjectBankNo{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="researchProjectBankNo" data-fieldname="researchProjectBankNo" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankNo}">
-		{BEGIN researchProjectBankNo_label}{$label researchScholarshipProposal researchProjectBankNo }{END researchProjectBankNo_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectBankNo_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectBankNo">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectBankNo }		</div>
-	</div>
-</div>
-
-
-{END researchProjectBankNo_fieldblock}
-											
-{BEGIN researchProjectBankName_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectBankName}  r-vertical-field" 
-	data-signal-error-for="researchProjectBankName{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="researchProjectBankName" data-fieldname="researchProjectBankName" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_researchProjectBankName}">
-		{BEGIN researchProjectBankName_label}{$label researchScholarshipProposal researchProjectBankName }{END researchProjectBankName_label}
-	</label>
-	<div class="r-edit-field">
-		{$researchProjectBankName_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="researchProjectBankName">
-		<div class="text-muted" >
-		{$tooltip researchScholarshipProposal researchProjectBankName }		</div>
-	</div>
-</div>
-
-
-{END researchProjectBankName_fieldblock}
-											
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN entryUserName_fieldblock}
 
 
@@ -571,7 +671,43 @@
 
 
 {END entryUserName_fieldblock}
-											
+	
+								</td>
+			{END cellblock_grid_c5}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN entryTime_fieldblock}
 
 
@@ -592,10 +728,13 @@
 
 
 {END entryTime_fieldblock}
-										</td>
-			{END cellblock_grid_c3}
-										</tr>
-										</tbody></table>
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+																</tbody></table>
 				
 {BEGIN details_researchoperatingperiod}
 <div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
@@ -618,7 +757,7 @@
 				{END grid_block}
 									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
-		data-v-width="4"
+		data-v-width="5"
 	data-v-margin="0"
 	
 >		

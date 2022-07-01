@@ -27,76 +27,79 @@ if(mlang_getcurrentlang()=="English")
 	$pageTitlesresearchscholarshipproposal["English"] = array();
 	$fieldLabelsresearchscholarshipproposal["English"]["id"] = "ID";
 	$fieldToolTipsresearchscholarshipproposal["English"]["id"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["id"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["id"] = "ID";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchRegisterID"] = "Research Register ID";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchRegisterID"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchRegisterID"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchRegisterID"] = "Research Register ID";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectNo"] = "Research Project No";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectNo"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNo"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNo"] = "Research Project No";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectGroupName"] = "Research Project Group Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectGroupName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectGroupName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectGroupName"] = "Research Project Group Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectNameThai"] = "Research Project Name Thai";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectNameThai"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNameThai"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNameThai"] = "Research Project Name Thai";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectNameEng"] = "Research Project Name Eng";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectNameEng"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNameEng"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectNameEng"] = "Research Project Name Eng";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectPeriodYear"] = "Research Project Period Year";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectPeriodYear"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectPeriodYear"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectPeriodYear"] = "Research Project Period Year";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectPeriodMonth"] = "Research Project Period Month";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectPeriodMonth"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectPeriodMonth"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectPeriodMonth"] = "Research Project Period Month";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectRequestedBudget"] = "Research Project Requested Budget";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectRequestedBudget"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectRequestedBudget"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectRequestedBudget"] = "Research Project Requested Budget";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectDepartment"] = "Research Project Department";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectDepartment"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectDepartment"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectDepartment"] = "Research Project Department";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectMainField"] = "Research Project Main Field";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectMainField"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectMainField"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectMainField"] = "Research Project Main Field";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectSubField"] = "Research Project Sub Field";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectSubField"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectSubField"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectSubField"] = "Research Project Sub Field";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectHeadName"] = "Research Project Head Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectHeadName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectHeadName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectHeadName"] = "Research Project Head Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectAffiliationName"] = "Research Project Affiliation Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectAffiliationName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationName"] = "Research Project Affiliation Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectSubAffiliationName"] = "Research Project Sub Affiliation Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectSubAffiliationName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectSubAffiliationName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectSubAffiliationName"] = "Research Project Sub Affiliation Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectAffiliationMobile"] = "Research Project Affiliation Mobile";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectAffiliationMobile"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationMobile"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationMobile"] = "Research Project Affiliation Mobile";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectAffiliationTelephone"] = "Research Project Affiliation Telephone";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectAffiliationTelephone"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationTelephone"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationTelephone"] = "Research Project Affiliation Telephone";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectAffiliationEmail"] = "Research Project Affiliation Email";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectAffiliationEmail"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationEmail"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectAffiliationEmail"] = "Research Project Affiliation Email";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectFile"] = "Research Project File";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectFile"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectFile"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectFile"] = "Research Project File";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectBankAccountName"] = "Research Project Bank Account Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectBankAccountName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankAccountName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankAccountName"] = "Research Project Bank Account Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectBankNo"] = "Research Project Bank No";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectBankNo"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankNo"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankNo"] = "Research Project Bank No";
 	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectBankName"] = "Research Project Bank Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectBankName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectBankName"] = "Research Project Bank Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["entryUserName"] = "Entry User Name";
 	$fieldToolTipsresearchscholarshipproposal["English"]["entryUserName"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["entryUserName"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["entryUserName"] = "Entry User Name";
 	$fieldLabelsresearchscholarshipproposal["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchscholarshipproposal["English"]["entryTime"] = "";
-	$placeHoldersresearchscholarshipproposal["English"]["entryTime"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["entryTime"] = "Entry Time";
+	$fieldLabelsresearchscholarshipproposal["English"]["researchProjectStatus"] = "Research Project Status";
+	$fieldToolTipsresearchscholarshipproposal["English"]["researchProjectStatus"] = "";
+	$placeHoldersresearchscholarshipproposal["English"]["researchProjectStatus"] = "Research Project Status";
 	if (count($fieldToolTipsresearchscholarshipproposal["English"]))
 		$tdataresearchscholarshipproposal[".isUseToolTips"] = true;
 }
@@ -108,76 +111,79 @@ if(mlang_getcurrentlang()=="Thai")
 	$pageTitlesresearchscholarshipproposal["Thai"] = array();
 	$fieldLabelsresearchscholarshipproposal["Thai"]["id"] = "ID";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["id"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["id"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["id"] = "ID";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchRegisterID"] = "ชื่อโครงการ (การรับสมัครขอรับทุนวิจัย)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchRegisterID"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchRegisterID"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchRegisterID"] = "ชื่อโครงการ (การรับสมัครขอรับทุนวิจัย)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectNo"] = "รหัสโครงการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectNo"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNo"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNo"] = "รหัสโครงการ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectGroupName"] = "กลุ่ม";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectGroupName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectGroupName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectGroupName"] = "กลุ่ม";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectNameThai"] = "ชื่อโครงการ (ภาษาไทย)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectNameThai"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNameThai"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNameThai"] = "ชื่อโครงการ (ภาษาไทย)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectNameEng"] = "Project Name (English)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectNameEng"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNameEng"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectNameEng"] = "Project Name (English)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectPeriodYear"] = "ระยะเวลา (ปี)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectPeriodYear"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectPeriodYear"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectPeriodYear"] = "ระยะเวลา (ปี)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectPeriodMonth"] = "ระยะเวลา (เดือน)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectPeriodMonth"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectPeriodMonth"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectPeriodMonth"] = "ระยะเวลา (เดือน)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectRequestedBudget"] = "งบประมาณที่เสนอขอ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectRequestedBudget"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectRequestedBudget"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectRequestedBudget"] = "งบประมาณที่เสนอขอ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectDepartment"] = "คณะ / กอง / สถาบันหน่วยงานเจ้าของโครงการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectDepartment"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectDepartment"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectDepartment"] = "คณะ / กอง / สถาบันหน่วยงานเจ้าของโครงการ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectMainField"] = "สาขาการวิจัยหลัก";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectMainField"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectMainField"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectMainField"] = "สาขาการวิจัยหลัก";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectSubField"] = "สาขาการวิจัยย่อย";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectSubField"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectSubField"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectSubField"] = "สาขาการวิจัยย่อย";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectHeadName"] = "ชื่อหัวหน้าเสนอโครงการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectHeadName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectHeadName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectHeadName"] = "ชื่อหัวหน้าเสนอโครงการ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectAffiliationName"] = "สังกัดนักวิจัย (ตอนเสนอขอ)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectAffiliationName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationName"] = "สังกัดนักวิจัย (ตอนเสนอขอ)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectSubAffiliationName"] = "สังกัดหน่วยงานย่อยของนักวิจัย (ตอนเสนอขอ)";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectSubAffiliationName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectSubAffiliationName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectSubAffiliationName"] = "สังกัดหน่วยงานย่อยของนักวิจัย (ตอนเสนอขอ)";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectAffiliationMobile"] = "โทรศัพท์มือถือนักวิจัย";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectAffiliationMobile"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationMobile"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationMobile"] = "โทรศัพท์มือถือนักวิจัย";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectAffiliationTelephone"] = "โทรศัพท์นักวิจัย";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectAffiliationTelephone"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationTelephone"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationTelephone"] = "โทรศัพท์นักวิจัย";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectAffiliationEmail"] = "อีเมล์นักวิจัย";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectAffiliationEmail"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationEmail"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectAffiliationEmail"] = "อีเมล์นักวิจัย";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectFile"] = "เอกสารข้อเสนอโครงการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectFile"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectFile"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectFile"] = "เอกสารข้อเสนอโครงการ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectBankAccountName"] = "ชื่อบัญชี";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectBankAccountName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankAccountName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankAccountName"] = "ชื่อบัญชี";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectBankNo"] = "หมายเลขบัญชี";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectBankNo"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankNo"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankNo"] = "หมายเลขบัญชี";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectBankName"] = "ธนาคาร";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectBankName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectBankName"] = "ธนาคาร";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["entryUserName"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["entryUserName"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsresearchscholarshipproposal["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchscholarshipproposal["Thai"]["entryTime"] = "";
-	$placeHoldersresearchscholarshipproposal["Thai"]["entryTime"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
+	$fieldLabelsresearchscholarshipproposal["Thai"]["researchProjectStatus"] = "สถานะ";
+	$fieldToolTipsresearchscholarshipproposal["Thai"]["researchProjectStatus"] = "";
+	$placeHoldersresearchscholarshipproposal["Thai"]["researchProjectStatus"] = "สถานะ";
 	if (count($fieldToolTipsresearchscholarshipproposal["Thai"]))
 		$tdataresearchscholarshipproposal[".isUseToolTips"] = true;
 }
@@ -211,7 +217,7 @@ $tdataresearchscholarshipproposal[".listAjax"] = false;
 //	temporary
 //$tdataresearchscholarshipproposal[".listAjax"] = false;
 
-	$tdataresearchscholarshipproposal[".audit"] = false;
+	$tdataresearchscholarshipproposal[".audit"] = true;
 
 	$tdataresearchscholarshipproposal[".locking"] = false;
 
@@ -283,7 +289,7 @@ $tdataresearchscholarshipproposal[".ajaxCodeSnippetAdded"] = false;
 
 $tdataresearchscholarshipproposal[".buttonsAdded"] = false;
 
-$tdataresearchscholarshipproposal[".addPageEvents"] = false;
+$tdataresearchscholarshipproposal[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataresearchscholarshipproposal[".isUseTimeForSearch"] = false;
@@ -319,6 +325,7 @@ $tdataresearchscholarshipproposal[".googleLikeFields"][] = "researchProjectFile"
 $tdataresearchscholarshipproposal[".googleLikeFields"][] = "researchProjectBankAccountName";
 $tdataresearchscholarshipproposal[".googleLikeFields"][] = "researchProjectBankNo";
 $tdataresearchscholarshipproposal[".googleLikeFields"][] = "researchProjectBankName";
+$tdataresearchscholarshipproposal[".googleLikeFields"][] = "researchProjectStatus";
 $tdataresearchscholarshipproposal[".googleLikeFields"][] = "entryUserName";
 $tdataresearchscholarshipproposal[".googleLikeFields"][] = "entryTime";
 
@@ -354,8 +361,8 @@ $tdataresearchscholarshipproposal[".strOrderBy"] = $tstrOrderBy;
 $tdataresearchscholarshipproposal[".orderindexes"] = array();
 
 
-$tdataresearchscholarshipproposal[".sqlHead"] = "SELECT id,  	researchRegisterID,  	researchProjectNo,  	researchProjectGroupName,  	researchProjectNameThai,  	researchProjectNameEng,  	researchProjectPeriodYear,  	researchProjectPeriodMonth,  	researchProjectRequestedBudget,  	researchProjectDepartment,  	researchProjectMainField,  	researchProjectSubField,  	researchProjectHeadName,  	researchProjectAffiliationName,  	researchProjectSubAffiliationName,  	researchProjectAffiliationMobile,  	researchProjectAffiliationTelephone,  	researchProjectAffiliationEmail,  	researchProjectFile,  	researchProjectBankAccountName,  	researchProjectBankNo,  	researchProjectBankName,  	entryUserName,  	entryTime";
-$tdataresearchscholarshipproposal[".sqlFrom"] = "FROM researchScholarshipProposal";
+$tdataresearchscholarshipproposal[".sqlHead"] = "SELECT researchScholarshipProposal.id,  researchScholarshipProposal.researchRegisterID,  researchScholarshipProposal.researchProjectNo,  researchScholarshipProposal.researchProjectGroupName,  researchScholarshipProposal.researchProjectNameThai,  researchScholarshipProposal.researchProjectNameEng,  researchScholarshipProposal.researchProjectPeriodYear,  researchScholarshipProposal.researchProjectPeriodMonth,  researchScholarshipProposal.researchProjectRequestedBudget,  researchScholarshipProposal.researchProjectDepartment,  researchScholarshipProposal.researchProjectMainField,  researchScholarshipProposal.researchProjectSubField,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAffiliationName,  researchScholarshipProposal.researchProjectSubAffiliationName,  researchScholarshipProposal.researchProjectAffiliationMobile,  researchScholarshipProposal.researchProjectAffiliationTelephone,  researchScholarshipProposal.researchProjectAffiliationEmail,  researchScholarshipProposal.researchProjectFile,  researchScholarshipProposal.researchProjectBankAccountName,  researchScholarshipProposal.researchProjectBankNo,  researchScholarshipProposal.researchProjectBankName,  researchScholarshipProposal.researchProjectStatus,  researchScholarshipProposal.entryUserName,  researchScholarshipProposal.entryTime";
+$tdataresearchscholarshipproposal[".sqlFrom"] = "FROM researchScholarshipProposal  INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
 $tdataresearchscholarshipproposal[".sqlWhereExpr"] = "";
 $tdataresearchscholarshipproposal[".sqlTail"] = "";
 
@@ -423,7 +430,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "id";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "id";
+	$fdata["FullName"] = "researchScholarshipProposal.id";
 
 	
 	
@@ -563,7 +570,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchRegisterID";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchRegisterID";
+	$fdata["FullName"] = "researchScholarshipProposal.researchRegisterID";
 
 	
 	
@@ -728,7 +735,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectNo";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectNo";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectNo";
 
 	
 	
@@ -866,7 +873,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectGroupName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectGroupName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectGroupName";
 
 	
 	
@@ -914,21 +921,22 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "researchProjectGroup";
+	$edata["LookupTable"] = "optionSub";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 0;
 
 	
 		
-	$edata["LinkField"] = "researchProjectGroupName";
+	$edata["LinkField"] = "optionName";
 	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "researchProjectGroupName";
+	$edata["DisplayField"] = "optionName";
+
+				$edata["LookupWhere"] = "optionGroupID = 4";
+
 
 	
-
-	
-	$edata["LookupOrderBy"] = "researchProjectGroupName";
+	$edata["LookupOrderBy"] = "optionName";
 
 	
 	
@@ -1031,7 +1039,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectNameThai";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectNameThai";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectNameThai";
 
 	
 	
@@ -1169,7 +1177,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectNameEng";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectNameEng";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectNameEng";
 
 	
 	
@@ -1307,7 +1315,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectPeriodYear";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectPeriodYear";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectPeriodYear";
 
 	
 	
@@ -1447,7 +1455,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectPeriodMonth";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectPeriodMonth";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectPeriodMonth";
 
 	
 	
@@ -1587,7 +1595,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectRequestedBudget";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectRequestedBudget";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectRequestedBudget";
 
 	
 	
@@ -1728,7 +1736,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectDepartment";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectDepartment";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectDepartment";
 
 	
 	
@@ -1866,7 +1874,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectMainField";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectMainField";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectMainField";
 
 	
 	
@@ -2004,7 +2012,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectSubField";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectSubField";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectSubField";
 
 	
 	
@@ -2142,7 +2150,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectHeadName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectHeadName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectHeadName";
 
 	
 	
@@ -2280,7 +2288,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectAffiliationName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectAffiliationName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectAffiliationName";
 
 	
 	
@@ -2418,7 +2426,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectSubAffiliationName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectSubAffiliationName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectSubAffiliationName";
 
 	
 	
@@ -2556,7 +2564,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectAffiliationMobile";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectAffiliationMobile";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectAffiliationMobile";
 
 	
 	
@@ -2694,7 +2702,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectAffiliationTelephone";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectAffiliationTelephone";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectAffiliationTelephone";
 
 	
 	
@@ -2832,7 +2840,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectAffiliationEmail";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectAffiliationEmail";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectAffiliationEmail";
 
 	
 	
@@ -2970,7 +2978,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectFile";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectFile";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectFile";
 
 	
 	
@@ -3110,7 +3118,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectBankAccountName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectBankAccountName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectBankAccountName";
 
 	
 	
@@ -3248,7 +3256,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectBankNo";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectBankNo";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectBankNo";
 
 	
 	
@@ -3386,7 +3394,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "researchProjectBankName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchProjectBankName";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectBankName";
 
 	
 	
@@ -3504,10 +3512,144 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 
 	$tdataresearchscholarshipproposal["researchProjectBankName"] = $fdata;
 		$tdataresearchscholarshipproposal[".searchableFields"][] = "researchProjectBankName";
-//	entryUserName
+//	researchProjectStatus
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 23;
+	$fdata["strName"] = "researchProjectStatus";
+	$fdata["GoodName"] = "researchProjectStatus";
+	$fdata["ownerTable"] = "researchScholarshipProposal";
+	$fdata["Label"] = GetFieldLabel("researchScholarshipProposal","researchProjectStatus");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchProjectStatus";
+
+		$fdata["sourceSingle"] = "researchProjectStatus";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectStatus";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchscholarshipproposal["researchProjectStatus"] = $fdata;
+		$tdataresearchscholarshipproposal[".searchableFields"][] = "researchProjectStatus";
+//	entryUserName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 24;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -3524,7 +3666,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "entryUserName";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "entryUserName";
+	$fdata["FullName"] = "researchScholarshipProposal.entryUserName";
 
 	
 	
@@ -3643,7 +3785,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 24;
+	$fdata["Index"] = 25;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -3660,7 +3802,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 		$fdata["sourceSingle"] = "entryTime";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "entryTime";
+	$fdata["FullName"] = "researchScholarshipProposal.entryTime";
 
 	
 	
@@ -3708,8 +3850,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -3730,7 +3871,7 @@ $tdataresearchscholarshipproposal[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+	
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -3878,8 +4019,8 @@ function createSqlQuery_researchscholarshipproposal()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchRegisterID,  	researchProjectNo,  	researchProjectGroupName,  	researchProjectNameThai,  	researchProjectNameEng,  	researchProjectPeriodYear,  	researchProjectPeriodMonth,  	researchProjectRequestedBudget,  	researchProjectDepartment,  	researchProjectMainField,  	researchProjectSubField,  	researchProjectHeadName,  	researchProjectAffiliationName,  	researchProjectSubAffiliationName,  	researchProjectAffiliationMobile,  	researchProjectAffiliationTelephone,  	researchProjectAffiliationEmail,  	researchProjectFile,  	researchProjectBankAccountName,  	researchProjectBankNo,  	researchProjectBankName,  	entryUserName,  	entryTime";
-$proto0["m_strFrom"] = "FROM researchScholarshipProposal";
+$proto0["m_strFieldList"] = "researchScholarshipProposal.id,  researchScholarshipProposal.researchRegisterID,  researchScholarshipProposal.researchProjectNo,  researchScholarshipProposal.researchProjectGroupName,  researchScholarshipProposal.researchProjectNameThai,  researchScholarshipProposal.researchProjectNameEng,  researchScholarshipProposal.researchProjectPeriodYear,  researchScholarshipProposal.researchProjectPeriodMonth,  researchScholarshipProposal.researchProjectRequestedBudget,  researchScholarshipProposal.researchProjectDepartment,  researchScholarshipProposal.researchProjectMainField,  researchScholarshipProposal.researchProjectSubField,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAffiliationName,  researchScholarshipProposal.researchProjectSubAffiliationName,  researchScholarshipProposal.researchProjectAffiliationMobile,  researchScholarshipProposal.researchProjectAffiliationTelephone,  researchScholarshipProposal.researchProjectAffiliationEmail,  researchScholarshipProposal.researchProjectFile,  researchScholarshipProposal.researchProjectBankAccountName,  researchScholarshipProposal.researchProjectBankNo,  researchScholarshipProposal.researchProjectBankName,  researchScholarshipProposal.researchProjectStatus,  researchScholarshipProposal.entryUserName,  researchScholarshipProposal.entryTime";
+$proto0["m_strFrom"] = "FROM researchScholarshipProposal  INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
@@ -3925,7 +4066,7 @@ $proto0["m_fieldlist"] = array();
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto6["m_sql"] = "id";
+$proto6["m_sql"] = "researchScholarshipProposal.id";
 $proto6["m_srcTableName"] = "researchScholarshipProposal";
 $proto6["m_expr"]=$obj;
 $proto6["m_alias"] = "";
@@ -3939,7 +4080,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto8["m_sql"] = "researchRegisterID";
+$proto8["m_sql"] = "researchScholarshipProposal.researchRegisterID";
 $proto8["m_srcTableName"] = "researchScholarshipProposal";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -3953,7 +4094,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto10["m_sql"] = "researchProjectNo";
+$proto10["m_sql"] = "researchScholarshipProposal.researchProjectNo";
 $proto10["m_srcTableName"] = "researchScholarshipProposal";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -3967,7 +4108,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto12["m_sql"] = "researchProjectGroupName";
+$proto12["m_sql"] = "researchScholarshipProposal.researchProjectGroupName";
 $proto12["m_srcTableName"] = "researchScholarshipProposal";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -3981,7 +4122,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto14["m_sql"] = "researchProjectNameThai";
+$proto14["m_sql"] = "researchScholarshipProposal.researchProjectNameThai";
 $proto14["m_srcTableName"] = "researchScholarshipProposal";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -3995,7 +4136,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto16["m_sql"] = "researchProjectNameEng";
+$proto16["m_sql"] = "researchScholarshipProposal.researchProjectNameEng";
 $proto16["m_srcTableName"] = "researchScholarshipProposal";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -4009,7 +4150,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto18["m_sql"] = "researchProjectPeriodYear";
+$proto18["m_sql"] = "researchScholarshipProposal.researchProjectPeriodYear";
 $proto18["m_srcTableName"] = "researchScholarshipProposal";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -4023,7 +4164,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto20["m_sql"] = "researchProjectPeriodMonth";
+$proto20["m_sql"] = "researchScholarshipProposal.researchProjectPeriodMonth";
 $proto20["m_srcTableName"] = "researchScholarshipProposal";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -4037,7 +4178,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto22["m_sql"] = "researchProjectRequestedBudget";
+$proto22["m_sql"] = "researchScholarshipProposal.researchProjectRequestedBudget";
 $proto22["m_srcTableName"] = "researchScholarshipProposal";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -4051,7 +4192,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto24["m_sql"] = "researchProjectDepartment";
+$proto24["m_sql"] = "researchScholarshipProposal.researchProjectDepartment";
 $proto24["m_srcTableName"] = "researchScholarshipProposal";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -4065,7 +4206,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto26["m_sql"] = "researchProjectMainField";
+$proto26["m_sql"] = "researchScholarshipProposal.researchProjectMainField";
 $proto26["m_srcTableName"] = "researchScholarshipProposal";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -4079,7 +4220,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto28["m_sql"] = "researchProjectSubField";
+$proto28["m_sql"] = "researchScholarshipProposal.researchProjectSubField";
 $proto28["m_srcTableName"] = "researchScholarshipProposal";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -4093,7 +4234,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto30["m_sql"] = "researchProjectHeadName";
+$proto30["m_sql"] = "researchScholarshipProposal.researchProjectHeadName";
 $proto30["m_srcTableName"] = "researchScholarshipProposal";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -4107,7 +4248,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto32["m_sql"] = "researchProjectAffiliationName";
+$proto32["m_sql"] = "researchScholarshipProposal.researchProjectAffiliationName";
 $proto32["m_srcTableName"] = "researchScholarshipProposal";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -4121,7 +4262,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto34["m_sql"] = "researchProjectSubAffiliationName";
+$proto34["m_sql"] = "researchScholarshipProposal.researchProjectSubAffiliationName";
 $proto34["m_srcTableName"] = "researchScholarshipProposal";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -4135,7 +4276,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto36["m_sql"] = "researchProjectAffiliationMobile";
+$proto36["m_sql"] = "researchScholarshipProposal.researchProjectAffiliationMobile";
 $proto36["m_srcTableName"] = "researchScholarshipProposal";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -4149,7 +4290,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto38["m_sql"] = "researchProjectAffiliationTelephone";
+$proto38["m_sql"] = "researchScholarshipProposal.researchProjectAffiliationTelephone";
 $proto38["m_srcTableName"] = "researchScholarshipProposal";
 $proto38["m_expr"]=$obj;
 $proto38["m_alias"] = "";
@@ -4163,7 +4304,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto40["m_sql"] = "researchProjectAffiliationEmail";
+$proto40["m_sql"] = "researchScholarshipProposal.researchProjectAffiliationEmail";
 $proto40["m_srcTableName"] = "researchScholarshipProposal";
 $proto40["m_expr"]=$obj;
 $proto40["m_alias"] = "";
@@ -4177,7 +4318,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto42["m_sql"] = "researchProjectFile";
+$proto42["m_sql"] = "researchScholarshipProposal.researchProjectFile";
 $proto42["m_srcTableName"] = "researchScholarshipProposal";
 $proto42["m_expr"]=$obj;
 $proto42["m_alias"] = "";
@@ -4191,7 +4332,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto44["m_sql"] = "researchProjectBankAccountName";
+$proto44["m_sql"] = "researchScholarshipProposal.researchProjectBankAccountName";
 $proto44["m_srcTableName"] = "researchScholarshipProposal";
 $proto44["m_expr"]=$obj;
 $proto44["m_alias"] = "";
@@ -4205,7 +4346,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto46["m_sql"] = "researchProjectBankNo";
+$proto46["m_sql"] = "researchScholarshipProposal.researchProjectBankNo";
 $proto46["m_srcTableName"] = "researchScholarshipProposal";
 $proto46["m_expr"]=$obj;
 $proto46["m_alias"] = "";
@@ -4219,7 +4360,7 @@ $proto0["m_fieldlist"][]=$obj;
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto48["m_sql"] = "researchProjectBankName";
+$proto48["m_sql"] = "researchScholarshipProposal.researchProjectBankName";
 $proto48["m_srcTableName"] = "researchScholarshipProposal";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -4228,12 +4369,12 @@ $obj = new SQLFieldListItem($proto48);
 $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchProjectStatus",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto50["m_sql"] = "entryUserName";
+$proto50["m_sql"] = "researchScholarshipProposal.researchProjectStatus";
 $proto50["m_srcTableName"] = "researchScholarshipProposal";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "";
@@ -4242,72 +4383,141 @@ $obj = new SQLFieldListItem($proto50);
 $proto0["m_fieldlist"][]=$obj;
 						$proto52=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "researchScholarshipProposal"
 ));
 
-$proto52["m_sql"] = "entryTime";
+$proto52["m_sql"] = "researchScholarshipProposal.entryUserName";
 $proto52["m_srcTableName"] = "researchScholarshipProposal";
 $proto52["m_expr"]=$obj;
 $proto52["m_alias"] = "";
 $obj = new SQLFieldListItem($proto52);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto54=array();
-$proto54["m_link"] = "SQLL_MAIN";
-			$proto55=array();
-$proto55["m_strName"] = "researchScholarshipProposal";
-$proto55["m_srcTableName"] = "researchScholarshipProposal";
-$proto55["m_columns"] = array();
-$proto55["m_columns"][] = "id";
-$proto55["m_columns"][] = "researchRegisterID";
-$proto55["m_columns"][] = "researchProjectNo";
-$proto55["m_columns"][] = "researchProjectGroupName";
-$proto55["m_columns"][] = "researchProjectNameThai";
-$proto55["m_columns"][] = "researchProjectNameEng";
-$proto55["m_columns"][] = "researchProjectPeriodYear";
-$proto55["m_columns"][] = "researchProjectPeriodMonth";
-$proto55["m_columns"][] = "researchProjectRequestedBudget";
-$proto55["m_columns"][] = "researchProjectDepartment";
-$proto55["m_columns"][] = "researchProjectMainField";
-$proto55["m_columns"][] = "researchProjectSubField";
-$proto55["m_columns"][] = "researchProjectHeadName";
-$proto55["m_columns"][] = "researchProjectAffiliationName";
-$proto55["m_columns"][] = "researchProjectSubAffiliationName";
-$proto55["m_columns"][] = "researchProjectAffiliationMobile";
-$proto55["m_columns"][] = "researchProjectAffiliationTelephone";
-$proto55["m_columns"][] = "researchProjectAffiliationEmail";
-$proto55["m_columns"][] = "researchProjectFile";
-$proto55["m_columns"][] = "researchProjectBankAccountName";
-$proto55["m_columns"][] = "researchProjectBankNo";
-$proto55["m_columns"][] = "researchProjectBankName";
-$proto55["m_columns"][] = "entryUserName";
-$proto55["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto55);
+						$proto54=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchScholarshipProposal",
+	"m_srcTableName" => "researchScholarshipProposal"
+));
 
-$proto54["m_table"] = $obj;
-$proto54["m_sql"] = "researchScholarshipProposal";
-$proto54["m_alias"] = "";
+$proto54["m_sql"] = "researchScholarshipProposal.entryTime";
 $proto54["m_srcTableName"] = "researchScholarshipProposal";
-$proto56=array();
-$proto56["m_sql"] = "";
-$proto56["m_uniontype"] = "SQLL_UNKNOWN";
+$proto54["m_expr"]=$obj;
+$proto54["m_alias"] = "";
+$obj = new SQLFieldListItem($proto54);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto56=array();
+$proto56["m_link"] = "SQLL_MAIN";
+			$proto57=array();
+$proto57["m_strName"] = "researchScholarshipProposal";
+$proto57["m_srcTableName"] = "researchScholarshipProposal";
+$proto57["m_columns"] = array();
+$proto57["m_columns"][] = "id";
+$proto57["m_columns"][] = "researchRegisterID";
+$proto57["m_columns"][] = "researchProjectNo";
+$proto57["m_columns"][] = "researchProjectGroupName";
+$proto57["m_columns"][] = "researchProjectNameThai";
+$proto57["m_columns"][] = "researchProjectNameEng";
+$proto57["m_columns"][] = "researchProjectPeriodYear";
+$proto57["m_columns"][] = "researchProjectPeriodMonth";
+$proto57["m_columns"][] = "researchProjectEndDate";
+$proto57["m_columns"][] = "researchOperatingPeriodEndDate";
+$proto57["m_columns"][] = "researchProjectRequestedBudget";
+$proto57["m_columns"][] = "researchProjectDepartment";
+$proto57["m_columns"][] = "researchProjectMainField";
+$proto57["m_columns"][] = "researchProjectSubField";
+$proto57["m_columns"][] = "researchProjectHeadName";
+$proto57["m_columns"][] = "researchProjectAffiliationName";
+$proto57["m_columns"][] = "researchProjectSubAffiliationName";
+$proto57["m_columns"][] = "researchProjectAffiliationMobile";
+$proto57["m_columns"][] = "researchProjectAffiliationTelephone";
+$proto57["m_columns"][] = "researchProjectAffiliationEmail";
+$proto57["m_columns"][] = "researchProjectFile";
+$proto57["m_columns"][] = "researchProjectBankAccountName";
+$proto57["m_columns"][] = "researchProjectBankNo";
+$proto57["m_columns"][] = "researchProjectBankName";
+$proto57["m_columns"][] = "researchProjectStatus";
+$proto57["m_columns"][] = "ScholarshipProposalFinishStatus";
+$proto57["m_columns"][] = "researchProjectAppointmentStatus";
+$proto57["m_columns"][] = "researchProjectDisburseStatus";
+$proto57["m_columns"][] = "contractSignDate";
+$proto57["m_columns"][] = "contractSignFile";
+$proto57["m_columns"][] = "projectStatusDesc";
+$proto57["m_columns"][] = "projectStatus";
+$proto57["m_columns"][] = "trackingProjectDesc";
+$proto57["m_columns"][] = "trackingProjectDescResult";
+$proto57["m_columns"][] = "entryUserName";
+$proto57["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto57);
+
+$proto56["m_table"] = $obj;
+$proto56["m_sql"] = "researchScholarshipProposal";
+$proto56["m_alias"] = "";
+$proto56["m_srcTableName"] = "researchScholarshipProposal";
+$proto58=array();
+$proto58["m_sql"] = "";
+$proto58["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto56["m_column"]=$obj;
-$proto56["m_contained"] = array();
-$proto56["m_strCase"] = "";
-$proto56["m_havingmode"] = false;
-$proto56["m_inBrackets"] = false;
-$proto56["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto56);
+$proto58["m_column"]=$obj;
+$proto58["m_contained"] = array();
+$proto58["m_strCase"] = "";
+$proto58["m_havingmode"] = false;
+$proto58["m_inBrackets"] = false;
+$proto58["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto58);
 
-$proto54["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto54);
+$proto56["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto56);
+
+$proto0["m_fromlist"][]=$obj;
+												$proto60=array();
+$proto60["m_link"] = "SQLL_INNERJOIN";
+			$proto61=array();
+$proto61["m_strName"] = "researchScholarshipRegister";
+$proto61["m_srcTableName"] = "researchScholarshipProposal";
+$proto61["m_columns"] = array();
+$proto61["m_columns"][] = "id";
+$proto61["m_columns"][] = "researchRegisterNo";
+$proto61["m_columns"][] = "researchRegisterName";
+$proto61["m_columns"][] = "researchRegisterStartDate";
+$proto61["m_columns"][] = "researchRegisterEndDate";
+$proto61["m_columns"][] = "researchRegisterFile";
+$proto61["m_columns"][] = "researchType";
+$proto61["m_columns"][] = "researchRegisterStatus";
+$proto61["m_columns"][] = "entryUserName";
+$proto61["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto61);
+
+$proto60["m_table"] = $obj;
+$proto60["m_sql"] = "INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
+$proto60["m_alias"] = "";
+$proto60["m_srcTableName"] = "researchScholarshipProposal";
+$proto62=array();
+$proto62["m_sql"] = "researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
+$proto62["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "researchRegisterID",
+	"m_strTable" => "researchScholarshipProposal",
+	"m_srcTableName" => "researchScholarshipProposal"
+));
+
+$proto62["m_column"]=$obj;
+$proto62["m_contained"] = array();
+$proto62["m_strCase"] = "= researchScholarshipRegister.id";
+$proto62["m_havingmode"] = false;
+$proto62["m_inBrackets"] = false;
+$proto62["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto62);
+
+$proto60["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto60);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -4323,7 +4533,7 @@ $queryData_researchscholarshipproposal = createSqlQuery_researchscholarshippropo
 	
 				;
 
-																								
+																									
 
 $tdataresearchscholarshipproposal[".sqlquery"] = $queryData_researchscholarshipproposal;
 
@@ -4333,4 +4543,18 @@ include_once(getabspath("include/researchscholarshipproposal_events.php"));
 $tableEvents["researchScholarshipProposal"] = new eventclass_researchscholarshipproposal;
 $tdataresearchscholarshipproposal[".hasEvents"] = true;
 
+$query = &$queryData_researchscholarshipproposal;
+$table = "researchScholarshipProposal";
+// here goes EVENT_INIT_TABLE event
+		
+
+		if(strpos($_SESSION["GroupName"],"<Admin>") == ""){
+			$query->addWhere("`researchScholarshipRegister`.`researchType` IN (".$_SESSION["typeName"].")");
+		}
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;
+unset($query);
 ?>

@@ -127,6 +127,9 @@ pdfDocument = {
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_import_field10}"},
 				
+				
+			{"text":{$researchConsiderValue_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
