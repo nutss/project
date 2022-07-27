@@ -241,7 +241,7 @@
 	 
 		{BEGIN researchConsiderName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderName" data-fieldname="researchConsiderName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderName" data-fieldname="researchConsiderName">
 	{$label researchConsider researchConsiderName }	</span>
 {END researchConsiderName_fieldheadercolumn}
 
@@ -266,7 +266,7 @@
 	 
 		{BEGIN entryUserName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
 	{$label researchConsider entryUserName }	</span>
 {END entryUserName_fieldheadercolumn}
 
@@ -291,13 +291,38 @@
 	 
 		{BEGIN entryTime_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
 	{$label researchConsider entryTime }	</span>
 {END entryTime_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchConsiderGroupAuthorized_class}
+			"
+
+			data-field="researchConsiderGroupAuthorized"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchConsiderGroupAuthorized_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderGroupAuthorized" data-fieldname="researchConsiderGroupAuthorized">
+	{$label researchConsider researchConsiderGroupAuthorized }	</span>
+{END researchConsiderGroupAuthorized_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
 							</tr>
 					 
 					 
@@ -497,6 +522,29 @@
 {END entryTime_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchConsiderGroupAuthorized_class}
+			"
+
+			data-field="researchConsiderGroupAuthorized"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchConsiderGroupAuthorized_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderGroupAuthorized" data-fieldname="researchConsiderGroupAuthorized" data-default-width >
+{$researchConsiderGroupAuthorized_value}
+</span>
+{END researchConsiderGroupAuthorized_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -640,6 +688,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchconsider_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

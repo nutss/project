@@ -6,11 +6,11 @@ $tdatamissionassignment[".OwnerID"] = "";
 $tdatamissionassignment[".OriginalTable"] = "missionAssignment";
 
 
-$tdatamissionassignment[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdatamissionassignment[".pagesByType"] = my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdatamissionassignment[".originalPagesByType"] = $tdatamissionassignment[".pagesByType"];
-$tdatamissionassignment[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdatamissionassignment[".pages"] = types2pages( my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdatamissionassignment[".originalPages"] = $tdatamissionassignment[".pages"];
-$tdatamissionassignment[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdatamissionassignment[".defaultPages"] = my_json_decode( "{\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdatamissionassignment[".originalDefaultPages"] = $tdatamissionassignment[".defaultPages"];
 
 //	field labels
@@ -88,7 +88,7 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsmissionassignment["Thai"]["missionAssignmentResponsibleName"] = "ผู้รับผิดชอบ";
 	$fieldToolTipsmissionassignment["Thai"]["missionAssignmentResponsibleName"] = "";
 	$placeHoldersmissionassignment["Thai"]["missionAssignmentResponsibleName"] = "ผู้รับผิดชอบ";
-	$fieldLabelsmissionassignment["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
+	$fieldLabelsmissionassignment["Thai"]["entryUserName"] = "มอบหมายโดย";
 	$fieldToolTipsmissionassignment["Thai"]["entryUserName"] = "";
 	$placeHoldersmissionassignment["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
 	$fieldLabelsmissionassignment["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
@@ -199,7 +199,7 @@ $tdatamissionassignment[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdatamissionassignment[".ajaxCodeSnippetAdded"] = false;
 
@@ -1548,14 +1548,14 @@ $tdatamissionassignment[".hideMobileList"] = array();
 
 	
 		
-	$edata["LinkField"] = "staffUsername";
+	$edata["LinkField"] = "staffFullName";
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "staffFullName";
 
 	
 
 	
-	$edata["LookupOrderBy"] = "staffUsername";
+	$edata["LookupOrderBy"] = "staffFullName";
 
 	
 	
@@ -1728,8 +1728,7 @@ $tdatamissionassignment[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 	
-		$edata["autoUpdatable"] = true;
-
+	
 	//	End validation
 
 	

@@ -11,6 +11,7 @@ $dalTableresearchRenewalConsider["researchRegisterDesc"] = array("type"=>201,"va
 $dalTableresearchRenewalConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchRenewalConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
 $dalTableresearchRenewalConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
+$dalTableresearchRenewalConsider["researchConsiderGroupAuthorized"] = array("type"=>200,"varname"=>"researchConsiderGroupAuthorized", "name" => "researchConsiderGroupAuthorized");
 $dalTableresearchRenewalConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchRenewalConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchRenewalConsider["id"]["key"]=true;

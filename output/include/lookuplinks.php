@@ -103,6 +103,13 @@ function InitLookupLinks()
 			$lookupTableLinks["optionSub"]["researchconsider.researchConsiderName"] = array();
 		}
 		$lookupTableLinks["optionSub"]["researchconsider.researchConsiderName"]["edit"] = array("table" => "researchConsider", "field" => "researchConsiderName", "page" => "edit");
+		if( !isset( $lookupTableLinks["project_uggroups"] ) ) {
+			$lookupTableLinks["project_uggroups"] = array();
+		}
+		if( !isset( $lookupTableLinks["project_uggroups"]["researchconsider.researchConsiderGroupAuthorized"] )) {
+			$lookupTableLinks["project_uggroups"]["researchconsider.researchConsiderGroupAuthorized"] = array();
+		}
+		$lookupTableLinks["project_uggroups"]["researchconsider.researchConsiderGroupAuthorized"]["edit"] = array("table" => "researchConsider", "field" => "researchConsiderGroupAuthorized", "page" => "edit");
 		if( !isset( $lookupTableLinks["researchType"] ) ) {
 			$lookupTableLinks["researchType"] = array();
 		}
@@ -117,13 +124,69 @@ function InitLookupLinks()
 			$lookupTableLinks["researchScholarshipRegister"]["researchscholarshipproposal.researchRegisterID"] = array();
 		}
 		$lookupTableLinks["researchScholarshipRegister"]["researchscholarshipproposal.researchRegisterID"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchRegisterID", "page" => "edit");
+		if( !isset( $lookupTableLinks["TypeGroup_Search_Lookup"] ) ) {
+			$lookupTableLinks["TypeGroup_Search_Lookup"] = array();
+		}
+		if( !isset( $lookupTableLinks["TypeGroup_Search_Lookup"]["researchscholarshipproposal.researchProjectGroupName"] )) {
+			$lookupTableLinks["TypeGroup_Search_Lookup"]["researchscholarshipproposal.researchProjectGroupName"] = array();
+		}
+		$lookupTableLinks["TypeGroup_Search_Lookup"]["researchscholarshipproposal.researchProjectGroupName"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchProjectGroupName", "page" => "edit");
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
-		if( !isset( $lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectGroupName"] )) {
-			$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectGroupName"] = array();
+		if( !isset( $lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPrefixName"] )) {
+			$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPrefixName"] = array();
 		}
-		$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectGroupName"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchProjectGroupName", "page" => "edit");
+		$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPrefixName"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchProjectAffiliationPrefixName", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPosition"] )) {
+			$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPosition"] = array();
+		}
+		$lookupTableLinks["optionSub"]["researchscholarshipproposal.researchProjectAffiliationPosition"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchProjectAffiliationPosition", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub_Search_Lookup"] ) ) {
+			$lookupTableLinks["optionSub_Search_Lookup"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub_Search_Lookup"]["researchscholarshipproposal.researchProjectBankName"] )) {
+			$lookupTableLinks["optionSub_Search_Lookup"]["researchscholarshipproposal.researchProjectBankName"] = array();
+		}
+		$lookupTableLinks["optionSub_Search_Lookup"]["researchscholarshipproposal.researchProjectBankName"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "researchProjectBankName", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["researchscholarshipproposal.projectStatus"] )) {
+			$lookupTableLinks["optionSub"]["researchscholarshipproposal.projectStatus"] = array();
+		}
+		$lookupTableLinks["optionSub"]["researchscholarshipproposal.projectStatus"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "projectStatus", "page" => "edit");
+		if( !isset( $lookupTableLinks["geographies"] ) ) {
+			$lookupTableLinks["geographies"] = array();
+		}
+		if( !isset( $lookupTableLinks["geographies"]["researchscholarshipproposal.geographiesID"] )) {
+			$lookupTableLinks["geographies"]["researchscholarshipproposal.geographiesID"] = array();
+		}
+		$lookupTableLinks["geographies"]["researchscholarshipproposal.geographiesID"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "geographiesID", "page" => "edit");
+		if( !isset( $lookupTableLinks["provinces"] ) ) {
+			$lookupTableLinks["provinces"] = array();
+		}
+		if( !isset( $lookupTableLinks["provinces"]["researchscholarshipproposal.provincesID"] )) {
+			$lookupTableLinks["provinces"]["researchscholarshipproposal.provincesID"] = array();
+		}
+		$lookupTableLinks["provinces"]["researchscholarshipproposal.provincesID"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "provincesID", "page" => "edit");
+		if( !isset( $lookupTableLinks["amphures"] ) ) {
+			$lookupTableLinks["amphures"] = array();
+		}
+		if( !isset( $lookupTableLinks["amphures"]["researchscholarshipproposal.amphuresID"] )) {
+			$lookupTableLinks["amphures"]["researchscholarshipproposal.amphuresID"] = array();
+		}
+		$lookupTableLinks["amphures"]["researchscholarshipproposal.amphuresID"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "amphuresID", "page" => "edit");
+		if( !isset( $lookupTableLinks["districts"] ) ) {
+			$lookupTableLinks["districts"] = array();
+		}
+		if( !isset( $lookupTableLinks["districts"]["researchscholarshipproposal.districtsID"] )) {
+			$lookupTableLinks["districts"]["researchscholarshipproposal.districtsID"] = array();
+		}
+		$lookupTableLinks["districts"]["researchscholarshipproposal.districtsID"]["edit"] = array("table" => "researchScholarshipProposal", "field" => "districtsID", "page" => "edit");
 		if( !isset( $lookupTableLinks["considerChoice"] ) ) {
 			$lookupTableLinks["considerChoice"] = array();
 		}
@@ -138,13 +201,34 @@ function InitLookupLinks()
 			$lookupTableLinks["researchScholarshipRegister"]["researchprojectproposal.researchRegisterID"] = array();
 		}
 		$lookupTableLinks["researchScholarshipRegister"]["researchprojectproposal.researchRegisterID"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchRegisterID", "page" => "edit");
+		if( !isset( $lookupTableLinks["TypeGroup_Search_Lookup"] ) ) {
+			$lookupTableLinks["TypeGroup_Search_Lookup"] = array();
+		}
+		if( !isset( $lookupTableLinks["TypeGroup_Search_Lookup"]["researchprojectproposal.researchProjectGroupName"] )) {
+			$lookupTableLinks["TypeGroup_Search_Lookup"]["researchprojectproposal.researchProjectGroupName"] = array();
+		}
+		$lookupTableLinks["TypeGroup_Search_Lookup"]["researchprojectproposal.researchProjectGroupName"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchProjectGroupName", "page" => "edit");
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
-		if( !isset( $lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectGroupName"] )) {
-			$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectGroupName"] = array();
+		if( !isset( $lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPrefixName"] )) {
+			$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPrefixName"] = array();
 		}
-		$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectGroupName"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchProjectGroupName", "page" => "edit");
+		$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPrefixName"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchProjectAffiliationPrefixName", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPosition"] )) {
+			$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPosition"] = array();
+		}
+		$lookupTableLinks["optionSub"]["researchprojectproposal.researchProjectAffiliationPosition"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchProjectAffiliationPosition", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub_Search_Lookup"] ) ) {
+			$lookupTableLinks["optionSub_Search_Lookup"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub_Search_Lookup"]["researchprojectproposal.researchProjectBankName"] )) {
+			$lookupTableLinks["optionSub_Search_Lookup"]["researchprojectproposal.researchProjectBankName"] = array();
+		}
+		$lookupTableLinks["optionSub_Search_Lookup"]["researchprojectproposal.researchProjectBankName"]["edit"] = array("table" => "researchProjectProposal", "field" => "researchProjectBankName", "page" => "edit");
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
@@ -159,6 +243,34 @@ function InitLookupLinks()
 			$lookupTableLinks["optionSub"]["researchprojectproposal.trackingProjectDescResult"] = array();
 		}
 		$lookupTableLinks["optionSub"]["researchprojectproposal.trackingProjectDescResult"]["edit"] = array("table" => "researchProjectProposal", "field" => "trackingProjectDescResult", "page" => "edit");
+		if( !isset( $lookupTableLinks["geographies"] ) ) {
+			$lookupTableLinks["geographies"] = array();
+		}
+		if( !isset( $lookupTableLinks["geographies"]["researchprojectproposal.geographiesID"] )) {
+			$lookupTableLinks["geographies"]["researchprojectproposal.geographiesID"] = array();
+		}
+		$lookupTableLinks["geographies"]["researchprojectproposal.geographiesID"]["edit"] = array("table" => "researchProjectProposal", "field" => "geographiesID", "page" => "edit");
+		if( !isset( $lookupTableLinks["provinces"] ) ) {
+			$lookupTableLinks["provinces"] = array();
+		}
+		if( !isset( $lookupTableLinks["provinces"]["researchprojectproposal.provincesID"] )) {
+			$lookupTableLinks["provinces"]["researchprojectproposal.provincesID"] = array();
+		}
+		$lookupTableLinks["provinces"]["researchprojectproposal.provincesID"]["edit"] = array("table" => "researchProjectProposal", "field" => "provincesID", "page" => "edit");
+		if( !isset( $lookupTableLinks["amphures"] ) ) {
+			$lookupTableLinks["amphures"] = array();
+		}
+		if( !isset( $lookupTableLinks["amphures"]["researchprojectproposal.amphuresID"] )) {
+			$lookupTableLinks["amphures"]["researchprojectproposal.amphuresID"] = array();
+		}
+		$lookupTableLinks["amphures"]["researchprojectproposal.amphuresID"]["edit"] = array("table" => "researchProjectProposal", "field" => "amphuresID", "page" => "edit");
+		if( !isset( $lookupTableLinks["districts"] ) ) {
+			$lookupTableLinks["districts"] = array();
+		}
+		if( !isset( $lookupTableLinks["districts"]["researchprojectproposal.districtsID"] )) {
+			$lookupTableLinks["districts"]["researchprojectproposal.districtsID"] = array();
+		}
+		$lookupTableLinks["districts"]["researchprojectproposal.districtsID"]["edit"] = array("table" => "researchProjectProposal", "field" => "districtsID", "page" => "edit");
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
@@ -211,6 +323,13 @@ function InitLookupLinks()
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
+		if( !isset( $lookupTableLinks["optionSub"]["missionfollow.missionFollowActionStatus"] )) {
+			$lookupTableLinks["optionSub"]["missionfollow.missionFollowActionStatus"] = array();
+		}
+		$lookupTableLinks["optionSub"]["missionfollow.missionFollowActionStatus"]["edit"] = array("table" => "missionFollow", "field" => "missionFollowActionStatus", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
 		if( !isset( $lookupTableLinks["optionSub"]["missionassignment.missionAssignmentConsiderName"] )) {
 			$lookupTableLinks["optionSub"]["missionassignment.missionAssignmentConsiderName"] = array();
 		}
@@ -232,27 +351,6 @@ function InitLookupLinks()
 		if( !isset( $lookupTableLinks["researchType"] ) ) {
 			$lookupTableLinks["researchType"] = array();
 		}
-		if( !isset( $lookupTableLinks["researchType"]["researchconsiderview.researchTypeID"] )) {
-			$lookupTableLinks["researchType"]["researchconsiderview.researchTypeID"] = array();
-		}
-		$lookupTableLinks["researchType"]["researchconsiderview.researchTypeID"]["edit"] = array("table" => "researchConsiderView", "field" => "researchTypeID", "page" => "edit");
-		if( !isset( $lookupTableLinks["process"] ) ) {
-			$lookupTableLinks["process"] = array();
-		}
-		if( !isset( $lookupTableLinks["process"]["researchconsiderview.processName"] )) {
-			$lookupTableLinks["process"]["researchconsiderview.processName"] = array();
-		}
-		$lookupTableLinks["process"]["researchconsiderview.processName"]["edit"] = array("table" => "researchConsiderView", "field" => "processName", "page" => "edit");
-		if( !isset( $lookupTableLinks["optionSub"] ) ) {
-			$lookupTableLinks["optionSub"] = array();
-		}
-		if( !isset( $lookupTableLinks["optionSub"]["researchconsiderview.researchConsiderName"] )) {
-			$lookupTableLinks["optionSub"]["researchconsiderview.researchConsiderName"] = array();
-		}
-		$lookupTableLinks["optionSub"]["researchconsiderview.researchConsiderName"]["edit"] = array("table" => "researchConsiderView", "field" => "researchConsiderName", "page" => "edit");
-		if( !isset( $lookupTableLinks["researchType"] ) ) {
-			$lookupTableLinks["researchType"] = array();
-		}
 		if( !isset( $lookupTableLinks["researchType"]["project_uggroups.typeName"] )) {
 			$lookupTableLinks["researchType"]["project_uggroups.typeName"] = array();
 		}
@@ -260,17 +358,24 @@ function InitLookupLinks()
 		if( !isset( $lookupTableLinks["researchScholarshipRegister"] ) ) {
 			$lookupTableLinks["researchScholarshipRegister"] = array();
 		}
-		if( !isset( $lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"] )) {
-			$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"] = array();
-		}
-		$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"]["edit"] = array("table" => "ReportProgress", "field" => "researchRegisterID", "page" => "edit");
-		if( !isset( $lookupTableLinks["researchScholarshipRegister"] ) ) {
-			$lookupTableLinks["researchScholarshipRegister"] = array();
-		}
 		if( !isset( $lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchType"] )) {
 			$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchType"] = array();
 		}
 		$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchType"]["edit"] = array("table" => "ReportProgress", "field" => "researchType", "page" => "edit");
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"] ) ) {
+			$lookupTableLinks["researchScholarshipRegister"] = array();
+		}
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"] )) {
+			$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"] = array();
+		}
+		$lookupTableLinks["researchScholarshipRegister"]["reportprogress.researchRegisterID"]["edit"] = array("table" => "ReportProgress", "field" => "researchRegisterID", "page" => "edit");
+		if( !isset( $lookupTableLinks["researchProjectProposal"] ) ) {
+			$lookupTableLinks["researchProjectProposal"] = array();
+		}
+		if( !isset( $lookupTableLinks["researchProjectProposal"]["reportprogress.researchProjectAffiliationName"] )) {
+			$lookupTableLinks["researchProjectProposal"]["reportprogress.researchProjectAffiliationName"] = array();
+		}
+		$lookupTableLinks["researchProjectProposal"]["reportprogress.researchProjectAffiliationName"]["edit"] = array("table" => "ReportProgress", "field" => "researchProjectAffiliationName", "page" => "edit");
 		if( !isset( $lookupTableLinks["optionSub"] ) ) {
 			$lookupTableLinks["optionSub"] = array();
 		}
@@ -278,6 +383,62 @@ function InitLookupLinks()
 			$lookupTableLinks["optionSub"]["reportprogress.trackingProjectDescResult"] = array();
 		}
 		$lookupTableLinks["optionSub"]["reportprogress.trackingProjectDescResult"]["edit"] = array("table" => "ReportProgress", "field" => "trackingProjectDescResult", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["reportprogress.projectStatus"] )) {
+			$lookupTableLinks["optionSub"]["reportprogress.projectStatus"] = array();
+		}
+		$lookupTableLinks["optionSub"]["reportprogress.projectStatus"]["edit"] = array("table" => "ReportProgress", "field" => "projectStatus", "page" => "edit");
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"] ) ) {
+			$lookupTableLinks["researchScholarshipRegister"] = array();
+		}
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchRegisterID"] )) {
+			$lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchRegisterID"] = array();
+		}
+		$lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchRegisterID"]["edit"] = array("table" => "ReportSearchresearchRegister", "field" => "researchRegisterID", "page" => "edit");
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"] ) ) {
+			$lookupTableLinks["researchScholarshipRegister"] = array();
+		}
+		if( !isset( $lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchType"] )) {
+			$lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchType"] = array();
+		}
+		$lookupTableLinks["researchScholarshipRegister"]["reportsearchresearchregister.researchType"]["edit"] = array("table" => "ReportSearchresearchRegister", "field" => "researchType", "page" => "edit");
+		if( !isset( $lookupTableLinks["missionFollow"] ) ) {
+			$lookupTableLinks["missionFollow"] = array();
+		}
+		if( !isset( $lookupTableLinks["missionFollow"]["reportmission.missionFollowName"] )) {
+			$lookupTableLinks["missionFollow"]["reportmission.missionFollowName"] = array();
+		}
+		$lookupTableLinks["missionFollow"]["reportmission.missionFollowName"]["edit"] = array("table" => "ReportMission", "field" => "missionFollowName", "page" => "edit");
+		if( !isset( $lookupTableLinks["staffUsers"] ) ) {
+			$lookupTableLinks["staffUsers"] = array();
+		}
+		if( !isset( $lookupTableLinks["staffUsers"]["reportmission.missionAssignmentResponsibleName"] )) {
+			$lookupTableLinks["staffUsers"]["reportmission.missionAssignmentResponsibleName"] = array();
+		}
+		$lookupTableLinks["staffUsers"]["reportmission.missionAssignmentResponsibleName"]["edit"] = array("table" => "ReportMission", "field" => "missionAssignmentResponsibleName", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["reportgraphmissionfollow.missionFollowActionStatus"] )) {
+			$lookupTableLinks["optionSub"]["reportgraphmissionfollow.missionFollowActionStatus"] = array();
+		}
+		$lookupTableLinks["optionSub"]["reportgraphmissionfollow.missionFollowActionStatus"]["search"] = array("table" => "ReportGraphmissionFollow", "field" => "missionFollowActionStatus", "page" => "search");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["researcher.researchType"] )) {
+			$lookupTableLinks["optionSub"]["researcher.researchType"] = array();
+		}
+		$lookupTableLinks["optionSub"]["researcher.researchType"]["edit"] = array("table" => "researcher", "field" => "researchType", "page" => "edit");
+		if( !isset( $lookupTableLinks["optionSub"] ) ) {
+			$lookupTableLinks["optionSub"] = array();
+		}
+		if( !isset( $lookupTableLinks["optionSub"]["researchresearcher.researchType"] )) {
+			$lookupTableLinks["optionSub"]["researchresearcher.researchType"] = array();
+		}
+		$lookupTableLinks["optionSub"]["researchresearcher.researchType"]["edit"] = array("table" => "researchResearcher", "field" => "researchType", "page" => "edit");
 }
 
 ?>

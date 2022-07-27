@@ -59,20 +59,13 @@ function AfterSuccessfulLogin($username, $password, &$data, $pageObject)
 			$RS1 = CustomQuery($SQLCommand);
 			while ($RS1_DATA = db_fetch_array($RS1)) {
 
-				if ($RS1_DATA["GroupID"]=="") {
+				if (($RS1_DATA["GroupID"]=="") OR ($RS1_DATA["typeName"]=="")){
 					
-					$_SESSION["GroupName"].="'<Admin>'".",";
 
-					$SQLCommand = "SELECT * FROM researchType";	
-				
-						$RS2 = CustomQuery($SQLCommand);
-						while ($RS2_DATA = db_fetch_array($RS2)) {
-								$_SESSION["typeName"].="'".$RS2_DATA["typeName"]."',";
-						}
+					if ($RS1_DATA["GroupID"]==""){
 
-				}
-
-				elseif ($RS1_DATA["typeName"]=="") {
+						$_SESSION["GroupName"].="'<Admin>'".",";
+					}
 					
 
 					$SQLCommand = "SELECT * FROM researchType";	
@@ -81,13 +74,14 @@ function AfterSuccessfulLogin($username, $password, &$data, $pageObject)
 						while ($RS2_DATA = db_fetch_array($RS2)) {
 								$_SESSION["typeName"].="'".$RS2_DATA["typeName"]."',";
 						}
-
+						break;
 				}
+
 
 				else{
 					$_SESSION["GroupName"].="'".$RS1_DATA["Label"]."',";
 					$_SESSION["typeName"].="'".$RS1_DATA["typeName"]."',";
-					//$pageObject->setProxyValue("GroupName", $data["Label"]);
+					
 				}
 
 			}
@@ -95,8 +89,10 @@ function AfterSuccessfulLogin($username, $password, &$data, $pageObject)
 			$_SESSION["GroupName"] = substr($_SESSION["GroupName"],0,-1);
 			$_SESSION["typeName"] = substr($_SESSION["typeName"],0,-1);
 
+			$pageObject->setProxyValue("name",$_SESSION["GroupName"]);
 
-
+			header("Location: reportmonitor_dashboard.php");
+			exit();
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 ;		

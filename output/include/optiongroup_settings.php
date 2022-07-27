@@ -37,9 +37,6 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsoptiongroup["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsoptiongroup["English"]["entryTime"] = "";
 	$placeHoldersoptiongroup["English"]["entryTime"] = "Entry Time";
-	$fieldLabelsoptiongroup["English"]["optionGroupNumber"] = "Option Group Number";
-	$fieldToolTipsoptiongroup["English"]["optionGroupNumber"] = "";
-	$placeHoldersoptiongroup["English"]["optionGroupNumber"] = "";
 	if (count($fieldToolTipsoptiongroup["English"]))
 		$tdataoptiongroup[".isUseToolTips"] = true;
 }
@@ -61,9 +58,6 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsoptiongroup["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsoptiongroup["Thai"]["entryTime"] = "";
 	$placeHoldersoptiongroup["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
-	$fieldLabelsoptiongroup["Thai"]["optionGroupNumber"] = "รหัสตัวเลือก";
-	$fieldToolTipsoptiongroup["Thai"]["optionGroupNumber"] = "";
-	$placeHoldersoptiongroup["Thai"]["optionGroupNumber"] = "";
 	if (count($fieldToolTipsoptiongroup["Thai"]))
 		$tdataoptiongroup[".isUseToolTips"] = true;
 }
@@ -163,7 +157,7 @@ $tdataoptiongroup[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataoptiongroup[".ajaxCodeSnippetAdded"] = false;
 
@@ -184,7 +178,6 @@ $tdataoptiongroup[".requiredSearchFields"] = array();
 
 $tdataoptiongroup[".googleLikeFields"] = array();
 $tdataoptiongroup[".googleLikeFields"][] = "id";
-$tdataoptiongroup[".googleLikeFields"][] = "optionGroupNumber";
 $tdataoptiongroup[".googleLikeFields"][] = "optionGroupName";
 $tdataoptiongroup[".googleLikeFields"][] = "entryUserName";
 $tdataoptiongroup[".googleLikeFields"][] = "entryTime";
@@ -221,7 +214,7 @@ $tdataoptiongroup[".strOrderBy"] = $tstrOrderBy;
 $tdataoptiongroup[".orderindexes"] = array();
 
 
-$tdataoptiongroup[".sqlHead"] = "SELECT id,  	optionGroupNumber,  	optionGroupName,  	entryUserName,  	entryTime";
+$tdataoptiongroup[".sqlHead"] = "SELECT id,  	optionGroupName,  	entryUserName,  	entryTime";
 $tdataoptiongroup[".sqlFrom"] = "FROM optionGroup";
 $tdataoptiongroup[".sqlWhereExpr"] = "";
 $tdataoptiongroup[".sqlTail"] = "";
@@ -410,148 +403,10 @@ $tdataoptiongroup[".hideMobileList"] = array();
 
 	$tdataoptiongroup["id"] = $fdata;
 		$tdataoptiongroup[".searchableFields"][] = "id";
-//	optionGroupNumber
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 2;
-	$fdata["strName"] = "optionGroupNumber";
-	$fdata["GoodName"] = "optionGroupNumber";
-	$fdata["ownerTable"] = "optionGroup";
-	$fdata["Label"] = GetFieldLabel("optionGroup","optionGroupNumber");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "optionGroupNumber";
-
-		$fdata["sourceSingle"] = "optionGroupNumber";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "optionGroupNumber";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataoptiongroup["optionGroupNumber"] = $fdata;
-		$tdataoptiongroup[".searchableFields"][] = "optionGroupNumber";
 //	optionGroupName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 3;
+	$fdata["Index"] = 2;
 	$fdata["strName"] = "optionGroupName";
 	$fdata["GoodName"] = "optionGroupName";
 	$fdata["ownerTable"] = "optionGroup";
@@ -689,7 +544,7 @@ $tdataoptiongroup[".hideMobileList"] = array();
 //	entryUserName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 4;
+	$fdata["Index"] = 3;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "optionGroup";
@@ -825,7 +680,7 @@ $tdataoptiongroup[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 5;
+	$fdata["Index"] = 4;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "optionGroup";
@@ -1029,7 +884,7 @@ function createSqlQuery_optiongroup()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	optionGroupNumber,  	optionGroupName,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	optionGroupName,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM optionGroup";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1085,12 +940,12 @@ $obj = new SQLFieldListItem($proto6);
 $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$obj = new SQLField(array(
-	"m_strName" => "optionGroupNumber",
+	"m_strName" => "optionGroupName",
 	"m_strTable" => "optionGroup",
 	"m_srcTableName" => "optionGroup"
 ));
 
-$proto8["m_sql"] = "optionGroupNumber";
+$proto8["m_sql"] = "optionGroupName";
 $proto8["m_srcTableName"] = "optionGroup";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -1099,12 +954,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "optionGroupName",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "optionGroup",
 	"m_srcTableName" => "optionGroup"
 ));
 
-$proto10["m_sql"] = "optionGroupName";
+$proto10["m_sql"] = "entryUserName";
 $proto10["m_srcTableName"] = "optionGroup";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -1113,67 +968,52 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "entryTime",
 	"m_strTable" => "optionGroup",
 	"m_srcTableName" => "optionGroup"
 ));
 
-$proto12["m_sql"] = "entryUserName";
+$proto12["m_sql"] = "entryTime";
 $proto12["m_srcTableName"] = "optionGroup";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
 $obj = new SQLFieldListItem($proto12);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto14=array();
-			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
-	"m_strTable" => "optionGroup",
-	"m_srcTableName" => "optionGroup"
-));
-
-$proto14["m_sql"] = "entryTime";
-$proto14["m_srcTableName"] = "optionGroup";
-$proto14["m_expr"]=$obj;
-$proto14["m_alias"] = "";
-$obj = new SQLFieldListItem($proto14);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto16=array();
-$proto16["m_link"] = "SQLL_MAIN";
-			$proto17=array();
-$proto17["m_strName"] = "optionGroup";
-$proto17["m_srcTableName"] = "optionGroup";
-$proto17["m_columns"] = array();
-$proto17["m_columns"][] = "id";
-$proto17["m_columns"][] = "optionGroupNumber";
-$proto17["m_columns"][] = "optionGroupName";
-$proto17["m_columns"][] = "entryUserName";
-$proto17["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto17);
+												$proto14=array();
+$proto14["m_link"] = "SQLL_MAIN";
+			$proto15=array();
+$proto15["m_strName"] = "optionGroup";
+$proto15["m_srcTableName"] = "optionGroup";
+$proto15["m_columns"] = array();
+$proto15["m_columns"][] = "id";
+$proto15["m_columns"][] = "optionGroupName";
+$proto15["m_columns"][] = "entryUserName";
+$proto15["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto15);
 
-$proto16["m_table"] = $obj;
-$proto16["m_sql"] = "optionGroup";
-$proto16["m_alias"] = "";
-$proto16["m_srcTableName"] = "optionGroup";
-$proto18=array();
-$proto18["m_sql"] = "";
-$proto18["m_uniontype"] = "SQLL_UNKNOWN";
+$proto14["m_table"] = $obj;
+$proto14["m_sql"] = "optionGroup";
+$proto14["m_alias"] = "";
+$proto14["m_srcTableName"] = "optionGroup";
+$proto16=array();
+$proto16["m_sql"] = "";
+$proto16["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto18["m_column"]=$obj;
-$proto18["m_contained"] = array();
-$proto18["m_strCase"] = "";
-$proto18["m_havingmode"] = false;
-$proto18["m_inBrackets"] = false;
-$proto18["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto18);
+$proto16["m_column"]=$obj;
+$proto16["m_contained"] = array();
+$proto16["m_strCase"] = "";
+$proto16["m_havingmode"] = false;
+$proto16["m_inBrackets"] = false;
+$proto16["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto16);
 
-$proto16["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto16);
+$proto14["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto14);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1189,7 +1029,7 @@ $queryData_optiongroup = createSqlQuery_optiongroup();
 	
 				;
 
-					
+				
 
 $tdataoptiongroup[".sqlquery"] = $queryData_optiongroup;
 

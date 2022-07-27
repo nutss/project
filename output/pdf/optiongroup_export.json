@@ -104,9 +104,6 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$optionGroupNumber_pdfvalue},"hidden":"{$item_hide_export_field}"},
-				
-				
 			{"text":{$optionGroupName_pdfvalue},"hidden":"{$item_hide_export_field1}"},
 				
 				

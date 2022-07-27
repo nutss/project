@@ -1,0 +1,6 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● researchScholarshipRegister:
+		 + amphuresName
+		 + districtsName
+		 + geographiesName
+		 + provincesName

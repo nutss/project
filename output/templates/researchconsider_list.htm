@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_entryTime}</span>
 						</div>
 		{END searchCtrlBlock_entryTime}
+																{BEGIN searchCtrlBlock_researchConsiderGroupAuthorized}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_researchConsiderGroupAuthorized}" {$filterRow_attrs_researchConsiderGroupAuthorized}>
+			<label>{$label researchConsider researchConsiderGroupAuthorized }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_researchConsiderGroupAuthorized}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_researchConsiderGroupAuthorized}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_researchConsiderGroupAuthorized}</span>
+						</div>
+		{END searchCtrlBlock_researchConsiderGroupAuthorized}
 																{BEGIN searchCtrlBlock_researchConsiderName}
 
 
@@ -295,14 +308,6 @@
 												<span class="caret"></span>
 		</button>
 		<ul class="dropdown-menu">
-							{BEGIN editselected_link}
-	<li data-itemtype="edit_selected" data-itemid="edit_selected" {$item_edit_selected} data-pageid="{$pageid}" data-small >
-				<a  href="#" {$editselectedlink_attrs} {$editselectedlink_span}  title="" >
-				
-		{mlang_message EDIT_SELECTED}		
-		</a>
-	</li>
-{END editselected_link}
 							{BEGIN exportselected_link}
 	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
 				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
@@ -613,6 +618,9 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchConsiderName"]:before {
 		content: "{$label researchConsider researchConsiderName}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchConsiderGroupAuthorized"]:before {
+		content: "{$label researchConsider researchConsiderGroupAuthorized}";
+	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
 		content: "{$label researchConsider entryUserName}";
 	}
@@ -817,7 +825,7 @@
 	 
 		{BEGIN researchConsiderName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderName" data-fieldname="researchConsiderName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderName" data-fieldname="researchConsiderName">
 	{$label researchConsider researchConsiderName }	</span>
 {END researchConsiderName_fieldheadercolumn}
 
@@ -831,20 +839,22 @@
 	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchConsiderGroupAuthorized_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchConsiderGroupAuthorized"
 	
 	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label researchConsider entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
+		{BEGIN researchConsiderGroupAuthorized_fieldheadercolumn}
+	{BEGIN researchConsiderGroupAuthorized_fieldheader}
+	<SPAN {$researchConsiderGroupAuthorized_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderGroupAuthorized" data-fieldname="researchConsiderGroupAuthorized">
+	{$label researchConsider researchConsiderGroupAuthorized }	{$arrow_icon_researchConsiderGroupAuthorized}
+	</SPAN>
+	{END researchConsiderGroupAuthorized_fieldheader}
+{END researchConsiderGroupAuthorized_fieldheadercolumn}
 
 	
 	</th>
@@ -856,24 +866,49 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryTime_class}
+		 r-ori-vert				{$entryUserName_class}
 			"
 
-			data-field="entryTime"
+			data-field="entryUserName"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
+		{BEGIN entryUserName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	{$label researchConsider entryUserName }	</span>
+{END entryUserName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$entryTime_class}
+			"
+
+			data-field="entryTime"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
 		{BEGIN entryTime_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
 	{$label researchConsider entryTime }	</span>
 {END entryTime_fieldheadercolumn}
 
 	
 	</th>
-	{END cellblock_grid_headcell_field7}
+	{END cellblock_grid_headcell_field8}
 							</tr>
 					 
 					 
@@ -904,16 +939,16 @@
 	>
 
 	 
-		{BEGIN inlineedit_column}
-{BEGIN inlineedit_link}
-<span data-itemtype="grid_inline_edit" data-itemid="grid_inline_edit" {$item_grid_inline_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="{mlang_message INLINE_EDIT}" class="btn-link   
-	 glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="{mlang_message INLINE_EDIT}" >		
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="{mlang_message EDIT}" class="btn-link   
+	 glyphicon glyphicon-pencil" href="researchconsider_edit.php?{$editlink}" {$editlink_attrs} title="{mlang_message EDIT}" >		
 				
 								</a>
 </span>
-{END inlineedit_link}
-{END inlineedit_column}
+{END edit_link}
+{END edit_column}
 	 
 		{BEGIN inline_save}
 <span data-itemtype="grid_inline_save" data-itemid="grid_inline_save" {$item_grid_inline_save} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
@@ -1105,20 +1140,20 @@
 	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchConsiderGroupAuthorized_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchConsiderGroupAuthorized"
 	
 	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
+		{BEGIN researchConsiderGroupAuthorized_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchConsiderGroupAuthorized" data-fieldname="researchConsiderGroupAuthorized" data-default-width >
+{$researchConsiderGroupAuthorized_value}
 </span>
-{END entryUserName_fieldcolumn}	
+{END researchConsiderGroupAuthorized_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
 				 
@@ -1128,12 +1163,35 @@
 	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$entryUserName_class}
+			"
+
+			data-field="entryUserName"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN entryUserName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
+{$entryUserName_value}
+</span>
+{END entryUserName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$entryTime_class}
 			"
 
 			data-field="entryTime"
 	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1143,7 +1201,7 @@
 </span>
 {END entryTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -1319,6 +1377,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchconsider_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

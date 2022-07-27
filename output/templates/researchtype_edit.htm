@@ -201,7 +201,7 @@
 							{$caption researchConsider }				
 							<span>
 					{$detailslButtons_researchconsider}
-																				</span>
+																															</span>
 			</h4>
 		</div>
 		<div class="panel-body">
@@ -210,6 +210,24 @@
 	</div>
 </div>
 {END details_researchconsider}
+											
+{BEGIN details_researchtypegroup}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption researchTypeGroup }				
+							<span>
+					{$detailslButtons_researchtypegroup}
+																															</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_researchtypegroup}
+		</div>
+	</div>
+</div>
+{END details_researchtypegroup}
 	
 				{END grid_block}
 									{BEGIN below-grid_block}

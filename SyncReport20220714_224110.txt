@@ -1,0 +1,4 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● missionFollow:
+		 + missionFollowActionStatus
+		 + missionFollowDocFile

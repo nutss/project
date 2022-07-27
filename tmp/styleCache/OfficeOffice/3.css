@@ -25,7 +25,7 @@ width: 10px
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: 0px 0px;
 background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@ background-repeat: no-repeat;
 
 background: none;
 background-color:#494949;
-background-image: url('img3/sprite2.png?1172767000');
+background-image: url('img3/sprite2.png?1026287375');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -42,7 +42,7 @@ background-repeat: repeat-y;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -10px 0px;
 background-repeat: no-repeat;
 }
@@ -57,7 +57,7 @@ background-color:#494949;
 
 background: none;
 background-color:#494949;
-background-image: url('img3/sprite3.png?1172767000');
+background-image: url('img3/sprite3.png?1026287375');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -71,7 +71,7 @@ background-color:#494949;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -20px 0px;
 background-repeat: no-repeat;
 }
@@ -80,7 +80,7 @@ background-repeat: no-repeat;
 
 background: none;
 background-color:#494949;
-background-image: url('img3/sprite4.png?1172767000');
+background-image: url('img3/sprite4.png?1026287375');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -88,7 +88,7 @@ background-repeat: repeat-y;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -30px 0px;
 background-repeat: no-repeat;
 }
@@ -96,7 +96,7 @@ background-repeat: no-repeat;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -40px 0px;
 background-repeat: no-repeat;
 }
@@ -110,7 +110,7 @@ background-color:#000080;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767000');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -50px 0px;
 background-repeat: no-repeat;
 }
@@ -136,7 +136,7 @@ background-color:#000080;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -60px 0px;
 background-repeat: no-repeat;
 }
@@ -150,7 +150,7 @@ background-color:#000080;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -70px 0px;
 background-repeat: no-repeat;
 }
@@ -159,7 +159,7 @@ background-repeat: no-repeat;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -80px 0px;
 background-repeat: no-repeat;
 }
@@ -175,7 +175,7 @@ background-color:#FF9900;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -90px 0px;
 background-repeat: no-repeat;
 }
@@ -205,7 +205,7 @@ background-color:#FF9900;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -100px 0px;
 background-repeat: no-repeat;
 }
@@ -221,7 +221,7 @@ background-color:#FF9900;
 {
 
 background: none;
-background-image: url('img3/sprite1.png?1172767015');
+background-image: url('img3/sprite1.png?1026287375');
 background-position: -110px 0px;
 background-repeat: no-repeat;
 }
@@ -360,7 +360,7 @@ height:23px;
 .preview  .runner-wrapper .runner-s-3 .runner-cc  span.runner-btnframe > .runner-btnleft,
 .preview  .runner-wrapper .runner-s-3 .runner-cc  span.runner-btnframe > .runner-btnright
 {
-background-image: url('btnbutton1/sprite1.png?1172766937')
+background-image: url('btnbutton1/sprite1.png?1026287281')
 }
 .preview .runner-s-3 .runner-cc  span.runner-btnframe > .runner-btnleft,
 .preview .runner-s-3 .runner-cc  span.runner-btnframe > .runner-btnright,
@@ -452,7 +452,7 @@ width: 10px
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: 0px 0px;
 background-repeat: no-repeat;
 }
@@ -461,7 +461,7 @@ background-repeat: no-repeat;
 
 background: none;
 background-color:#B9B9B9;
-background-image: url('imgdisabled-3/sprite2.png?1172767031');
+background-image: url('imgdisabled-3/sprite2.png?1026287390');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -469,7 +469,7 @@ background-repeat: repeat-y;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -10px 0px;
 background-repeat: no-repeat;
 }
@@ -484,7 +484,7 @@ background-color:#B9B9B9;
 
 background: none;
 background-color:#B9B9B9;
-background-image: url('imgdisabled-3/sprite3.png?1172767031');
+background-image: url('imgdisabled-3/sprite3.png?1026287390');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -498,7 +498,7 @@ background-color:#B9B9B9;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -20px 0px;
 background-repeat: no-repeat;
 }
@@ -507,7 +507,7 @@ background-repeat: no-repeat;
 
 background: none;
 background-color:#B9B9B9;
-background-image: url('imgdisabled-3/sprite4.png?1172767031');
+background-image: url('imgdisabled-3/sprite4.png?1026287390');
 background-position: center top;
 background-repeat: repeat-y;
 }
@@ -515,7 +515,7 @@ background-repeat: repeat-y;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -30px 0px;
 background-repeat: no-repeat;
 }
@@ -523,7 +523,7 @@ background-repeat: no-repeat;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -40px 0px;
 background-repeat: no-repeat;
 }
@@ -537,7 +537,7 @@ background-color:#B0B0B0;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -50px 0px;
 background-repeat: no-repeat;
 }
@@ -563,7 +563,7 @@ background-color:#B0B0B0;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -60px 0px;
 background-repeat: no-repeat;
 }
@@ -577,7 +577,7 @@ background-color:#B0B0B0;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -70px 0px;
 background-repeat: no-repeat;
 }
@@ -586,7 +586,7 @@ background-repeat: no-repeat;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -80px 0px;
 background-repeat: no-repeat;
 }
@@ -602,7 +602,7 @@ background-color:#CCCCCC;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -90px 0px;
 background-repeat: no-repeat;
 }
@@ -632,7 +632,7 @@ background-color:#CCCCCC;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -100px 0px;
 background-repeat: no-repeat;
 }
@@ -648,7 +648,7 @@ background-color:#CCCCCC;
 {
 
 background: none;
-background-image: url('imgdisabled-3/sprite1.png?1172767031');
+background-image: url('imgdisabled-3/sprite1.png?1026287390');
 background-position: -110px 0px;
 background-repeat: no-repeat;
 }
@@ -787,7 +787,7 @@ height:23px;
 .preview  .runner-wrapper .runner-s-disabled-3 .runner-cc  span.runner-btnframe > .runner-btnleft,
 .preview  .runner-wrapper .runner-s-disabled-3 .runner-cc  span.runner-btnframe > .runner-btnright
 {
-background-image: url('btndisabledbutton1/sprite1.png?1172766984')
+background-image: url('btndisabledbutton1/sprite1.png?1026287328')
 }
 .preview .runner-s-disabled-3 .runner-cc  span.runner-btnframe > .runner-btnleft,
 .preview .runner-s-disabled-3 .runner-cc  span.runner-btnframe > .runner-btnright,

@@ -168,6 +168,9 @@ pdfDocument = {
 			{"text":{$researchOperatingPeriodNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
 				
 				
+			{"text":{$researchOperatingPeriodName_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
+				
+				
 			{"text":{$researchOperatingPeriodEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field3}"},
 				
 				

@@ -374,18 +374,7 @@
 	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
 
 
-																		{BEGIN searchCtrlBlock_researchRegisterID}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_researchRegisterID}" {$filterRow_attrs_researchRegisterID}>
-			<label>{$label ReportProgress researchRegisterID }</label>
-
-			
-								<span class="rnr-searchtype" style="display: none;">{$searchtype_researchRegisterID}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_researchRegisterID}</span>
-						</div>
-		{END searchCtrlBlock_researchRegisterID}
-																{BEGIN searchCtrlBlock_researchType}
+																		{BEGIN searchCtrlBlock_researchType}
 
 
 		<div class="form-group srchPanelRow {$filterRow_class_researchType}" {$filterRow_attrs_researchType}>
@@ -396,6 +385,50 @@
 								<span class="rnr-searchcontrol">{$searchcontrol_researchType}</span>
 						</div>
 		{END searchCtrlBlock_researchType}
+																{BEGIN searchCtrlBlock_researchRegisterID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_researchRegisterID}" {$filterRow_attrs_researchRegisterID}>
+			<label>{$label ReportProgress researchRegisterID }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_researchRegisterID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_researchRegisterID}</span>
+						</div>
+		{END searchCtrlBlock_researchRegisterID}
+																{BEGIN searchCtrlBlock_researchProjectAffiliationName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_researchProjectAffiliationName}" {$filterRow_attrs_researchProjectAffiliationName}>
+			<label>{$label ReportProgress researchProjectAffiliationName }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_researchProjectAffiliationName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_researchProjectAffiliationName}</span>
+						</div>
+		{END searchCtrlBlock_researchProjectAffiliationName}
+																{BEGIN searchCtrlBlock_projectStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_projectStatus}" {$filterRow_attrs_projectStatus}>
+			<label>{$label ReportProgress projectStatus }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_projectStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_projectStatus}</span>
+						</div>
+		{END searchCtrlBlock_projectStatus}
+																{BEGIN searchCtrlBlock_researchProjectDisburseStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_researchProjectDisburseStatus}" {$filterRow_attrs_researchProjectDisburseStatus}>
+			<label>{$label ReportProgress researchProjectDisburseStatus }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_researchProjectDisburseStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_researchProjectDisburseStatus}</span>
+						</div>
+		{END searchCtrlBlock_researchProjectDisburseStatus}
 		
 
 	</div>
@@ -431,14 +464,23 @@
 		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectNo"]:before {
 		content: "{$label ReportProgress researchProjectNo}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterID"]:before {
-		content: "{$label ReportProgress researchRegisterID}";
-	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchType"]:before {
 		content: "{$label ReportProgress researchType}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterID"]:before {
+		content: "{$label ReportProgress researchRegisterID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectNameThai"]:before {
+		content: "{$label ReportProgress researchProjectNameThai}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectNameEng"]:before {
+		content: "{$label ReportProgress researchProjectNameEng}";
+	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectHeadName"]:before {
 		content: "{$label ReportProgress researchProjectHeadName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectAffiliationName"]:before {
+		content: "{$label ReportProgress researchProjectAffiliationName}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchProjectAppointmentStatus"]:before {
 		content: "{$label ReportProgress researchProjectAppointmentStatus}";
@@ -483,22 +525,22 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNo_class}
+		 r-ori-vert				{$researchType_class}
 			"
 
-			data-field="researchProjectNo"
+			data-field="researchType"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectNo_fieldheadercolumn}
-	{BEGIN researchProjectNo_fieldheader}
-	<SPAN {$researchProjectNo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo">
-	{$label ReportProgress researchProjectNo }	{$arrow_icon_researchProjectNo}
+		{BEGIN researchType_fieldheadercolumn}
+	{BEGIN researchType_fieldheader}
+	<SPAN {$researchType_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType">
+	{$label ReportProgress researchType }	{$arrow_icon_researchType}
 	</SPAN>
-	{END researchProjectNo_fieldheader}
-{END researchProjectNo_fieldheadercolumn}
+	{END researchType_fieldheader}
+{END researchType_fieldheadercolumn}
 
 	
 	</th>
@@ -510,22 +552,22 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterID_class}
+		 r-ori-vert				{$researchProjectNo_class}
 			"
 
-			data-field="researchRegisterID"
+			data-field="researchProjectNo"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterID_fieldheadercolumn}
-	{BEGIN researchRegisterID_fieldheader}
-	<SPAN {$researchRegisterID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID">
-	{$label ReportProgress researchRegisterID }	{$arrow_icon_researchRegisterID}
+		{BEGIN researchProjectNo_fieldheadercolumn}
+	{BEGIN researchProjectNo_fieldheader}
+	<SPAN {$researchProjectNo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo">
+	{$label ReportProgress researchProjectNo }	{$arrow_icon_researchProjectNo}
 	</SPAN>
-	{END researchRegisterID_fieldheader}
-{END researchRegisterID_fieldheadercolumn}
+	{END researchProjectNo_fieldheader}
+{END researchProjectNo_fieldheadercolumn}
 
 	
 	</th>
@@ -537,22 +579,22 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchType_class}
+		 r-ori-vert				{$researchProjectNameThai_class}
 			"
 
-			data-field="researchType"
+			data-field="researchProjectNameThai"
 	
 	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchType_fieldheadercolumn}
-	{BEGIN researchType_fieldheader}
-	<SPAN {$researchType_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType">
-	{$label ReportProgress researchType }	{$arrow_icon_researchType}
+		{BEGIN researchProjectNameThai_fieldheadercolumn}
+	{BEGIN researchProjectNameThai_fieldheader}
+	<SPAN {$researchProjectNameThai_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai">
+	{$label ReportProgress researchProjectNameThai }	{$arrow_icon_researchProjectNameThai}
 	</SPAN>
-	{END researchType_fieldheader}
-{END researchType_fieldheadercolumn}
+	{END researchProjectNameThai_fieldheader}
+{END researchProjectNameThai_fieldheadercolumn}
 
 	
 	</th>
@@ -564,22 +606,22 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectHeadName_class}
+		 r-ori-vert				{$researchProjectNameEng_class}
 			"
 
-			data-field="researchProjectHeadName"
+			data-field="researchProjectNameEng"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectHeadName_fieldheadercolumn}
-	{BEGIN researchProjectHeadName_fieldheader}
-	<SPAN {$researchProjectHeadName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName">
-	{$label ReportProgress researchProjectHeadName }	{$arrow_icon_researchProjectHeadName}
+		{BEGIN researchProjectNameEng_fieldheadercolumn}
+	{BEGIN researchProjectNameEng_fieldheader}
+	<SPAN {$researchProjectNameEng_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng">
+	{$label ReportProgress researchProjectNameEng }	{$arrow_icon_researchProjectNameEng}
 	</SPAN>
-	{END researchProjectHeadName_fieldheader}
-{END researchProjectHeadName_fieldheadercolumn}
+	{END researchProjectNameEng_fieldheader}
+{END researchProjectNameEng_fieldheadercolumn}
 
 	
 	</th>
@@ -591,22 +633,22 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectAppointmentStatus_class}
+		 r-ori-vert				{$researchProjectHeadName_class}
 			"
 
-			data-field="researchProjectAppointmentStatus"
+			data-field="researchProjectHeadName"
 	
 	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectAppointmentStatus_fieldheadercolumn}
-	{BEGIN researchProjectAppointmentStatus_fieldheader}
-	<SPAN {$researchProjectAppointmentStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAppointmentStatus" data-fieldname="researchProjectAppointmentStatus">
-	{$label ReportProgress researchProjectAppointmentStatus }	{$arrow_icon_researchProjectAppointmentStatus}
+		{BEGIN researchProjectHeadName_fieldheadercolumn}
+	{BEGIN researchProjectHeadName_fieldheader}
+	<SPAN {$researchProjectHeadName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName">
+	{$label ReportProgress researchProjectHeadName }	{$arrow_icon_researchProjectHeadName}
 	</SPAN>
-	{END researchProjectAppointmentStatus_fieldheader}
-{END researchProjectAppointmentStatus_fieldheadercolumn}
+	{END researchProjectHeadName_fieldheader}
+{END researchProjectHeadName_fieldheadercolumn}
 
 	
 	</th>
@@ -618,22 +660,22 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectDisburseStatus_class}
+		 r-ori-vert				{$researchRegisterID_class}
 			"
 
-			data-field="researchProjectDisburseStatus"
+			data-field="researchRegisterID"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectDisburseStatus_fieldheadercolumn}
-	{BEGIN researchProjectDisburseStatus_fieldheader}
-	<SPAN {$researchProjectDisburseStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus">
-	{$label ReportProgress researchProjectDisburseStatus }	{$arrow_icon_researchProjectDisburseStatus}
+		{BEGIN researchRegisterID_fieldheadercolumn}
+	{BEGIN researchRegisterID_fieldheader}
+	<SPAN {$researchRegisterID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID">
+	{$label ReportProgress researchRegisterID }	{$arrow_icon_researchRegisterID}
 	</SPAN>
-	{END researchProjectDisburseStatus_fieldheader}
-{END researchProjectDisburseStatus_fieldheadercolumn}
+	{END researchRegisterID_fieldheader}
+{END researchRegisterID_fieldheadercolumn}
 
 	
 	</th>
@@ -645,22 +687,22 @@
 	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectEndDate_class}
+		 r-ori-vert				{$researchProjectAppointmentStatus_class}
 			"
 
-			data-field="researchProjectEndDate"
+			data-field="researchProjectAppointmentStatus"
 	
 	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectEndDate_fieldheadercolumn}
-	{BEGIN researchProjectEndDate_fieldheader}
-	<SPAN {$researchProjectEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectEndDate" data-fieldname="researchProjectEndDate">
-	{$label ReportProgress researchProjectEndDate }	{$arrow_icon_researchProjectEndDate}
+		{BEGIN researchProjectAppointmentStatus_fieldheadercolumn}
+	{BEGIN researchProjectAppointmentStatus_fieldheader}
+	<SPAN {$researchProjectAppointmentStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAppointmentStatus" data-fieldname="researchProjectAppointmentStatus">
+	{$label ReportProgress researchProjectAppointmentStatus }	{$arrow_icon_researchProjectAppointmentStatus}
 	</SPAN>
-	{END researchProjectEndDate_fieldheader}
-{END researchProjectEndDate_fieldheadercolumn}
+	{END researchProjectAppointmentStatus_fieldheader}
+{END researchProjectAppointmentStatus_fieldheadercolumn}
 
 	
 	</th>
@@ -672,22 +714,22 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$trackingProjectDescResult_class}
+		 r-ori-vert				{$researchProjectDisburseStatus_class}
 			"
 
-			data-field="trackingProjectDescResult"
+			data-field="researchProjectDisburseStatus"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN trackingProjectDescResult_fieldheadercolumn}
-	{BEGIN trackingProjectDescResult_fieldheader}
-	<SPAN {$trackingProjectDescResult_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trackingProjectDescResult" data-fieldname="trackingProjectDescResult">
-	{$label ReportProgress trackingProjectDescResult }	{$arrow_icon_trackingProjectDescResult}
+		{BEGIN researchProjectDisburseStatus_fieldheadercolumn}
+	{BEGIN researchProjectDisburseStatus_fieldheader}
+	<SPAN {$researchProjectDisburseStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus">
+	{$label ReportProgress researchProjectDisburseStatus }	{$arrow_icon_researchProjectDisburseStatus}
 	</SPAN>
-	{END trackingProjectDescResult_fieldheader}
-{END trackingProjectDescResult_fieldheadercolumn}
+	{END researchProjectDisburseStatus_fieldheader}
+{END researchProjectDisburseStatus_fieldheadercolumn}
 
 	
 	</th>
@@ -699,22 +741,22 @@
 	{$cell_grid_headcell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$projectStatus_class}
+		 r-ori-vert				{$researchProjectEndDate_class}
 			"
 
-			data-field="projectStatus"
+			data-field="researchProjectEndDate"
 	
 	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN projectStatus_fieldheadercolumn}
-	{BEGIN projectStatus_fieldheader}
-	<SPAN {$projectStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatus" data-fieldname="projectStatus">
-	{$label ReportProgress projectStatus }	{$arrow_icon_projectStatus}
+		{BEGIN researchProjectEndDate_fieldheadercolumn}
+	{BEGIN researchProjectEndDate_fieldheader}
+	<SPAN {$researchProjectEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectEndDate" data-fieldname="researchProjectEndDate">
+	{$label ReportProgress researchProjectEndDate }	{$arrow_icon_researchProjectEndDate}
 	</SPAN>
-	{END projectStatus_fieldheader}
-{END projectStatus_fieldheadercolumn}
+	{END researchProjectEndDate_fieldheader}
+{END researchProjectEndDate_fieldheadercolumn}
 
 	
 	</th>
@@ -726,22 +768,22 @@
 	{$cell_grid_headcell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$UseTime_class}
+		 r-ori-vert				{$trackingProjectDescResult_class}
 			"
 
-			data-field="UseTime"
+			data-field="trackingProjectDescResult"
 	
 	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN UseTime_fieldheadercolumn}
-	{BEGIN UseTime_fieldheader}
-	<SPAN {$UseTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UseTime" data-fieldname="UseTime">
-	{$label ReportProgress UseTime }	{$arrow_icon_UseTime}
+		{BEGIN trackingProjectDescResult_fieldheadercolumn}
+	{BEGIN trackingProjectDescResult_fieldheader}
+	<SPAN {$trackingProjectDescResult_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trackingProjectDescResult" data-fieldname="trackingProjectDescResult">
+	{$label ReportProgress trackingProjectDescResult }	{$arrow_icon_trackingProjectDescResult}
 	</SPAN>
-	{END UseTime_fieldheader}
-{END UseTime_fieldheadercolumn}
+	{END trackingProjectDescResult_fieldheader}
+{END trackingProjectDescResult_fieldheadercolumn}
 
 	
 	</th>
@@ -753,18 +795,72 @@
 	{$cell_grid_headcell_field10}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$overdueTime_class}
+		 r-ori-vert				{$projectStatus_class}
 			"
 
-			data-field="overdueTime"
+			data-field="projectStatus"
 	
 	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
+		{BEGIN projectStatus_fieldheadercolumn}
+	{BEGIN projectStatus_fieldheader}
+	<SPAN {$projectStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatus" data-fieldname="projectStatus">
+	{$label ReportProgress projectStatus }	{$arrow_icon_projectStatus}
+	</SPAN>
+	{END projectStatus_fieldheader}
+{END projectStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UseTime_class}
+			"
+
+			data-field="UseTime"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UseTime_fieldheadercolumn}
+	{BEGIN UseTime_fieldheader}
+	<SPAN {$UseTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UseTime" data-fieldname="UseTime">
+	{$label ReportProgress UseTime }	{$arrow_icon_UseTime}
+	</SPAN>
+	{END UseTime_fieldheader}
+{END UseTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$overdueTime_class}
+			"
+
+			data-field="overdueTime"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
 		{BEGIN overdueTime_fieldheadercolumn}
 	{BEGIN overdueTime_fieldheader}
-	<SPAN {$overdueTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="overdueTime" data-fieldname="overdueTime">
+	<SPAN {$overdueTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="overdueTime" data-fieldname="overdueTime">
 	{$label ReportProgress overdueTime }	{$arrow_icon_overdueTime}
 	</SPAN>
 	{END overdueTime_fieldheader}
@@ -772,7 +868,34 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field10}
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchProjectAffiliationName_class}
+			"
+
+			data-field="researchProjectAffiliationName"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchProjectAffiliationName_fieldheadercolumn}
+	{BEGIN researchProjectAffiliationName_fieldheader}
+	<SPAN {$researchProjectAffiliationName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAffiliationName" data-fieldname="researchProjectAffiliationName">
+	{$label ReportProgress researchProjectAffiliationName }	{$arrow_icon_researchProjectAffiliationName}
+	</SPAN>
+	{END researchProjectAffiliationName_fieldheader}
+{END researchProjectAffiliationName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
 							</tr>
 					 
 					 
@@ -795,58 +918,12 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectNo_class}
-			"
-
-			data-field="researchProjectNo"
-	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN researchProjectNo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo" data-default-width >
-{$researchProjectNo_value}
-</span>
-{END researchProjectNo_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field}
-				 
-					{BEGIN cellblock_grid_cell_field1}
-	<td
-	
-	{$cell_grid_cell_field1}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$researchRegisterID_class}
-			"
-
-			data-field="researchRegisterID"
-	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN researchRegisterID_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID" data-default-width >
-{$researchRegisterID_value}
-</span>
-{END researchRegisterID_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field1}
-				 
-					{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$researchType_class}
 			"
 
 			data-field="researchType"
 	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -856,6 +933,52 @@
 </span>
 {END researchType_fieldcolumn}	
 	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchProjectNo_class}
+			"
+
+			data-field="researchProjectNo"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchProjectNo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNo" data-fieldname="researchProjectNo" data-default-width >
+{$researchProjectNo_value}
+</span>
+{END researchProjectNo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchProjectNameThai_class}
+			"
+
+			data-field="researchProjectNameThai"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchProjectNameThai_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameThai" data-fieldname="researchProjectNameThai" data-default-width >
+{$researchProjectNameThai_value}
+</span>
+{END researchProjectNameThai_fieldcolumn}	
+	</td>
 	{END cellblock_grid_cell_field2}
 				 
 					{BEGIN cellblock_grid_cell_field3}
@@ -864,20 +987,20 @@
 	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectHeadName_class}
+		 r-ori-vert				{$researchProjectNameEng_class}
 			"
 
-			data-field="researchProjectHeadName"
+			data-field="researchProjectNameEng"
 	
 	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectHeadName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName" data-default-width >
-{$researchProjectHeadName_value}
+		{BEGIN researchProjectNameEng_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectNameEng" data-fieldname="researchProjectNameEng" data-default-width >
+{$researchProjectNameEng_value}
 </span>
-{END researchProjectHeadName_fieldcolumn}	
+{END researchProjectNameEng_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
 				 
@@ -887,20 +1010,20 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectAppointmentStatus_class}
+		 r-ori-vert				{$researchProjectHeadName_class}
 			"
 
-			data-field="researchProjectAppointmentStatus"
+			data-field="researchProjectHeadName"
 	
 	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectAppointmentStatus_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAppointmentStatus" data-fieldname="researchProjectAppointmentStatus" data-default-width >
-{$researchProjectAppointmentStatus_value}
+		{BEGIN researchProjectHeadName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectHeadName" data-fieldname="researchProjectHeadName" data-default-width >
+{$researchProjectHeadName_value}
 </span>
-{END researchProjectAppointmentStatus_fieldcolumn}	
+{END researchProjectHeadName_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
 				 
@@ -910,20 +1033,20 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectDisburseStatus_class}
+		 r-ori-vert				{$researchRegisterID_class}
 			"
 
-			data-field="researchProjectDisburseStatus"
+			data-field="researchRegisterID"
 	
 	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectDisburseStatus_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus" data-default-width >
-{$researchProjectDisburseStatus_value}
+		{BEGIN researchRegisterID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterID" data-fieldname="researchRegisterID" data-default-width >
+{$researchRegisterID_value}
 </span>
-{END researchProjectDisburseStatus_fieldcolumn}	
+{END researchRegisterID_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
 				 
@@ -933,20 +1056,20 @@
 	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchProjectEndDate_class}
+		 r-ori-vert				{$researchProjectAppointmentStatus_class}
 			"
 
-			data-field="researchProjectEndDate"
+			data-field="researchProjectAppointmentStatus"
 	
 	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchProjectEndDate_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectEndDate" data-fieldname="researchProjectEndDate" data-default-width >
-{$researchProjectEndDate_value}
+		{BEGIN researchProjectAppointmentStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAppointmentStatus" data-fieldname="researchProjectAppointmentStatus" data-default-width >
+{$researchProjectAppointmentStatus_value}
 </span>
-{END researchProjectEndDate_fieldcolumn}	
+{END researchProjectAppointmentStatus_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
 				 
@@ -956,20 +1079,20 @@
 	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$trackingProjectDescResult_class}
+		 r-ori-vert				{$researchProjectDisburseStatus_class}
 			"
 
-			data-field="trackingProjectDescResult"
+			data-field="researchProjectDisburseStatus"
 	
 	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN trackingProjectDescResult_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trackingProjectDescResult" data-fieldname="trackingProjectDescResult" data-default-width >
-{$trackingProjectDescResult_value}
+		{BEGIN researchProjectDisburseStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus" data-default-width >
+{$researchProjectDisburseStatus_value}
 </span>
-{END trackingProjectDescResult_fieldcolumn}	
+{END researchProjectDisburseStatus_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
 				 
@@ -979,20 +1102,20 @@
 	{$cell_grid_cell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$projectStatus_class}
+		 r-ori-vert				{$researchProjectEndDate_class}
 			"
 
-			data-field="projectStatus"
+			data-field="researchProjectEndDate"
 	
 	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN projectStatus_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatus" data-fieldname="projectStatus" data-default-width >
-{$projectStatus_value}
+		{BEGIN researchProjectEndDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectEndDate" data-fieldname="researchProjectEndDate" data-default-width >
+{$researchProjectEndDate_value}
 </span>
-{END projectStatus_fieldcolumn}	
+{END researchProjectEndDate_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field8}
 				 
@@ -1002,20 +1125,20 @@
 	{$cell_grid_cell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$UseTime_class}
+		 r-ori-vert				{$trackingProjectDescResult_class}
 			"
 
-			data-field="UseTime"
+			data-field="trackingProjectDescResult"
 	
 	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN UseTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UseTime" data-fieldname="UseTime" data-default-width >
-{$UseTime_value}
+		{BEGIN trackingProjectDescResult_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trackingProjectDescResult" data-fieldname="trackingProjectDescResult" data-default-width >
+{$trackingProjectDescResult_value}
 </span>
-{END UseTime_fieldcolumn}	
+{END trackingProjectDescResult_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field9}
 				 
@@ -1025,12 +1148,58 @@
 	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$projectStatus_class}
+			"
+
+			data-field="projectStatus"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN projectStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatus" data-fieldname="projectStatus" data-default-width >
+{$projectStatus_value}
+</span>
+{END projectStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UseTime_class}
+			"
+
+			data-field="UseTime"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UseTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UseTime" data-fieldname="UseTime" data-default-width >
+{$UseTime_value}
+</span>
+{END UseTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$overdueTime_class}
 			"
 
 			data-field="overdueTime"
 	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1040,7 +1209,30 @@
 </span>
 {END overdueTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field10}
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$researchProjectAffiliationName_class}
+			"
+
+			data-field="researchProjectAffiliationName"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN researchProjectAffiliationName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectAffiliationName" data-fieldname="researchProjectAffiliationName" data-default-width >
+{$researchProjectAffiliationName_value}
+</span>
+{END researchProjectAffiliationName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
 							</tr>
 					 
 					
@@ -1232,6 +1424,54 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportprogress_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportprogress_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportprogress_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
 							</tr>
 					
 					</tfoot>

@@ -123,7 +123,7 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 {
 
 				ScholarshipProposalUpdateStatus($values["researchProjectID"]);
-
+		DisburseCalStatusAll($values["id"]);
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 ;		

@@ -10,6 +10,7 @@
 'researchRegisterDescCheck' => array( 'totalsType' => '' ),
 'researchConsiderName' => array( 'totalsType' => '' ),
 'researchConsiderValue' => array( 'totalsType' => '' ),
+'researchConsiderGroupAuthorized' => array( 'totalsType' => '' ),
 'entryUserName' => array( 'totalsType' => '' ),
 'entryTime' => array( 'totalsType' => '' ) ),
 'fields' => array( 'gridFields' => array( 'researchConsiderNumber',

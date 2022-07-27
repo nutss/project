@@ -151,7 +151,7 @@ $tdataproject_uggroups[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataproject_uggroups[".ajaxCodeSnippetAdded"] = false;
 
@@ -452,7 +452,7 @@ $tdataproject_uggroups[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -477,11 +477,8 @@ $tdataproject_uggroups[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=300";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -630,8 +627,7 @@ $tdataproject_uggroups[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -652,8 +648,7 @@ $tdataproject_uggroups[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 

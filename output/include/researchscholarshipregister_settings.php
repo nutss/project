@@ -193,7 +193,7 @@ $tdataresearchscholarshipregister[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataresearchscholarshipregister[".ajaxCodeSnippetAdded"] = false;
 
@@ -843,7 +843,8 @@ $tdataresearchscholarshipregister[".hideMobileList"] = array();
 //Filters settings
 	$fdata["filterTotals"] = 0;
 		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+		$fdata["filterTotalFields"] = "id";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;

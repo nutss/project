@@ -162,9 +162,6 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$optionGroupNumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field4}"},
-				
-				
 			{"text":{$optionGroupName_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
 				
 				

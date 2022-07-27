@@ -162,7 +162,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_integrated_search_field53}"},
 				
 				
 			{"text":{$researchRegisterID_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
@@ -235,6 +235,42 @@ pdfDocument = {
 				
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field23}"},
+				
+				
+			{"text":{$researchProjectStartDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field50}"},
+				
+				
+			{"text":{$researchProjectEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field51}"},
+				
+				
+			{"text":{$contractSignDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field49}"},
+				
+				
+			{"text":{$contractSignFile_pdfvalue},"hidden":"{$item_hide_integrated_search_field52}"},
+				
+				
+			{"text":{$projectStatusDesc_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+				
+				
+			{"text":{$projectStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field25}"},
+				
+				
+			{"text":{$researchProjectAffiliationPrefixName_pdfvalue},"hidden":"{$item_hide_integrated_search_field26}"},
+				
+				
+			{"text":{$researchProjectAffiliationPosition_pdfvalue},"hidden":"{$item_hide_integrated_search_field27}"},
+				
+				
+			{"text":{$geographiesID_pdfvalue},"hidden":"{$item_hide_integrated_search_field28}"},
+				
+				
+			{"text":{$provincesID_pdfvalue},"hidden":"{$item_hide_integrated_search_field29}"},
+				
+				
+			{"text":{$amphuresID_pdfvalue},"hidden":"{$item_hide_integrated_search_field30}"},
+				
+				
+			{"text":{$districtsID_pdfvalue},"hidden":"{$item_hide_integrated_search_field31}"},
 				
 		  ],
   "border": [ false, false, false, false ],

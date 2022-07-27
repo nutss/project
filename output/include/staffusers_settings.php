@@ -52,6 +52,12 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsstaffusers["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsstaffusers["English"]["entryTime"] = "";
 	$placeHoldersstaffusers["English"]["entryTime"] = "Entry Time";
+	$fieldLabelsstaffusers["English"]["reset_token"] = "Reset Token";
+	$fieldToolTipsstaffusers["English"]["reset_token"] = "";
+	$placeHoldersstaffusers["English"]["reset_token"] = "";
+	$fieldLabelsstaffusers["English"]["reset_date"] = "Reset Date";
+	$fieldToolTipsstaffusers["English"]["reset_date"] = "";
+	$placeHoldersstaffusers["English"]["reset_date"] = "";
 	if (count($fieldToolTipsstaffusers["English"]))
 		$tdatastaffusers[".isUseToolTips"] = true;
 }
@@ -88,6 +94,12 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsstaffusers["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsstaffusers["Thai"]["entryTime"] = "";
 	$placeHoldersstaffusers["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
+	$fieldLabelsstaffusers["Thai"]["reset_token"] = "Reset Token";
+	$fieldToolTipsstaffusers["Thai"]["reset_token"] = "";
+	$placeHoldersstaffusers["Thai"]["reset_token"] = "";
+	$fieldLabelsstaffusers["Thai"]["reset_date"] = "Reset Date";
+	$fieldToolTipsstaffusers["Thai"]["reset_date"] = "";
+	$placeHoldersstaffusers["Thai"]["reset_date"] = "";
 	if (count($fieldToolTipsstaffusers["Thai"]))
 		$tdatastaffusers[".isUseToolTips"] = true;
 }
@@ -187,7 +199,7 @@ $tdatastaffusers[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdatastaffusers[".ajaxCodeSnippetAdded"] = false;
 
@@ -249,7 +261,7 @@ $tdatastaffusers[".strOrderBy"] = $tstrOrderBy;
 $tdatastaffusers[".orderindexes"] = array();
 
 
-$tdatastaffusers[".sqlHead"] = "SELECT id,  	staffFullName,  	staffUsername,  	staffPassword,  	staffEmail,  	staffStatus,  	staffEmailNotify,  	entryUserName,  	entryTime";
+$tdatastaffusers[".sqlHead"] = "SELECT id,  staffFullName,  staffUsername,  staffPassword,  staffEmail,  staffStatus,  staffEmailNotify,  entryUserName,  entryTime,  reset_token,  reset_date";
 $tdatastaffusers[".sqlFrom"] = "FROM staffUsers";
 $tdatastaffusers[".sqlWhereExpr"] = "";
 $tdatastaffusers[".sqlTail"] = "";
@@ -1595,6 +1607,282 @@ $tdatastaffusers[".hideMobileList"] = array();
 
 	$tdatastaffusers["entryTime"] = $fdata;
 		$tdatastaffusers[".searchableFields"][] = "entryTime";
+//	reset_token
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 10;
+	$fdata["strName"] = "reset_token";
+	$fdata["GoodName"] = "reset_token";
+	$fdata["ownerTable"] = "staffUsers";
+	$fdata["Label"] = GetFieldLabel("staffUsers","reset_token");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "reset_token";
+
+		$fdata["sourceSingle"] = "reset_token";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "reset_token";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=50";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+					//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatastaffusers["reset_token"] = $fdata;
+		$tdatastaffusers[".searchableFields"][] = "reset_token";
+//	reset_date
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 11;
+	$fdata["strName"] = "reset_date";
+	$fdata["GoodName"] = "reset_date";
+	$fdata["ownerTable"] = "staffUsers";
+	$fdata["Label"] = GetFieldLabel("staffUsers","reset_date");
+	$fdata["FieldType"] = 135;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "reset_date";
+
+		$fdata["sourceSingle"] = "reset_date";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "reset_date";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 100;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+					//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatastaffusers["reset_date"] = $fdata;
+		$tdatastaffusers[".searchableFields"][] = "reset_date";
 
 
 $tables_data["staffUsers"]=&$tdatastaffusers;
@@ -1636,7 +1924,7 @@ function createSqlQuery_staffusers()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	staffFullName,  	staffUsername,  	staffPassword,  	staffEmail,  	staffStatus,  	staffEmailNotify,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  staffFullName,  staffUsername,  staffPassword,  staffEmail,  staffStatus,  staffEmailNotify,  entryUserName,  entryTime,  reset_token,  reset_date";
 $proto0["m_strFrom"] = "FROM staffUsers";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1802,46 +2090,76 @@ $proto22["m_alias"] = "";
 $obj = new SQLFieldListItem($proto22);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto24=array();
-$proto24["m_link"] = "SQLL_MAIN";
-			$proto25=array();
-$proto25["m_strName"] = "staffUsers";
-$proto25["m_srcTableName"] = "staffUsers";
-$proto25["m_columns"] = array();
-$proto25["m_columns"][] = "id";
-$proto25["m_columns"][] = "staffFullName";
-$proto25["m_columns"][] = "staffUsername";
-$proto25["m_columns"][] = "staffPassword";
-$proto25["m_columns"][] = "staffEmail";
-$proto25["m_columns"][] = "staffStatus";
-$proto25["m_columns"][] = "staffEmailNotify";
-$proto25["m_columns"][] = "entryUserName";
-$proto25["m_columns"][] = "entryTime";
-$proto25["m_columns"][] = "apikey";
-$obj = new SQLTable($proto25);
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "reset_token",
+	"m_strTable" => "staffUsers",
+	"m_srcTableName" => "staffUsers"
+));
 
-$proto24["m_table"] = $obj;
-$proto24["m_sql"] = "staffUsers";
-$proto24["m_alias"] = "";
+$proto24["m_sql"] = "reset_token";
 $proto24["m_srcTableName"] = "staffUsers";
-$proto26=array();
-$proto26["m_sql"] = "";
-$proto26["m_uniontype"] = "SQLL_UNKNOWN";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "reset_date",
+	"m_strTable" => "staffUsers",
+	"m_srcTableName" => "staffUsers"
+));
+
+$proto26["m_sql"] = "reset_date";
+$proto26["m_srcTableName"] = "staffUsers";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto28=array();
+$proto28["m_link"] = "SQLL_MAIN";
+			$proto29=array();
+$proto29["m_strName"] = "staffUsers";
+$proto29["m_srcTableName"] = "staffUsers";
+$proto29["m_columns"] = array();
+$proto29["m_columns"][] = "id";
+$proto29["m_columns"][] = "staffFullName";
+$proto29["m_columns"][] = "staffUsername";
+$proto29["m_columns"][] = "staffPassword";
+$proto29["m_columns"][] = "staffEmail";
+$proto29["m_columns"][] = "staffStatus";
+$proto29["m_columns"][] = "staffEmailNotify";
+$proto29["m_columns"][] = "entryUserName";
+$proto29["m_columns"][] = "entryTime";
+$proto29["m_columns"][] = "apikey";
+$proto29["m_columns"][] = "reset_token";
+$proto29["m_columns"][] = "reset_date";
+$obj = new SQLTable($proto29);
+
+$proto28["m_table"] = $obj;
+$proto28["m_sql"] = "staffUsers";
+$proto28["m_alias"] = "";
+$proto28["m_srcTableName"] = "staffUsers";
+$proto30=array();
+$proto30["m_sql"] = "";
+$proto30["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto26["m_column"]=$obj;
-$proto26["m_contained"] = array();
-$proto26["m_strCase"] = "";
-$proto26["m_havingmode"] = false;
-$proto26["m_inBrackets"] = false;
-$proto26["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto26);
+$proto30["m_column"]=$obj;
+$proto30["m_contained"] = array();
+$proto30["m_strCase"] = "";
+$proto30["m_havingmode"] = false;
+$proto30["m_inBrackets"] = false;
+$proto30["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto30);
 
-$proto24["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto24);
+$proto28["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1857,7 +2175,7 @@ $queryData_staffusers = createSqlQuery_staffusers();
 	
 				;
 
-									
+											
 
 $tdatastaffusers[".sqlquery"] = $queryData_staffusers;
 

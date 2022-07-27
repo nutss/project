@@ -82,15 +82,6 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
-										{BEGIN col_grid_8}
-					"%",
-					{END col_grid_8}
-										{BEGIN col_grid_9}
-					"%",
-					{END col_grid_9}
-										{BEGIN col_grid_10}
-					"%",
-					{END col_grid_10}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -251,6 +242,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_checkbox}
+																							{BEGIN cellblock_grid_headcell_field}
+{
+	cellId: 'headcell_field',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel researchScholarshipRegister researchType }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchType_align}',
+  },
+
+{END cellblock_grid_headcell_field}
 																							{BEGIN cellblock_grid_headcell_field1}
 {
 	cellId: 'headcell_field1',
@@ -269,7 +286,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterNo }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchScholarshipRegister researchRegisterNo }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -295,7 +312,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterName }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel researchScholarshipRegister researchRegisterName }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -321,7 +338,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterStartDate }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+			{"text":"{$jslabel researchScholarshipRegister researchRegisterStartDate }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -347,7 +364,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterEndDate }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
+			{"text":"{$jslabel researchScholarshipRegister researchRegisterEndDate }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -355,32 +372,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field4}
-																							{BEGIN cellblock_grid_headcell_field5}
-{
-	cellId: 'headcell_field5',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterFile }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchRegisterFile_align}',
-  },
-
-{END cellblock_grid_headcell_field5}
 																							{BEGIN cellblock_grid_headcell_field6}
 {
 	cellId: 'headcell_field6',
@@ -399,92 +390,14 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchScholarshipRegister researchType }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchType_align}',
-  },
-
-{END cellblock_grid_headcell_field6}
-																							{BEGIN cellblock_grid_headcell_field7}
-{
-	cellId: 'headcell_field7',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipRegister researchRegisterStatus }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel researchScholarshipRegister researchRegisterStatus }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$researchRegisterStatus_align}',
   },
 
-{END cellblock_grid_headcell_field7}
-																							{BEGIN cellblock_grid_headcell_field8}
-{
-	cellId: 'headcell_field8',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipRegister entryUserName }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$entryUserName_align}',
-  },
-
-{END cellblock_grid_headcell_field8}
-																							{BEGIN cellblock_grid_headcell_field9}
-{
-	cellId: 'headcell_field9',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel researchScholarshipRegister entryTime }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$entryTime_align}',
-  },
-
-{END cellblock_grid_headcell_field9}
+{END cellblock_grid_headcell_field6}
 											],
 				{END row_grid_0}
 		
@@ -512,14 +425,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_grid_field}"},
-				
-				
 			{"text":"","hidden":"{$item_hide_grid_edit}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$id_align}',
+              "alignment": 'left',
   },
 
 {END cellblock_grid_cell_icons}
@@ -549,6 +459,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_checkbox}
+																							{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_simple_grid_field6}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchType_align}',
+  },
+
+{END cellblock_grid_cell_field}
 																							{BEGIN cellblock_grid_cell_field1}
 {
 	cellId: 'cell_field1',
@@ -653,61 +589,9 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field4}
-																							{BEGIN cellblock_grid_cell_field5}
-{
-	cellId: 'cell_field5',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$researchRegisterFile_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchRegisterFile_align}',
-  },
-
-{END cellblock_grid_cell_field5}
 																							{BEGIN cellblock_grid_cell_field6}
 {
 	cellId: 'cell_field6',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_simple_grid_field6}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$researchType_align}',
-  },
-
-{END cellblock_grid_cell_field6}
-																							{BEGIN cellblock_grid_cell_field7}
-{
-	cellId: 'cell_field7',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -730,59 +614,7 @@ pdfDocument = {
               "alignment": '{$researchRegisterStatus_align}',
   },
 
-{END cellblock_grid_cell_field7}
-																							{BEGIN cellblock_grid_cell_field8}
-{
-	cellId: 'cell_field8',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$entryUserName_align}',
-  },
-
-{END cellblock_grid_cell_field8}
-																							{BEGIN cellblock_grid_cell_field9}
-{
-	cellId: 'cell_field9',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_simple_grid_field9}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$entryTime_align}',
-  },
-
-{END cellblock_grid_cell_field9}
+{END cellblock_grid_cell_field6}
 											],
 				{END row_grid_1}
 		
@@ -840,6 +672,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_checkbox}
+																							{BEGIN cellblock_grid_footcell_field}
+{
+	cellId: 'footcell_field',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field}
 																							{BEGIN cellblock_grid_footcell_field1}
 {
 	cellId: 'footcell_field1',
@@ -936,30 +792,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field4}
-																							{BEGIN cellblock_grid_footcell_field5}
-{
-	cellId: 'footcell_field5',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field5}
 																							{BEGIN cellblock_grid_footcell_field6}
 {
 	cellId: 'footcell_field6',
@@ -984,78 +816,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field6}
-																							{BEGIN cellblock_grid_footcell_field7}
-{
-	cellId: 'footcell_field7',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field7}
-																							{BEGIN cellblock_grid_footcell_field8}
-{
-	cellId: 'footcell_field8',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field8}
-																							{BEGIN cellblock_grid_footcell_field9}
-{
-	cellId: 'footcell_field9',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field9}
 											],
 				{END row_grid_2}
 		

@@ -168,25 +168,16 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel missionAssignment missionAssignmentDesc }","bold":true},{"text":{$missionAssignmentDesc_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel missionAssignment missionAssignmentConsiderName }","bold":true},{"text":{$missionAssignmentConsiderName_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel missionAssignment missionAssignmentResponsibleName }","bold":true},{"text":{$missionAssignmentResponsibleName_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel missionAssignment missionAssignmentConsiderValue }","bold":true},{"text":{$missionAssignmentConsiderValue_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel missionAssignment entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel missionAssignment entryTime }","bold":true},{"text":{$entryTime_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel missionAssignment id }","bold":true},{"text":{$id_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel missionAssignment missionFollowID }","bold":true},{"text":{$missionFollowID_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel missionAssignment missionAssignmentConsiderValue }","bold":true},{"text":{$missionAssignmentConsiderValue_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

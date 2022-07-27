@@ -6,11 +6,11 @@ $tdataresearchdisburse[".OwnerID"] = "";
 $tdataresearchdisburse[".OriginalTable"] = "researchOperatingPeriod";
 
 
-$tdataresearchdisburse[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchdisburse[".pagesByType"] = my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchdisburse[".originalPagesByType"] = $tdataresearchdisburse[".pagesByType"];
-$tdataresearchdisburse[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchdisburse[".pages"] = types2pages( my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchdisburse[".originalPages"] = $tdataresearchdisburse[".pages"];
-$tdataresearchdisburse[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchdisburse[".defaultPages"] = my_json_decode( "{\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchdisburse[".originalDefaultPages"] = $tdataresearchdisburse[".defaultPages"];
 
 //	field labels
@@ -49,6 +49,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsresearchdisburse["English"]["entryTime"] = "Entry Time";
 	$fieldToolTipsresearchdisburse["English"]["entryTime"] = "";
 	$placeHoldersresearchdisburse["English"]["entryTime"] = "Entry Time";
+	$fieldLabelsresearchdisburse["English"]["researchProjectDisburseStatus"] = "Research Project Disburse Status";
+	$fieldToolTipsresearchdisburse["English"]["researchProjectDisburseStatus"] = "";
+	$placeHoldersresearchdisburse["English"]["researchProjectDisburseStatus"] = "";
 	if (count($fieldToolTipsresearchdisburse["English"]))
 		$tdataresearchdisburse[".isUseToolTips"] = true;
 }
@@ -82,6 +85,9 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchdisburse["Thai"]["researchProjectID"] = "PROJECT_ID";
 	$fieldToolTipsresearchdisburse["Thai"]["researchProjectID"] = "";
 	$placeHoldersresearchdisburse["Thai"]["researchProjectID"] = "PROJECT_ID";
+	$fieldLabelsresearchdisburse["Thai"]["researchProjectDisburseStatus"] = "สถานะการเบิกจ่าย";
+	$fieldToolTipsresearchdisburse["Thai"]["researchProjectDisburseStatus"] = "";
+	$placeHoldersresearchdisburse["Thai"]["researchProjectDisburseStatus"] = "";
 	if (count($fieldToolTipsresearchdisburse["Thai"]))
 		$tdataresearchdisburse[".isUseToolTips"] = true;
 }
@@ -126,7 +132,7 @@ if( $pages[PAGE_EDIT] ) {
 	$tdataresearchdisburse[".edit"] = true;
 	$tdataresearchdisburse[".afterEditAction"] = 1;
 	$tdataresearchdisburse[".closePopupAfterEdit"] = 1;
-	$tdataresearchdisburse[".afterEditActionDetTable"] = "";
+	$tdataresearchdisburse[".afterEditActionDetTable"] = "researchDisburseConsider";
 }
 
 if( $pages[PAGE_ADD] ) {
@@ -181,7 +187,7 @@ $tdataresearchdisburse[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdataresearchdisburse[".ajaxCodeSnippetAdded"] = false;
 
@@ -207,6 +213,7 @@ $tdataresearchdisburse[".googleLikeFields"][] = "researchOperatingPeriodNo";
 $tdataresearchdisburse[".googleLikeFields"][] = "researchOperatingPeriodEndDate";
 $tdataresearchdisburse[".googleLikeFields"][] = "researchOperatingPeriodDisburse";
 $tdataresearchdisburse[".googleLikeFields"][] = "researchOperatingPeriodDisbursePercent";
+$tdataresearchdisburse[".googleLikeFields"][] = "researchProjectDisburseStatus";
 $tdataresearchdisburse[".googleLikeFields"][] = "entryUserName";
 $tdataresearchdisburse[".googleLikeFields"][] = "entryTime";
 
@@ -236,13 +243,15 @@ $tdataresearchdisburse[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY researchOperatingPeriodNo";
 $tdataresearchdisburse[".strOrderBy"] = $tstrOrderBy;
 
 $tdataresearchdisburse[".orderindexes"] = array();
+	$tdataresearchdisburse[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "researchOperatingPeriodNo");
 
 
-$tdataresearchdisburse[".sqlHead"] = "SELECT id,  	researchProjectID,  	researchOperatingPeriodNo,  	researchOperatingPeriodEndDate,  	researchOperatingPeriodDisburse,  	researchOperatingPeriodDisbursePercent,  	entryUserName,  	entryTime";
+
+$tdataresearchdisburse[".sqlHead"] = "SELECT id,  researchProjectID,  researchOperatingPeriodNo,  researchOperatingPeriodEndDate,  researchOperatingPeriodDisburse,  researchOperatingPeriodDisbursePercent,  researchProjectDisburseStatus,  entryUserName,  entryTime";
 $tdataresearchdisburse[".sqlFrom"] = "FROM researchOperatingPeriod";
 $tdataresearchdisburse[".sqlWhereExpr"] = "";
 $tdataresearchdisburse[".sqlTail"] = "";
@@ -1126,10 +1135,145 @@ $tdataresearchdisburse[".hideMobileList"] = array();
 
 	$tdataresearchdisburse["researchOperatingPeriodDisbursePercent"] = $fdata;
 		$tdataresearchdisburse[".searchableFields"][] = "researchOperatingPeriodDisbursePercent";
-//	entryUserName
+//	researchProjectDisburseStatus
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 7;
+	$fdata["strName"] = "researchProjectDisburseStatus";
+	$fdata["GoodName"] = "researchProjectDisburseStatus";
+	$fdata["ownerTable"] = "researchOperatingPeriod";
+	$fdata["Label"] = GetFieldLabel("researchDisburse","researchProjectDisburseStatus");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchProjectDisburseStatus";
+
+		$fdata["sourceSingle"] = "researchProjectDisburseStatus";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchProjectDisburseStatus";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchdisburse["researchProjectDisburseStatus"] = $fdata;
+		$tdataresearchdisburse[".searchableFields"][] = "researchProjectDisburseStatus";
+//	entryUserName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchOperatingPeriod";
@@ -1265,7 +1409,7 @@ $tdataresearchdisburse[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchOperatingPeriod";
@@ -1487,10 +1631,10 @@ function createSqlQuery_researchdisburse()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchProjectID,  	researchOperatingPeriodNo,  	researchOperatingPeriodEndDate,  	researchOperatingPeriodDisburse,  	researchOperatingPeriodDisbursePercent,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  researchProjectID,  researchOperatingPeriodNo,  researchOperatingPeriodEndDate,  researchOperatingPeriodDisburse,  researchOperatingPeriodDisbursePercent,  researchProjectDisburseStatus,  entryUserName,  entryTime";
 $proto0["m_strFrom"] = "FROM researchOperatingPeriod";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY researchOperatingPeriodNo";
 	
 				;
 			$proto0["cipherer"] = null;
@@ -1613,12 +1757,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchProjectDisburseStatus",
 	"m_strTable" => "researchOperatingPeriod",
 	"m_srcTableName" => "researchDisburse"
 ));
 
-$proto18["m_sql"] = "entryUserName";
+$proto18["m_sql"] = "researchProjectDisburseStatus";
 $proto18["m_srcTableName"] = "researchDisburse";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -1627,60 +1771,89 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "researchOperatingPeriod",
 	"m_srcTableName" => "researchDisburse"
 ));
 
-$proto20["m_sql"] = "entryTime";
+$proto20["m_sql"] = "entryUserName";
 $proto20["m_srcTableName"] = "researchDisburse";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
 $obj = new SQLFieldListItem($proto20);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto22=array();
-$proto22["m_link"] = "SQLL_MAIN";
-			$proto23=array();
-$proto23["m_strName"] = "researchOperatingPeriod";
-$proto23["m_srcTableName"] = "researchDisburse";
-$proto23["m_columns"] = array();
-$proto23["m_columns"][] = "id";
-$proto23["m_columns"][] = "researchProjectID";
-$proto23["m_columns"][] = "researchOperatingPeriodNo";
-$proto23["m_columns"][] = "researchOperatingPeriodEndDate";
-$proto23["m_columns"][] = "researchOperatingPeriodDisburse";
-$proto23["m_columns"][] = "researchOperatingPeriodDisbursePercent";
-$proto23["m_columns"][] = "entryUserName";
-$proto23["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto23);
+						$proto22=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchOperatingPeriod",
+	"m_srcTableName" => "researchDisburse"
+));
 
-$proto22["m_table"] = $obj;
-$proto22["m_sql"] = "researchOperatingPeriod";
-$proto22["m_alias"] = "";
+$proto22["m_sql"] = "entryTime";
 $proto22["m_srcTableName"] = "researchDisburse";
-$proto24=array();
-$proto24["m_sql"] = "";
-$proto24["m_uniontype"] = "SQLL_UNKNOWN";
+$proto22["m_expr"]=$obj;
+$proto22["m_alias"] = "";
+$obj = new SQLFieldListItem($proto22);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto24=array();
+$proto24["m_link"] = "SQLL_MAIN";
+			$proto25=array();
+$proto25["m_strName"] = "researchOperatingPeriod";
+$proto25["m_srcTableName"] = "researchDisburse";
+$proto25["m_columns"] = array();
+$proto25["m_columns"][] = "id";
+$proto25["m_columns"][] = "researchProjectID";
+$proto25["m_columns"][] = "researchOperatingPeriodNo";
+$proto25["m_columns"][] = "researchOperatingPeriodName";
+$proto25["m_columns"][] = "researchOperatingPeriodEndDate";
+$proto25["m_columns"][] = "researchOperatingPeriodDisburse";
+$proto25["m_columns"][] = "researchOperatingPeriodDisbursePercent";
+$proto25["m_columns"][] = "researchProjectDisburseStatus";
+$proto25["m_columns"][] = "entryUserName";
+$proto25["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto25);
+
+$proto24["m_table"] = $obj;
+$proto24["m_sql"] = "researchOperatingPeriod";
+$proto24["m_alias"] = "";
+$proto24["m_srcTableName"] = "researchDisburse";
+$proto26=array();
+$proto26["m_sql"] = "";
+$proto26["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto24["m_column"]=$obj;
-$proto24["m_contained"] = array();
-$proto24["m_strCase"] = "";
-$proto24["m_havingmode"] = false;
-$proto24["m_inBrackets"] = false;
-$proto24["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto24);
+$proto26["m_column"]=$obj;
+$proto26["m_contained"] = array();
+$proto26["m_strCase"] = "";
+$proto26["m_havingmode"] = false;
+$proto26["m_inBrackets"] = false;
+$proto26["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto26);
 
-$proto22["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto22);
+$proto24["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto24);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto28=array();
+						$obj = new SQLField(array(
+	"m_strName" => "researchOperatingPeriodNo",
+	"m_strTable" => "researchOperatingPeriod",
+	"m_srcTableName" => "researchDisburse"
+));
+
+$proto28["m_column"]=$obj;
+$proto28["m_bAsc"] = 1;
+$proto28["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto28);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="researchDisburse";		
 $obj = new SQLQuery($proto0);
 
@@ -1692,7 +1865,7 @@ $queryData_researchdisburse = createSqlQuery_researchdisburse();
 	
 				;
 
-								
+									
 
 $tdataresearchdisburse[".sqlquery"] = $queryData_researchdisburse;
 

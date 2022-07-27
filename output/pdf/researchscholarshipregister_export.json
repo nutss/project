@@ -104,6 +104,9 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
 			{"text":{$researchRegisterNo_pdfvalue},"hidden":"{$item_hide_export_field1}"},
 				
 				
@@ -114,12 +117,6 @@ pdfDocument = {
 				
 				
 			{"text":{$researchRegisterEndDate_pdfvalue},"hidden":"{$item_hide_export_field4}"},
-				
-				
-			{"text":{$researchRegisterFile_pdfvalue},"hidden":"{$item_hide_export_field5}"},
-				
-				
-			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_export_field6}"},
 				
 				
 			{"text":{$researchRegisterStatus_pdfvalue},"hidden":"{$item_hide_export_field7}"},

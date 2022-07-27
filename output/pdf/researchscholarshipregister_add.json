@@ -168,9 +168,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel researchScholarshipRegister researchRegisterEndDate }","bold":true},{"text":{$researchRegisterEndDate_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel researchScholarshipRegister researchRegisterFile }","bold":true},{"text":{$researchRegisterFile_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel researchScholarshipRegister researchType }","bold":true},{"text":{$researchType_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				

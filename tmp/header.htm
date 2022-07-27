@@ -1,71 +1,0 @@
-<!doctype html><html {$html_attrs}><head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><LINK REL="stylesheet" href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/default.css" type="text/css" ruleindex="0"><LINK REL="stylesheet" href type="text/css" id="styleCss" ruleindex="1"><link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/editor.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/bootstrap/project/normal/style.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/bs.css" type="text/css" temporary="">
-<link rel=stylesheet href="file:///C:/Users/Chanaphon%20Lamunsup/Documents/PHPRunnerProjects/project/tmp/styleCache/font-awesome/css/font-awesome.min.css" type="text/css" temporary="">
-<style custombootstrapcss="" temporary="">[data-itemtype="grid_field"][data-field]:before {
-    display: inline;
-}</style>
-</head><BODY><script>
-/*
-if (!document.location.href.includes('login')) {
-  let b = document.body
-  let dhead = document.createElement('div') //สร้าง div สำหรับ header
-  let dfoot = document.createElement('div') //สร้าง div สำหรับ footer
-  let normpage = document.querySelector('.r-vbar-page') //หน้าทั่าไป
-  let printpage = document.querySelector('[class="rp-presplitpage rp-page"]') //หน้า print
-  //if (normpage) normpage.style.marginTop = "100px"
-  //if (printpage) printpage.style.marginTop = "100px"
-
-  //เลื่อนหน้าลงมา จะได้ไม่ทับกับ header
-  //dhead.className ="yourheader" 
-   // css ของ heade
-  //dhead.textContent = 'THis is header'//content ใน header
-  //dhead.innerHTML = '<div style="font-family:Kanit; display:flex;padding-left:40px"><div class="imghead"><img src="https://www.mhesi.go.th/images/2565/Pornnapa/05/110565/1/1.png" style="width:60px;padding:5px 0px 0px 5px"/></div><div class="texthead" style="font-size:0.8em;padding:4px;text-align:left"><span style="font-size:1.8em;color:#7a4ea3">ระบบบริหารการขอรับทุน</span><br>กลุ่มภารกิจบริหารยุทธศาสตร์ (ภย.)<br>สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม (สป.อว.)</div></div>'
-  //dhead.style="position:fixed;left:0;top:0;width:100%;height:100px;text-align:center;z-index:2;background-color:white;color:black"
-
-	dhead.innerHTML = '<img style ="height:100%; object-fit: cover; object-position:0 0" src="https://project.mac.in.th/images/header.png" />'
-  
-	b.insertBefore(dhead,b.firstChild) //แทรก div header เป็นตัวแรก จาก body
-  dfoot.className ="yourfooter"
-  dfoot.innerText = `กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม (อว.)\n
-  เป็นหน่วยงานของรัฐที่จัดตั้งขึ้นเพื่อขับเคลื่อนการอุดมศึกษาไทย วิทยาศาสตร์ วิจัยและนวัตกรรม ไปสู่มาตรฐานในระดับสากล\nและเพิ่มอันดับความสามารถการแข่งขันในระดับนานาชาติอย่างยั่งยืน ไม่ได้มีวัตถุประสงค์เพื่อแสวงหากำไร\nหากท่านพบว่ามีข้อมูลใดๆ ที่ละเมิดทรัพย์สินทางปัญญาปรากฏอยู่ในเว็บไซต์นี้ โปรดแจ้งให้ทราบ เพื่อดำเนินการแก้ปัญหาดังกล่าวโดยเร็วที่สุดต่อไป\n© 2020 Ministry of Higher Education, Science, Research and Innovation. ALL RIGHTS RESERVED`//content ใน footer
-  dfoot.style="font-family:Kanit;left:0;bottom:0;width:100%;text-align:right;padding:10px;z-index:9999;background-color:#999999;color:black;font-size:0.75em"//css ของ footer
-
-  b.appendChild(dfoot) //แทรก div ของ footer ไว้ท้่ายสุด  
-
-}
-*/
-
-if (!document.location.href.includes('login')) {
-    let dhead = document.createElement('div')
-    let dfoot = document.createElement('div')
-    dhead.className = "yourheader"
-    //dhead.style = 'position:fixed;top:0;z-index:2;width:100%;background-color:white;box-shadow:rgba(0, 0, 0, 0.19) 0px 5px,rgba(0, 0, 0, 0.1) 0px 10px'
-		dhead.style = 'position:fixed;top:0;z-index:2;width:100%;background-color:white;'
-		dhead.innerHTML = '<img style ="height:100%; object-fit: cover; object-position:0 0" src="https://project.mac.in.th/images/header.png" />'
-	let topoffset = "97px"
-    if (document.location.href.includes('print')) {
-		document.querySelector('[class="rp-presplitpage rp-page"]').style.marginTop = topoffset
-	} else {
-		document.querySelector('.r-vbar-page').style.marginTop = topoffset
-	}
-
-    let b = document.body
-    b.insertBefore(dhead, b.firstChild) //แทรก div header เป็นตัวแรก จาก body
-    dfoot.className = "yourfooter"
-    //dfoot.innerText = `กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม (อว.)\nเป็นหน่วยงานของรัฐที่จัดตั้งขึ้นเพื่อขับเคลื่อนการอุดมศึกษาไทย วิทยาศาสตร์ วิจัยและนวัตกรรม ไปสู่มาตรฐานในระดับสากล\nและเพิ่มอันดับความสามารถการแข่งขันในระดับนานาชาติอย่างยั่งยืน ไม่ได้มีวัตถุประสงค์เพื่อแสวงหากำไร\nหากท่านพบว่ามีข้อมูลใดๆ ที่ละเมิดทรัพย์สินทางปัญญาปรากฏอยู่ในเว็บไซต์นี้ โปรดแจ้งให้ทราบ เพื่อดำเนินการแก้ปัญหาดังกล่าวโดยเร็วที่สุดต่อไป\n© 2020 Ministry of Higher Education, Science, Research and Innovation. ALL RIGHTS RESERVED` 
-    //dfoot.style = "font-family:Kanit;left:0;width:100%;text-align:right;padding:10px;z-index:0;background-color:#999999;color:black;font-size:0.75em"
-    b.appendChild(dfoot)
-    let footposn = ()=>{
-		(b.getBoundingClientRect(0).height > screen.height) ? dfoot.style.position = 'relative' : dfoot.style.position = 'absolute';
-		if (document.location.href.includes('dashboard_dashboard.php')) dfoot.style.position = 'relative'
-		//dfoot.style.bottom = "-170px"
-		dfoot.style.bottom = "-50px"
-    }
-    footposn()
-    b.onresize = footposn
-    ScreenOrientation.onchange = footposn
- 
-}
-
-</script></BODY></html>

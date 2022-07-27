@@ -13,7 +13,7 @@ date_default_timezone_set('Asia/Bangkok');
 require("../include/phpmailer/PHPMailerAutoload.php");
 require("../include/phpmailer/class.phpmailer.php");
 
-var_dump($_POST);
+
 
 		$mail             = new PHPMailer();
 		$mail->IsSMTP();											
@@ -40,29 +40,30 @@ var_dump($_POST);
 		$mail->AltBody    = "[ระบบบริหารการขอรับทุน]  แจ้งเตือน สถานะโครงการ"; // optional, comment out and test
 
 		
-		foreach(explode(',', $_POST['MailTo']) as $MailTo) {
+		foreach(explode(';', $_POST['MailTo']) as $MailTo) {
 
 			if ($MailTo != "") {
 				$mail->addBCC($MailTo);
 			}
-		}
+		}	
 
-				$mail_body_html  = "ชื่อโครงการ		: ".urldecode($_POST['projectName'])."<BR>";
-				$mail_body_html .= "วันเริ่มโครงการ		: ".date_format(date_create($_POST['projectStart']),"d/m/Y")."<BR>";
-				$mail_body_html .= "วันสิ้นสุดโครงการ	: ".date_format(date_create($_POST['projectEnd']),"d/m/Y")."<BR>";
-				$mail_body_html .= "ประเภททุนวิจัย		: ".urldecode($_POST['researchFundingType'])."<BR>";
-				$mail_body_html .= "ผู้ติดต่อ			: ".urldecode($_POST['contactName']."<BR>");
-						
-				echo $mail_body_html;
+				$mail_body_html  = "ชื่อโครงการ			: ".urldecode($_POST['researchProjectNameThai']."<BR>");
+				$mail_body_html .= "ชื่อหัวหน้าเสนอโครงการ		: ".urldecode($_POST['researchProjectHeadName']."<BR>");
+				$mail_body_html .= "กระบวนการ			: ".urldecode($_POST['processName']."<BR>");
+				$mail_body_html .= "ขั้นตอน				: ".urldecode($_POST['stepName']."<BR>");
+				$mail_body_html .= "การพิจารณา			: ".urldecode($_POST['researchConsiderValue']."<BR>");
+				$mail_body_html .= "หมายเหตุ			: ".urldecode($_POST['researchRegisterDesc']."<BR>");
+				
+
 				$mail->MsgHTML("[ระบบบริหารการขอรับทุน]  แจ้งเตือน สถานะโครงการ <BR> ".$mail_body_html);
 
 
 		
 		
 				if(!$mail->Send()) {
-		  			//echo "Mailer Error: " . $mail->ErrorInfo;
+		  			echo "Mailer Error: " . $mail->ErrorInfo;
 				} else {
-		  			//echo "Message sent! ";
+		  			echo "Message sent! ";
 				}
 
 ?>

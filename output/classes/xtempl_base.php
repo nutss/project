@@ -125,11 +125,26 @@ class XTempl_Base
 	
 		if( !$hideAddedCharts ) //#9607 1. Temporary fix
 		{
-			$this->assign_function("reportmonitorgraphtrackingstatus_chart","xt_showchart",
+			$this->assign_function("reportmonitorgraphtrackingstatus1_chart","xt_showchart",
 			array(
-				"chartName"=>"reportmonitorgraphtrackingstatus",
-				"table"=>"ReportMonitorGraphTrackingStatus",
+				"chartName"=>"reportmonitorgraphtrackingstatus1",
+				"table"=>"ReportMonitorGraphTrackingStatus1",
 				"ctype"=>"2DPie"));
+			$this->assign_function("reportmonitorgraphtrackingstatus2_chart","xt_showchart",
+			array(
+				"chartName"=>"reportmonitorgraphtrackingstatus2",
+				"table"=>"ReportMonitorGraphTrackingStatus2",
+				"ctype"=>"2DPie"));
+			$this->assign_function("reportmonitorgraphtrackingstatus3_chart","xt_showchart",
+			array(
+				"chartName"=>"reportmonitorgraphtrackingstatus3",
+				"table"=>"ReportMonitorGraphTrackingStatus3",
+				"ctype"=>"2DPie"));
+			$this->assign_function("reportgraphmissionfollow_chart","xt_showchart",
+			array(
+				"chartName"=>"reportgraphmissionfollow",
+				"table"=>"ReportGraphmissionFollow",
+				"ctype"=>"2DColumn"));
 		}
 		
 

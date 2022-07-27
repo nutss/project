@@ -1,2 +1,50 @@
 
 
+[data-itemtype="grid_field"][data-field]:before {
+    display: inline;
+}
+.panel-footer{
+    text-align:right
+}
+#dashelement_reportmonitorgraphtrackingstatus1_chart1 div,#dashelement_reportmonitorgraphtrackingstatus2_chart1 div,#dashelement_reportmonitorgraphtrackingstatus3_chart1 div{
+    border:1px solid white
+}
+#dashelement_reportmonitorgraphtrackingstatus1_chart1 .panel-heading,#dashelement_reportmonitorgraphtrackingstatus2_chart1 .panel-heading,#dashelement_reportmonitorgraphtrackingstatus3_chart1 .panel-heading{
+    display:none
+}
+
+#dashelement_reportmonitorprojectstatus1_list1>.panel-primary>.panel-heading{
+	color: #fff;
+	background-color: #892b11;
+	border-color: #892b11;
+}
+#dashelement_reportmonitorprojectstatus2_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #ffbd43;
+	border-color: #ffbd43;
+}
+#dashelement_reportmonitorprojectstatus3_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #208582;
+	border-color: #208582;
+}
+#dashelement_reportmonitorprojectstatus4_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #aeb5db;
+	border-color: #aeb5db;
+}
+#dashelement_reportmonitorprojectstatus5_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #898484;
+	border-color: #898484;
+}
+#dashelement_reportmonitorprojectstatus6_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #892b11;
+	border-color: #892b11;
+}
+#dashelement_reportmonitorprojectstatus7_list1>.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #484898;
+	border-color: #484898;
+}

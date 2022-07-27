@@ -18,7 +18,6 @@
 
 
 
-
 	}
 
 //	handlers
@@ -136,71 +135,6 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 ;		
 } // function AfterEdit
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

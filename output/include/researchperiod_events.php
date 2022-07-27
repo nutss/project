@@ -13,6 +13,10 @@
 	{
 	// fill list of events
 
+		$this->events["AfterAdd"]=true;
+
+		$this->events["AfterEdit"]=true;
+
 
 	}
 
@@ -40,6 +44,158 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record added
+function AfterAdd(&$values, &$keys, $inline, $pageObject)
+{
+
+		
+		DisburseConsiderInsert($values["researchProjectID"],$values["id"]);
+		ScholarshipProposalUpdateStatus($values["researchProjectID"]);
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterAdd
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
+{
+
+			ScholarshipProposalUpdateStatus($values["researchProjectID"]);
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
 		
 		
 		

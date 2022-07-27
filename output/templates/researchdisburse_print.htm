@@ -130,7 +130,7 @@
 	 
 		{BEGIN researchOperatingPeriodNo_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodNo" data-fieldname="researchOperatingPeriodNo">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodNo" data-fieldname="researchOperatingPeriodNo">
 	{$label researchDisburse researchOperatingPeriodNo }	</span>
 {END researchOperatingPeriodNo_fieldheadercolumn}
 
@@ -155,7 +155,7 @@
 	 
 		{BEGIN researchOperatingPeriodEndDate_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodEndDate" data-fieldname="researchOperatingPeriodEndDate">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodEndDate" data-fieldname="researchOperatingPeriodEndDate">
 	{$label researchDisburse researchOperatingPeriodEndDate }	</span>
 {END researchOperatingPeriodEndDate_fieldheadercolumn}
 
@@ -180,7 +180,7 @@
 	 
 		{BEGIN researchOperatingPeriodDisburse_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodDisburse" data-fieldname="researchOperatingPeriodDisburse">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodDisburse" data-fieldname="researchOperatingPeriodDisburse">
 	{$label researchDisburse researchOperatingPeriodDisburse }	</span>
 {END researchOperatingPeriodDisburse_fieldheadercolumn}
 
@@ -205,7 +205,7 @@
 	 
 		{BEGIN researchOperatingPeriodDisbursePercent_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodDisbursePercent" data-fieldname="researchOperatingPeriodDisbursePercent">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchOperatingPeriodDisbursePercent" data-fieldname="researchOperatingPeriodDisbursePercent">
 	{$label researchDisburse researchOperatingPeriodDisbursePercent }	</span>
 {END researchOperatingPeriodDisbursePercent_fieldheadercolumn}
 
@@ -219,20 +219,20 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchProjectDisburseStatus_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchProjectDisburseStatus"
 	
 	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldheadercolumn}
+		{BEGIN researchProjectDisburseStatus_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label researchDisburse entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus">
+	{$label researchDisburse researchProjectDisburseStatus }	</span>
+{END researchProjectDisburseStatus_fieldheadercolumn}
 
 	
 	</th>
@@ -244,24 +244,49 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryTime_class}
+		 r-ori-vert				{$entryUserName_class}
 			"
 
-			data-field="entryTime"
+			data-field="entryUserName"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
+		{BEGIN entryUserName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	{$label researchDisburse entryUserName }	</span>
+{END entryUserName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$entryTime_class}
+			"
+
+			data-field="entryTime"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
 		{BEGIN entryTime_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
 	{$label researchDisburse entryTime }	</span>
 {END entryTime_fieldheadercolumn}
 
 	
 	</th>
-	{END cellblock_grid_headcell_field5}
+	{END cellblock_grid_headcell_field6}
 							</tr>
 					 
 					 
@@ -377,20 +402,20 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
+		 r-ori-vert				{$researchProjectDisburseStatus_class}
 			"
 
-			data-field="entryUserName"
+			data-field="researchProjectDisburseStatus"
 	
 	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
+		{BEGIN researchProjectDisburseStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus" data-default-width >
+{$researchProjectDisburseStatus_value}
 </span>
-{END entryUserName_fieldcolumn}	
+{END researchProjectDisburseStatus_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
 				 
@@ -400,12 +425,35 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$entryUserName_class}
+			"
+
+			data-field="entryUserName"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN entryUserName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
+{$entryUserName_value}
+</span>
+{END entryUserName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$entryTime_class}
 			"
 
 			data-field="entryTime"
 	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -415,7 +463,7 @@
 </span>
 {END entryTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field5}
+	{END cellblock_grid_cell_field6}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -553,6 +601,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchdisburse_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
 							</tr>
 					
 					</tfoot>

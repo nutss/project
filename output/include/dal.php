@@ -47,7 +47,10 @@ function DBLookup($sql)
   */
 class tDAL
 {
+	var $tblmc_at_192_168_1_111__amphures;
 	var $tblmc_at_192_168_1_111__considerChoice;
+	var $tblmc_at_192_168_1_111__districts;
+	var $tblmc_at_192_168_1_111__geographies;
 	var $tblmc_at_192_168_1_111__missionAssignment;
 	var $tblmc_at_192_168_1_111__missionFollow;
 	var $tblmc_at_192_168_1_111__optionGroup;
@@ -57,10 +60,12 @@ class tDAL
 	var $tblmc_at_192_168_1_111__project_uggroups;
 	var $tblmc_at_192_168_1_111__project_ugmembers;
 	var $tblmc_at_192_168_1_111__project_ugrights;
+	var $tblmc_at_192_168_1_111__provinces;
 	var $tblmc_at_192_168_1_111__researchAppointment;
 	var $tblmc_at_192_168_1_111__researchAppointmentConsider;
 	var $tblmc_at_192_168_1_111__researchConsider;
 	var $tblmc_at_192_168_1_111__researchDisburseConsider;
+	var $tblmc_at_192_168_1_111__researcher;
 	var $tblmc_at_192_168_1_111__researchOperatingPeriod;
 	var $tblmc_at_192_168_1_111__researchRenewal;
 	var $tblmc_at_192_168_1_111__researchRenewalConsider;
@@ -68,6 +73,7 @@ class tDAL
 	var $tblmc_at_192_168_1_111__researchScholarshipProposal;
 	var $tblmc_at_192_168_1_111__researchScholarshipRegister;
 	var $tblmc_at_192_168_1_111__researchType;
+	var $tblmc_at_192_168_1_111__researchTypeGroup;
 	var $tblmc_at_192_168_1_111__staffUsers;
 	var $tblmc_at_192_168_1_111__statusType;
 	var $lstTables;
@@ -77,7 +83,10 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
+		$this->lstTables[] = array("name" => "amphures", "varname" => "mc_at_192_168_1_111__amphures", "altvarname" => "amphures", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "considerChoice", "varname" => "mc_at_192_168_1_111__considerChoice", "altvarname" => "considerChoice", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
+		$this->lstTables[] = array("name" => "districts", "varname" => "mc_at_192_168_1_111__districts", "altvarname" => "districts", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
+		$this->lstTables[] = array("name" => "geographies", "varname" => "mc_at_192_168_1_111__geographies", "altvarname" => "geographies", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "missionAssignment", "varname" => "mc_at_192_168_1_111__missionAssignment", "altvarname" => "missionAssignment", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "missionFollow", "varname" => "mc_at_192_168_1_111__missionFollow", "altvarname" => "missionFollow", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "optionGroup", "varname" => "mc_at_192_168_1_111__optionGroup", "altvarname" => "optionGroup", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
@@ -87,10 +96,12 @@ class tDAL
 		$this->lstTables[] = array("name" => "project_uggroups", "varname" => "mc_at_192_168_1_111__project_uggroups", "altvarname" => "project_uggroups", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "project_ugmembers", "varname" => "mc_at_192_168_1_111__project_ugmembers", "altvarname" => "project_ugmembers", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "project_ugrights", "varname" => "mc_at_192_168_1_111__project_ugrights", "altvarname" => "project_ugrights", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
+		$this->lstTables[] = array("name" => "provinces", "varname" => "mc_at_192_168_1_111__provinces", "altvarname" => "provinces", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchAppointment", "varname" => "mc_at_192_168_1_111__researchAppointment", "altvarname" => "researchAppointment", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchAppointmentConsider", "varname" => "mc_at_192_168_1_111__researchAppointmentConsider", "altvarname" => "researchAppointmentConsider", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchConsider", "varname" => "mc_at_192_168_1_111__researchConsider", "altvarname" => "researchConsider", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchDisburseConsider", "varname" => "mc_at_192_168_1_111__researchDisburseConsider", "altvarname" => "researchDisburseConsider", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
+		$this->lstTables[] = array("name" => "researcher", "varname" => "mc_at_192_168_1_111__researcher", "altvarname" => "researcher", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchOperatingPeriod", "varname" => "mc_at_192_168_1_111__researchOperatingPeriod", "altvarname" => "researchOperatingPeriod", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchRenewal", "varname" => "mc_at_192_168_1_111__researchRenewal", "altvarname" => "researchRenewal", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchRenewalConsider", "varname" => "mc_at_192_168_1_111__researchRenewalConsider", "altvarname" => "researchRenewalConsider", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
@@ -98,6 +109,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "researchScholarshipProposal", "varname" => "mc_at_192_168_1_111__researchScholarshipProposal", "altvarname" => "researchScholarshipProposal", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchScholarshipRegister", "varname" => "mc_at_192_168_1_111__researchScholarshipRegister", "altvarname" => "researchScholarshipRegister", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "researchType", "varname" => "mc_at_192_168_1_111__researchType", "altvarname" => "researchType", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
+		$this->lstTables[] = array("name" => "researchTypeGroup", "varname" => "mc_at_192_168_1_111__researchTypeGroup", "altvarname" => "researchTypeGroup", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "staffUsers", "varname" => "mc_at_192_168_1_111__staffUsers", "altvarname" => "staffUsers", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 		$this->lstTables[] = array("name" => "statusType", "varname" => "mc_at_192_168_1_111__statusType", "altvarname" => "statusType", "connId" => "mc_at_192_168_1_111", "schema" => "", "connName" => "project at 192.168.1.111");
 	}

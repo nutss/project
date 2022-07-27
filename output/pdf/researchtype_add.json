@@ -172,6 +172,11 @@ pdfDocument = {
 			{$displayDetailTable_researchconsider }
 		{END details_researchconsider},
 				
+				
+			 {BEGIN details_researchtypegroup}
+			{$displayDetailTable_researchtypegroup }
+		{END details_researchtypegroup},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

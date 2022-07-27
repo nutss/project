@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('ReportSearchresearchRegister',Runner.pages.constants.PAGE_SEARCH,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){$("[class='r-search-option']").hide();});

@@ -249,17 +249,13 @@ function checkTableName($shortTName )
 		return true;
 	if ("considerchoice" == $shortTName )
 		return true;
-	if ("researchconsiderview" == $shortTName )
-		return true;
 	if ("project_uggroups" == $shortTName )
 		return true;
 	if ("statustype" == $shortTName )
 		return true;
 	if ("reportprogress" == $shortTName )
 		return true;
-	if ("reportmonitor" == $shortTName )
-		return true;
-	if ("reportmonitorgraphtrackingstatus" == $shortTName )
+	if ("reportmonitorgraphtrackingstatus1" == $shortTName )
 		return true;
 	if ("reportmonitorprojectstatus1" == $shortTName )
 		return true;
@@ -268,6 +264,46 @@ function checkTableName($shortTName )
 	if ("reportmonitorprojectstatus3" == $shortTName )
 		return true;
 	if ("reportmonitorprojectstatus4" == $shortTName )
+		return true;
+	if ("reportmonitorgraphtrackingstatus2" == $shortTName )
+		return true;
+	if ("reportmonitorgraphtrackingstatus3" == $shortTName )
+		return true;
+	if ("reportmonitorprojectstatus5" == $shortTName )
+		return true;
+	if ("reportmonitorprojectstatus6" == $shortTName )
+		return true;
+	if ("reportmonitorprojectstatus7" == $shortTName )
+		return true;
+	if ("reportmonitorprojectstatus8" == $shortTName )
+		return true;
+	if ("reportmonitor" == $shortTName )
+		return true;
+	if ("reportsearchresearchregister" == $shortTName )
+		return true;
+	if ("reportmission" == $shortTName )
+		return true;
+	if ("reportgraphmissionfollow" == $shortTName )
+		return true;
+	if ("dashboardmission" == $shortTName )
+		return true;
+	if ("researcher" == $shortTName )
+		return true;
+	if ("researchresearcher" == $shortTName )
+		return true;
+	if ("optionsub_search_lookup" == $shortTName )
+		return true;
+	if ("researchtypegroup" == $shortTName )
+		return true;
+	if ("typegroup_search_lookup" == $shortTName )
+		return true;
+	if ("geographies" == $shortTName )
+		return true;
+	if ("provinces" == $shortTName )
+		return true;
+	if ("districts" == $shortTName )
+		return true;
+	if ("amphures" == $shortTName )
 		return true;
 	return false;
 }
@@ -555,15 +591,6 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("researchConsiderView");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="researchConsiderView";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("project_uggroups");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
@@ -591,21 +618,12 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("ReportMonitor");
+		$strPerm = GetUserPermissions("ReportMonitorGraphTrackingStatus1");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
 	}
 	if( $tableAvailable ) {
-		$arr[]="ReportMonitor";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("ReportMonitorGraphTrackingStatus");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="ReportMonitorGraphTrackingStatus";
+		$arr[]="ReportMonitorGraphTrackingStatus1";
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
@@ -643,6 +661,186 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="ReportMonitorProjectStatus4";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorGraphTrackingStatus2");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorGraphTrackingStatus2";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorGraphTrackingStatus3");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorGraphTrackingStatus3";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorProjectStatus5");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorProjectStatus5";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorProjectStatus6");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorProjectStatus6";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorProjectStatus7");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorProjectStatus7";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitorProjectStatus8");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitorProjectStatus8";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMonitor");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMonitor";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportSearchresearchRegister");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportSearchresearchRegister";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportMission");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportMission";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ReportGraphmissionFollow");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ReportGraphmissionFollow";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("DashboardMission");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="DashboardMission";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("researcher");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="researcher";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("researchResearcher");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="researchResearcher";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("optionSub_Search_Lookup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="optionSub_Search_Lookup";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("researchTypeGroup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="researchTypeGroup";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("TypeGroup_Search_Lookup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="TypeGroup_Search_Lookup";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("geographies");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="geographies";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("provinces");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="provinces";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("districts");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="districts";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("amphures");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="amphures";
+	}
 	return $arr;
 }
 
@@ -678,16 +876,34 @@ function GetTablesListWithoutSecurity()
 	$arr[]="optionSub";
 	$arr[]="project_audit";
 	$arr[]="considerChoice";
-	$arr[]="researchConsiderView";
 	$arr[]="project_uggroups";
 	$arr[]="statusType";
 	$arr[]="ReportProgress";
-	$arr[]="ReportMonitor";
-	$arr[]="ReportMonitorGraphTrackingStatus";
+	$arr[]="ReportMonitorGraphTrackingStatus1";
 	$arr[]="ReportMonitorProjectStatus1";
 	$arr[]="ReportMonitorProjectStatus2";
 	$arr[]="ReportMonitorProjectStatus3";
 	$arr[]="ReportMonitorProjectStatus4";
+	$arr[]="ReportMonitorGraphTrackingStatus2";
+	$arr[]="ReportMonitorGraphTrackingStatus3";
+	$arr[]="ReportMonitorProjectStatus5";
+	$arr[]="ReportMonitorProjectStatus6";
+	$arr[]="ReportMonitorProjectStatus7";
+	$arr[]="ReportMonitorProjectStatus8";
+	$arr[]="ReportMonitor";
+	$arr[]="ReportSearchresearchRegister";
+	$arr[]="ReportMission";
+	$arr[]="ReportGraphmissionFollow";
+	$arr[]="DashboardMission";
+	$arr[]="researcher";
+	$arr[]="researchResearcher";
+	$arr[]="optionSub_Search_Lookup";
+	$arr[]="researchTypeGroup";
+	$arr[]="TypeGroup_Search_Lookup";
+	$arr[]="geographies";
+	$arr[]="provinces";
+	$arr[]="districts";
+	$arr[]="amphures";
 	return $arr;
 }
 
@@ -731,8 +947,14 @@ function GetFullFieldName($field, $table = "", $addAs = true, $connection = null
  */
 function GetChartType($shorttable)
 {
-	if($shorttable=="reportmonitorgraphtrackingstatus")
+	if($shorttable=="reportmonitorgraphtrackingstatus1")
 		return "2DPie";
+	if($shorttable=="reportmonitorgraphtrackingstatus2")
+		return "2DPie";
+	if($shorttable=="reportmonitorgraphtrackingstatus3")
+		return "2DPie";
+	if($shorttable=="reportgraphmissionfollow")
+		return "2DColumn";
 	return "";
 }
 
@@ -1446,11 +1668,6 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="researchConsiderView" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
 	if( $table=="project_uggroups" )
 	{
 //	default permissions
@@ -1466,12 +1683,7 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="ReportMonitor" )
-	{
-//	default permissions
-		return "S".$extraPerm;
-	}
-	if( $table=="ReportMonitorGraphTrackingStatus" )
+	if( $table=="ReportMonitorGraphTrackingStatus1" )
 	{
 //	default permissions
 		return "S".$extraPerm;
@@ -1492,6 +1704,106 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ReportMonitorProjectStatus4" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorGraphTrackingStatus2" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorGraphTrackingStatus3" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorProjectStatus5" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorProjectStatus6" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorProjectStatus7" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitorProjectStatus8" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMonitor" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportSearchresearchRegister" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportMission" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ReportGraphmissionFollow" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="DashboardMission" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="researcher" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="researchResearcher" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="optionSub_Search_Lookup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="researchTypeGroup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="TypeGroup_Search_Lookup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="geographies" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="provinces" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="districts" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="amphures" )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;

@@ -933,7 +933,15 @@ $value .= "</a>";;
 
 $researchProjectStatusValues = explode(" ",$data["researchProjectStatus"]);
 
-$value  = $data["researchProjectStatus"];
+
+	if (strpos($data["researchProjectStatus"],"nan%")){
+		$value  = "";
+	}
+	else{
+		$value  = $data["researchProjectStatus"];
+	}
+
+
 $value .= "<div class=\"progress\">";
 $value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
 $value .= "</div>";;
@@ -943,10 +951,38 @@ $value .= "</div>";;
 	{
 		$researchProjectStatusValues = explode(" ",$data["researchProjectStatus"]);
 
-$value  = $data["researchProjectStatus"];
+	if (strpos($data["researchProjectStatus"],"nan%")){
+		$value  = "";
+	}
+	else{
+		$value  = $data["researchProjectStatus"];
+	}
+
 $value .= "<div class=\"progress\">";
 $value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
 $value .= "</div>";;
+		return $value;
+	}
+				if($table=="researchProjectProposal" && $field=="researchProjectDisburseStatus")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectDisburseStatus"]);
+
+	if (strpos($data["researchProjectDisburseStatus"],"nan%")){
+		$value  = "";
+	}
+	else{
+		$value  = $data["researchProjectDisburseStatus"];
+	}
+
+
+
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";
+
+;
 		return $value;
 	}
 				if($table=="researchProjectRegister" && $field=="id")
@@ -992,7 +1028,37 @@ $value .= "</div>";;
 	};
 		return $value;
 	}
-				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus")
+				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus" && $ptype=="view")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectAppointmentStatus"]);
+
+$value  = $data["researchProjectAppointmentStatus"];
+//$value .= "<div class=\"progress\">";
+//$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+//$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus" && $ptype=="list")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectAppointmentStatus"]);
+
+	if (strpos($data["researchProjectAppointmentStatus"],"nan%")){
+		$value  = "";
+	}
+	else{
+		$value  = $data["researchProjectAppointmentStatus"];
+	}
+
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus" && $ptype=="print")
 	{
 		// Put your code here.
 
@@ -1004,7 +1070,53 @@ $value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\
 $value .= "</div>";;
 		return $value;
 	}
-				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus")
+				if($table=="ReportProgress" && $field=="researchProjectAppointmentStatus" && $ptype=="export")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectAppointmentStatus"]);
+
+$value  = $data["researchProjectAppointmentStatus"];
+//$value .= "<div class=\"progress\">";
+//$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+//$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus" && $ptype=="view")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectDisburseStatus"]);
+
+$value  = $data["researchProjectDisburseStatus"];
+//$value .= "<div class=\"progress\">";
+//$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+//$value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus" && $ptype=="list")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["researchProjectDisburseStatus"]);
+
+	if (strpos($data["researchProjectDisburseStatus"],"nan%")){
+		$value  = "";
+	}
+	else{
+		$value  = $data["researchProjectDisburseStatus"];
+	}
+
+
+
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";
+
+;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus" && $ptype=="print")
 	{
 		// Put your code here.
 
@@ -1014,6 +1126,18 @@ $value  = $data["researchProjectDisburseStatus"];
 $value .= "<div class=\"progress\">";
 $value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
 $value .= "</div>";;
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="researchProjectDisburseStatus" && $ptype=="export")
+	{
+		// Put your code here.
+
+$researchProjectDisburseStatus = explode(" ",$data["researchProjectDisburseStatus"]);
+
+$value  = $researchProjectDisburseStatus[0];
+//$value .= "<div class=\"progress\">";
+//$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+//$value .= "</div>";;
 		return $value;
 	}
 				if($table=="ReportProgress" && $field=="UseTime")
@@ -1026,7 +1150,7 @@ $value .= "</div>";;
 ;
 		return $value;
 	}
-				if($table=="ReportProgress" && $field=="overdueTime")
+				if($table=="ReportProgress" && $field=="overdueTime" && $ptype=="view")
 	{
 		// Put your code here.
 
@@ -1062,6 +1186,172 @@ else{
 };
 		return $value;
 	}
+				if($table=="ReportProgress" && $field=="overdueTime" && $ptype=="list")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["overdueTime"]);
+
+$value  = $data["overdueTime"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";
+
+
+if ($data["overdueTime"] > 0){
+		
+		$value  = "เกินกำหนดมาแล้ว<BR>";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน";
+
+}
+
+elseif ($data["overdueTime"] == 0){
+		
+		$value  = "ครบกำหนด<BR>";
+
+
+}
+
+else{
+
+		$value  = "อีก ";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน <BR>จะครบกำหนด";
+
+};
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="overdueTime" && $ptype=="print")
+	{
+		// Put your code here.
+
+$researchProjectStatusValues = explode(" ",$data["overdueTime"]);
+
+$value  = $data["overdueTime"];
+$value .= "<div class=\"progress\">";
+$value .= "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ".$researchProjectStatusValues[1]."\"></div>";
+$value .= "</div>";
+
+
+if ($data["overdueTime"] > 0){
+		
+		$value  = "เกินกำหนดมาแล้ว<BR>";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน";
+
+}
+
+elseif ($data["overdueTime"] == 0){
+		
+		$value  = "ครบกำหนด<BR>";
+
+
+}
+
+else{
+
+		$value  = "อีก ";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน <BR>จะครบกำหนด";
+
+};
+		return $value;
+	}
+				if($table=="ReportProgress" && $field=="overdueTime" && $ptype=="export")
+	{
+		// Put your code here.
+
+$value  = $data["overdueTime"];
+
+
+if ($data["overdueTime"] > 0){
+		
+		$value  = "เกินกำหนดมาแล้ว";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน";
+
+}
+
+elseif ($data["overdueTime"] == 0){
+		
+		$value  = "ครบกำหนด";
+
+
+}
+
+else{
+
+		$value  = "อีก ";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน จะครบกำหนด";
+
+};
+		return $value;
+	}
+				if($table=="ReportSearchresearchRegister" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"researchprojectproposal_list.php?q=(researchRegisterID~equals~".$data["id"].")\"> ";
+$value .= "</a>";;
+		return $value;
+	}
+				if($table=="ReportMission" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"missionfollow_edit.php?editid1=".$data["id"]."&\"> ";
+$value .= "</a>";
+;
+		return $value;
+	}
+				if($table=="ReportMission" && $field=="UseTime")
+	{
+		// Put your code here.
+
+		$value = abs($data["UseTime"]);
+		$value .= " วัน";
+
+;
+		return $value;
+	}
+				if($table=="ReportMission" && $field=="overdueTime")
+	{
+		// Put your code here.
+
+
+
+
+if ($data["overdueTime"] > 0){
+		
+		$value  = "เกินกำหนดมาแล้ว<BR>";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน";
+
+}
+
+elseif ($data["overdueTime"] == 0){
+		
+		$value  = "ครบกำหนด<BR>";
+
+
+}
+
+else{
+
+		$value  = "อีก ";
+		$value .= abs($data["overdueTime"]);
+		$value .= " วัน <BR>จะครบกำหนด";
+
+};
+		return $value;
+	}
+				if($table=="ReportGraphmissionFollow" && $field=="id")
+	{
+		$value  = "<a type=\"button\" title=\"เปิดรายการ\" class=\"btn-link glyphicon glyphicon-search\" ";
+$value .= "href=\"missionassignmentview_list.php?q=(missionFollowID~equals~".$data["id"].")\"> ";
+$value .= "</a>";;
+		return $value;
+	}
 	return $value;
 }
 
@@ -1078,7 +1368,22 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
+				if($table=="researchScholarshipProposal" && $field=="researchProjectFile")
+	{
+		;
+		return $value;
+	}
+				if($table=="researchScholarshipProposal" && $field=="contractSignFile")
+	{
+		;
+		return $value;
+	}
 				if($table=="researchScholarshipConsider" && $field=="researchConsiderFile")
+	{
+		;
+		return $value;
+	}
+				if($table=="researchProjectProposal" && $field=="researchProjectFile")
 	{
 		;
 		return $value;
@@ -1108,12 +1413,12 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
-				if($table=="missionAssignment" && $field=="missionAssignmentFile")
+				if($table=="missionFollow" && $field=="missionFollowDocFile")
 	{
 		;
 		return $value;
 	}
-				if($table=="researchConsiderView" && $field=="researchConsiderFile")
+				if($table=="missionAssignment" && $field=="missionAssignmentFile")
 	{
 		;
 		return $value;
@@ -1242,6 +1547,18 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
+				if($table=="researchScholarshipProposal" && $field=="researchProjectStartDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="researchScholarshipProposal" && $field=="researchProjectEndDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="researchScholarshipProposal" && $field=="projectStatus")
+	{
+		return "เข้ามาใหม่";
+	}
 				if($table=="researchScholarshipProposal" && $field=="entryUserName")
 	{
 		return $_SESSION["UserName"];
@@ -1261,6 +1578,14 @@ function GetDefaultValue($field, $ptype, $table="")
 				if($table=="researchScholarshipConsider" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchProjectProposal" && $field=="researchProjectStartDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="researchProjectProposal" && $field=="researchProjectEndDate")
+	{
+		return strftime("%Y-%m-%d");
 	}
 				if($table=="researchProjectProposal" && $field=="entryUserName")
 	{
@@ -1374,11 +1699,43 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="researchConsiderView" && $field=="entryUserName")
+				if($table=="ReportMission" && $field=="entryUserName")
 	{
 		return $_SESSION["UserName"];
 	}
-				if($table=="researchConsiderView" && $field=="entryTime")
+				if($table=="ReportMission" && $field=="missionFollowStartDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="ReportMission" && $field=="missionFollowEndDate")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="ReportGraphmissionFollow" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researcher" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researcher" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchResearcher" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchResearcher" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchTypeGroup" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchTypeGroup" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1545,10 +1902,6 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="missionAssignment" && $field=="entryUserName")
-	{
-		return $_SESSION["UserName"];
-	}
 				if($table=="missionAssignment" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
@@ -1569,11 +1922,35 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="researchConsiderView" && $field=="entryUserName")
+				if($table=="ReportMission" && $field=="entryUserName")
 	{
 		return $_SESSION["UserName"];
 	}
-				if($table=="researchConsiderView" && $field=="entryTime")
+				if($table=="ReportGraphmissionFollow" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researcher" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researcher" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchResearcher" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchResearcher" && $field=="entryTime")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="researchTypeGroup" && $field=="entryUserName")
+	{
+		return $_SESSION["UserName"];
+	}
+				if($table=="researchTypeGroup" && $field=="entryTime")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}

@@ -189,9 +189,6 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"","hidden":"{$item_hide_add}"},
-				
-				
 			{"text":"","hidden":"{$item_hide_inline_add}"},
 				
 				
@@ -475,7 +472,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel missionAssignment entryUserName }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel missionAssignment entryUserName }","hidden":"{$item_hide_grid_field_label}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -501,7 +498,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel missionAssignment entryTime }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel missionAssignment entryTime }","hidden":"{$item_hide_grid_field_label1}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -750,7 +747,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_simple_grid_field7}"},
+			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -776,7 +773,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
+			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_grid_field1}"},
 				
 		  ],
   "border": [ true, true, true, true ],

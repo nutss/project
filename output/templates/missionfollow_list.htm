@@ -113,6 +113,45 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_entryTime}</span>
 						</div>
 		{END searchCtrlBlock_entryTime}
+																{BEGIN searchCtrlBlock_missionFollowHeadName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowHeadName}" {$filterRow_attrs_missionFollowHeadName}>
+			<label>{$label missionFollow missionFollowHeadName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowHeadName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowHeadName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowHeadName}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowHeadName}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus}" {$filterRow_attrs_missionFollowActionStatus}>
+			<label>{$label missionFollow missionFollowActionStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus}
+																{BEGIN searchCtrlBlock_missionFollowDocFile}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowDocFile}" {$filterRow_attrs_missionFollowDocFile}>
+			<label>{$label missionFollow missionFollowDocFile }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowDocFile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowDocFile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowDocFile}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowDocFile}
 																{BEGIN searchCtrlBlock_missionFollowStatus}
 
 
@@ -544,9 +583,6 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id"]:before {
-		content: "{$label missionFollow id}";
-	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="missionFollowNo"]:before {
 		content: "{$label missionFollow missionFollowNo}";
 	}
@@ -559,16 +595,10 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="missionFollowEndDate"]:before {
 		content: "{$label missionFollow missionFollowEndDate}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="missionFollowStatus"]:before {
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="missionFollowStatus"]:before {
 		content: "{$label missionFollow missionFollowStatus}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
-		content: "{$label missionFollow entryUserName}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryTime"]:before {
-		content: "{$label missionFollow entryTime}";
-	}
-	}
+				}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -630,39 +660,12 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$id_class}
-			"
-
-			data-field="id"
-	
-	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_fieldheadercolumn}
-	{BEGIN id_fieldheader}
-	<SPAN {$id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
-	{$label missionFollow id }	{$arrow_icon_id}
-	</SPAN>
-	{END id_fieldheader}
-{END id_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field}
-				 
-					{BEGIN cellblock_grid_headcell_field1}
-	<th
-	
-	{$cell_grid_headcell_field1}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$missionFollowNo_class}
 			"
 
 			data-field="missionFollowNo"
 	
-	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -676,6 +679,33 @@
 
 	
 	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$missionFollowName_class}
+			"
+
+			data-field="missionFollowName"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN missionFollowName_fieldheadercolumn}
+	{BEGIN missionFollowName_fieldheader}
+	<SPAN {$missionFollowName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowName" data-fieldname="missionFollowName">
+	{$label missionFollow missionFollowName }	{$arrow_icon_missionFollowName}
+	</SPAN>
+	{END missionFollowName_fieldheader}
+{END missionFollowName_fieldheadercolumn}
+
+	
+	</th>
 	{END cellblock_grid_headcell_field1}
 				 
 					{BEGIN cellblock_grid_headcell_field2}
@@ -684,22 +714,22 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$missionFollowName_class}
+		 r-ori-vert				{$missionFollowStartDate_class}
 			"
 
-			data-field="missionFollowName"
+			data-field="missionFollowStartDate"
 	
 	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN missionFollowName_fieldheadercolumn}
-	{BEGIN missionFollowName_fieldheader}
-	<SPAN {$missionFollowName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowName" data-fieldname="missionFollowName">
-	{$label missionFollow missionFollowName }	{$arrow_icon_missionFollowName}
+		{BEGIN missionFollowStartDate_fieldheadercolumn}
+	{BEGIN missionFollowStartDate_fieldheader}
+	<SPAN {$missionFollowStartDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowStartDate" data-fieldname="missionFollowStartDate">
+	{$label missionFollow missionFollowStartDate }	{$arrow_icon_missionFollowStartDate}
 	</SPAN>
-	{END missionFollowName_fieldheader}
-{END missionFollowName_fieldheadercolumn}
+	{END missionFollowStartDate_fieldheader}
+{END missionFollowStartDate_fieldheadercolumn}
 
 	
 	</th>
@@ -711,22 +741,22 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$missionFollowStartDate_class}
+		 r-ori-vert				{$missionFollowEndDate_class}
 			"
 
-			data-field="missionFollowStartDate"
+			data-field="missionFollowEndDate"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN missionFollowStartDate_fieldheadercolumn}
-	{BEGIN missionFollowStartDate_fieldheader}
-	<SPAN {$missionFollowStartDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowStartDate" data-fieldname="missionFollowStartDate">
-	{$label missionFollow missionFollowStartDate }	{$arrow_icon_missionFollowStartDate}
+		{BEGIN missionFollowEndDate_fieldheadercolumn}
+	{BEGIN missionFollowEndDate_fieldheader}
+	<SPAN {$missionFollowEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowEndDate" data-fieldname="missionFollowEndDate">
+	{$label missionFollow missionFollowEndDate }	{$arrow_icon_missionFollowEndDate}
 	</SPAN>
-	{END missionFollowStartDate_fieldheader}
-{END missionFollowStartDate_fieldheadercolumn}
+	{END missionFollowEndDate_fieldheader}
+{END missionFollowEndDate_fieldheadercolumn}
 
 	
 	</th>
@@ -738,45 +768,18 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$missionFollowEndDate_class}
-			"
-
-			data-field="missionFollowEndDate"
-	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN missionFollowEndDate_fieldheadercolumn}
-	{BEGIN missionFollowEndDate_fieldheader}
-	<SPAN {$missionFollowEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowEndDate" data-fieldname="missionFollowEndDate">
-	{$label missionFollow missionFollowEndDate }	{$arrow_icon_missionFollowEndDate}
-	</SPAN>
-	{END missionFollowEndDate_fieldheader}
-{END missionFollowEndDate_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field4}
-				 
-					{BEGIN cellblock_grid_headcell_field5}
-	<th
-	
-	{$cell_grid_headcell_field5}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$missionFollowStatus_class}
 			"
 
 			data-field="missionFollowStatus"
 	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN missionFollowStatus_fieldheadercolumn}
 	{BEGIN missionFollowStatus_fieldheader}
-	<SPAN {$missionFollowStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowStatus" data-fieldname="missionFollowStatus">
+	<SPAN {$missionFollowStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="missionFollowStatus" data-fieldname="missionFollowStatus">
 	{$label missionFollow missionFollowStatus }	{$arrow_icon_missionFollowStatus}
 	</SPAN>
 	{END missionFollowStatus_fieldheader}
@@ -784,61 +787,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field5}
-				 
-					{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldheadercolumn}
-	{BEGIN entryUserName_fieldheader}
-	<SPAN {$entryUserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label missionFollow entryUserName }	{$arrow_icon_entryUserName}
-	</SPAN>
-	{END entryUserName_fieldheader}
-{END entryUserName_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field6}
-				 
-					{BEGIN cellblock_grid_headcell_field7}
-	<th
-	
-	{$cell_grid_headcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldheadercolumn}
-	{BEGIN entryTime_fieldheader}
-	<SPAN {$entryTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label missionFollow entryTime }	{$arrow_icon_entryTime}
-	</SPAN>
-	{END entryTime_fieldheader}
-{END entryTime_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field7}
+	{END cellblock_grid_headcell_field4}
 							</tr>
 					 
 					 
@@ -914,35 +863,12 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$id_class}
-			"
-
-			data-field="id"
-	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id" data-default-width >
-{$id_value}
-</span>
-{END id_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field}
-				 
-					{BEGIN cellblock_grid_cell_field1}
-	<td
-	
-	{$cell_grid_cell_field1}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$missionFollowNo_class}
 			"
 
 			data-field="missionFollowNo"
 	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -952,12 +878,12 @@
 </span>
 {END missionFollowNo_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field1}
+	{END cellblock_grid_cell_field}
 				 
-					{BEGIN cellblock_grid_cell_field2}
+					{BEGIN cellblock_grid_cell_field1}
 	<td
 	
-	{$cell_grid_cell_field2}
+	{$cell_grid_cell_field1}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$missionFollowName_class}
@@ -965,7 +891,7 @@
 
 			data-field="missionFollowName"
 	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -975,12 +901,12 @@
 </span>
 {END missionFollowName_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field2}
+	{END cellblock_grid_cell_field1}
 				 
-					{BEGIN cellblock_grid_cell_field3}
+					{BEGIN cellblock_grid_cell_field2}
 	<td
 	
-	{$cell_grid_cell_field3}
+	{$cell_grid_cell_field2}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$missionFollowStartDate_class}
@@ -988,7 +914,7 @@
 
 			data-field="missionFollowStartDate"
 	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -998,12 +924,12 @@
 </span>
 {END missionFollowStartDate_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field3}
+	{END cellblock_grid_cell_field2}
 				 
-					{BEGIN cellblock_grid_cell_field4}
+					{BEGIN cellblock_grid_cell_field3}
 	<td
 	
-	{$cell_grid_cell_field4}
+	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$missionFollowEndDate_class}
@@ -1011,7 +937,7 @@
 
 			data-field="missionFollowEndDate"
 	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1021,12 +947,12 @@
 </span>
 {END missionFollowEndDate_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field4}
+	{END cellblock_grid_cell_field3}
 				 
-					{BEGIN cellblock_grid_cell_field5}
+					{BEGIN cellblock_grid_cell_field4}
 	<td
 	
-	{$cell_grid_cell_field5}
+	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$missionFollowStatus_class}
@@ -1034,7 +960,7 @@
 
 			data-field="missionFollowStatus"
 	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1044,53 +970,7 @@
 </span>
 {END missionFollowStatus_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
-</span>
-{END entryUserName_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
-				 
-					{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
-{$entryTime_value}
-</span>
-{END entryTime_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field4}
 							</tr>
 					 
 					
@@ -1218,54 +1098,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field4}
-				 
-					{BEGIN cellblock_grid_footcell_field5}
-	<td
-	
-	{$cell_grid_footcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="missionfollow_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field5}
-				 
-					{BEGIN cellblock_grid_footcell_field6}
-	<td
-	
-	{$cell_grid_footcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="missionfollow_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field6}
-				 
-					{BEGIN cellblock_grid_footcell_field7}
-	<td
-	
-	{$cell_grid_footcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="missionfollow_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

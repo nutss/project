@@ -40,8 +40,6 @@ class AuditTrailTable
 		global $auditMaxFieldLength;
 
 		$this->connection = $cman->getForAudit();
-		$this->attLogin=3;
-		$this->timeLogin=5;
 		$userid="";
 		if( Security::getUserName())
 			$userid = Security::getUserName();
@@ -514,10 +512,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="researchConsiderView")
-		{
-			return true;
-		}
 		if($table=="project_uggroups")
 		{
 			return false;
@@ -530,11 +524,7 @@ class AuditTrailTable
 		{
 			return true;
 		}
-		if($table=="ReportMonitor")
-		{
-			return false;
-		}
-		if($table=="ReportMonitorGraphTrackingStatus")
+		if($table=="ReportMonitorGraphTrackingStatus1")
 		{
 			return false;
 		}
@@ -553,6 +543,86 @@ class AuditTrailTable
 		if($table=="ReportMonitorProjectStatus4")
 		{
 			return true;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus2")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus3")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorProjectStatus5")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus6")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus7")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus8")
+		{
+			return true;
+		}
+		if($table=="ReportMonitor")
+		{
+			return false;
+		}
+		if($table=="ReportSearchresearchRegister")
+		{
+			return true;
+		}
+		if($table=="ReportMission")
+		{
+			return true;
+		}
+		if($table=="ReportGraphmissionFollow")
+		{
+			return false;
+		}
+		if($table=="DashboardMission")
+		{
+			return false;
+		}
+		if($table=="researcher")
+		{
+			return false;
+		}
+		if($table=="researchResearcher")
+		{
+			return false;
+		}
+		if($table=="optionSub_Search_Lookup")
+		{
+			return true;
+		}
+		if($table=="researchTypeGroup")
+		{
+			return false;
+		}
+		if($table=="TypeGroup_Search_Lookup")
+		{
+			return false;
+		}
+		if($table=="geographies")
+		{
+			return false;
+		}
+		if($table=="provinces")
+		{
+			return false;
+		}
+		if($table=="districts")
+		{
+			return false;
+		}
+		if($table=="amphures")
+		{
+			return false;
 		}
 	}
 
@@ -1020,10 +1090,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="researchConsiderView")
-		{
-			return true;
-		}
 		if($table=="project_uggroups")
 		{
 			return false;
@@ -1036,11 +1102,7 @@ class AuditTrailFile
 		{
 			return true;
 		}
-		if($table=="ReportMonitor")
-		{
-			return false;
-		}
-		if($table=="ReportMonitorGraphTrackingStatus")
+		if($table=="ReportMonitorGraphTrackingStatus1")
 		{
 			return false;
 		}
@@ -1059,6 +1121,86 @@ class AuditTrailFile
 		if($table=="ReportMonitorProjectStatus4")
 		{
 			return true;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus2")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorGraphTrackingStatus3")
+		{
+			return false;
+		}
+		if($table=="ReportMonitorProjectStatus5")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus6")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus7")
+		{
+			return true;
+		}
+		if($table=="ReportMonitorProjectStatus8")
+		{
+			return true;
+		}
+		if($table=="ReportMonitor")
+		{
+			return false;
+		}
+		if($table=="ReportSearchresearchRegister")
+		{
+			return true;
+		}
+		if($table=="ReportMission")
+		{
+			return true;
+		}
+		if($table=="ReportGraphmissionFollow")
+		{
+			return false;
+		}
+		if($table=="DashboardMission")
+		{
+			return false;
+		}
+		if($table=="researcher")
+		{
+			return false;
+		}
+		if($table=="researchResearcher")
+		{
+			return false;
+		}
+		if($table=="optionSub_Search_Lookup")
+		{
+			return true;
+		}
+		if($table=="researchTypeGroup")
+		{
+			return false;
+		}
+		if($table=="TypeGroup_Search_Lookup")
+		{
+			return false;
+		}
+		if($table=="geographies")
+		{
+			return false;
+		}
+		if($table=="provinces")
+		{
+			return false;
+		}
+		if($table=="districts")
+		{
+			return false;
+		}
+		if($table=="amphures")
+		{
+			return false;
 		}
 	}
 

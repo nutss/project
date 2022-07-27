@@ -174,6 +174,9 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel researchConsider researchConsiderName }","bold":true},{"text":{$researchConsiderName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel researchConsider researchConsiderGroupAuthorized }","bold":true},{"text":{$researchConsiderGroupAuthorized_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel researchConsider entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				

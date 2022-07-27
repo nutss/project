@@ -61,6 +61,15 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsreportprogress["English"]["researchRegisterID"] = "Research Register ID";
 	$fieldToolTipsreportprogress["English"]["researchRegisterID"] = "";
 	$placeHoldersreportprogress["English"]["researchRegisterID"] = "";
+	$fieldLabelsreportprogress["English"]["researchProjectNameThai"] = "Research Project Name Thai";
+	$fieldToolTipsreportprogress["English"]["researchProjectNameThai"] = "";
+	$placeHoldersreportprogress["English"]["researchProjectNameThai"] = "";
+	$fieldLabelsreportprogress["English"]["researchProjectNameEng"] = "Research Project Name Eng";
+	$fieldToolTipsreportprogress["English"]["researchProjectNameEng"] = "";
+	$placeHoldersreportprogress["English"]["researchProjectNameEng"] = "";
+	$fieldLabelsreportprogress["English"]["researchProjectAffiliationName"] = "Research Project Affiliation Name";
+	$fieldToolTipsreportprogress["English"]["researchProjectAffiliationName"] = "";
+	$placeHoldersreportprogress["English"]["researchProjectAffiliationName"] = "";
 	if (count($fieldToolTipsreportprogress["English"]))
 		$tdatareportprogress[".isUseToolTips"] = true;
 }
@@ -103,9 +112,18 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsreportprogress["Thai"]["overdueTime"] = "เกินกำหนด";
 	$fieldToolTipsreportprogress["Thai"]["overdueTime"] = "";
 	$placeHoldersreportprogress["Thai"]["overdueTime"] = "";
-	$fieldLabelsreportprogress["Thai"]["researchRegisterID"] = "ชื่อโครงการ (การรับสมัครขอรับทุนวิจัย)";
+	$fieldLabelsreportprogress["Thai"]["researchRegisterID"] = "การรับสมัครขอรับทุนวิจัย";
 	$fieldToolTipsreportprogress["Thai"]["researchRegisterID"] = "";
 	$placeHoldersreportprogress["Thai"]["researchRegisterID"] = "";
+	$fieldLabelsreportprogress["Thai"]["researchProjectNameThai"] = "ชื่อโครงการ (ภาษาไทย)";
+	$fieldToolTipsreportprogress["Thai"]["researchProjectNameThai"] = "";
+	$placeHoldersreportprogress["Thai"]["researchProjectNameThai"] = "";
+	$fieldLabelsreportprogress["Thai"]["researchProjectNameEng"] = "Project Name (English)";
+	$fieldToolTipsreportprogress["Thai"]["researchProjectNameEng"] = "";
+	$placeHoldersreportprogress["Thai"]["researchProjectNameEng"] = "";
+	$fieldLabelsreportprogress["Thai"]["researchProjectAffiliationName"] = "สังกัดนักวิจัย (ตอนเสนอขอ)";
+	$fieldToolTipsreportprogress["Thai"]["researchProjectAffiliationName"] = "";
+	$placeHoldersreportprogress["Thai"]["researchProjectAffiliationName"] = "";
 	if (count($fieldToolTipsreportprogress["Thai"]))
 		$tdatareportprogress[".isUseToolTips"] = true;
 }
@@ -205,7 +223,7 @@ $tdatareportprogress[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdatareportprogress[".ajaxCodeSnippetAdded"] = false;
 
@@ -226,9 +244,12 @@ $tdatareportprogress[".requiredSearchFields"] = array();
 
 $tdatareportprogress[".googleLikeFields"] = array();
 $tdatareportprogress[".googleLikeFields"][] = "researchProjectNo";
-$tdatareportprogress[".googleLikeFields"][] = "researchRegisterID";
 $tdatareportprogress[".googleLikeFields"][] = "researchType";
+$tdatareportprogress[".googleLikeFields"][] = "researchRegisterID";
+$tdatareportprogress[".googleLikeFields"][] = "researchProjectNameThai";
+$tdatareportprogress[".googleLikeFields"][] = "researchProjectNameEng";
 $tdatareportprogress[".googleLikeFields"][] = "researchProjectHeadName";
+$tdatareportprogress[".googleLikeFields"][] = "researchProjectAffiliationName";
 $tdatareportprogress[".googleLikeFields"][] = "researchProjectAppointmentStatus";
 $tdatareportprogress[".googleLikeFields"][] = "researchProjectDisburseStatus";
 $tdatareportprogress[".googleLikeFields"][] = "researchProjectEndDate";
@@ -270,7 +291,7 @@ $tdatareportprogress[".strOrderBy"] = $tstrOrderBy;
 $tdatareportprogress[".orderindexes"] = array();
 
 
-$tdatareportprogress[".sqlHead"] = "SELECT researchScholarshipProposal.researchProjectNo,  researchScholarshipProposal.researchRegisterID,  researchScholarshipRegister.researchType,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAppointmentStatus,  researchScholarshipProposal.researchProjectDisburseStatus,  researchScholarshipProposal.researchProjectEndDate,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate)) AS UseTime,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate)) AS overdueTime,  researchScholarshipProposal.trackingProjectDescResult,  researchScholarshipProposal.projectStatus,  researchScholarshipProposal.id";
+$tdatareportprogress[".sqlHead"] = "SELECT researchScholarshipProposal.researchProjectNo,  researchScholarshipRegister.researchType,  researchScholarshipProposal.researchRegisterID,  researchScholarshipProposal.researchProjectNameThai,  researchScholarshipProposal.researchProjectNameEng,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAffiliationName,  researchScholarshipProposal.researchProjectAppointmentStatus,  researchScholarshipProposal.researchProjectDisburseStatus,  researchScholarshipProposal.researchProjectEndDate,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate)) AS UseTime,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate)) AS overdueTime,  researchScholarshipProposal.trackingProjectDescResult,  researchScholarshipProposal.projectStatus,  researchScholarshipProposal.id";
 $tdatareportprogress[".sqlFrom"] = "FROM researchScholarshipProposal  INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
 $tdatareportprogress[".sqlWhereExpr"] = "";
 $tdatareportprogress[".sqlTail"] = "";
@@ -467,10 +488,175 @@ $tdatareportprogress[".hideMobileList"] = array();
 
 	$tdatareportprogress["researchProjectNo"] = $fdata;
 		$tdatareportprogress[".searchableFields"][] = "researchProjectNo";
-//	researchRegisterID
+//	researchType
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 2;
+	$fdata["strName"] = "researchType";
+	$fdata["GoodName"] = "researchType";
+	$fdata["ownerTable"] = "researchScholarshipRegister";
+	$fdata["Label"] = GetFieldLabel("ReportProgress","researchType");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchType";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchScholarshipRegister.researchType";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "researchScholarshipRegister";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "researchType";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "researchType";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+				//dependent dropdowns @deprecated data ?
+	$edata["DependentLookups"] = array();
+	$edata["DependentLookups"][] = "researchRegisterID";
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatareportprogress["researchType"] = $fdata;
+		$tdatareportprogress[".searchableFields"][] = "researchType";
+//	researchRegisterID
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 3;
 	$fdata["strName"] = "researchRegisterID";
 	$fdata["GoodName"] = "researchRegisterID";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -552,12 +738,15 @@ $tdatareportprogress[".hideMobileList"] = array();
 	$edata["LookupOrderBy"] = "researchRegisterName";
 
 	
-	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "researchType", "lookup" => "researchType" );
+
 	
 	
 				//dependent dropdowns @deprecated data ?
 	$edata["DependentLookups"] = array();
-	$edata["DependentLookups"][] = "researchType";
+	$edata["DependentLookups"][] = "researchProjectAffiliationName";
 
 	
 	
@@ -635,14 +824,14 @@ $tdatareportprogress[".hideMobileList"] = array();
 
 	$tdatareportprogress["researchRegisterID"] = $fdata;
 		$tdatareportprogress[".searchableFields"][] = "researchRegisterID";
-//	researchType
+//	researchProjectNameThai
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 3;
-	$fdata["strName"] = "researchType";
-	$fdata["GoodName"] = "researchType";
-	$fdata["ownerTable"] = "researchScholarshipRegister";
-	$fdata["Label"] = GetFieldLabel("ReportProgress","researchType");
+	$fdata["Index"] = 4;
+	$fdata["strName"] = "researchProjectNameThai";
+	$fdata["GoodName"] = "researchProjectNameThai";
+	$fdata["ownerTable"] = "researchScholarshipProposal";
+	$fdata["Label"] = GetFieldLabel("ReportProgress","researchProjectNameThai");
 	$fdata["FieldType"] = 200;
 
 
@@ -650,11 +839,12 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "researchType";
+		$fdata["strField"] = "researchProjectNameThai";
 
-	
+		$fdata["sourceSingle"] = "researchProjectNameThai";
+
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "researchScholarshipRegister.researchType";
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectNameThai";
 
 	
 	
@@ -690,7 +880,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Lookup wizard");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -700,37 +890,6 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "researchScholarshipRegister";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "researchType";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "researchType";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-		$edata["UseCategory"] = true;
-	$edata["categoryFields"] = array();
-	$edata["categoryFields"][] = array( "main" => "researchRegisterID", "lookup" => "id" );
-
-	
-	
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
 
 
 	
@@ -746,8 +905,11 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 	
-	
-	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -773,7 +935,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
+		$fdata["defaultSearchOption"] = "Contains";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -798,12 +960,150 @@ $tdatareportprogress[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatareportprogress["researchType"] = $fdata;
-		$tdatareportprogress[".searchableFields"][] = "researchType";
+	$tdatareportprogress["researchProjectNameThai"] = $fdata;
+		$tdatareportprogress[".searchableFields"][] = "researchProjectNameThai";
+//	researchProjectNameEng
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 5;
+	$fdata["strName"] = "researchProjectNameEng";
+	$fdata["GoodName"] = "researchProjectNameEng";
+	$fdata["ownerTable"] = "researchScholarshipProposal";
+	$fdata["Label"] = GetFieldLabel("ReportProgress","researchProjectNameEng");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchProjectNameEng";
+
+		$fdata["sourceSingle"] = "researchProjectNameEng";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectNameEng";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatareportprogress["researchProjectNameEng"] = $fdata;
+		$tdatareportprogress[".searchableFields"][] = "researchProjectNameEng";
 //	researchProjectHeadName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 4;
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "researchProjectHeadName";
 	$fdata["GoodName"] = "researchProjectHeadName";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -938,10 +1238,176 @@ $tdatareportprogress[".hideMobileList"] = array();
 
 	$tdatareportprogress["researchProjectHeadName"] = $fdata;
 		$tdatareportprogress[".searchableFields"][] = "researchProjectHeadName";
+//	researchProjectAffiliationName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "researchProjectAffiliationName";
+	$fdata["GoodName"] = "researchProjectAffiliationName";
+	$fdata["ownerTable"] = "researchScholarshipProposal";
+	$fdata["Label"] = GetFieldLabel("ReportProgress","researchProjectAffiliationName");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchProjectAffiliationName";
+
+		$fdata["sourceSingle"] = "researchProjectAffiliationName";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchScholarshipProposal.researchProjectAffiliationName";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "researchProjectProposal";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "researchProjectAffiliationName";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "researchProjectAffiliationName";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "researchProjectAffiliationName";
+
+	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "researchRegisterID", "lookup" => "id" );
+
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatareportprogress["researchProjectAffiliationName"] = $fdata;
+		$tdatareportprogress[".searchableFields"][] = "researchProjectAffiliationName";
 //	researchProjectAppointmentStatus
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 5;
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "researchProjectAppointmentStatus";
 	$fdata["GoodName"] = "researchProjectAppointmentStatus";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -987,6 +1453,69 @@ $tdatareportprogress[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
@@ -1035,10 +1564,96 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1074,7 +1689,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	researchProjectDisburseStatus
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 6;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "researchProjectDisburseStatus";
 	$fdata["GoodName"] = "researchProjectDisburseStatus";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -1120,6 +1735,69 @@ $tdatareportprogress[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
@@ -1168,10 +1846,96 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1207,7 +1971,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	researchProjectEndDate
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "researchProjectEndDate";
 	$fdata["GoodName"] = "researchProjectEndDate";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -1346,7 +2110,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	UseTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "UseTime";
 	$fdata["GoodName"] = "UseTime";
 	$fdata["ownerTable"] = "";
@@ -1484,7 +2248,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	overdueTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "overdueTime";
 	$fdata["GoodName"] = "overdueTime";
 	$fdata["ownerTable"] = "";
@@ -1530,6 +2294,69 @@ $tdatareportprogress[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "Custom");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
@@ -1583,10 +2410,106 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1622,7 +2545,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	trackingProjectDescResult
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "trackingProjectDescResult";
 	$fdata["GoodName"] = "trackingProjectDescResult";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -1786,7 +2709,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	projectStatus
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 11;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "projectStatus";
 	$fdata["GoodName"] = "projectStatus";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -1839,7 +2762,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1849,6 +2772,35 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "optionSub";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "optionName";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "optionName";
+
+				$edata["LookupWhere"] = "optionGroupID = 1";
+
+
+	
+	$edata["LookupOrderBy"] = "optionGroupNumber";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1864,11 +2816,8 @@ $tdatareportprogress[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1894,7 +2843,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1924,7 +2873,7 @@ $tdatareportprogress[".hideMobileList"] = array();
 //	id
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 15;
 	$fdata["strName"] = "id";
 	$fdata["GoodName"] = "id";
 	$fdata["ownerTable"] = "researchScholarshipProposal";
@@ -2103,7 +3052,7 @@ function createSqlQuery_reportprogress()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "researchScholarshipProposal.researchProjectNo,  researchScholarshipProposal.researchRegisterID,  researchScholarshipRegister.researchType,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAppointmentStatus,  researchScholarshipProposal.researchProjectDisburseStatus,  researchScholarshipProposal.researchProjectEndDate,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate)) AS UseTime,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate)) AS overdueTime,  researchScholarshipProposal.trackingProjectDescResult,  researchScholarshipProposal.projectStatus,  researchScholarshipProposal.id";
+$proto0["m_strFieldList"] = "researchScholarshipProposal.researchProjectNo,  researchScholarshipRegister.researchType,  researchScholarshipProposal.researchRegisterID,  researchScholarshipProposal.researchProjectNameThai,  researchScholarshipProposal.researchProjectNameEng,  researchScholarshipProposal.researchProjectHeadName,  researchScholarshipProposal.researchProjectAffiliationName,  researchScholarshipProposal.researchProjectAppointmentStatus,  researchScholarshipProposal.researchProjectDisburseStatus,  researchScholarshipProposal.researchProjectEndDate,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate)) AS UseTime,  IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate)) AS overdueTime,  researchScholarshipProposal.trackingProjectDescResult,  researchScholarshipProposal.projectStatus,  researchScholarshipProposal.id";
 $proto0["m_strFrom"] = "FROM researchScholarshipProposal  INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2159,12 +3108,12 @@ $obj = new SQLFieldListItem($proto6);
 $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchRegisterID",
-	"m_strTable" => "researchScholarshipProposal",
+	"m_strName" => "researchType",
+	"m_strTable" => "researchScholarshipRegister",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto8["m_sql"] = "researchScholarshipProposal.researchRegisterID";
+$proto8["m_sql"] = "researchScholarshipRegister.researchType";
 $proto8["m_srcTableName"] = "ReportProgress";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -2173,12 +3122,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchType",
-	"m_strTable" => "researchScholarshipRegister",
+	"m_strName" => "researchRegisterID",
+	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto10["m_sql"] = "researchScholarshipRegister.researchType";
+$proto10["m_sql"] = "researchScholarshipProposal.researchRegisterID";
 $proto10["m_srcTableName"] = "ReportProgress";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -2187,12 +3136,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchProjectHeadName",
+	"m_strName" => "researchProjectNameThai",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto12["m_sql"] = "researchScholarshipProposal.researchProjectHeadName";
+$proto12["m_sql"] = "researchScholarshipProposal.researchProjectNameThai";
 $proto12["m_srcTableName"] = "ReportProgress";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -2201,12 +3150,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchProjectAppointmentStatus",
+	"m_strName" => "researchProjectNameEng",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto14["m_sql"] = "researchScholarshipProposal.researchProjectAppointmentStatus";
+$proto14["m_sql"] = "researchScholarshipProposal.researchProjectNameEng";
 $proto14["m_srcTableName"] = "ReportProgress";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -2215,12 +3164,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchProjectDisburseStatus",
+	"m_strName" => "researchProjectHeadName",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto16["m_sql"] = "researchScholarshipProposal.researchProjectDisburseStatus";
+$proto16["m_sql"] = "researchScholarshipProposal.researchProjectHeadName";
 $proto16["m_srcTableName"] = "ReportProgress";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -2229,12 +3178,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "researchProjectEndDate",
+	"m_strName" => "researchProjectAffiliationName",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto18["m_sql"] = "researchScholarshipProposal.researchProjectEndDate";
+$proto18["m_sql"] = "researchScholarshipProposal.researchProjectAffiliationName";
 $proto18["m_srcTableName"] = "ReportProgress";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -2242,214 +3191,267 @@ $obj = new SQLFieldListItem($proto18);
 
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
-			$proto21=array();
-$proto21["m_functiontype"] = "SQLF_CUSTOM";
-$proto21["m_arguments"] = array();
+			$obj = new SQLField(array(
+	"m_strName" => "researchProjectAppointmentStatus",
+	"m_strTable" => "researchScholarshipProposal",
+	"m_srcTableName" => "ReportProgress"
+));
+
+$proto20["m_sql"] = "researchScholarshipProposal.researchProjectAppointmentStatus";
+$proto20["m_srcTableName"] = "ReportProgress";
+$proto20["m_expr"]=$obj;
+$proto20["m_alias"] = "";
+$obj = new SQLFieldListItem($proto20);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto22=array();
+			$obj = new SQLField(array(
+	"m_strName" => "researchProjectDisburseStatus",
+	"m_strTable" => "researchScholarshipProposal",
+	"m_srcTableName" => "ReportProgress"
+));
+
+$proto22["m_sql"] = "researchScholarshipProposal.researchProjectDisburseStatus";
+$proto22["m_srcTableName"] = "ReportProgress";
+$proto22["m_expr"]=$obj;
+$proto22["m_alias"] = "";
+$obj = new SQLFieldListItem($proto22);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "researchProjectEndDate",
+	"m_strTable" => "researchScholarshipProposal",
+	"m_srcTableName" => "ReportProgress"
+));
+
+$proto24["m_sql"] = "researchScholarshipProposal.researchProjectEndDate";
+$proto24["m_srcTableName"] = "ReportProgress";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto26=array();
+			$proto27=array();
+$proto27["m_functiontype"] = "SQLF_CUSTOM";
+$proto27["m_arguments"] = array();
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ'"
 ));
 
-$proto21["m_arguments"][]=$obj;
+$proto27["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate)"
 ));
 
-$proto21["m_arguments"][]=$obj;
+$proto27["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate)"
 ));
 
-$proto21["m_arguments"][]=$obj;
-$proto21["m_strFunctionName"] = "IF";
-$obj = new SQLFunctionCall($proto21);
+$proto27["m_arguments"][]=$obj;
+$proto27["m_strFunctionName"] = "IF";
+$obj = new SQLFunctionCall($proto27);
 
-$proto20["m_sql"] = "IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate))";
-$proto20["m_srcTableName"] = "ReportProgress";
-$proto20["m_expr"]=$obj;
-$proto20["m_alias"] = "UseTime";
-$obj = new SQLFieldListItem($proto20);
+$proto26["m_sql"] = "IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.contractSignDate), DATEDIFF(CURDATE(), researchScholarshipProposal.contractSignDate))";
+$proto26["m_srcTableName"] = "ReportProgress";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "UseTime";
+$obj = new SQLFieldListItem($proto26);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto25=array();
-			$proto26=array();
-$proto26["m_functiontype"] = "SQLF_CUSTOM";
-$proto26["m_arguments"] = array();
+						$proto31=array();
+			$proto32=array();
+$proto32["m_functiontype"] = "SQLF_CUSTOM";
+$proto32["m_arguments"] = array();
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ'"
 ));
 
-$proto26["m_arguments"][]=$obj;
+$proto32["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate)"
 ));
 
-$proto26["m_arguments"][]=$obj;
+$proto32["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate)"
 ));
 
-$proto26["m_arguments"][]=$obj;
-$proto26["m_strFunctionName"] = "IF";
-$obj = new SQLFunctionCall($proto26);
+$proto32["m_arguments"][]=$obj;
+$proto32["m_strFunctionName"] = "IF";
+$obj = new SQLFunctionCall($proto32);
 
-$proto25["m_sql"] = "IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate))";
-$proto25["m_srcTableName"] = "ReportProgress";
-$proto25["m_expr"]=$obj;
-$proto25["m_alias"] = "overdueTime";
-$obj = new SQLFieldListItem($proto25);
+$proto31["m_sql"] = "IF(researchScholarshipProposal.projectStatus  = 'สิ้นสุดโครงการ', DATEDIFF(researchScholarshipProposal.researchProjectEndDate, researchScholarshipProposal.researchOperatingPeriodEndDate), DATEDIFF(CURDATE(), researchScholarshipProposal.researchOperatingPeriodEndDate))";
+$proto31["m_srcTableName"] = "ReportProgress";
+$proto31["m_expr"]=$obj;
+$proto31["m_alias"] = "overdueTime";
+$obj = new SQLFieldListItem($proto31);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto30=array();
+						$proto36=array();
 			$obj = new SQLField(array(
 	"m_strName" => "trackingProjectDescResult",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto30["m_sql"] = "researchScholarshipProposal.trackingProjectDescResult";
-$proto30["m_srcTableName"] = "ReportProgress";
-$proto30["m_expr"]=$obj;
-$proto30["m_alias"] = "";
-$obj = new SQLFieldListItem($proto30);
+$proto36["m_sql"] = "researchScholarshipProposal.trackingProjectDescResult";
+$proto36["m_srcTableName"] = "ReportProgress";
+$proto36["m_expr"]=$obj;
+$proto36["m_alias"] = "";
+$obj = new SQLFieldListItem($proto36);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto32=array();
+						$proto38=array();
 			$obj = new SQLField(array(
 	"m_strName" => "projectStatus",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto32["m_sql"] = "researchScholarshipProposal.projectStatus";
-$proto32["m_srcTableName"] = "ReportProgress";
-$proto32["m_expr"]=$obj;
-$proto32["m_alias"] = "";
-$obj = new SQLFieldListItem($proto32);
+$proto38["m_sql"] = "researchScholarshipProposal.projectStatus";
+$proto38["m_srcTableName"] = "ReportProgress";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto34=array();
+						$proto40=array();
 			$obj = new SQLField(array(
 	"m_strName" => "id",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto34["m_sql"] = "researchScholarshipProposal.id";
-$proto34["m_srcTableName"] = "ReportProgress";
-$proto34["m_expr"]=$obj;
-$proto34["m_alias"] = "";
-$obj = new SQLFieldListItem($proto34);
+$proto40["m_sql"] = "researchScholarshipProposal.id";
+$proto40["m_srcTableName"] = "ReportProgress";
+$proto40["m_expr"]=$obj;
+$proto40["m_alias"] = "";
+$obj = new SQLFieldListItem($proto40);
 
 $proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto36=array();
-$proto36["m_link"] = "SQLL_MAIN";
-			$proto37=array();
-$proto37["m_strName"] = "researchScholarshipProposal";
-$proto37["m_srcTableName"] = "ReportProgress";
-$proto37["m_columns"] = array();
-$proto37["m_columns"][] = "id";
-$proto37["m_columns"][] = "researchRegisterID";
-$proto37["m_columns"][] = "researchProjectNo";
-$proto37["m_columns"][] = "researchProjectGroupName";
-$proto37["m_columns"][] = "researchProjectNameThai";
-$proto37["m_columns"][] = "researchProjectNameEng";
-$proto37["m_columns"][] = "researchProjectPeriodYear";
-$proto37["m_columns"][] = "researchProjectPeriodMonth";
-$proto37["m_columns"][] = "researchProjectEndDate";
-$proto37["m_columns"][] = "researchOperatingPeriodEndDate";
-$proto37["m_columns"][] = "researchProjectRequestedBudget";
-$proto37["m_columns"][] = "researchProjectDepartment";
-$proto37["m_columns"][] = "researchProjectMainField";
-$proto37["m_columns"][] = "researchProjectSubField";
-$proto37["m_columns"][] = "researchProjectHeadName";
-$proto37["m_columns"][] = "researchProjectAffiliationName";
-$proto37["m_columns"][] = "researchProjectSubAffiliationName";
-$proto37["m_columns"][] = "researchProjectAffiliationMobile";
-$proto37["m_columns"][] = "researchProjectAffiliationTelephone";
-$proto37["m_columns"][] = "researchProjectAffiliationEmail";
-$proto37["m_columns"][] = "researchProjectFile";
-$proto37["m_columns"][] = "researchProjectBankAccountName";
-$proto37["m_columns"][] = "researchProjectBankNo";
-$proto37["m_columns"][] = "researchProjectBankName";
-$proto37["m_columns"][] = "researchProjectStatus";
-$proto37["m_columns"][] = "ScholarshipProposalFinishStatus";
-$proto37["m_columns"][] = "researchProjectAppointmentStatus";
-$proto37["m_columns"][] = "researchProjectDisburseStatus";
-$proto37["m_columns"][] = "contractSignDate";
-$proto37["m_columns"][] = "contractSignFile";
-$proto37["m_columns"][] = "projectStatusDesc";
-$proto37["m_columns"][] = "projectStatus";
-$proto37["m_columns"][] = "trackingProjectDesc";
-$proto37["m_columns"][] = "trackingProjectDescResult";
-$proto37["m_columns"][] = "entryUserName";
-$proto37["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto37);
+												$proto42=array();
+$proto42["m_link"] = "SQLL_MAIN";
+			$proto43=array();
+$proto43["m_strName"] = "researchScholarshipProposal";
+$proto43["m_srcTableName"] = "ReportProgress";
+$proto43["m_columns"] = array();
+$proto43["m_columns"][] = "id";
+$proto43["m_columns"][] = "researchRegisterID";
+$proto43["m_columns"][] = "researchProjectNo";
+$proto43["m_columns"][] = "researchProjectGroupName";
+$proto43["m_columns"][] = "researchProjectNameThai";
+$proto43["m_columns"][] = "researchProjectNameEng";
+$proto43["m_columns"][] = "researchProjectPeriodYear";
+$proto43["m_columns"][] = "researchProjectPeriodMonth";
+$proto43["m_columns"][] = "researchProjectStartDate";
+$proto43["m_columns"][] = "researchProjectEndDate";
+$proto43["m_columns"][] = "researchOperatingPeriodEndDate";
+$proto43["m_columns"][] = "researchProjectRequestedBudget";
+$proto43["m_columns"][] = "researchProjectDepartment";
+$proto43["m_columns"][] = "researchProjectMainField";
+$proto43["m_columns"][] = "researchProjectSubField";
+$proto43["m_columns"][] = "researchProjectHeadName";
+$proto43["m_columns"][] = "researchProjectAffiliationPrefixName";
+$proto43["m_columns"][] = "researchProjectAffiliationName";
+$proto43["m_columns"][] = "researchProjectAffiliationPosition";
+$proto43["m_columns"][] = "researchProjectSubAffiliationName";
+$proto43["m_columns"][] = "researchProjectAffiliationMobile";
+$proto43["m_columns"][] = "researchProjectAffiliationTelephone";
+$proto43["m_columns"][] = "researchProjectAffiliationEmail";
+$proto43["m_columns"][] = "researchProjectFile";
+$proto43["m_columns"][] = "researchProjectBankAccountName";
+$proto43["m_columns"][] = "researchProjectBankNo";
+$proto43["m_columns"][] = "researchProjectBankName";
+$proto43["m_columns"][] = "researchProjectStatus";
+$proto43["m_columns"][] = "ScholarshipProposalFinishStatus";
+$proto43["m_columns"][] = "researchProjectAppointmentStatus";
+$proto43["m_columns"][] = "researchProjectDisburseStatus";
+$proto43["m_columns"][] = "contractSignDate";
+$proto43["m_columns"][] = "contractSignFile";
+$proto43["m_columns"][] = "projectStatusDesc";
+$proto43["m_columns"][] = "projectStatus";
+$proto43["m_columns"][] = "trackingProjectDesc";
+$proto43["m_columns"][] = "trackingProjectDescResult";
+$proto43["m_columns"][] = "geographiesID";
+$proto43["m_columns"][] = "geographiesName";
+$proto43["m_columns"][] = "provincesID";
+$proto43["m_columns"][] = "provincesName";
+$proto43["m_columns"][] = "districtsID";
+$proto43["m_columns"][] = "districtsName";
+$proto43["m_columns"][] = "amphuresID";
+$proto43["m_columns"][] = "amphuresName";
+$proto43["m_columns"][] = "entryUserName";
+$proto43["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto43);
 
-$proto36["m_table"] = $obj;
-$proto36["m_sql"] = "researchScholarshipProposal";
-$proto36["m_alias"] = "";
-$proto36["m_srcTableName"] = "ReportProgress";
-$proto38=array();
-$proto38["m_sql"] = "";
-$proto38["m_uniontype"] = "SQLL_UNKNOWN";
+$proto42["m_table"] = $obj;
+$proto42["m_sql"] = "researchScholarshipProposal";
+$proto42["m_alias"] = "";
+$proto42["m_srcTableName"] = "ReportProgress";
+$proto44=array();
+$proto44["m_sql"] = "";
+$proto44["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto38["m_column"]=$obj;
-$proto38["m_contained"] = array();
-$proto38["m_strCase"] = "";
-$proto38["m_havingmode"] = false;
-$proto38["m_inBrackets"] = false;
-$proto38["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto38);
+$proto44["m_column"]=$obj;
+$proto44["m_contained"] = array();
+$proto44["m_strCase"] = "";
+$proto44["m_havingmode"] = false;
+$proto44["m_inBrackets"] = false;
+$proto44["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto44);
 
-$proto36["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto36);
+$proto42["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto42);
 
 $proto0["m_fromlist"][]=$obj;
-												$proto40=array();
-$proto40["m_link"] = "SQLL_INNERJOIN";
-			$proto41=array();
-$proto41["m_strName"] = "researchScholarshipRegister";
-$proto41["m_srcTableName"] = "ReportProgress";
-$proto41["m_columns"] = array();
-$proto41["m_columns"][] = "id";
-$proto41["m_columns"][] = "researchRegisterNo";
-$proto41["m_columns"][] = "researchRegisterName";
-$proto41["m_columns"][] = "researchRegisterStartDate";
-$proto41["m_columns"][] = "researchRegisterEndDate";
-$proto41["m_columns"][] = "researchRegisterFile";
-$proto41["m_columns"][] = "researchType";
-$proto41["m_columns"][] = "researchRegisterStatus";
-$proto41["m_columns"][] = "entryUserName";
-$proto41["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto41);
+												$proto46=array();
+$proto46["m_link"] = "SQLL_INNERJOIN";
+			$proto47=array();
+$proto47["m_strName"] = "researchScholarshipRegister";
+$proto47["m_srcTableName"] = "ReportProgress";
+$proto47["m_columns"] = array();
+$proto47["m_columns"][] = "id";
+$proto47["m_columns"][] = "researchRegisterNo";
+$proto47["m_columns"][] = "researchRegisterName";
+$proto47["m_columns"][] = "researchRegisterStartDate";
+$proto47["m_columns"][] = "researchRegisterEndDate";
+$proto47["m_columns"][] = "researchRegisterFile";
+$proto47["m_columns"][] = "researchType";
+$proto47["m_columns"][] = "researchRegisterStatus";
+$proto47["m_columns"][] = "entryUserName";
+$proto47["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto47);
 
-$proto40["m_table"] = $obj;
-$proto40["m_sql"] = "INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
-$proto40["m_alias"] = "";
-$proto40["m_srcTableName"] = "ReportProgress";
-$proto42=array();
-$proto42["m_sql"] = "researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
-$proto42["m_uniontype"] = "SQLL_UNKNOWN";
+$proto46["m_table"] = $obj;
+$proto46["m_sql"] = "INNER JOIN researchScholarshipRegister ON researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
+$proto46["m_alias"] = "";
+$proto46["m_srcTableName"] = "ReportProgress";
+$proto48=array();
+$proto48["m_sql"] = "researchScholarshipProposal.researchRegisterID = researchScholarshipRegister.id";
+$proto48["m_uniontype"] = "SQLL_UNKNOWN";
 						$obj = new SQLField(array(
 	"m_strName" => "researchRegisterID",
 	"m_strTable" => "researchScholarshipProposal",
 	"m_srcTableName" => "ReportProgress"
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_contained"] = array();
-$proto42["m_strCase"] = "= researchScholarshipRegister.id";
-$proto42["m_havingmode"] = false;
-$proto42["m_inBrackets"] = false;
-$proto42["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto42);
+$proto48["m_column"]=$obj;
+$proto48["m_contained"] = array();
+$proto48["m_strCase"] = "= researchScholarshipRegister.id";
+$proto48["m_havingmode"] = false;
+$proto48["m_inBrackets"] = false;
+$proto48["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto48);
 
-$proto40["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto40);
+$proto46["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto46);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2465,7 +3467,7 @@ $queryData_reportprogress = createSqlQuery_reportprogress();
 	
 				;
 
-												
+															
 
 $tdatareportprogress[".sqlquery"] = $queryData_reportprogress;
 
@@ -2475,18 +3477,4 @@ include_once(getabspath("include/reportprogress_events.php"));
 $tableEvents["ReportProgress"] = new eventclass_reportprogress;
 $tdatareportprogress[".hasEvents"] = true;
 
-$query = &$queryData_reportprogress;
-$table = "ReportProgress";
-// here goes EVENT_INIT_TABLE event
-		
-
-		if(strpos($_SESSION["GroupName"],"<Admin>") == ""){
-			$query->addWhere("`researchScholarshipRegister`.`researchType` IN (".$_SESSION["typeName"].")");
-		}
-
-
-// Place event code here.
-// Use "Add Action" button to add code snippets.
-;
-unset($query);
 ?>

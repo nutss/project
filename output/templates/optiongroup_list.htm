@@ -113,19 +113,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_entryTime}</span>
 						</div>
 		{END searchCtrlBlock_entryTime}
-																{BEGIN searchCtrlBlock_optionGroupNumber}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_optionGroupNumber}" {$filterRow_attrs_optionGroupNumber}>
-			<label>{$label optionGroup optionGroupNumber }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_optionGroupNumber}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_optionGroupNumber}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_optionGroupNumber}</span>
-						</div>
-		{END searchCtrlBlock_optionGroupNumber}
 																{BEGIN searchCtrlBlock_optionGroupName}
 
 
@@ -489,9 +476,6 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="optionGroupNumber"]:before {
-		content: "{$label optionGroup optionGroupNumber}";
-	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="optionGroupName"]:before {
 		content: "{$label optionGroup optionGroupName}";
 	}
@@ -563,22 +547,22 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$optionGroupNumber_class}
+		 r-ori-vert				{$optionGroupName_class}
 			"
 
-			data-field="optionGroupNumber"
+			data-field="optionGroupName"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN optionGroupNumber_fieldheadercolumn}
-	{BEGIN optionGroupNumber_fieldheader}
-	<SPAN {$optionGroupNumber_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="optionGroupNumber" data-fieldname="optionGroupNumber">
-	{$label optionGroup optionGroupNumber }	{$arrow_icon_optionGroupNumber}
+		{BEGIN optionGroupName_fieldheadercolumn}
+	{BEGIN optionGroupName_fieldheader}
+	<SPAN {$optionGroupName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="optionGroupName" data-fieldname="optionGroupName">
+	{$label optionGroup optionGroupName }	{$arrow_icon_optionGroupName}
 	</SPAN>
-	{END optionGroupNumber_fieldheader}
-{END optionGroupNumber_fieldheadercolumn}
+	{END optionGroupName_fieldheader}
+{END optionGroupName_fieldheadercolumn}
 
 	
 	</th>
@@ -590,22 +574,22 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$optionGroupName_class}
+		 r-ori-vert				{$entryUserName_class}
 			"
 
-			data-field="optionGroupName"
+			data-field="entryUserName"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN optionGroupName_fieldheadercolumn}
-	{BEGIN optionGroupName_fieldheader}
-	<SPAN {$optionGroupName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="optionGroupName" data-fieldname="optionGroupName">
-	{$label optionGroup optionGroupName }	{$arrow_icon_optionGroupName}
+		{BEGIN entryUserName_fieldheadercolumn}
+	{BEGIN entryUserName_fieldheader}
+	<SPAN {$entryUserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
+	{$label optionGroup entryUserName }	{$arrow_icon_entryUserName}
 	</SPAN>
-	{END optionGroupName_fieldheader}
-{END optionGroupName_fieldheadercolumn}
+	{END entryUserName_fieldheader}
+{END entryUserName_fieldheadercolumn}
 
 	
 	</th>
@@ -617,45 +601,18 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldheadercolumn}
-	{BEGIN entryUserName_fieldheader}
-	<SPAN {$entryUserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label optionGroup entryUserName }	{$arrow_icon_entryUserName}
-	</SPAN>
-	{END entryUserName_fieldheader}
-{END entryUserName_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field2}
-				 
-					{BEGIN cellblock_grid_headcell_field3}
-	<th
-	
-	{$cell_grid_headcell_field3}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$entryTime_class}
 			"
 
 			data-field="entryTime"
 	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN entryTime_fieldheadercolumn}
 	{BEGIN entryTime_fieldheader}
-	<SPAN {$entryTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
+	<SPAN {$entryTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
 	{$label optionGroup entryTime }	{$arrow_icon_entryTime}
 	</SPAN>
 	{END entryTime_fieldheader}
@@ -663,7 +620,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field3}
+	{END cellblock_grid_headcell_field2}
 							</tr>
 					 
 					 
@@ -739,35 +696,12 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$optionGroupNumber_class}
-			"
-
-			data-field="optionGroupNumber"
-	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN optionGroupNumber_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="optionGroupNumber" data-fieldname="optionGroupNumber" data-default-width >
-{$optionGroupNumber_value}
-</span>
-{END optionGroupNumber_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field}
-				 
-					{BEGIN cellblock_grid_cell_field1}
-	<td
-	
-	{$cell_grid_cell_field1}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$optionGroupName_class}
 			"
 
 			data-field="optionGroupName"
 	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -777,6 +711,29 @@
 </span>
 {END optionGroupName_fieldcolumn}	
 	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$entryUserName_class}
+			"
+
+			data-field="entryUserName"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN entryUserName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
+{$entryUserName_value}
+</span>
+{END entryUserName_fieldcolumn}	
+	</td>
 	{END cellblock_grid_cell_field1}
 				 
 					{BEGIN cellblock_grid_cell_field2}
@@ -785,45 +742,22 @@
 	{$cell_grid_cell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
-</span>
-{END entryUserName_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field2}
-				 
-					{BEGIN cellblock_grid_cell_field3}
-	<td
-	
-	{$cell_grid_cell_field3}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$entryTime_class}
 			"
 
 			data-field="entryTime"
 	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN entryTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
 {$entryTime_value}
 </span>
 {END entryTime_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field3}
+	{END cellblock_grid_cell_field2}
 							</tr>
 					 
 					
@@ -919,22 +853,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field2}
-				 
-					{BEGIN cellblock_grid_footcell_field3}
-	<td
-	
-	{$cell_grid_footcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="optiongroup_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field3}
 							</tr>
 					
 					</tfoot>

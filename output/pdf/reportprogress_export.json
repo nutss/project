@@ -110,6 +110,12 @@ pdfDocument = {
 			{"text":{$researchRegisterID_pdfvalue},"hidden":"{$item_hide_export_field11}"},
 				
 				
+			{"text":{$researchProjectNameThai_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$researchProjectNameEng_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
 			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_export_field2}"},
 				
 				
@@ -135,6 +141,9 @@ pdfDocument = {
 				
 				
 			{"text":{$overdueTime_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$researchProjectAffiliationName_pdfvalue},"hidden":"{$item_hide_export_field13}"},
 				
 		  ],
   "border": [ false, false, false, false ],

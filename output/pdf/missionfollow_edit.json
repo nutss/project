@@ -168,6 +168,15 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel missionFollow missionFollowEndDate }","bold":true},{"text":{$missionFollowEndDate_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel missionFollow missionFollowDocFile }","bold":true},{"text":{$missionFollowDocFile_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel missionFollow missionFollowActionStatus }","bold":true},{"text":{$missionFollowActionStatus_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel missionFollow missionFollowHeadName }","bold":true},{"text":{$missionFollowHeadName_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel missionFollow entryUserName }","bold":true},{"text":{$entryUserName_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				

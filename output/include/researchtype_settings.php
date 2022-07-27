@@ -163,7 +163,7 @@ $tdataresearchtype[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataresearchtype[".ajaxCodeSnippetAdded"] = false;
 
@@ -215,10 +215,12 @@ $tdataresearchtype[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY typeNumber";
 $tdataresearchtype[".strOrderBy"] = $tstrOrderBy;
 
 $tdataresearchtype[".orderindexes"] = array();
+	$tdataresearchtype[".orderindexes"][] = array(2, (1 ? "ASC" : "DESC"), "typeNumber");
+
 
 
 $tdataresearchtype[".sqlHead"] = "SELECT id,  	typeNumber,  	typeName,  	entryUserName,  	entryTime";
@@ -1004,6 +1006,36 @@ $detailsTablesData["researchType"] = array();
 				$detailsTablesData["researchType"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["researchType"][$dIndex]["detailKeys"][]="researchTypeID";
+//	researchTypeGroup
+	
+	
+
+		$dIndex = 1;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="researchTypeGroup";
+		$detailsParam["dOriginalTable"] = "researchTypeGroup";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "researchtypegroup";
+	$detailsParam["dCaptionTable"] = GetTableCaption("researchTypeGroup");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["researchType"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["researchType"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["researchType"][$dIndex]["masterKeys"][]="id";
+
+				$detailsTablesData["researchType"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["researchType"][$dIndex]["detailKeys"][]="researchTypeID";
 //endif
 
 // tables which are master tables for current table (detail)
@@ -1034,7 +1066,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "id,  	typeNumber,  	typeName,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchType";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY typeNumber";
 	
 				;
 			$proto0["cipherer"] = null;
@@ -1180,6 +1212,19 @@ $obj = new SQLFromListItem($proto16);
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto20=array();
+						$obj = new SQLField(array(
+	"m_strName" => "typeNumber",
+	"m_strTable" => "researchType",
+	"m_srcTableName" => "researchType"
+));
+
+$proto20["m_column"]=$obj;
+$proto20["m_bAsc"] = 1;
+$proto20["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto20);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="researchType";		
 $obj = new SQLQuery($proto0);
 

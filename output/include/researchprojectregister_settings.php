@@ -6,11 +6,11 @@ $tdataresearchprojectregister[".OwnerID"] = "";
 $tdataresearchprojectregister[".OriginalTable"] = "researchScholarshipRegister";
 
 
-$tdataresearchprojectregister[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchprojectregister[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchprojectregister[".originalPagesByType"] = $tdataresearchprojectregister[".pagesByType"];
-$tdataresearchprojectregister[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchprojectregister[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchprojectregister[".originalPages"] = $tdataresearchprojectregister[".pages"];
-$tdataresearchprojectregister[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchprojectregister[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchprojectregister[".originalDefaultPages"] = $tdataresearchprojectregister[".defaultPages"];
 
 //	field labels
@@ -193,7 +193,7 @@ $tdataresearchprojectregister[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataresearchprojectregister[".ajaxCodeSnippetAdded"] = false;
 

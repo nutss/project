@@ -162,7 +162,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
 				
 				
 			{"text":{$researchRegisterNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
@@ -178,9 +178,6 @@ pdfDocument = {
 				
 				
 			{"text":{$researchRegisterFile_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
-				
-				
-			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
 				
 				
 			{"text":{$researchRegisterStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},

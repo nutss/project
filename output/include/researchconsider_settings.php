@@ -6,11 +6,11 @@ $tdataresearchconsider[".OwnerID"] = "";
 $tdataresearchconsider[".OriginalTable"] = "researchConsider";
 
 
-$tdataresearchconsider[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
+$tdataresearchconsider[".pagesByType"] = my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataresearchconsider[".originalPagesByType"] = $tdataresearchconsider[".pagesByType"];
-$tdataresearchconsider[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
+$tdataresearchconsider[".pages"] = types2pages( my_json_decode( "{\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataresearchconsider[".originalPages"] = $tdataresearchconsider[".pages"];
-$tdataresearchconsider[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
+$tdataresearchconsider[".defaultPages"] = my_json_decode( "{\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataresearchconsider[".originalDefaultPages"] = $tdataresearchconsider[".defaultPages"];
 
 //	field labels
@@ -55,6 +55,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsresearchconsider["English"]["researchConsiderName"] = "Research Consider Name";
 	$fieldToolTipsresearchconsider["English"]["researchConsiderName"] = "";
 	$placeHoldersresearchconsider["English"]["researchConsiderName"] = "Research Consider Name";
+	$fieldLabelsresearchconsider["English"]["researchConsiderGroupAuthorized"] = "Research Consider Group Authorized";
+	$fieldToolTipsresearchconsider["English"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchconsider["English"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchconsider["English"]))
 		$tdataresearchconsider[".isUseToolTips"] = true;
 }
@@ -91,9 +94,12 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchconsider["Thai"]["researchTypeID"] = "ประเภททุน";
 	$fieldToolTipsresearchconsider["Thai"]["researchTypeID"] = "";
 	$placeHoldersresearchconsider["Thai"]["researchTypeID"] = "ประเภททุน";
-	$fieldLabelsresearchconsider["Thai"]["researchConsiderName"] = "การพิจารณา";
+	$fieldLabelsresearchconsider["Thai"]["researchConsiderName"] = "การดำเนินงาน";
 	$fieldToolTipsresearchconsider["Thai"]["researchConsiderName"] = "";
 	$placeHoldersresearchconsider["Thai"]["researchConsiderName"] = "การพิจารณา";
+	$fieldLabelsresearchconsider["Thai"]["researchConsiderGroupAuthorized"] = "กลุ่มผู้ใช้งาน";
+	$fieldToolTipsresearchconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchconsider["Thai"]))
 		$tdataresearchconsider[".isUseToolTips"] = true;
 }
@@ -193,7 +199,7 @@ $tdataresearchconsider[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdataresearchconsider[".ajaxCodeSnippetAdded"] = false;
 
@@ -221,6 +227,7 @@ $tdataresearchconsider[".googleLikeFields"][] = "stepName";
 $tdataresearchconsider[".googleLikeFields"][] = "researchConsiderFile";
 $tdataresearchconsider[".googleLikeFields"][] = "researchRegisterDesc";
 $tdataresearchconsider[".googleLikeFields"][] = "researchConsiderName";
+$tdataresearchconsider[".googleLikeFields"][] = "researchConsiderGroupAuthorized";
 $tdataresearchconsider[".googleLikeFields"][] = "entryUserName";
 $tdataresearchconsider[".googleLikeFields"][] = "entryTime";
 
@@ -250,13 +257,17 @@ $tdataresearchconsider[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY processName,researchConsiderNumber";
 $tdataresearchconsider[".strOrderBy"] = $tstrOrderBy;
 
 $tdataresearchconsider[".orderindexes"] = array();
+	$tdataresearchconsider[".orderindexes"][] = array(4, (1 ? "ASC" : "DESC"), "processName");
+
+	$tdataresearchconsider[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "researchConsiderNumber");
 
 
-$tdataresearchconsider[".sqlHead"] = "SELECT id,  	researchTypeID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	entryUserName,  	entryTime";
+
+$tdataresearchconsider[".sqlHead"] = "SELECT id,  	researchTypeID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $tdataresearchconsider[".sqlFrom"] = "FROM researchConsider";
 $tdataresearchconsider[".sqlWhereExpr"] = "";
 $tdataresearchconsider[".sqlTail"] = "";
@@ -1544,10 +1555,173 @@ $tdataresearchconsider[".hideMobileList"] = array();
 
 	$tdataresearchconsider["researchConsiderName"] = $fdata;
 		$tdataresearchconsider[".searchableFields"][] = "researchConsiderName";
-//	entryUserName
+//	researchConsiderGroupAuthorized
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 9;
+	$fdata["strName"] = "researchConsiderGroupAuthorized";
+	$fdata["GoodName"] = "researchConsiderGroupAuthorized";
+	$fdata["ownerTable"] = "researchConsider";
+	$fdata["Label"] = GetFieldLabel("researchConsider","researchConsiderGroupAuthorized");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchConsiderGroupAuthorized";
+
+		$fdata["sourceSingle"] = "researchConsiderGroupAuthorized";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchConsiderGroupAuthorized";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "project_uggroups";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "Label";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Label";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchconsider["researchConsiderGroupAuthorized"] = $fdata;
+		$tdataresearchconsider[".searchableFields"][] = "researchConsiderGroupAuthorized";
+//	entryUserName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchConsider";
@@ -1683,7 +1857,7 @@ $tdataresearchconsider[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchConsider";
@@ -1875,10 +2049,10 @@ function createSqlQuery_researchconsider()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchTypeID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	researchTypeID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchRegisterDesc,  	researchConsiderName,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchConsider";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY processName,researchConsiderNumber";
 	
 				;
 			$proto0["cipherer"] = null;
@@ -2029,12 +2203,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchConsiderGroupAuthorized",
 	"m_strTable" => "researchConsider",
 	"m_srcTableName" => "researchConsider"
 ));
 
-$proto22["m_sql"] = "entryUserName";
+$proto22["m_sql"] = "researchConsiderGroupAuthorized";
 $proto22["m_srcTableName"] = "researchConsider";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -2043,62 +2217,103 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "researchConsider",
 	"m_srcTableName" => "researchConsider"
 ));
 
-$proto24["m_sql"] = "entryTime";
+$proto24["m_sql"] = "entryUserName";
 $proto24["m_srcTableName"] = "researchConsider";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
 $obj = new SQLFieldListItem($proto24);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "researchConsider";
-$proto27["m_srcTableName"] = "researchConsider";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "id";
-$proto27["m_columns"][] = "researchTypeID";
-$proto27["m_columns"][] = "researchConsiderNumber";
-$proto27["m_columns"][] = "processName";
-$proto27["m_columns"][] = "stepName";
-$proto27["m_columns"][] = "researchConsiderFile";
-$proto27["m_columns"][] = "researchRegisterDesc";
-$proto27["m_columns"][] = "researchConsiderName";
-$proto27["m_columns"][] = "entryUserName";
-$proto27["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto27);
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchConsider",
+	"m_srcTableName" => "researchConsider"
+));
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "researchConsider";
-$proto26["m_alias"] = "";
+$proto26["m_sql"] = "entryTime";
 $proto26["m_srcTableName"] = "researchConsider";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto28=array();
+$proto28["m_link"] = "SQLL_MAIN";
+			$proto29=array();
+$proto29["m_strName"] = "researchConsider";
+$proto29["m_srcTableName"] = "researchConsider";
+$proto29["m_columns"] = array();
+$proto29["m_columns"][] = "id";
+$proto29["m_columns"][] = "researchTypeID";
+$proto29["m_columns"][] = "researchConsiderNumber";
+$proto29["m_columns"][] = "processName";
+$proto29["m_columns"][] = "stepName";
+$proto29["m_columns"][] = "researchConsiderFile";
+$proto29["m_columns"][] = "researchRegisterDesc";
+$proto29["m_columns"][] = "researchConsiderName";
+$proto29["m_columns"][] = "researchConsiderGroupAuthorized";
+$proto29["m_columns"][] = "entryUserName";
+$proto29["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto29);
+
+$proto28["m_table"] = $obj;
+$proto28["m_sql"] = "researchConsider";
+$proto28["m_alias"] = "";
+$proto28["m_srcTableName"] = "researchConsider";
+$proto30=array();
+$proto30["m_sql"] = "";
+$proto30["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto30["m_column"]=$obj;
+$proto30["m_contained"] = array();
+$proto30["m_strCase"] = "";
+$proto30["m_havingmode"] = false;
+$proto30["m_inBrackets"] = false;
+$proto30["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto30);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto28["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto32=array();
+						$obj = new SQLField(array(
+	"m_strName" => "processName",
+	"m_strTable" => "researchConsider",
+	"m_srcTableName" => "researchConsider"
+));
+
+$proto32["m_column"]=$obj;
+$proto32["m_bAsc"] = 1;
+$proto32["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto32);
+
+$proto0["m_orderby"][]=$obj;					
+												$proto34=array();
+						$obj = new SQLField(array(
+	"m_strName" => "researchConsiderNumber",
+	"m_strTable" => "researchConsider",
+	"m_srcTableName" => "researchConsider"
+));
+
+$proto34["m_column"]=$obj;
+$proto34["m_bAsc"] = 1;
+$proto34["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto34);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="researchConsider";		
 $obj = new SQLQuery($proto0);
 
@@ -2110,7 +2325,7 @@ $queryData_researchconsider = createSqlQuery_researchconsider();
 	
 				;
 
-										
+											
 
 $tdataresearchconsider[".sqlquery"] = $queryData_researchconsider;
 

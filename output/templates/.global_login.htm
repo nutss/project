@@ -32,7 +32,9 @@
 	class="r-align-center r-ori-vert			col-md-12
 	
 ">
-			</div>					</div>
+		 
+		<img src="{$file_url images/header.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" />
+		</div>					</div>
 	</div>		
 {END supertop_block}
 					<div class="bs-pagepanel panel panel-primary">
@@ -249,10 +251,16 @@
 			 
 				<div 
 	data-cellId="superbottom_c1" data-pageid="{$pageid}"	{$cell_superbottom_c1}
-	class="r-align-center r-ori-vert			col-md-12
+	class="r-align-center			col-md-12
 	
 ">
 		 
+		<span data-itemtype="login_remind" data-itemid="login_remind" {$item_login_remind} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-link   
+	" {$forgotpasswordlink_attrs} href="remind.php" >
+							{mlang_message FORGOT}			</a>
+</span>
+	 
 		<span data-itemtype="loginform_register_link" data-itemid="loginform_register_link" {$item_loginform_register_link} data-pageid="{$pageid}" data-small data-button-item>
 	<a type="button" title="" class="btn btn-link   
 	" {$registerlink_attrs} href="register.php" >

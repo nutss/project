@@ -167,6 +167,9 @@ pdfDocument = {
 				
 			{"text":{$projectStatusCount_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
 				
+				
+			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

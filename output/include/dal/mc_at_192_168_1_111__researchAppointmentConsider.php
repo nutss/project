@@ -11,6 +11,7 @@ $dalTableresearchAppointmentConsider["researchRegisterDesc"] = array("type"=>201
 $dalTableresearchAppointmentConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchAppointmentConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
 $dalTableresearchAppointmentConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
+$dalTableresearchAppointmentConsider["researchConsiderGroupAuthorized"] = array("type"=>200,"varname"=>"researchConsiderGroupAuthorized", "name" => "researchConsiderGroupAuthorized");
 $dalTableresearchAppointmentConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchAppointmentConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchAppointmentConsider["id"]["key"]=true;

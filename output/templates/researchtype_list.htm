@@ -475,6 +475,29 @@
 				 
 					<li class="container-fluid 
 										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		{mlang_message PPANEL_DETAILS}	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_researchconsider}
+			<div>
+				<label for="printDetailsresearchconsider{$id}">
+					<input type="checkbox" value="researchconsider" id="printDetailsresearchconsider{$id}" checked>
+					ขั้นตอนการพิจารณา [ประเภททุน]				</label>
+			</div>
+			{END print_details_researchconsider}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
 									<div>
 	<label for="printPerPage{$id}">
 					{mlang_message RECORDS_PP}							
@@ -567,10 +590,16 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchtype_list"		data-control-cell
-	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchtype_list"	
+		data-checkbox-cell
 	>
 
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
 	
 	</th>
 	{END cellblock_grid_headcell_checkbox}

@@ -49,6 +49,15 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsmissionfollow["English"]["missionFollowStatus"] = "Mission Follow Status";
 	$fieldToolTipsmissionfollow["English"]["missionFollowStatus"] = "";
 	$placeHoldersmissionfollow["English"]["missionFollowStatus"] = "";
+	$fieldLabelsmissionfollow["English"]["missionFollowDocFile"] = "Mission Follow Doc File";
+	$fieldToolTipsmissionfollow["English"]["missionFollowDocFile"] = "";
+	$placeHoldersmissionfollow["English"]["missionFollowDocFile"] = "";
+	$fieldLabelsmissionfollow["English"]["missionFollowActionStatus"] = "Mission Follow Action Status";
+	$fieldToolTipsmissionfollow["English"]["missionFollowActionStatus"] = "";
+	$placeHoldersmissionfollow["English"]["missionFollowActionStatus"] = "";
+	$fieldLabelsmissionfollow["English"]["missionFollowHeadName"] = "Mission Follow Head Name";
+	$fieldToolTipsmissionfollow["English"]["missionFollowHeadName"] = "";
+	$placeHoldersmissionfollow["English"]["missionFollowHeadName"] = "";
 	if (count($fieldToolTipsmissionfollow["English"]))
 		$tdatamissionfollow[".isUseToolTips"] = true;
 }
@@ -82,6 +91,15 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsmissionfollow["Thai"]["missionFollowStatus"] = "สถานะ";
 	$fieldToolTipsmissionfollow["Thai"]["missionFollowStatus"] = "";
 	$placeHoldersmissionfollow["Thai"]["missionFollowStatus"] = "";
+	$fieldLabelsmissionfollow["Thai"]["missionFollowDocFile"] = "เอกสารโครงการ";
+	$fieldToolTipsmissionfollow["Thai"]["missionFollowDocFile"] = "";
+	$placeHoldersmissionfollow["Thai"]["missionFollowDocFile"] = "";
+	$fieldLabelsmissionfollow["Thai"]["missionFollowActionStatus"] = "สถานะการดำเนินการ";
+	$fieldToolTipsmissionfollow["Thai"]["missionFollowActionStatus"] = "";
+	$placeHoldersmissionfollow["Thai"]["missionFollowActionStatus"] = "";
+	$fieldLabelsmissionfollow["Thai"]["missionFollowHeadName"] = "หัวหน้าภารกิจ";
+	$fieldToolTipsmissionfollow["Thai"]["missionFollowHeadName"] = "";
+	$placeHoldersmissionfollow["Thai"]["missionFollowHeadName"] = "";
 	if (count($fieldToolTipsmissionfollow["Thai"]))
 		$tdatamissionfollow[".isUseToolTips"] = true;
 }
@@ -181,7 +199,7 @@ $tdatamissionfollow[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdatamissionfollow[".ajaxCodeSnippetAdded"] = false;
 
@@ -206,7 +224,10 @@ $tdatamissionfollow[".googleLikeFields"][] = "missionFollowNo";
 $tdatamissionfollow[".googleLikeFields"][] = "missionFollowName";
 $tdatamissionfollow[".googleLikeFields"][] = "missionFollowStartDate";
 $tdatamissionfollow[".googleLikeFields"][] = "missionFollowEndDate";
+$tdatamissionfollow[".googleLikeFields"][] = "missionFollowDocFile";
+$tdatamissionfollow[".googleLikeFields"][] = "missionFollowActionStatus";
 $tdatamissionfollow[".googleLikeFields"][] = "missionFollowStatus";
+$tdatamissionfollow[".googleLikeFields"][] = "missionFollowHeadName";
 $tdatamissionfollow[".googleLikeFields"][] = "entryUserName";
 $tdatamissionfollow[".googleLikeFields"][] = "entryTime";
 
@@ -242,7 +263,7 @@ $tdatamissionfollow[".strOrderBy"] = $tstrOrderBy;
 $tdatamissionfollow[".orderindexes"] = array();
 
 
-$tdatamissionfollow[".sqlHead"] = "SELECT id,  	missionFollowNo,  	missionFollowName,  	missionFollowStartDate,  	missionFollowEndDate,  	missionFollowStatus,  	entryUserName,  	entryTime";
+$tdatamissionfollow[".sqlHead"] = "SELECT id,  	missionFollowNo,  	missionFollowName,  	missionFollowStartDate,  	missionFollowEndDate,  	missionFollowDocFile,  	missionFollowActionStatus,  	missionFollowStatus,  	missionFollowHeadName,  	entryUserName,  	entryTime";
 $tdatamissionfollow[".sqlFrom"] = "FROM missionFollow";
 $tdatamissionfollow[".sqlWhereExpr"] = "";
 $tdatamissionfollow[".sqlTail"] = "";
@@ -986,10 +1007,310 @@ $tdatamissionfollow[".hideMobileList"] = array();
 
 	$tdatamissionfollow["missionFollowEndDate"] = $fdata;
 		$tdatamissionfollow[".searchableFields"][] = "missionFollowEndDate";
-//	missionFollowStatus
+//	missionFollowDocFile
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 6;
+	$fdata["strName"] = "missionFollowDocFile";
+	$fdata["GoodName"] = "missionFollowDocFile";
+	$fdata["ownerTable"] = "missionFollow";
+	$fdata["Label"] = GetFieldLabel("missionFollow","missionFollowDocFile");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "missionFollowDocFile";
+
+		$fdata["sourceSingle"] = "missionFollowDocFile";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "missionFollowDocFile";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Document Download");
+
+	
+	
+	
+						$vdata["ShowFileSize"] = true;
+			$vdata["ShowIcon"] = true;
+		
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Document upload");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatamissionfollow["missionFollowDocFile"] = $fdata;
+		$tdatamissionfollow[".searchableFields"][] = "missionFollowDocFile";
+//	missionFollowActionStatus
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "missionFollowActionStatus";
+	$fdata["GoodName"] = "missionFollowActionStatus";
+	$fdata["ownerTable"] = "missionFollow";
+	$fdata["Label"] = GetFieldLabel("missionFollow","missionFollowActionStatus");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "missionFollowActionStatus";
+
+		$fdata["sourceSingle"] = "missionFollowActionStatus";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "missionFollowActionStatus";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "optionSub";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "optionName";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "optionName";
+
+				$edata["LookupWhere"] = "optionGroupID = 1";
+
+
+	
+	$edata["LookupOrderBy"] = "optionGroupNumber";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatamissionfollow["missionFollowActionStatus"] = $fdata;
+		$tdatamissionfollow[".searchableFields"][] = "missionFollowActionStatus";
+//	missionFollowStatus
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "missionFollowStatus";
 	$fdata["GoodName"] = "missionFollowStatus";
 	$fdata["ownerTable"] = "missionFollow";
@@ -1120,10 +1441,148 @@ $tdatamissionfollow[".hideMobileList"] = array();
 
 	$tdatamissionfollow["missionFollowStatus"] = $fdata;
 		$tdatamissionfollow[".searchableFields"][] = "missionFollowStatus";
+//	missionFollowHeadName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 9;
+	$fdata["strName"] = "missionFollowHeadName";
+	$fdata["GoodName"] = "missionFollowHeadName";
+	$fdata["ownerTable"] = "missionFollow";
+	$fdata["Label"] = GetFieldLabel("missionFollow","missionFollowHeadName");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "missionFollowHeadName";
+
+		$fdata["sourceSingle"] = "missionFollowHeadName";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "missionFollowHeadName";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatamissionfollow["missionFollowHeadName"] = $fdata;
+		$tdatamissionfollow[".searchableFields"][] = "missionFollowHeadName";
 //	entryUserName
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "missionFollow";
@@ -1259,7 +1718,7 @@ $tdatamissionfollow[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "missionFollow";
@@ -1463,7 +1922,7 @@ function createSqlQuery_missionfollow()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	missionFollowNo,  	missionFollowName,  	missionFollowStartDate,  	missionFollowEndDate,  	missionFollowStatus,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	missionFollowNo,  	missionFollowName,  	missionFollowStartDate,  	missionFollowEndDate,  	missionFollowDocFile,  	missionFollowActionStatus,  	missionFollowStatus,  	missionFollowHeadName,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM missionFollow";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1575,12 +2034,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "missionFollowStatus",
+	"m_strName" => "missionFollowDocFile",
 	"m_strTable" => "missionFollow",
 	"m_srcTableName" => "missionFollow"
 ));
 
-$proto16["m_sql"] = "missionFollowStatus";
+$proto16["m_sql"] = "missionFollowDocFile";
 $proto16["m_srcTableName"] = "missionFollow";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -1589,12 +2048,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "missionFollowActionStatus",
 	"m_strTable" => "missionFollow",
 	"m_srcTableName" => "missionFollow"
 ));
 
-$proto18["m_sql"] = "entryUserName";
+$proto18["m_sql"] = "missionFollowActionStatus";
 $proto18["m_srcTableName"] = "missionFollow";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -1603,56 +2062,101 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "missionFollowStatus",
 	"m_strTable" => "missionFollow",
 	"m_srcTableName" => "missionFollow"
 ));
 
-$proto20["m_sql"] = "entryTime";
+$proto20["m_sql"] = "missionFollowStatus";
 $proto20["m_srcTableName"] = "missionFollow";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
 $obj = new SQLFieldListItem($proto20);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto22=array();
-$proto22["m_link"] = "SQLL_MAIN";
-			$proto23=array();
-$proto23["m_strName"] = "missionFollow";
-$proto23["m_srcTableName"] = "missionFollow";
-$proto23["m_columns"] = array();
-$proto23["m_columns"][] = "id";
-$proto23["m_columns"][] = "missionFollowNo";
-$proto23["m_columns"][] = "missionFollowName";
-$proto23["m_columns"][] = "missionFollowStartDate";
-$proto23["m_columns"][] = "missionFollowEndDate";
-$proto23["m_columns"][] = "missionFollowStatus";
-$proto23["m_columns"][] = "entryUserName";
-$proto23["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto23);
+						$proto22=array();
+			$obj = new SQLField(array(
+	"m_strName" => "missionFollowHeadName",
+	"m_strTable" => "missionFollow",
+	"m_srcTableName" => "missionFollow"
+));
 
-$proto22["m_table"] = $obj;
-$proto22["m_sql"] = "missionFollow";
-$proto22["m_alias"] = "";
+$proto22["m_sql"] = "missionFollowHeadName";
 $proto22["m_srcTableName"] = "missionFollow";
-$proto24=array();
-$proto24["m_sql"] = "";
-$proto24["m_uniontype"] = "SQLL_UNKNOWN";
+$proto22["m_expr"]=$obj;
+$proto22["m_alias"] = "";
+$obj = new SQLFieldListItem($proto22);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryUserName",
+	"m_strTable" => "missionFollow",
+	"m_srcTableName" => "missionFollow"
+));
+
+$proto24["m_sql"] = "entryUserName";
+$proto24["m_srcTableName"] = "missionFollow";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "missionFollow",
+	"m_srcTableName" => "missionFollow"
+));
+
+$proto26["m_sql"] = "entryTime";
+$proto26["m_srcTableName"] = "missionFollow";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto28=array();
+$proto28["m_link"] = "SQLL_MAIN";
+			$proto29=array();
+$proto29["m_strName"] = "missionFollow";
+$proto29["m_srcTableName"] = "missionFollow";
+$proto29["m_columns"] = array();
+$proto29["m_columns"][] = "id";
+$proto29["m_columns"][] = "missionFollowNo";
+$proto29["m_columns"][] = "missionFollowName";
+$proto29["m_columns"][] = "missionFollowStartDate";
+$proto29["m_columns"][] = "missionFollowEndDate";
+$proto29["m_columns"][] = "missionFollowDocFile";
+$proto29["m_columns"][] = "missionFollowActionStatus";
+$proto29["m_columns"][] = "missionFollowStatus";
+$proto29["m_columns"][] = "missionFollowHeadName";
+$proto29["m_columns"][] = "entryUserName";
+$proto29["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto29);
+
+$proto28["m_table"] = $obj;
+$proto28["m_sql"] = "missionFollow";
+$proto28["m_alias"] = "";
+$proto28["m_srcTableName"] = "missionFollow";
+$proto30=array();
+$proto30["m_sql"] = "";
+$proto30["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto24["m_column"]=$obj;
-$proto24["m_contained"] = array();
-$proto24["m_strCase"] = "";
-$proto24["m_havingmode"] = false;
-$proto24["m_inBrackets"] = false;
-$proto24["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto24);
+$proto30["m_column"]=$obj;
+$proto30["m_contained"] = array();
+$proto30["m_strCase"] = "";
+$proto30["m_havingmode"] = false;
+$proto30["m_inBrackets"] = false;
+$proto30["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto30);
 
-$proto22["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto22);
+$proto28["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1668,7 +2172,7 @@ $queryData_missionfollow = createSqlQuery_missionfollow();
 	
 				;
 
-								
+											
 
 $tdatamissionfollow[".sqlquery"] = $queryData_missionfollow;
 

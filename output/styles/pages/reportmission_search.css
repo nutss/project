@@ -1,0 +1,19 @@
+
+/* Put  your custom CSS code here */
+
+[data-cellid="below-grid_c1"][data-page="reportmission_search"][data-cellid="below-grid_c1"][data-page="reportmission_search"][data-cellid="below-grid_c1"][data-page="reportmission_search"] {
+  color: red;
+}
+/* Put  your custom CSS code here */
+
+[data-page="reportmission_search"][data-itemid="search_search"] {
+  color: red;
+}
+
+.panel-footer{
+text-align:right
+}
+
+.r-search-option{
+ display:none
+}

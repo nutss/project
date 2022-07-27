@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('DashboardMission',Runner.pages.constants.PAGE_DASHBOARD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){$("[name='srchOpt_10009_missionAssignmentResponsibleName']").remove();$("[name='srchOpt_10009_missionFollowName']").remove();});

@@ -162,40 +162,16 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$researchProjectNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
 				
 				
 			{"text":{$researchRegisterID_pdfvalue},"hidden":"{$item_hide_integrated_search_field12}"},
 				
 				
-			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
+			{"text":{$researchProjectAffiliationName_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
 				
 				
-			{"text":{$researchProjectHeadName_pdfvalue},"hidden":"{$item_hide_integrated_search_field3}"},
-				
-				
-			{"text":{$researchProjectAppointmentStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field4}"},
-				
-				
-			{"text":{$researchProjectDisburseStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
-				
-				
-			{"text":{$researchProjectEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
-				
-				
-			{"text":{$trackingProjectDescResult_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
-				
-				
-			{"text":{$projectStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field10}"},
-				
-				
-			{"text":{$UseTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
-				
-				
-			{"text":{$overdueTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
-				
-				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field11}"},
+			{"text":{$researchProjectDisburseStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
 				
 		  ],
   "border": [ false, false, false, false ],

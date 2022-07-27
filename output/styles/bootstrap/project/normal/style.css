@@ -6834,6 +6834,11 @@ button.close {
 .navbar-brand {
   line-height: 1;
 }
+.modal-dialog,
+.modal-content,
+.modal-body {
+  width: 1300px !important;
+}
 .btn {
   border-width: 2px;
 }
@@ -6949,14 +6954,14 @@ input:focus {
   box-shadow: none;
 }
 body {
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-link.glyphicon.glyphicon-pencil {
   color: #E1B037;
   padding: 8px;
 }
 .btn-link.glyphicon.glyphicon-pencil::after {
-  content: "แก้ไข";
+  content: "";
   font-size: small;
   font-family: Kanit;
 }

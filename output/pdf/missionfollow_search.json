@@ -180,10 +180,19 @@ pdfDocument = {
 			{"text":{$missionFollowStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
 				
 				
+			{"text":{$missionFollowDocFile_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
+				
+				
+			{"text":{$missionFollowActionStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
+				
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
 				
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
+				
+				
+			{"text":{$missionFollowHeadName_pdfvalue},"hidden":"{$item_hide_integrated_search_field10}"},
 				
 		  ],
   "border": [ false, false, false, false ],

@@ -162,9 +162,6 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
-				
-				
 			{"text":{$researchOperatingPeriodNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
 				
 				
@@ -177,13 +174,13 @@ pdfDocument = {
 			{"text":{$researchOperatingPeriodDisbursePercent_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
 				
 				
+			{"text":{$researchProjectDisburseStatus_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
+				
+				
 			{"text":{$entryUserName_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
 				
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
-				
-				
-			{"text":{$researchProjectID_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
 				
 		  ],
   "border": [ false, false, false, false ],

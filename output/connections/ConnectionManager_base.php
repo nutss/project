@@ -265,15 +265,32 @@ class ConnectionManager_Base
 		$connectionsIds["optionSub"] = "mc_at_192_168_1_111";
 		$connectionsIds["project_audit"] = "mc_at_192_168_1_111";
 		$connectionsIds["considerChoice"] = "mc_at_192_168_1_111";
-		$connectionsIds["researchConsiderView"] = "mc_at_192_168_1_111";
 		$connectionsIds["project_uggroups"] = "mc_at_192_168_1_111";
 		$connectionsIds["statusType"] = "mc_at_192_168_1_111";
 		$connectionsIds["ReportProgress"] = "mc_at_192_168_1_111";
-		$connectionsIds["ReportMonitorGraphTrackingStatus"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorGraphTrackingStatus1"] = "mc_at_192_168_1_111";
 		$connectionsIds["ReportMonitorProjectStatus1"] = "mc_at_192_168_1_111";
 		$connectionsIds["ReportMonitorProjectStatus2"] = "mc_at_192_168_1_111";
 		$connectionsIds["ReportMonitorProjectStatus3"] = "mc_at_192_168_1_111";
 		$connectionsIds["ReportMonitorProjectStatus4"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorGraphTrackingStatus2"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorGraphTrackingStatus3"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus5"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus6"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus7"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMonitorProjectStatus8"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportSearchresearchRegister"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportMission"] = "mc_at_192_168_1_111";
+		$connectionsIds["ReportGraphmissionFollow"] = "mc_at_192_168_1_111";
+		$connectionsIds["researcher"] = "mc_at_192_168_1_111";
+		$connectionsIds["researchResearcher"] = "mc_at_192_168_1_111";
+		$connectionsIds["optionSub_Search_Lookup"] = "mc_at_192_168_1_111";
+		$connectionsIds["researchTypeGroup"] = "mc_at_192_168_1_111";
+		$connectionsIds["TypeGroup_Search_Lookup"] = "mc_at_192_168_1_111";
+		$connectionsIds["geographies"] = "mc_at_192_168_1_111";
+		$connectionsIds["provinces"] = "mc_at_192_168_1_111";
+		$connectionsIds["districts"] = "mc_at_192_168_1_111";
+		$connectionsIds["amphures"] = "mc_at_192_168_1_111";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

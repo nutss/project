@@ -93,28 +93,6 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN id_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="id{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_id}">
-		{$label researchDisburse id }	</label>
-	<div class="r-search-option">
-		{$searchtype_id}
-	</div>
-	<div class="r-search-field">
-		{$id_editcontrol}	</div>
-	<div class="r-search-field">
-		{$id_editcontrol1}
-	</div>
-	
-</div>
-
-{END id_fieldblock}
-											
 {BEGIN researchOperatingPeriodNo_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_researchOperatingPeriodNo}  r-horizontal-field form-horizontal" 	
@@ -203,6 +181,28 @@
 
 {END researchOperatingPeriodDisbursePercent_fieldblock}
 											
+{BEGIN researchProjectDisburseStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectDisburseStatus}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectDisburseStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="researchProjectDisburseStatus" data-fieldname="researchProjectDisburseStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectDisburseStatus}">
+		{$label researchDisburse researchProjectDisburseStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectDisburseStatus}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectDisburseStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectDisburseStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectDisburseStatus_fieldblock}
+											
 {BEGIN entryUserName_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
@@ -246,28 +246,6 @@
 </div>
 
 {END entryTime_fieldblock}
-											
-{BEGIN researchProjectID_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectID}  r-horizontal-field form-horizontal" 	
-	data-signal-error-for="researchProjectID{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="researchProjectID" data-fieldname="researchProjectID" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_researchProjectID}">
-		{$label researchDisburse researchProjectID }	</label>
-	<div class="r-search-option">
-		{$searchtype_researchProjectID}
-	</div>
-	<div class="r-search-field">
-		{$researchProjectID_editcontrol}	</div>
-	<div class="r-search-field">
-		{$researchProjectID_editcontrol1}
-	</div>
-	
-</div>
-
-{END researchProjectID_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

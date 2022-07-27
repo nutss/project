@@ -193,7 +193,7 @@ $tdataresearchconsiderview[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataresearchconsiderview[".ajaxCodeSnippetAdded"] = false;
 
@@ -2004,6 +2004,7 @@ $proto27["m_columns"][] = "stepName";
 $proto27["m_columns"][] = "researchConsiderFile";
 $proto27["m_columns"][] = "researchRegisterDesc";
 $proto27["m_columns"][] = "researchConsiderName";
+$proto27["m_columns"][] = "researchConsiderGroupAuthorized";
 $proto27["m_columns"][] = "entryUserName";
 $proto27["m_columns"][] = "entryTime";
 $obj = new SQLTable($proto27);

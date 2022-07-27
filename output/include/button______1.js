@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["_____1"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='_____1';if(!pageObj.buttonEventBefore['_____1']){pageObj.buttonEventBefore['_____1']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;}}
+if(!pageObj.buttonEventAfter['_____1']){pageObj.buttonEventAfter['_____1']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var win=Runner.displayPopup({url:"https://project.mac.in.th/report/documents/master/ViewerTransferNotice.php?"+result["txt"],width:1080,height:900,header:'หนังสือแจ้งโอน'});}}
+$('a[id="_____1"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="_____1"+"_"+Runner.genId();var button______1=new Runner.form.Button({id:this.id,btnName:"_____1"});button______1.init({args:[pageObj,proxy,pageid]});});};

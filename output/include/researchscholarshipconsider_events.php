@@ -18,6 +18,8 @@
 
 
 
+		$this->events["BeforeShowEdit"]=true;
+
 
 	}
 
@@ -50,6 +52,12 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 
 					
 		ScholarshipProposalUpdateStatus($values["researchProjectID"]);
+		
+	if ($values["researchConsiderValue"] <> $oldvalues["researchConsiderValue"]){
+
+		Mail2ScholarshipConsiderAlert($_SESSION["MailSettings"],$values);
+	}
+
 
 // Place event code here.
 // Use "Add Action" button to add code snippets.
@@ -281,6 +289,98 @@ function AfterAdd(&$values, &$keys, $inline, $pageObject)
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before display
+function BeforeShowEdit(&$xt, &$templatefile, $values, $pageObject)
+{
+
+						$pageObject->hideField("researchConsiderGroupAuthorized");
+		
+				if(strpos($_SESSION["GroupName"],"<Admin>")){
+
+						$pageObject->showField("researchConsiderValue");
+				}
+				else{
+
+						if(strpos($_SESSION["GroupName"],$values["researchConsiderGroupAuthorized"])!== false){
+
+								$pageObject->showField("researchConsiderValue");
+						}
+						else{
+								$pageObject->hideField("researchConsiderValue");
+						}
+				}
+				
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function BeforeShowEdit
+
 		
 		
 		

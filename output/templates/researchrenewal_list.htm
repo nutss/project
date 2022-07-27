@@ -528,7 +528,7 @@
 			<div>
 				<label for="printDetailsresearchrenewalconsider{$id}">
 					<input type="checkbox" value="researchrenewalconsider" id="printDetailsresearchrenewalconsider{$id}" checked>
-					การพิจารณา				</label>
+					การดำเนินการ [ขยายระยะเวลา]				</label>
 			</div>
 			{END print_details_researchrenewalconsider}
 						</div>
@@ -588,13 +588,7 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchAppointmentDay"]:before {
 		content: "{$label researchRenewal researchAppointmentDay}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
-		content: "{$label researchRenewal entryUserName}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryTime"]:before {
-		content: "{$label researchRenewal entryTime}";
-	}
-	}
+			}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -703,7 +697,7 @@
 	 
 		{BEGIN researchRenewalPeriod_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRenewalPeriod" data-fieldname="researchRenewalPeriod">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRenewalPeriod" data-fieldname="researchRenewalPeriod">
 	{$label researchRenewal researchRenewalPeriod }	</span>
 {END researchRenewalPeriod_fieldheadercolumn}
 
@@ -728,63 +722,13 @@
 	 
 		{BEGIN researchAppointmentDay_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchAppointmentDay" data-fieldname="researchAppointmentDay">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchAppointmentDay" data-fieldname="researchAppointmentDay">
 	{$label researchRenewal researchAppointmentDay }	</span>
 {END researchAppointmentDay_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field2}
-				 
-					{BEGIN cellblock_grid_headcell_field3}
-	<th
-	
-	{$cell_grid_headcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label researchRenewal entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field3}
-				 
-					{BEGIN cellblock_grid_headcell_field4}
-	<th
-	
-	{$cell_grid_headcell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label researchRenewal entryTime }	</span>
-{END entryTime_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field4}
 							</tr>
 					 
 					 
@@ -975,52 +919,6 @@
 {END researchAppointmentDay_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field2}
-				 
-					{BEGIN cellblock_grid_cell_field3}
-	<td
-	
-	{$cell_grid_cell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
-</span>
-{END entryUserName_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field3}
-				 
-					{BEGIN cellblock_grid_cell_field4}
-	<td
-	
-	{$cell_grid_cell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
-{$entryTime_value}
-</span>
-{END entryTime_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field4}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1163,38 +1061,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field2}
-				 
-					{BEGIN cellblock_grid_footcell_field3}
-	<td
-	
-	{$cell_grid_footcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchrenewal_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field3}
-				 
-					{BEGIN cellblock_grid_footcell_field4}
-	<td
-	
-	{$cell_grid_footcell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchrenewal_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field4}
 							</tr>
 					
 					</tfoot>

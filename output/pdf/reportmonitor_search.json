@@ -209,12 +209,6 @@ pdfDocument = {
 			{"text":""},
 				
 				
-			{"text":""},
-				
-				
-			{"text":"","hidden":"{$item_hide_search_back_list}"},
-				
-				
 			{"text":"","hidden":"{$item_hide_search_cancel}"},
 				
 		  ],

@@ -13,43 +13,177 @@ $hostname_www = "project.mac.in.th";
 
 
 
-function Mail2ProjectAlert($MailSettings,$Project) {
+function Mail2ScholarshipConsiderAlert($MailSettings,$Consider) {
 
 	global $hostname_www,$wget_command;
 
 
-
-	$SQLCommand = "SELECT * FROM staffUsers WHERE (staffEmailNotify = '1')";
+	if(strpos($Consider["researchConsiderName"],$Consider["researchConsiderValue"]."/")  !== false){
 	
-	$RS = CustomQuery($SQLCommand);
-	while ($data = db_fetch_array($RS)) {
 
-		$MailTo .= $data["staffEmail"].",";
+		$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = '".$Consider["researchProjectID"]."')";
 		
+		$RS1 = CustomQuery($SQLCommand);
+		if ($RS1_DATA = db_fetch_array($RS1)) {
+
+			$Url = "http://".$hostname_www."/script/mail2AlertProject.php";
+			$UrlOption.= "ConsiderID=".urlencode($Consider["id"])."&";
+			$UrlOption.= "researchProjectNameThai=".urlencode($RS1_DATA["researchProjectNameThai"])."&";
+			$UrlOption.= "researchProjectHeadName=".urlencode($RS1_DATA["researchProjectHeadName"])."&";
+			$UrlOption.= "processName=".urlencode($Consider["processName"])."&";
+			$UrlOption.= "stepName=".urlencode($Consider["stepName"])."&";
+			$UrlOption.= "researchRegisterDesc=".urlencode($Consider["researchRegisterDesc"])."&";
+			$UrlOption.= "researchConsiderValue=".urlencode($Consider["researchConsiderValue"])."&";
+			$UrlOption.= "SMTPSecure=".urlencode($MailSettings["SMTPSecure"])."&";
+			$UrlOption.= "strSMTPServer=".urlencode($MailSettings["strSMTPServer"])."&";
+			$UrlOption.= "strSMTPPort=".urlencode($MailSettings["strSMTPPort"])."&";
+			$UrlOption.= "strSMTPUser=".urlencode($MailSettings["strSMTPUser"])."&";
+			$UrlOption.= "strSMTPPassword=".urlencode($MailSettings["strSMTPPassword"])."&";
+			$UrlOption.= "MailTo=".$RS1_DATA["researchProjectAffiliationEmail"]."";
+
+		}
+		
+		$command_sh = $wget_command." ".$Url." --post-data \"".$UrlOption."\"";
+		//echo($command_sh);
+		executeBackgroundProces($command_sh);
+
 	}
+}	
 
 
-	$Url = "http://".$hostname_www."/script/mail2AlertProject.php";
-	$UrlOption.= "projectID=".urlencode($Project["id"])."&";
-	$UrlOption.= "projectName=".urlencode($Project["projectName"])."&";
-	$UrlOption.= "projectStart=".$Project["projectStart"]."&";
-	$UrlOption.= "projectEnd=".$Project["projectEnd"]."&";
-	$UrlOption.= "researchFundingType=".urlencode($Project["researchFundingType"])."&";
-	$UrlOption.= "contactName=".urlencode($Project["contactName"])."&";
-	$UrlOption.= "SMTPSecure=".urlencode($MailSettings["SMTPSecure"])."&";
-	$UrlOption.= "strSMTPServer=".urlencode($MailSettings["strSMTPServer"])."&";
-	$UrlOption.= "strSMTPPort=".urlencode($MailSettings["strSMTPPort"])."&";
-	$UrlOption.= "strSMTPUser=".urlencode($MailSettings["strSMTPUser"])."&";
-	$UrlOption.= "strSMTPPassword=".urlencode($MailSettings["strSMTPPassword"])."&";
-	$UrlOption.= "MailTo=".$MailTo."";
+function Mail2AppointmentConsiderAlert($MailSettings,$Consider) {
 
+	global $hostname_www,$wget_command;
+
+
+	if(strpos($Consider["researchConsiderName"],$Consider["researchConsiderValue"]."/")  !== false){
 	
+
+		$SQLCommand = "SELECT * FROM researchAppointment WHERE (id = '".$Consider["researchAppointmentID"]."')";
+		
+		$RS1 = CustomQuery($SQLCommand);
+		if ($RS1_DATA = db_fetch_array($RS1)) {
+
+
+			$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = '".$RS1_DATA["researchProjectID"]."')";
+			
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$Url = "http://".$hostname_www."/script/mail2AlertProject.php";
+				$UrlOption.= "ConsiderID=".urlencode($Consider["id"])."&";
+				$UrlOption.= "researchProjectNameThai=".urlencode($RS2_DATA["researchProjectNameThai"])."&";
+				$UrlOption.= "researchProjectHeadName=".urlencode($RS2_DATA["researchProjectHeadName"])."&";
+				$UrlOption.= "processName=".urlencode($Consider["processName"])."&";
+				$UrlOption.= "stepName=".urlencode($Consider["stepName"])."&";
+				$UrlOption.= "researchRegisterDesc=".urlencode($Consider["researchRegisterDesc"])."&";
+				$UrlOption.= "researchConsiderValue=".urlencode($Consider["researchConsiderValue"])."&";
+				$UrlOption.= "SMTPSecure=".urlencode($MailSettings["SMTPSecure"])."&";
+				$UrlOption.= "strSMTPServer=".urlencode($MailSettings["strSMTPServer"])."&";
+				$UrlOption.= "strSMTPPort=".urlencode($MailSettings["strSMTPPort"])."&";
+				$UrlOption.= "strSMTPUser=".urlencode($MailSettings["strSMTPUser"])."&";
+				$UrlOption.= "strSMTPPassword=".urlencode($MailSettings["strSMTPPassword"])."&";
+				$UrlOption.= "MailTo=".$RS2_DATA["researchProjectAffiliationEmail"]."";
+			}
+
+		}
+		
+		$command_sh = $wget_command." ".$Url." --post-data \"".$UrlOption."\"";
+		//echo($command_sh);
+		executeBackgroundProces($command_sh);
+
+	}
+}	
+
+
+function Mail2DisburseConsiderAlert($MailSettings,$Consider) {
+
+	global $hostname_www,$wget_command;
+
+
+	if(strpos($Consider["researchConsiderName"],$Consider["researchConsiderValue"]."/")  !== false){
 	
-	$command_sh = $wget_command." ".$Url." --post-data \"".$UrlOption."\"";
-	//echo $command_sh;
-	executeBackgroundProces($command_sh);
+
+		$SQLCommand = "SELECT * FROM researchOperatingPeriod WHERE (id = '".$Consider["researchDisburseID"]."')";
+		
+		$RS1 = CustomQuery($SQLCommand);
+		if ($RS1_DATA = db_fetch_array($RS1)) {
 
 
+			$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = '".$RS1_DATA["researchProjectID"]."')";
+			
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+				$Url = "http://".$hostname_www."/script/mail2AlertProject.php";
+				$UrlOption.= "ConsiderID=".urlencode($Consider["id"])."&";
+				$UrlOption.= "researchProjectNameThai=".urlencode($RS2_DATA["researchProjectNameThai"])."&";
+				$UrlOption.= "researchProjectHeadName=".urlencode($RS2_DATA["researchProjectHeadName"])."&";
+				$UrlOption.= "processName=".urlencode($Consider["processName"])."&";
+				$UrlOption.= "stepName=".urlencode($Consider["stepName"])."&";
+				$UrlOption.= "researchRegisterDesc=".urlencode($Consider["researchRegisterDesc"])."&";
+				$UrlOption.= "researchConsiderValue=".urlencode($Consider["researchConsiderValue"])."&";
+				$UrlOption.= "SMTPSecure=".urlencode($MailSettings["SMTPSecure"])."&";
+				$UrlOption.= "strSMTPServer=".urlencode($MailSettings["strSMTPServer"])."&";
+				$UrlOption.= "strSMTPPort=".urlencode($MailSettings["strSMTPPort"])."&";
+				$UrlOption.= "strSMTPUser=".urlencode($MailSettings["strSMTPUser"])."&";
+				$UrlOption.= "strSMTPPassword=".urlencode($MailSettings["strSMTPPassword"])."&";
+				$UrlOption.= "MailTo=".$RS2_DATA["researchProjectAffiliationEmail"]."";
+			}
+
+		}
+		
+		$command_sh = $wget_command." ".$Url." --post-data \"".$UrlOption."\"";
+		//echo($command_sh);
+		executeBackgroundProces($command_sh);
+
+	}
+}	
+
+
+function Mail2RenewalConsiderAlert($MailSettings,$Consider) {
+
+	global $hostname_www,$wget_command;
+
+
+	if(strpos($Consider["researchConsiderName"],$Consider["researchConsiderValue"]."/")  !== false){
+	
+
+		$SQLCommand = "SELECT * FROM researchRenewal WHERE (id = '".$Consider["researchRenewalID"]."')";
+		
+		$RS1 = CustomQuery($SQLCommand);
+		if ($RS1_DATA = db_fetch_array($RS1)) {
+
+
+			$SQLCommand = "SELECT * FROM researchScholarshipProposal WHERE (id = '".$RS1_DATA["researchProjectID"]."')";
+			
+			$RS2 = CustomQuery($SQLCommand);
+			if ($RS2_DATA = db_fetch_array($RS2)) {
+
+
+				$Url = "http://".$hostname_www."/script/mail2AlertProject.php";
+				$UrlOption.= "ConsiderID=".urlencode($Consider["id"])."&";
+				$UrlOption.= "researchProjectNameThai=".urlencode($RS2_DATA["researchProjectNameThai"])."&";
+				$UrlOption.= "researchProjectHeadName=".urlencode($RS2_DATA["researchProjectHeadName"])."&";
+				$UrlOption.= "processName=".urlencode($Consider["processName"])."&";
+				$UrlOption.= "stepName=".urlencode($Consider["stepName"])."&";
+				$UrlOption.= "researchRegisterDesc=".urlencode($Consider["researchRegisterDesc"])."&";
+				$UrlOption.= "researchConsiderValue=".urlencode($Consider["researchConsiderValue"])."&";
+				$UrlOption.= "SMTPSecure=".urlencode($MailSettings["SMTPSecure"])."&";
+				$UrlOption.= "strSMTPServer=".urlencode($MailSettings["strSMTPServer"])."&";
+				$UrlOption.= "strSMTPPort=".urlencode($MailSettings["strSMTPPort"])."&";
+				$UrlOption.= "strSMTPUser=".urlencode($MailSettings["strSMTPUser"])."&";
+				$UrlOption.= "strSMTPPassword=".urlencode($MailSettings["strSMTPPassword"])."&";
+				$UrlOption.= "MailTo=".$RS2_DATA["researchProjectAffiliationEmail"]."";
+			}
+
+		}
+		
+		$command_sh = $wget_command." ".$Url." --post-data \"".$UrlOption."\"";
+		//echo($command_sh);
+		executeBackgroundProces($command_sh);
+
+	}
 }	
 
 
@@ -88,6 +222,7 @@ function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 					$SQLCommand .= "researchRegisterDesc,";
 					$SQLCommand .= "researchRegisterDescCheck,";
 					$SQLCommand .= "researchConsiderName,";
+					$SQLCommand .= "researchConsiderGroupAuthorized,";
 					$SQLCommand .= "entryUserName,";
 					$SQLCommand .= "entryTime ";					
 					
@@ -102,7 +237,7 @@ function ScholarshipConsiderInsert($PROJECT_ID,$REGISTER_ID){
 					$SQLCommand .= "'".$RS3_DATA["researchRegisterDesc"]."',";
 
 					$SQLCommand .= "'".$RS3_DATA["researchConsiderName"]."',";
-
+					$SQLCommand .= "'".$RS3_DATA["researchConsiderGroupAuthorized"]."',";
 					$SQLCommand .= "'".$_SESSION["UserName"]."',";
 					$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
 
@@ -205,6 +340,7 @@ function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
 						$SQLCommand .= "researchRegisterDesc,";
 						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
+						$SQLCommand .= "researchConsiderGroupAuthorized,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
 						
@@ -220,6 +356,7 @@ function DisburseConsiderInsert($PROJECT_ID,$DISBURSE_ID){
 						$SQLCommand .= "'".$RS4_DATA["researchRegisterDesc"]."',";
 
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+						$SQLCommand .= "'".$RS4_DATA["researchConsiderGroupAuthorized"]."',";
 						$SQLCommand .= "'".$_SESSION["UserName"]."',";
 						$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
 
@@ -323,6 +460,7 @@ function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 						$SQLCommand .= "researchRegisterDesc,";
 						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
+						$SQLCommand .= "researchConsiderGroupAuthorized,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
 						
@@ -339,6 +477,7 @@ function AppointmentConsiderInsert($PROJECT_ID,$APPPOINTMENT_ID){
 
 
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+						$SQLCommand .= "'".$RS4_DATA["researchConsiderGroupAuthorized"]."',";
 						$SQLCommand .= "'".$_SESSION["UserName"]."',";
 						$SQLCommand .= "'".strftime("%Y-%m-%d %H:%M:%S")."');";
 
@@ -442,6 +581,7 @@ function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
 						$SQLCommand .= "researchRegisterDesc,";
 						$SQLCommand .= "researchRegisterDescCheck,";
 						$SQLCommand .= "researchConsiderName,";
+						$SQLCommand .= "researchConsiderGroupAuthorized,";
 						$SQLCommand .= "entryUserName,";
 						$SQLCommand .= "entryTime ";					
 						
@@ -459,6 +599,7 @@ function RenewalConsiderInsert($PROJECT_ID,$RENEWAL_ID){
 
 
 						$SQLCommand .= "'".$RS4_DATA["researchConsiderName"]."',";
+						$SQLCommand .= "'".$RS4_DATA["researchConsiderGroupAuthorized"]."',";
 						$SQLCommand .= "'".$RS4_DATA["entryUserName"]."',";
 						$SQLCommand .= "'".$RS4_DATA["entryTime"]."');";
 
@@ -760,6 +901,42 @@ function DisburseCalStatus($ProjectID) {
 		return $ConsiderArray;
 
 }
+
+
+
+function DisburseCalStatusAll($DisburseID) {
+
+
+			$SQLCommand = "SELECT * FROM researchDisburseConsider WHERE (researchDisburseID=".$DisburseID.") ORDER BY researchConsiderNumber";
+
+			$RS1 = CustomQuery($SQLCommand);
+			while ($RS1_DATA = db_fetch_array($RS1)) {
+
+				$SQLCommand = "SELECT * FROM considerChoice ";
+				$SQLCommand .= "WHERE (ChoiceName = '".$RS1_DATA["researchConsiderValue"]."') ";
+				$SQLCommand .= "AND   (ConsiderID = '".$RS1_DATA["id"]."') ";
+				$SQLCommand .= "AND   (ChoiceType = 'researchDisburseConsider') ";
+				$SQLCommand .= "AND   (ChoiceValue ='true') ";
+
+				$RS2 = CustomQuery($SQLCommand);
+				if ($RS2_DATA = db_fetch_array($RS2)) {
+
+					$stepName = $RS1_DATA["stepName"];
+					$researchConsiderValue = $RS1_DATA["researchConsiderValue"]; 
+
+				}
+
+
+			}
+				$SQLCommand  = "UPDATE researchOperatingPeriod SET ";
+				$SQLCommand .= "researchProjectDisburseStatus = '".$stepName." [".$researchConsiderValue."]' ";
+
+				$SQLCommand .= "WHERE (id = ".$DisburseID.")";
+
+				CustomQuery($SQLCommand);
+}
+
+
 
 
 function AppointmentCalStatus($ProjectID) {

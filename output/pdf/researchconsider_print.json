@@ -82,6 +82,9 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
+										{BEGIN col_grid_8}
+					"%",
+					{END col_grid_8}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -360,7 +363,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchConsider researchConsiderName }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
+			{"text":"{$jslabel researchConsider researchConsiderName }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -386,7 +389,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchConsider entryUserName }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel researchConsider entryUserName }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -412,7 +415,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchConsider entryTime }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel researchConsider entryTime }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -420,6 +423,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field7}
+																							{BEGIN cellblock_grid_headcell_field8}
+{
+	cellId: 'headcell_field8',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel researchConsider researchConsiderGroupAuthorized }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchConsiderGroupAuthorized_align}',
+  },
+
+{END cellblock_grid_headcell_field8}
 											],
 				{END row_grid_0}
 		
@@ -637,6 +666,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field7}
+																							{BEGIN cellblock_grid_cell_field8}
+{
+	cellId: 'cell_field8',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$researchConsiderGroupAuthorized_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchConsiderGroupAuthorized_align}',
+  },
+
+{END cellblock_grid_cell_field8}
 											],
 				{END row_grid_1}
 		
@@ -838,6 +893,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field7}
+																							{BEGIN cellblock_grid_footcell_field8}
+{
+	cellId: 'footcell_field8',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field8}
 											],
 				{END row_grid_2}
 		

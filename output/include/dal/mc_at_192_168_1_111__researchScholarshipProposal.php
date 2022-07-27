@@ -8,6 +8,7 @@ $dalTableresearchScholarshipProposal["researchProjectNameThai"] = array("type"=>
 $dalTableresearchScholarshipProposal["researchProjectNameEng"] = array("type"=>200,"varname"=>"researchProjectNameEng", "name" => "researchProjectNameEng");
 $dalTableresearchScholarshipProposal["researchProjectPeriodYear"] = array("type"=>2,"varname"=>"researchProjectPeriodYear", "name" => "researchProjectPeriodYear");
 $dalTableresearchScholarshipProposal["researchProjectPeriodMonth"] = array("type"=>2,"varname"=>"researchProjectPeriodMonth", "name" => "researchProjectPeriodMonth");
+$dalTableresearchScholarshipProposal["researchProjectStartDate"] = array("type"=>7,"varname"=>"researchProjectStartDate", "name" => "researchProjectStartDate");
 $dalTableresearchScholarshipProposal["researchProjectEndDate"] = array("type"=>7,"varname"=>"researchProjectEndDate", "name" => "researchProjectEndDate");
 $dalTableresearchScholarshipProposal["researchOperatingPeriodEndDate"] = array("type"=>7,"varname"=>"researchOperatingPeriodEndDate", "name" => "researchOperatingPeriodEndDate");
 $dalTableresearchScholarshipProposal["researchProjectRequestedBudget"] = array("type"=>5,"varname"=>"researchProjectRequestedBudget", "name" => "researchProjectRequestedBudget");
@@ -15,7 +16,9 @@ $dalTableresearchScholarshipProposal["researchProjectDepartment"] = array("type"
 $dalTableresearchScholarshipProposal["researchProjectMainField"] = array("type"=>200,"varname"=>"researchProjectMainField", "name" => "researchProjectMainField");
 $dalTableresearchScholarshipProposal["researchProjectSubField"] = array("type"=>200,"varname"=>"researchProjectSubField", "name" => "researchProjectSubField");
 $dalTableresearchScholarshipProposal["researchProjectHeadName"] = array("type"=>200,"varname"=>"researchProjectHeadName", "name" => "researchProjectHeadName");
+$dalTableresearchScholarshipProposal["researchProjectAffiliationPrefixName"] = array("type"=>200,"varname"=>"researchProjectAffiliationPrefixName", "name" => "researchProjectAffiliationPrefixName");
 $dalTableresearchScholarshipProposal["researchProjectAffiliationName"] = array("type"=>200,"varname"=>"researchProjectAffiliationName", "name" => "researchProjectAffiliationName");
+$dalTableresearchScholarshipProposal["researchProjectAffiliationPosition"] = array("type"=>200,"varname"=>"researchProjectAffiliationPosition", "name" => "researchProjectAffiliationPosition");
 $dalTableresearchScholarshipProposal["researchProjectSubAffiliationName"] = array("type"=>200,"varname"=>"researchProjectSubAffiliationName", "name" => "researchProjectSubAffiliationName");
 $dalTableresearchScholarshipProposal["researchProjectAffiliationMobile"] = array("type"=>200,"varname"=>"researchProjectAffiliationMobile", "name" => "researchProjectAffiliationMobile");
 $dalTableresearchScholarshipProposal["researchProjectAffiliationTelephone"] = array("type"=>200,"varname"=>"researchProjectAffiliationTelephone", "name" => "researchProjectAffiliationTelephone");
@@ -34,6 +37,14 @@ $dalTableresearchScholarshipProposal["projectStatusDesc"] = array("type"=>200,"v
 $dalTableresearchScholarshipProposal["projectStatus"] = array("type"=>200,"varname"=>"projectStatus", "name" => "projectStatus");
 $dalTableresearchScholarshipProposal["trackingProjectDesc"] = array("type"=>200,"varname"=>"trackingProjectDesc", "name" => "trackingProjectDesc");
 $dalTableresearchScholarshipProposal["trackingProjectDescResult"] = array("type"=>200,"varname"=>"trackingProjectDescResult", "name" => "trackingProjectDescResult");
+$dalTableresearchScholarshipProposal["geographiesID"] = array("type"=>3,"varname"=>"geographiesID", "name" => "geographiesID");
+$dalTableresearchScholarshipProposal["geographiesName"] = array("type"=>200,"varname"=>"geographiesName", "name" => "geographiesName");
+$dalTableresearchScholarshipProposal["provincesID"] = array("type"=>3,"varname"=>"provincesID", "name" => "provincesID");
+$dalTableresearchScholarshipProposal["provincesName"] = array("type"=>200,"varname"=>"provincesName", "name" => "provincesName");
+$dalTableresearchScholarshipProposal["districtsID"] = array("type"=>3,"varname"=>"districtsID", "name" => "districtsID");
+$dalTableresearchScholarshipProposal["districtsName"] = array("type"=>200,"varname"=>"districtsName", "name" => "districtsName");
+$dalTableresearchScholarshipProposal["amphuresID"] = array("type"=>3,"varname"=>"amphuresID", "name" => "amphuresID");
+$dalTableresearchScholarshipProposal["amphuresName"] = array("type"=>200,"varname"=>"amphuresName", "name" => "amphuresName");
 $dalTableresearchScholarshipProposal["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchScholarshipProposal["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchScholarshipProposal["id"]["key"]=true;

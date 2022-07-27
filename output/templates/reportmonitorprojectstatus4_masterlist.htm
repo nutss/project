@@ -32,7 +32,15 @@
 	
 ">
 		{BEGIN firstAboveGridCell}
-				{END firstAboveGridCell}	
+		 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							{mlang_message INLINE_ADD}			</a>
+</span>
+{END inlineadd_link}
+			{END firstAboveGridCell}	
 	</div>					</div>
 	</div>		
 {END above-grid_block}
@@ -58,6 +66,23 @@
 								r-gridrow
 							">
 				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportmonitorprojectstatus4_masterlist"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
 					{BEGIN cellblock_grid_headcell_field}
 	<th
 	
@@ -75,7 +100,7 @@
 	 
 		{BEGIN projectStatusName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatusName" data-fieldname="projectStatusName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatusName" data-fieldname="projectStatusName">
 	{$label ReportMonitorProjectStatus4 projectStatusName }	</span>
 {END projectStatusName_fieldheadercolumn}
 
@@ -100,13 +125,38 @@
 	 
 		{BEGIN projectStatusCount_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatusCount" data-fieldname="projectStatusCount">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="projectStatusCount" data-fieldname="projectStatusCount">
 	{$label ReportMonitorProjectStatus4 projectStatusCount }	</span>
 {END projectStatusCount_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
+	{$label ReportMonitorProjectStatus4 id }	</span>
+{END id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
 							</tr>
 					 
 					 
@@ -122,6 +172,32 @@
 								
 								r-gridrow
 							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportmonitorprojectstatus4_masterlist"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="{mlang_message CANCEL}" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="{mlang_message CANCEL}" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
 				 
 					{BEGIN cellblock_grid_cell_field}
 	<td
@@ -168,6 +244,29 @@
 {END projectStatusCount_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id" data-default-width >
+{$id_value}
+</span>
+{END id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
 							</tr>
 					 
 					
@@ -183,6 +282,22 @@
 									
 								r-gridrow
 							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
 				 
 					{BEGIN cellblock_grid_footcell_field}
 	<td
@@ -215,6 +330,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reportmonitorprojectstatus4_masterlist"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
 							</tr>
 					
 					</tfoot>

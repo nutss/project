@@ -64,6 +64,12 @@ pdfDocument = {
 										{BEGIN col_grid_1}
 					"%",
 					{END col_grid_1}
+										{BEGIN col_grid_2}
+					"%",
+					{END col_grid_2}
+										{BEGIN col_grid_3}
+					"%",
+					{END col_grid_3}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -164,8 +170,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"text":"","hidden":"{$item_hide_inline_add}"},
+				
+		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
   },
@@ -186,7 +194,31 @@ pdfDocument = {
 				
 				{BEGIN row_grid_0}
 				[
-																{BEGIN cellblock_grid_headcell_field}
+																{BEGIN cellblock_grid_headcell_icons}
+{
+	cellId: 'headcell_icons',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_headcell_icons}
+																							{BEGIN cellblock_grid_headcell_field}
 {
 	cellId: 'headcell_field',
 	col:0,
@@ -204,7 +236,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ReportMonitorProjectStatus3 projectStatusName }","hidden":"{$item_hide_simple_grid_field2}","bold":true},
+			{"text":"{$jslabel ReportMonitorProjectStatus3 projectStatusName }","hidden":"{$item_hide_simple_grid_field3}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -230,7 +262,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ReportMonitorProjectStatus3 projectStatusCount }","hidden":"{$item_hide_simple_grid_field3}","bold":true},
+			{"text":"{$jslabel ReportMonitorProjectStatus3 projectStatusCount }","hidden":"{$item_hide_simple_grid_field4}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -238,6 +270,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field1}
+																							{BEGIN cellblock_grid_headcell_field2}
+{
+	cellId: 'headcell_field2',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel ReportMonitorProjectStatus3 id }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_headcell_field2}
 											],
 				{END row_grid_0}
 		
@@ -247,7 +305,33 @@ pdfDocument = {
 				
 				{BEGIN row_grid_1}
 				[
-																{BEGIN cellblock_grid_cell_field}
+																{BEGIN cellblock_grid_cell_icons}
+{
+	cellId: 'cell_icons',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_icons}
+																							{BEGIN cellblock_grid_cell_field}
 {
 	cellId: 'cell_field',
 	col:0,
@@ -299,6 +383,32 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field1}
+																							{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$id_pdfvalue},"hidden":"{$item_hide_simple_grid_field2}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_cell_field2}
 											],
 				{END row_grid_1}
 		
@@ -308,7 +418,31 @@ pdfDocument = {
 					
 				{BEGIN row_grid_2}
 				[
-																{BEGIN cellblock_grid_footcell_field}
+																{BEGIN cellblock_grid_footcell_icons}
+{
+	cellId: 'footcell_icons',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_icons}
+																							{BEGIN cellblock_grid_footcell_field}
 {
 	cellId: 'footcell_field',
 	col:0,
@@ -356,6 +490,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field1}
+																							{BEGIN cellblock_grid_footcell_field2}
+{
+	cellId: 'footcell_field2',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field2}
 											],
 				{END row_grid_2}
 		

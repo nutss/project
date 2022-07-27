@@ -430,25 +430,61 @@ class Chart
 			return true;
 		if("considerChoice" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchConsider" == $this->chrt_array['tables'][0])
-			return true;
 		if("project_uggroups" == $this->chrt_array['tables'][0])
 			return true;
 		if("statusType" == $this->chrt_array['tables'][0])
 			return true;
 		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
 			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+			return true;
+		if("ReportMonitor" == $this->chrt_array['tables'][0])
+			return true;
+		if("researchScholarshipRegister" == $this->chrt_array['tables'][0])
+			return true;
+		if("missionFollow" == $this->chrt_array['tables'][0])
+			return true;
+		if("missionFollow" == $this->chrt_array['tables'][0])
+			return true;
 		if("" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+		if("researcher" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+		if("researcher" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+		if("optionSub" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+		if("researchTypeGroup" == $this->chrt_array['tables'][0])
 			return true;
-		if("researchScholarshipProposal" == $this->chrt_array['tables'][0])
+		if("researchTypeGroup" == $this->chrt_array['tables'][0])
+			return true;
+		if("geographies" == $this->chrt_array['tables'][0])
+			return true;
+		if("provinces" == $this->chrt_array['tables'][0])
+			return true;
+		if("districts" == $this->chrt_array['tables'][0])
+			return true;
+		if("amphures" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

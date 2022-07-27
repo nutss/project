@@ -1,0 +1,5 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● researchAppointmentConsider:
+		 + researchConsiderGroupAuthorized
+	● researchRenewalConsider:
+		 + researchConsiderGroupAuthorized

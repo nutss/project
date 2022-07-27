@@ -105,9 +105,6 @@ pdfDocument = {
 			{"text":"","background":"#B22222","hidden":"{$item_hide_welcome_item}"},
 				
 				
-			{"text":"","background":"#3CB371","hidden":"{$item_hide_welcome_item1}"},
-				
-				
 			{"text":"","background":"#EDCA00","hidden":"{$item_hide_welcome_item2}"},
 				
 				
@@ -121,6 +118,66 @@ pdfDocument = {
 				
 				
 			{"text":"","background":"#4169E1","hidden":"{$item_hide_welcome_item6}"},
+				
+				
+			{"text":"","background":"#E07878","hidden":"{$item_hide_welcome_item7}"},
+				
+				
+			{"text":"","background":"#6B8E23","hidden":"{$item_hide_welcome_item8}"},
+				
+				
+			{"text":"","background":"#BC8F8F","hidden":"{$item_hide_welcome_item9}"},
+				
+				
+			{"text":"","background":"#8FBC8B","hidden":"{$item_hide_welcome_item10}"},
+				
+				
+			{"text":"","background":"#9ACD32","hidden":"{$item_hide_welcome_item11}"},
+				
+				
+			{"text":"","background":"#E67349","hidden":"{$item_hide_welcome_item12}"},
+				
+				
+			{"text":"","background":"#778899","hidden":"{$item_hide_welcome_item13}"},
+				
+				
+			{"text":"","background":"#4169E1","hidden":"{$item_hide_welcome_item14}"},
+				
+				
+			{"text":"","background":"#EDCA00","hidden":"{$item_hide_welcome_item1}"},
+				
+				
+			{"text":"","background":"#008B8B","hidden":"{$item_hide_welcome_item16}"},
+				
+				
+			{"text":"","background":"#D2691E","hidden":"{$item_hide_welcome_item17}"},
+				
+				
+			{"text":"","background":"#DC143C","hidden":"{$item_hide_welcome_item15}"},
+				
+				
+			{"text":"","background":"#6493EA","hidden":"{$item_hide_welcome_item18}"},
+				
+				
+			{"text":"","background":"#CD853F","hidden":"{$item_hide_welcome_item19}"},
+				
+				
+			{"text":"","background":"#CD5C5C","hidden":"{$item_hide_welcome_item20}"},
+				
+				
+			{"text":"","background":"#2F4F4F","hidden":"{$item_hide_welcome_item21}"},
+				
+				
+			{"text":"","background":"#9ACD32","hidden":"{$item_hide_welcome_item22}"},
+				
+				
+			{"text":"","background":"#B22222","hidden":"{$item_hide_welcome_item23}"},
+				
+				
+			{"text":"","background":"#B22222","hidden":"{$item_hide_welcome_item24}"},
+				
+				
+			{"text":"","background":"#5F9EA0","hidden":"{$item_hide_welcome_item25}"},
 				
 		  ],
   "border": [ false, false, false, false ],

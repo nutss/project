@@ -112,6 +112,9 @@ pdfDocument = {
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_export_field4}"},
 				
+				
+			{"text":{$optionGroupNumber_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

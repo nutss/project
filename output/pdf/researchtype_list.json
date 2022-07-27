@@ -229,8 +229,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"text":"","hidden":"{$item_hide_grid_checkbox_head}"},
+				
+		  ],
   "border": [ true, true, true, true ],
               "alignment": 'left',
   },

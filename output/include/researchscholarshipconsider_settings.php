@@ -64,6 +64,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsresearchscholarshipconsider["English"]["researchRegisterDescCheck"] = "Research Register Desc Check";
 	$fieldToolTipsresearchscholarshipconsider["English"]["researchRegisterDescCheck"] = "";
 	$placeHoldersresearchscholarshipconsider["English"]["researchRegisterDescCheck"] = "";
+	$fieldLabelsresearchscholarshipconsider["English"]["researchConsiderGroupAuthorized"] = "Research Consider Group Authorized";
+	$fieldToolTipsresearchscholarshipconsider["English"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchscholarshipconsider["English"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchscholarshipconsider["English"]))
 		$tdataresearchscholarshipconsider[".isUseToolTips"] = true;
 }
@@ -94,7 +97,7 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchscholarshipconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
 	$fieldToolTipsresearchscholarshipconsider["Thai"]["researchRegisterDesc"] = "";
 	$placeHoldersresearchscholarshipconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
-	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
+	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderName"] = "ชื่อการดำเนินงาน";
 	$fieldToolTipsresearchscholarshipconsider["Thai"]["researchConsiderName"] = "";
 	$placeHoldersresearchscholarshipconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
 	$fieldLabelsresearchscholarshipconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
@@ -103,7 +106,7 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchscholarshipconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchscholarshipconsider["Thai"]["entryTime"] = "";
 	$placeHoldersresearchscholarshipconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
-	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderValue"] = "การพิจารณา";
+	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderValue"] = "การดำเนินงาน";
 	$fieldToolTipsresearchscholarshipconsider["Thai"]["researchConsiderValue"] = "";
 	$placeHoldersresearchscholarshipconsider["Thai"]["researchConsiderValue"] = "ค่าการพิจารณา";
 	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderFileCheck"] = "ตรวจสอบเอกสารแนบ";
@@ -112,6 +115,9 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchscholarshipconsider["Thai"]["researchRegisterDescCheck"] = "ตรวจสอบหมายเหตุ";
 	$fieldToolTipsresearchscholarshipconsider["Thai"]["researchRegisterDescCheck"] = "";
 	$placeHoldersresearchscholarshipconsider["Thai"]["researchRegisterDescCheck"] = "";
+	$fieldLabelsresearchscholarshipconsider["Thai"]["researchConsiderGroupAuthorized"] = "กลุ่มผู้ใช้งาน";
+	$fieldToolTipsresearchscholarshipconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchscholarshipconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchscholarshipconsider["Thai"]))
 		$tdataresearchscholarshipconsider[".isUseToolTips"] = true;
 }
@@ -211,7 +217,7 @@ $tdataresearchscholarshipconsider[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdataresearchscholarshipconsider[".ajaxCodeSnippetAdded"] = false;
 
@@ -242,6 +248,7 @@ $tdataresearchscholarshipconsider[".googleLikeFields"][] = "researchRegisterDesc
 $tdataresearchscholarshipconsider[".googleLikeFields"][] = "researchRegisterDescCheck";
 $tdataresearchscholarshipconsider[".googleLikeFields"][] = "researchConsiderName";
 $tdataresearchscholarshipconsider[".googleLikeFields"][] = "researchConsiderValue";
+$tdataresearchscholarshipconsider[".googleLikeFields"][] = "researchConsiderGroupAuthorized";
 $tdataresearchscholarshipconsider[".googleLikeFields"][] = "entryUserName";
 $tdataresearchscholarshipconsider[".googleLikeFields"][] = "entryTime";
 
@@ -271,13 +278,15 @@ $tdataresearchscholarshipconsider[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY researchConsiderNumber";
 $tdataresearchscholarshipconsider[".strOrderBy"] = $tstrOrderBy;
 
 $tdataresearchscholarshipconsider[".orderindexes"] = array();
+	$tdataresearchscholarshipconsider[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "researchConsiderNumber");
 
 
-$tdataresearchscholarshipconsider[".sqlHead"] = "SELECT id,  	researchProjectID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
+
+$tdataresearchscholarshipconsider[".sqlHead"] = "SELECT id,  	researchProjectID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $tdataresearchscholarshipconsider[".sqlFrom"] = "FROM researchScholarshipConsider";
 $tdataresearchscholarshipconsider[".sqlWhereExpr"] = "";
 $tdataresearchscholarshipconsider[".sqlTail"] = "";
@@ -1864,10 +1873,145 @@ $tdataresearchscholarshipconsider[".hideMobileList"] = array();
 
 	$tdataresearchscholarshipconsider["researchConsiderValue"] = $fdata;
 		$tdataresearchscholarshipconsider[".searchableFields"][] = "researchConsiderValue";
-//	entryUserName
+//	researchConsiderGroupAuthorized
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 12;
+	$fdata["strName"] = "researchConsiderGroupAuthorized";
+	$fdata["GoodName"] = "researchConsiderGroupAuthorized";
+	$fdata["ownerTable"] = "researchScholarshipConsider";
+	$fdata["Label"] = GetFieldLabel("researchScholarshipConsider","researchConsiderGroupAuthorized");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchConsiderGroupAuthorized";
+
+		$fdata["sourceSingle"] = "researchConsiderGroupAuthorized";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchConsiderGroupAuthorized";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchscholarshipconsider["researchConsiderGroupAuthorized"] = $fdata;
+		$tdataresearchscholarshipconsider[".searchableFields"][] = "researchConsiderGroupAuthorized";
+//	entryUserName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchScholarshipConsider";
@@ -2003,7 +2147,7 @@ $tdataresearchscholarshipconsider[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchScholarshipConsider";
@@ -2195,10 +2339,10 @@ function createSqlQuery_researchscholarshipconsider()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchProjectID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	researchProjectID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchScholarshipConsider";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY researchConsiderNumber";
 	
 				;
 			$proto0["cipherer"] = null;
@@ -2391,12 +2535,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchConsiderGroupAuthorized",
 	"m_strTable" => "researchScholarshipConsider",
 	"m_srcTableName" => "researchScholarshipConsider"
 ));
 
-$proto28["m_sql"] = "entryUserName";
+$proto28["m_sql"] = "researchConsiderGroupAuthorized";
 $proto28["m_srcTableName"] = "researchScholarshipConsider";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -2405,65 +2549,93 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "researchScholarshipConsider",
 	"m_srcTableName" => "researchScholarshipConsider"
 ));
 
-$proto30["m_sql"] = "entryTime";
+$proto30["m_sql"] = "entryUserName";
 $proto30["m_srcTableName"] = "researchScholarshipConsider";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
 $obj = new SQLFieldListItem($proto30);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto32=array();
-$proto32["m_link"] = "SQLL_MAIN";
-			$proto33=array();
-$proto33["m_strName"] = "researchScholarshipConsider";
-$proto33["m_srcTableName"] = "researchScholarshipConsider";
-$proto33["m_columns"] = array();
-$proto33["m_columns"][] = "id";
-$proto33["m_columns"][] = "researchProjectID";
-$proto33["m_columns"][] = "researchConsiderNumber";
-$proto33["m_columns"][] = "processName";
-$proto33["m_columns"][] = "stepName";
-$proto33["m_columns"][] = "researchConsiderFile";
-$proto33["m_columns"][] = "researchConsiderFileCheck";
-$proto33["m_columns"][] = "researchRegisterDesc";
-$proto33["m_columns"][] = "researchRegisterDescCheck";
-$proto33["m_columns"][] = "researchConsiderName";
-$proto33["m_columns"][] = "researchConsiderValue";
-$proto33["m_columns"][] = "entryUserName";
-$proto33["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto33);
+						$proto32=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchScholarshipConsider",
+	"m_srcTableName" => "researchScholarshipConsider"
+));
 
-$proto32["m_table"] = $obj;
-$proto32["m_sql"] = "researchScholarshipConsider";
-$proto32["m_alias"] = "";
+$proto32["m_sql"] = "entryTime";
 $proto32["m_srcTableName"] = "researchScholarshipConsider";
-$proto34=array();
-$proto34["m_sql"] = "";
-$proto34["m_uniontype"] = "SQLL_UNKNOWN";
+$proto32["m_expr"]=$obj;
+$proto32["m_alias"] = "";
+$obj = new SQLFieldListItem($proto32);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto34=array();
+$proto34["m_link"] = "SQLL_MAIN";
+			$proto35=array();
+$proto35["m_strName"] = "researchScholarshipConsider";
+$proto35["m_srcTableName"] = "researchScholarshipConsider";
+$proto35["m_columns"] = array();
+$proto35["m_columns"][] = "id";
+$proto35["m_columns"][] = "researchProjectID";
+$proto35["m_columns"][] = "researchConsiderNumber";
+$proto35["m_columns"][] = "processName";
+$proto35["m_columns"][] = "stepName";
+$proto35["m_columns"][] = "researchConsiderFile";
+$proto35["m_columns"][] = "researchConsiderFileCheck";
+$proto35["m_columns"][] = "researchRegisterDesc";
+$proto35["m_columns"][] = "researchRegisterDescCheck";
+$proto35["m_columns"][] = "researchConsiderName";
+$proto35["m_columns"][] = "researchConsiderValue";
+$proto35["m_columns"][] = "researchConsiderGroupAuthorized";
+$proto35["m_columns"][] = "entryUserName";
+$proto35["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto35);
+
+$proto34["m_table"] = $obj;
+$proto34["m_sql"] = "researchScholarshipConsider";
+$proto34["m_alias"] = "";
+$proto34["m_srcTableName"] = "researchScholarshipConsider";
+$proto36=array();
+$proto36["m_sql"] = "";
+$proto36["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto34["m_column"]=$obj;
-$proto34["m_contained"] = array();
-$proto34["m_strCase"] = "";
-$proto34["m_havingmode"] = false;
-$proto34["m_inBrackets"] = false;
-$proto34["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto34);
+$proto36["m_column"]=$obj;
+$proto36["m_contained"] = array();
+$proto36["m_strCase"] = "";
+$proto36["m_havingmode"] = false;
+$proto36["m_inBrackets"] = false;
+$proto36["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto36);
 
-$proto32["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto32);
+$proto34["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto34);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto38=array();
+						$obj = new SQLField(array(
+	"m_strName" => "researchConsiderNumber",
+	"m_strTable" => "researchScholarshipConsider",
+	"m_srcTableName" => "researchScholarshipConsider"
+));
+
+$proto38["m_column"]=$obj;
+$proto38["m_bAsc"] = 1;
+$proto38["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto38);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="researchScholarshipConsider";		
 $obj = new SQLQuery($proto0);
 
@@ -2475,7 +2647,7 @@ $queryData_researchscholarshipconsider = createSqlQuery_researchscholarshipconsi
 	
 				;
 
-													
+														
 
 $tdataresearchscholarshipconsider[".sqlquery"] = $queryData_researchscholarshipconsider;
 

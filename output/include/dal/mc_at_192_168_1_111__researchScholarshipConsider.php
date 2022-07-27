@@ -11,6 +11,7 @@ $dalTableresearchScholarshipConsider["researchRegisterDesc"] = array("type"=>201
 $dalTableresearchScholarshipConsider["researchRegisterDescCheck"] = array("type"=>200,"varname"=>"researchRegisterDescCheck", "name" => "researchRegisterDescCheck");
 $dalTableresearchScholarshipConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
 $dalTableresearchScholarshipConsider["researchConsiderValue"] = array("type"=>200,"varname"=>"researchConsiderValue", "name" => "researchConsiderValue");
+$dalTableresearchScholarshipConsider["researchConsiderGroupAuthorized"] = array("type"=>200,"varname"=>"researchConsiderGroupAuthorized", "name" => "researchConsiderGroupAuthorized");
 $dalTableresearchScholarshipConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchScholarshipConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchScholarshipConsider["id"]["key"]=true;

@@ -1,0 +1,550 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-chart" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="340px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message EXPAND}" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			{mlang_message SEARCH_IN}			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>{mlang_message SEARCH_SHOW_OPTIONS_BUTTON}</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>{mlang_message SEARCH_ALL_CONDITIONS}</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>{mlang_message SEARCH_ANY_CONDITIONS}</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>{mlang_message HIDE}</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_missionFollowID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowID}" {$filterRow_attrs_missionFollowID}>
+			<label>{$label ReportGraphmissionFollow missionFollowID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowID}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowID}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus7}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus7}" {$filterRow_attrs_missionFollowActionStatus7}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus7 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus7}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus7}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus7}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus7}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus6}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus6}" {$filterRow_attrs_missionFollowActionStatus6}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus6 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus6}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus6}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus6}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus6}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus5}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus5}" {$filterRow_attrs_missionFollowActionStatus5}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus5 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus5}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus5}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus5}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus5}
+																{BEGIN searchCtrlBlock_missionAssignmentResponsibleName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionAssignmentResponsibleName}" {$filterRow_attrs_missionAssignmentResponsibleName}>
+			<label>{$label ReportGraphmissionFollow missionAssignmentResponsibleName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionAssignmentResponsibleName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionAssignmentResponsibleName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionAssignmentResponsibleName}</span>
+						</div>
+		{END searchCtrlBlock_missionAssignmentResponsibleName}
+																{BEGIN searchCtrlBlock_missionFollowName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowName}" {$filterRow_attrs_missionFollowName}>
+			<label>{$label ReportGraphmissionFollow missionFollowName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowName}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowName}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus4}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus4}" {$filterRow_attrs_missionFollowActionStatus4}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus4 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus4}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus4}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus4}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus4}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus3}" {$filterRow_attrs_missionFollowActionStatus3}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus3}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus3}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus2}" {$filterRow_attrs_missionFollowActionStatus2}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus2}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus2}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus1}" {$filterRow_attrs_missionFollowActionStatus1}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus1}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus1}
+																{BEGIN searchCtrlBlock_missionFollowActionStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_missionFollowActionStatus}" {$filterRow_attrs_missionFollowActionStatus}>
+			<label>{$label ReportGraphmissionFollow missionFollowActionStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_missionFollowActionStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_missionFollowActionStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_missionFollowActionStatus}</span>
+						</div>
+		{END searchCtrlBlock_missionFollowActionStatus}
+																{BEGIN searchCtrlBlock_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id}" {$filterRow_attrs_id}>
+			<label>{$label ReportGraphmissionFollow id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id}</span>
+						</div>
+		{END searchCtrlBlock_id}
+																{BEGIN searchCtrlBlock_entryUserName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_entryUserName}" {$filterRow_attrs_entryUserName}>
+			<label>{$label ReportGraphmissionFollow entryUserName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_entryUserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_entryUserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_entryUserName}</span>
+						</div>
+		{END searchCtrlBlock_entryUserName}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>{mlang_message SEARCH}</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>{mlang_message SHOW_ALL}</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message COLLAPSE}" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message SHOW_MENU}" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="{mlang_message SHOW_ALL}">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="reportgraphmissionfollow_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		{mlang_message ADVANCED_SEARCH}		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		{mlang_message SHOW_SEARCH_PANEL}		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		{mlang_message HIDE_SEARCH_PANEL}		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>								{BEGIN EnglishLANGLINK}
+	<li><a href="#" data-lang="English" class="rnr-langlink">
+		{BEGIN EnglishLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END EnglishLANGLINK_ACTIVE}
+		English</a></li>
+	{END EnglishLANGLINK}
+	{BEGIN ThaiLANGLINK}
+	<li><a href="#" data-lang="Thai" class="rnr-langlink">
+		{BEGIN ThaiLANGLINK_ACTIVE}<span class="glyphicon glyphicon-ok">&nbsp;</span>{END ThaiLANGLINK_ACTIVE}
+		ไทย</a></li>
+	{END ThaiLANGLINK}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							{mlang_message LOGIN}			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		{mlang_message USERINFO}		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		{mlang_message LOG_OUT}		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		{mlang_message AA_ADMINAREA}		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		{mlang_message CHANGE_PASSWORD}		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="full">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+	{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table class="r-fluid r-form" data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr {$row_grid_0} >
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="grid_c1" data-pageid="{$pageid}">
+ 
+<div data-itemtype="chart" data-itemid="chart" {$item_chart} data-pageid="{$pageid}" data-page="reportgraphmissionfollow_chart" >
+{$chart reportgraphmissionfollow 530px}
+</div>
+  </td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

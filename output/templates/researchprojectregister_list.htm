@@ -178,19 +178,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_researchRegisterName}</span>
 						</div>
 		{END searchCtrlBlock_researchRegisterName}
-																{BEGIN searchCtrlBlock_researchRegisterFile}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_researchRegisterFile}" {$filterRow_attrs_researchRegisterFile}>
-			<label>{$label researchProjectRegister researchRegisterFile }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_researchRegisterFile}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_researchRegisterFile}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_researchRegisterFile}</span>
-						</div>
-		{END searchCtrlBlock_researchRegisterFile}
 																{BEGIN searchCtrlBlock_researchRegisterEndDate}
 
 
@@ -546,6 +533,9 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id"]:before {
+		content: "{$label researchProjectRegister id}";
+	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterNo"]:before {
 		content: "{$label researchProjectRegister researchRegisterNo}";
 	}
@@ -558,22 +548,13 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterEndDate"]:before {
 		content: "{$label researchProjectRegister researchRegisterEndDate}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterFile"]:before {
-		content: "{$label researchProjectRegister researchRegisterFile}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchType"]:before {
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchType"]:before {
 		content: "{$label researchProjectRegister researchType}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="researchRegisterStatus"]:before {
 		content: "{$label researchProjectRegister researchRegisterStatus}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
-		content: "{$label researchProjectRegister entryUserName}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryTime"]:before {
-		content: "{$label researchProjectRegister entryTime}";
-	}
-	}
+			}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -589,45 +570,28 @@
 								r-gridrow
 							">
 				 
-					{BEGIN cellblock_grid_headcell_field10}
-	<th
-	
-	{$cell_grid_headcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
-	
-	>
-
-	
-	</th>
-	{END cellblock_grid_headcell_field10}
-				 
 					{BEGIN cellblock_grid_headcell_field}
 	<th
 	
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterNo_class}
+		 r-ori-vert				{$id_class}
 			"
 
-			data-field="researchRegisterNo"
+			data-field="id"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterNo_fieldheadercolumn}
-	{BEGIN researchRegisterNo_fieldheader}
-	<SPAN {$researchRegisterNo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterNo" data-fieldname="researchRegisterNo">
-	{$label researchProjectRegister researchRegisterNo }	{$arrow_icon_researchRegisterNo}
+		{BEGIN id_fieldheadercolumn}
+	{BEGIN id_fieldheader}
+	<SPAN {$id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
+	{$label researchProjectRegister id }	{$arrow_icon_id}
 	</SPAN>
-	{END researchRegisterNo_fieldheader}
-{END researchRegisterNo_fieldheadercolumn}
+	{END id_fieldheader}
+{END id_fieldheadercolumn}
 
 	
 	</th>
@@ -639,22 +603,22 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterName_class}
+		 r-ori-vert				{$researchType_class}
 			"
 
-			data-field="researchRegisterName"
+			data-field="researchType"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterName_fieldheadercolumn}
-	{BEGIN researchRegisterName_fieldheader}
-	<SPAN {$researchRegisterName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterName" data-fieldname="researchRegisterName">
-	{$label researchProjectRegister researchRegisterName }	{$arrow_icon_researchRegisterName}
+		{BEGIN researchType_fieldheadercolumn}
+	{BEGIN researchType_fieldheader}
+	<SPAN {$researchType_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType">
+	{$label researchProjectRegister researchType }	{$arrow_icon_researchType}
 	</SPAN>
-	{END researchRegisterName_fieldheader}
-{END researchRegisterName_fieldheadercolumn}
+	{END researchType_fieldheader}
+{END researchType_fieldheadercolumn}
 
 	
 	</th>
@@ -666,22 +630,22 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterStartDate_class}
+		 r-ori-vert				{$researchRegisterNo_class}
 			"
 
-			data-field="researchRegisterStartDate"
+			data-field="researchRegisterNo"
 	
 	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterStartDate_fieldheadercolumn}
-	{BEGIN researchRegisterStartDate_fieldheader}
-	<SPAN {$researchRegisterStartDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStartDate" data-fieldname="researchRegisterStartDate">
-	{$label researchProjectRegister researchRegisterStartDate }	{$arrow_icon_researchRegisterStartDate}
+		{BEGIN researchRegisterNo_fieldheadercolumn}
+	{BEGIN researchRegisterNo_fieldheader}
+	<SPAN {$researchRegisterNo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterNo" data-fieldname="researchRegisterNo">
+	{$label researchProjectRegister researchRegisterNo }	{$arrow_icon_researchRegisterNo}
 	</SPAN>
-	{END researchRegisterStartDate_fieldheader}
-{END researchRegisterStartDate_fieldheadercolumn}
+	{END researchRegisterNo_fieldheader}
+{END researchRegisterNo_fieldheadercolumn}
 
 	
 	</th>
@@ -693,22 +657,22 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterEndDate_class}
+		 r-ori-vert				{$researchRegisterName_class}
 			"
 
-			data-field="researchRegisterEndDate"
+			data-field="researchRegisterName"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterEndDate_fieldheadercolumn}
-	{BEGIN researchRegisterEndDate_fieldheader}
-	<SPAN {$researchRegisterEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterEndDate" data-fieldname="researchRegisterEndDate">
-	{$label researchProjectRegister researchRegisterEndDate }	{$arrow_icon_researchRegisterEndDate}
+		{BEGIN researchRegisterName_fieldheadercolumn}
+	{BEGIN researchRegisterName_fieldheader}
+	<SPAN {$researchRegisterName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterName" data-fieldname="researchRegisterName">
+	{$label researchProjectRegister researchRegisterName }	{$arrow_icon_researchRegisterName}
 	</SPAN>
-	{END researchRegisterEndDate_fieldheader}
-{END researchRegisterEndDate_fieldheadercolumn}
+	{END researchRegisterName_fieldheader}
+{END researchRegisterName_fieldheadercolumn}
 
 	
 	</th>
@@ -720,22 +684,22 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterFile_class}
+		 r-ori-vert				{$researchRegisterStartDate_class}
 			"
 
-			data-field="researchRegisterFile"
+			data-field="researchRegisterStartDate"
 	
 	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterFile_fieldheadercolumn}
-	{BEGIN researchRegisterFile_fieldheader}
-	<SPAN {$researchRegisterFile_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterFile" data-fieldname="researchRegisterFile">
-	{$label researchProjectRegister researchRegisterFile }	{$arrow_icon_researchRegisterFile}
+		{BEGIN researchRegisterStartDate_fieldheadercolumn}
+	{BEGIN researchRegisterStartDate_fieldheader}
+	<SPAN {$researchRegisterStartDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStartDate" data-fieldname="researchRegisterStartDate">
+	{$label researchProjectRegister researchRegisterStartDate }	{$arrow_icon_researchRegisterStartDate}
 	</SPAN>
-	{END researchRegisterFile_fieldheader}
-{END researchRegisterFile_fieldheadercolumn}
+	{END researchRegisterStartDate_fieldheader}
+{END researchRegisterStartDate_fieldheadercolumn}
 
 	
 	</th>
@@ -747,22 +711,22 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchType_class}
+		 r-ori-vert				{$researchRegisterEndDate_class}
 			"
 
-			data-field="researchType"
+			data-field="researchRegisterEndDate"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchType_fieldheadercolumn}
-	{BEGIN researchType_fieldheader}
-	<SPAN {$researchType_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType">
-	{$label researchProjectRegister researchType }	{$arrow_icon_researchType}
+		{BEGIN researchRegisterEndDate_fieldheadercolumn}
+	{BEGIN researchRegisterEndDate_fieldheader}
+	<SPAN {$researchRegisterEndDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterEndDate" data-fieldname="researchRegisterEndDate">
+	{$label researchProjectRegister researchRegisterEndDate }	{$arrow_icon_researchRegisterEndDate}
 	</SPAN>
-	{END researchType_fieldheader}
-{END researchType_fieldheadercolumn}
+	{END researchRegisterEndDate_fieldheader}
+{END researchRegisterEndDate_fieldheadercolumn}
 
 	
 	</th>
@@ -785,7 +749,7 @@
 	 
 		{BEGIN researchRegisterStatus_fieldheadercolumn}
 	{BEGIN researchRegisterStatus_fieldheader}
-	<SPAN {$researchRegisterStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStatus" data-fieldname="researchRegisterStatus">
+	<SPAN {$researchRegisterStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStatus" data-fieldname="researchRegisterStatus">
 	{$label researchProjectRegister researchRegisterStatus }	{$arrow_icon_researchRegisterStatus}
 	</SPAN>
 	{END researchRegisterStatus_fieldheader}
@@ -794,60 +758,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field6}
-				 
-					{BEGIN cellblock_grid_headcell_field7}
-	<th
-	
-	{$cell_grid_headcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldheadercolumn}
-	{BEGIN entryUserName_fieldheader}
-	<SPAN {$entryUserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label researchProjectRegister entryUserName }	{$arrow_icon_entryUserName}
-	</SPAN>
-	{END entryUserName_fieldheader}
-{END entryUserName_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field7}
-				 
-					{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldheadercolumn}
-	{BEGIN entryTime_fieldheader}
-	<SPAN {$entryTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label researchProjectRegister entryTime }	{$arrow_icon_entryTime}
-	</SPAN>
-	{END entryTime_fieldheader}
-{END entryTime_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
 							</tr>
 					 
 					 
@@ -864,10 +774,10 @@
 								r-gridrow
 							">
 				 
-					{BEGIN cellblock_grid_headcell_field11}
+					{BEGIN cellblock_grid_cell_field}
 	<td
 	
-	{$cell_grid_headcell_field11}
+	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$id_class}
@@ -875,7 +785,7 @@
 
 			data-field="id"
 	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -885,29 +795,6 @@
 </span>
 {END id_fieldcolumn}	
 	</td>
-	{END cellblock_grid_headcell_field11}
-				 
-					{BEGIN cellblock_grid_cell_field}
-	<td
-	
-	{$cell_grid_cell_field}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$researchRegisterNo_class}
-			"
-
-			data-field="researchRegisterNo"
-	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN researchRegisterNo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterNo" data-fieldname="researchRegisterNo" data-default-width >
-{$researchRegisterNo_value}
-</span>
-{END researchRegisterNo_fieldcolumn}	
-	</td>
 	{END cellblock_grid_cell_field}
 				 
 					{BEGIN cellblock_grid_cell_field1}
@@ -916,20 +803,20 @@
 	{$cell_grid_cell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterName_class}
+		 r-ori-vert				{$researchType_class}
 			"
 
-			data-field="researchRegisterName"
+			data-field="researchType"
 	
 	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterName" data-fieldname="researchRegisterName" data-default-width >
-{$researchRegisterName_value}
+		{BEGIN researchType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType" data-default-width >
+{$researchType_value}
 </span>
-{END researchRegisterName_fieldcolumn}	
+{END researchType_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
 				 
@@ -939,20 +826,20 @@
 	{$cell_grid_cell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterStartDate_class}
+		 r-ori-vert				{$researchRegisterNo_class}
 			"
 
-			data-field="researchRegisterStartDate"
+			data-field="researchRegisterNo"
 	
 	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterStartDate_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStartDate" data-fieldname="researchRegisterStartDate" data-default-width >
-{$researchRegisterStartDate_value}
+		{BEGIN researchRegisterNo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterNo" data-fieldname="researchRegisterNo" data-default-width >
+{$researchRegisterNo_value}
 </span>
-{END researchRegisterStartDate_fieldcolumn}	
+{END researchRegisterNo_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field2}
 				 
@@ -962,20 +849,20 @@
 	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterEndDate_class}
+		 r-ori-vert				{$researchRegisterName_class}
 			"
 
-			data-field="researchRegisterEndDate"
+			data-field="researchRegisterName"
 	
 	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterEndDate_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterEndDate" data-fieldname="researchRegisterEndDate" data-default-width >
-{$researchRegisterEndDate_value}
+		{BEGIN researchRegisterName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterName" data-fieldname="researchRegisterName" data-default-width >
+{$researchRegisterName_value}
 </span>
-{END researchRegisterEndDate_fieldcolumn}	
+{END researchRegisterName_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
 				 
@@ -985,20 +872,20 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchRegisterFile_class}
+		 r-ori-vert				{$researchRegisterStartDate_class}
 			"
 
-			data-field="researchRegisterFile"
+			data-field="researchRegisterStartDate"
 	
 	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchRegisterFile_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterFile" data-fieldname="researchRegisterFile" data-default-width >
-{$researchRegisterFile_value}
+		{BEGIN researchRegisterStartDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterStartDate" data-fieldname="researchRegisterStartDate" data-default-width >
+{$researchRegisterStartDate_value}
 </span>
-{END researchRegisterFile_fieldcolumn}	
+{END researchRegisterStartDate_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
 				 
@@ -1008,20 +895,20 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$researchType_class}
+		 r-ori-vert				{$researchRegisterEndDate_class}
 			"
 
-			data-field="researchType"
+			data-field="researchRegisterEndDate"
 	
 	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN researchType_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchType" data-fieldname="researchType" data-default-width >
-{$researchType_value}
+		{BEGIN researchRegisterEndDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="researchRegisterEndDate" data-fieldname="researchRegisterEndDate" data-default-width >
+{$researchRegisterEndDate_value}
 </span>
-{END researchType_fieldcolumn}	
+{END researchRegisterEndDate_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
 				 
@@ -1047,52 +934,6 @@
 {END researchRegisterStatus_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
-				 
-					{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
-</span>
-{END entryUserName_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
-				 
-					{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
-{$entryTime_value}
-</span>
-{END entryTime_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -1108,22 +949,6 @@
 									
 								r-gridrow
 							">
-				 
-					{BEGIN cellblock_grid_headcell_field12}
-	<td
-	
-	{$cell_grid_headcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchprojectregister_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_headcell_field12}
 				 
 					{BEGIN cellblock_grid_footcell_field}
 	<td
@@ -1236,38 +1061,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field6}
-				 
-					{BEGIN cellblock_grid_footcell_field7}
-	<td
-	
-	{$cell_grid_footcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchprojectregister_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field7}
-				 
-					{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="researchprojectregister_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

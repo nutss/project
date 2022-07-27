@@ -193,7 +193,7 @@ $tdataadmin_users[".rowHighlite"] = true;
 
 
 
-
+						
 
 $tdataadmin_users[".ajaxCodeSnippetAdded"] = false;
 
@@ -2133,6 +2133,8 @@ $proto27["m_columns"][] = "staffEmailNotify";
 $proto27["m_columns"][] = "entryUserName";
 $proto27["m_columns"][] = "entryTime";
 $proto27["m_columns"][] = "apikey";
+$proto27["m_columns"][] = "reset_token";
+$proto27["m_columns"][] = "reset_date";
 $obj = new SQLTable($proto27);
 
 $proto26["m_table"] = $obj;
@@ -2171,7 +2173,7 @@ $queryData_admin_users = createSqlQuery_admin_users();
 	
 				;
 
-																												
+																																
 
 $tdataadmin_users[".sqlquery"] = $queryData_admin_users;
 

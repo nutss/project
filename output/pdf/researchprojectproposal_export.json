@@ -193,6 +193,36 @@ pdfDocument = {
 				
 			{"text":{$projectStatus_pdfvalue},"hidden":"{$item_hide_export_field29}"},
 				
+				
+			{"text":{$researchProjectDisburseStatus_pdfvalue},"hidden":"{$item_hide_export_field30}"},
+				
+				
+			{"text":{$researchProjectStartDate_pdfvalue},"hidden":"{$item_hide_export_field31}"},
+				
+				
+			{"text":{$researchProjectEndDate_pdfvalue},"hidden":"{$item_hide_export_field32}"},
+				
+				
+			{"text":{$researchType_pdfvalue},"hidden":"{$item_hide_export_field33}"},
+				
+				
+			{"text":{$researchProjectAffiliationPrefixName_pdfvalue},"hidden":"{$item_hide_export_field34}"},
+				
+				
+			{"text":{$researchProjectAffiliationPosition_pdfvalue},"hidden":"{$item_hide_export_field35}"},
+				
+				
+			{"text":{$geographiesID_pdfvalue},"hidden":"{$item_hide_export_field36}"},
+				
+				
+			{"text":{$provincesID_pdfvalue},"hidden":"{$item_hide_export_field37}"},
+				
+				
+			{"text":{$amphuresID_pdfvalue},"hidden":"{$item_hide_export_field38}"},
+				
+				
+			{"text":{$districtsID_pdfvalue},"hidden":"{$item_hide_export_field39}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

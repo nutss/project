@@ -19,6 +19,9 @@
 
 
 
+		$this->events["BeforeEdit"]=true;
+
+
 	}
 
 //	handlers
@@ -129,7 +132,7 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 		ScholarshipProposalUpdateStatus($values["id"]);
 
 
-
+		
 
 
 		if ($values["projectStatus"] <> $oldvalues["projectStatus"]){
@@ -145,6 +148,16 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 			}
 
 		}
+
+
+				global $dal;
+				$tblresearchScholarshipProposal = $dal->Table("researchScholarshipProposal");
+				$tblresearchScholarshipProposal->Param["id"]=$values["id"];
+				$tblresearchScholarshipProposal->Value["researchProjectRequestedBudget"] = str_replace(",", "", $values["researchProjectRequestedBudget"]);
+				$tblresearchScholarshipProposal->Update();
+
+
+
 
 
 // Place event code here.
@@ -280,6 +293,149 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before record updated
+function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, $pageObject)
+{
+
+		
+//echo $values["researchProjectRequestedBudget"]." บาท";
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return true;
+;		
+} // function BeforeEdit
+
 		
 		
 		

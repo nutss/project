@@ -8,6 +8,7 @@ $dalTableresearchConsider["stepName"] = array("type"=>200,"varname"=>"stepName",
 $dalTableresearchConsider["researchConsiderFile"] = array("type"=>201,"varname"=>"researchConsiderFile", "name" => "researchConsiderFile");
 $dalTableresearchConsider["researchRegisterDesc"] = array("type"=>201,"varname"=>"researchRegisterDesc", "name" => "researchRegisterDesc");
 $dalTableresearchConsider["researchConsiderName"] = array("type"=>200,"varname"=>"researchConsiderName", "name" => "researchConsiderName");
+$dalTableresearchConsider["researchConsiderGroupAuthorized"] = array("type"=>200,"varname"=>"researchConsiderGroupAuthorized", "name" => "researchConsiderGroupAuthorized");
 $dalTableresearchConsider["entryUserName"] = array("type"=>200,"varname"=>"entryUserName", "name" => "entryUserName");
 $dalTableresearchConsider["entryTime"] = array("type"=>135,"varname"=>"entryTime", "name" => "entryTime");
 	$dalTableresearchConsider["id"]["key"]=true;

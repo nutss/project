@@ -64,6 +64,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsresearchrenewalconsider["English"]["researchRegisterDescCheck"] = "Research Register Desc Check";
 	$fieldToolTipsresearchrenewalconsider["English"]["researchRegisterDescCheck"] = "";
 	$placeHoldersresearchrenewalconsider["English"]["researchRegisterDescCheck"] = "";
+	$fieldLabelsresearchrenewalconsider["English"]["researchConsiderGroupAuthorized"] = "Research Consider Group Authorized";
+	$fieldToolTipsresearchrenewalconsider["English"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchrenewalconsider["English"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchrenewalconsider["English"]))
 		$tdataresearchrenewalconsider[".isUseToolTips"] = true;
 }
@@ -94,7 +97,7 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchrenewalconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
 	$fieldToolTipsresearchrenewalconsider["Thai"]["researchRegisterDesc"] = "";
 	$placeHoldersresearchrenewalconsider["Thai"]["researchRegisterDesc"] = "หมายเหตุ";
-	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
+	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderName"] = "ชื่อการดำเนินงาน";
 	$fieldToolTipsresearchrenewalconsider["Thai"]["researchConsiderName"] = "";
 	$placeHoldersresearchrenewalconsider["Thai"]["researchConsiderName"] = "ชื่อการพิจารณา";
 	$fieldLabelsresearchrenewalconsider["Thai"]["entryUserName"] = "ผู้บันทึกรายการ";
@@ -103,7 +106,7 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchrenewalconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
 	$fieldToolTipsresearchrenewalconsider["Thai"]["entryTime"] = "";
 	$placeHoldersresearchrenewalconsider["Thai"]["entryTime"] = "วันที่/เวลาบันทึกรายการ";
-	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderValue"] = "การพิจารณา";
+	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderValue"] = "การดำเนินงาน";
 	$fieldToolTipsresearchrenewalconsider["Thai"]["researchConsiderValue"] = "";
 	$placeHoldersresearchrenewalconsider["Thai"]["researchConsiderValue"] = "ค่าการพิจารณา";
 	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderFileCheck"] = "ตรวจสอบเอกสารแนบ";
@@ -112,6 +115,9 @@ if(mlang_getcurrentlang()=="Thai")
 	$fieldLabelsresearchrenewalconsider["Thai"]["researchRegisterDescCheck"] = "ตรวจสอบหมายเหตุ";
 	$fieldToolTipsresearchrenewalconsider["Thai"]["researchRegisterDescCheck"] = "";
 	$placeHoldersresearchrenewalconsider["Thai"]["researchRegisterDescCheck"] = "";
+	$fieldLabelsresearchrenewalconsider["Thai"]["researchConsiderGroupAuthorized"] = "กลุ่มผู้ใช้งาน";
+	$fieldToolTipsresearchrenewalconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
+	$placeHoldersresearchrenewalconsider["Thai"]["researchConsiderGroupAuthorized"] = "";
 	if (count($fieldToolTipsresearchrenewalconsider["Thai"]))
 		$tdataresearchrenewalconsider[".isUseToolTips"] = true;
 }
@@ -211,7 +217,7 @@ $tdataresearchrenewalconsider[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdataresearchrenewalconsider[".ajaxCodeSnippetAdded"] = false;
 
@@ -242,6 +248,7 @@ $tdataresearchrenewalconsider[".googleLikeFields"][] = "researchRegisterDesc";
 $tdataresearchrenewalconsider[".googleLikeFields"][] = "researchRegisterDescCheck";
 $tdataresearchrenewalconsider[".googleLikeFields"][] = "researchConsiderName";
 $tdataresearchrenewalconsider[".googleLikeFields"][] = "researchConsiderValue";
+$tdataresearchrenewalconsider[".googleLikeFields"][] = "researchConsiderGroupAuthorized";
 $tdataresearchrenewalconsider[".googleLikeFields"][] = "entryUserName";
 $tdataresearchrenewalconsider[".googleLikeFields"][] = "entryTime";
 
@@ -277,7 +284,7 @@ $tdataresearchrenewalconsider[".strOrderBy"] = $tstrOrderBy;
 $tdataresearchrenewalconsider[".orderindexes"] = array();
 
 
-$tdataresearchrenewalconsider[".sqlHead"] = "SELECT id,  	researchRenewalID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
+$tdataresearchrenewalconsider[".sqlHead"] = "SELECT id,  	researchRenewalID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $tdataresearchrenewalconsider[".sqlFrom"] = "FROM researchRenewalConsider";
 $tdataresearchrenewalconsider[".sqlWhereExpr"] = "";
 $tdataresearchrenewalconsider[".sqlTail"] = "";
@@ -1894,10 +1901,148 @@ $tdataresearchrenewalconsider[".hideMobileList"] = array();
 
 	$tdataresearchrenewalconsider["researchConsiderValue"] = $fdata;
 		$tdataresearchrenewalconsider[".searchableFields"][] = "researchConsiderValue";
-//	entryUserName
+//	researchConsiderGroupAuthorized
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 12;
+	$fdata["strName"] = "researchConsiderGroupAuthorized";
+	$fdata["GoodName"] = "researchConsiderGroupAuthorized";
+	$fdata["ownerTable"] = "researchRenewalConsider";
+	$fdata["Label"] = GetFieldLabel("researchRenewalConsider","researchConsiderGroupAuthorized");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "researchConsiderGroupAuthorized";
+
+		$fdata["sourceSingle"] = "researchConsiderGroupAuthorized";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "researchConsiderGroupAuthorized";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataresearchrenewalconsider["researchConsiderGroupAuthorized"] = $fdata;
+		$tdataresearchrenewalconsider[".searchableFields"][] = "researchConsiderGroupAuthorized";
+//	entryUserName
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "entryUserName";
 	$fdata["GoodName"] = "entryUserName";
 	$fdata["ownerTable"] = "researchRenewalConsider";
@@ -2033,7 +2178,7 @@ $tdataresearchrenewalconsider[".hideMobileList"] = array();
 //	entryTime
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "entryTime";
 	$fdata["GoodName"] = "entryTime";
 	$fdata["ownerTable"] = "researchRenewalConsider";
@@ -2225,7 +2370,7 @@ function createSqlQuery_researchrenewalconsider()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	researchRenewalID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	entryUserName,  	entryTime";
+$proto0["m_strFieldList"] = "id,  	researchRenewalID,  	researchConsiderNumber,  	processName,  	stepName,  	researchConsiderFile,  	researchConsiderFileCheck,  	researchRegisterDesc,  	researchRegisterDescCheck,  	researchConsiderName,  	researchConsiderValue,  	researchConsiderGroupAuthorized,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchRenewalConsider";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2421,12 +2566,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryUserName",
+	"m_strName" => "researchConsiderGroupAuthorized",
 	"m_strTable" => "researchRenewalConsider",
 	"m_srcTableName" => "researchRenewalConsider"
 ));
 
-$proto28["m_sql"] = "entryUserName";
+$proto28["m_sql"] = "researchConsiderGroupAuthorized";
 $proto28["m_srcTableName"] = "researchRenewalConsider";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -2435,61 +2580,76 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "entryTime",
+	"m_strName" => "entryUserName",
 	"m_strTable" => "researchRenewalConsider",
 	"m_srcTableName" => "researchRenewalConsider"
 ));
 
-$proto30["m_sql"] = "entryTime";
+$proto30["m_sql"] = "entryUserName";
 $proto30["m_srcTableName"] = "researchRenewalConsider";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
 $obj = new SQLFieldListItem($proto30);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto32=array();
-$proto32["m_link"] = "SQLL_MAIN";
-			$proto33=array();
-$proto33["m_strName"] = "researchRenewalConsider";
-$proto33["m_srcTableName"] = "researchRenewalConsider";
-$proto33["m_columns"] = array();
-$proto33["m_columns"][] = "id";
-$proto33["m_columns"][] = "researchRenewalID";
-$proto33["m_columns"][] = "researchConsiderNumber";
-$proto33["m_columns"][] = "processName";
-$proto33["m_columns"][] = "stepName";
-$proto33["m_columns"][] = "researchConsiderFile";
-$proto33["m_columns"][] = "researchConsiderFileCheck";
-$proto33["m_columns"][] = "researchRegisterDesc";
-$proto33["m_columns"][] = "researchRegisterDescCheck";
-$proto33["m_columns"][] = "researchConsiderName";
-$proto33["m_columns"][] = "researchConsiderValue";
-$proto33["m_columns"][] = "entryUserName";
-$proto33["m_columns"][] = "entryTime";
-$obj = new SQLTable($proto33);
+						$proto32=array();
+			$obj = new SQLField(array(
+	"m_strName" => "entryTime",
+	"m_strTable" => "researchRenewalConsider",
+	"m_srcTableName" => "researchRenewalConsider"
+));
 
-$proto32["m_table"] = $obj;
-$proto32["m_sql"] = "researchRenewalConsider";
-$proto32["m_alias"] = "";
+$proto32["m_sql"] = "entryTime";
 $proto32["m_srcTableName"] = "researchRenewalConsider";
-$proto34=array();
-$proto34["m_sql"] = "";
-$proto34["m_uniontype"] = "SQLL_UNKNOWN";
+$proto32["m_expr"]=$obj;
+$proto32["m_alias"] = "";
+$obj = new SQLFieldListItem($proto32);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto34=array();
+$proto34["m_link"] = "SQLL_MAIN";
+			$proto35=array();
+$proto35["m_strName"] = "researchRenewalConsider";
+$proto35["m_srcTableName"] = "researchRenewalConsider";
+$proto35["m_columns"] = array();
+$proto35["m_columns"][] = "id";
+$proto35["m_columns"][] = "researchRenewalID";
+$proto35["m_columns"][] = "researchConsiderNumber";
+$proto35["m_columns"][] = "processName";
+$proto35["m_columns"][] = "stepName";
+$proto35["m_columns"][] = "researchConsiderFile";
+$proto35["m_columns"][] = "researchConsiderFileCheck";
+$proto35["m_columns"][] = "researchRegisterDesc";
+$proto35["m_columns"][] = "researchRegisterDescCheck";
+$proto35["m_columns"][] = "researchConsiderName";
+$proto35["m_columns"][] = "researchConsiderValue";
+$proto35["m_columns"][] = "researchConsiderGroupAuthorized";
+$proto35["m_columns"][] = "entryUserName";
+$proto35["m_columns"][] = "entryTime";
+$obj = new SQLTable($proto35);
+
+$proto34["m_table"] = $obj;
+$proto34["m_sql"] = "researchRenewalConsider";
+$proto34["m_alias"] = "";
+$proto34["m_srcTableName"] = "researchRenewalConsider";
+$proto36=array();
+$proto36["m_sql"] = "";
+$proto36["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto34["m_column"]=$obj;
-$proto34["m_contained"] = array();
-$proto34["m_strCase"] = "";
-$proto34["m_havingmode"] = false;
-$proto34["m_inBrackets"] = false;
-$proto34["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto34);
+$proto36["m_column"]=$obj;
+$proto36["m_contained"] = array();
+$proto36["m_strCase"] = "";
+$proto36["m_havingmode"] = false;
+$proto36["m_inBrackets"] = false;
+$proto36["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto36);
 
-$proto32["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto32);
+$proto34["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto34);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2505,7 +2665,7 @@ $queryData_researchrenewalconsider = createSqlQuery_researchrenewalconsider();
 	
 				;
 
-													
+														
 
 $tdataresearchrenewalconsider[".sqlquery"] = $queryData_researchrenewalconsider;
 

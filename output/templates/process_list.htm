@@ -519,13 +519,7 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="processName"]:before {
 		content: "{$label process processName}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryUserName"]:before {
-		content: "{$label process entryUserName}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="entryTime"]:before {
-		content: "{$label process entryTime}";
-	}
-	}
+			}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -592,7 +586,7 @@
 	 
 		{BEGIN id_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
 	{$label process id }	</span>
 {END id_fieldheadercolumn}
 
@@ -617,63 +611,13 @@
 	 
 		{BEGIN processName_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="processName" data-fieldname="processName">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="processName" data-fieldname="processName">
 	{$label process processName }	</span>
 {END processName_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field1}
-				 
-					{BEGIN cellblock_grid_headcell_field2}
-	<th
-	
-	{$cell_grid_headcell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName">
-	{$label process entryUserName }	</span>
-{END entryUserName_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field2}
-				 
-					{BEGIN cellblock_grid_headcell_field3}
-	<th
-	
-	{$cell_grid_headcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime">
-	{$label process entryTime }	</span>
-{END entryTime_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field3}
 							</tr>
 					 
 					 
@@ -799,52 +743,6 @@
 {END processName_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
-				 
-					{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryUserName_class}
-			"
-
-			data-field="entryUserName"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryUserName_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryUserName" data-fieldname="entryUserName" data-default-width >
-{$entryUserName_value}
-</span>
-{END entryUserName_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field2}
-				 
-					{BEGIN cellblock_grid_cell_field3}
-	<td
-	
-	{$cell_grid_cell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$entryTime_class}
-			"
-
-			data-field="entryTime"
-	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN entryTime_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="entryTime" data-fieldname="entryTime" data-default-width >
-{$entryTime_value}
-</span>
-{END entryTime_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field3}
 							</tr>
 					 
 					
@@ -924,38 +822,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field1}
-				 
-					{BEGIN cellblock_grid_footcell_field2}
-	<td
-	
-	{$cell_grid_footcell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="process_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field2}
-				 
-					{BEGIN cellblock_grid_footcell_field3}
-	<td
-	
-	{$cell_grid_footcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="process_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field3}
 							</tr>
 					
 					</tfoot>

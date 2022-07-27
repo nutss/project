@@ -185,6 +185,9 @@ pdfDocument = {
 				
 			{"text":{$entryTime_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
 				
+				
+			{"text":{$researchConsiderGroupAuthorized_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

@@ -19,6 +19,8 @@
 
 
 
+
+
 	}
 
 //	handlers
@@ -48,6 +50,14 @@ function AfterAdd(&$values, &$keys, $inline, $pageObject)
 
 
 		ScholarshipProposalUpdateStatus($values["id"]);
+
+
+		global $dal;
+		$tblresearchScholarshipProposal = $dal->Table("researchScholarshipProposal");
+		$tblresearchScholarshipProposal->Param["id"]=$values["id"];
+		$tblresearchScholarshipProposal->Value["researchProjectRequestedBudget"] = str_replace(",", "", $values["researchProjectRequestedBudget"]);
+		$tblresearchScholarshipProposal->Update();
+
 
 // Place event code here.
 // Use "Add Action" button to add code snippets.
@@ -131,11 +141,149 @@ function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
 						
 		ScholarshipProposalUpdateStatus($values["id"]);
 
+				global $dal;
+				$tblresearchScholarshipProposal = $dal->Table("researchScholarshipProposal");
+				$tblresearchScholarshipProposal->Param["id"]=$values["id"];
+				$tblresearchScholarshipProposal->Value["researchProjectRequestedBudget"] = str_replace(",", "", $values["researchProjectRequestedBudget"]);
+				$tblresearchScholarshipProposal->Update();
+
+	
+
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 ;		
 } // function AfterEdit
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

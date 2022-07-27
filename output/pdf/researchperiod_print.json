@@ -76,6 +76,9 @@ pdfDocument = {
 										{BEGIN col_grid_5}
 					"%",
 					{END col_grid_5}
+										{BEGIN col_grid_6}
+					"%",
+					{END col_grid_6}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -245,7 +248,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod researchOperatingPeriodNo }","hidden":"{$item_hide_simple_grid_field}","bold":true},
+			{"text":"{$jslabel researchPeriod researchOperatingPeriodNo }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -271,11 +274,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod researchOperatingPeriodEndDate }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
+			{"text":"{$jslabel researchPeriod researchOperatingPeriodName }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchOperatingPeriodEndDate_align}',
+              "alignment": '{$researchOperatingPeriodName_align}',
   },
 
 {END cellblock_grid_headcell_field1}
@@ -297,11 +300,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod researchOperatingPeriodDisburse }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
+			{"text":"{$jslabel researchPeriod researchOperatingPeriodEndDate }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchOperatingPeriodDisburse_align}',
+              "alignment": '{$researchOperatingPeriodEndDate_align}',
   },
 
 {END cellblock_grid_headcell_field2}
@@ -323,11 +326,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod researchOperatingPeriodDisbursePercent }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel researchPeriod researchOperatingPeriodDisburse }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$researchOperatingPeriodDisbursePercent_align}',
+              "alignment": '{$researchOperatingPeriodDisburse_align}',
   },
 
 {END cellblock_grid_headcell_field3}
@@ -349,11 +352,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod entryUserName }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+			{"text":"{$jslabel researchPeriod researchOperatingPeriodDisbursePercent }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$entryUserName_align}',
+              "alignment": '{$researchOperatingPeriodDisbursePercent_align}',
   },
 
 {END cellblock_grid_headcell_field4}
@@ -375,14 +378,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel researchPeriod entryTime }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
+			{"text":"{$jslabel researchPeriod entryUserName }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$entryUserName_align}',
+  },
+
+{END cellblock_grid_headcell_field5}
+																							{BEGIN cellblock_grid_headcell_field6}
+{
+	cellId: 'headcell_field6',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel researchPeriod entryTime }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_headcell_field5}
+{END cellblock_grid_headcell_field6}
 											],
 				{END row_grid_0}
 		
@@ -436,6 +465,32 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"text":{$researchOperatingPeriodName_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$researchOperatingPeriodName_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+																							{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
 			{"text":{$researchOperatingPeriodEndDate_pdfvalue},"hidden":"{$item_hide_simple_grid_field3}"},
 				
 		  ],
@@ -443,10 +498,10 @@ pdfDocument = {
               "alignment": '{$researchOperatingPeriodEndDate_align}',
   },
 
-{END cellblock_grid_cell_field1}
-																							{BEGIN cellblock_grid_cell_field2}
+{END cellblock_grid_cell_field2}
+																							{BEGIN cellblock_grid_cell_field3}
 {
-	cellId: 'cell_field2',
+	cellId: 'cell_field3',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -469,10 +524,10 @@ pdfDocument = {
               "alignment": '{$researchOperatingPeriodDisburse_align}',
   },
 
-{END cellblock_grid_cell_field2}
-																							{BEGIN cellblock_grid_cell_field3}
+{END cellblock_grid_cell_field3}
+																							{BEGIN cellblock_grid_cell_field4}
 {
-	cellId: 'cell_field3',
+	cellId: 'cell_field4',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -495,10 +550,10 @@ pdfDocument = {
               "alignment": '{$researchOperatingPeriodDisbursePercent_align}',
   },
 
-{END cellblock_grid_cell_field3}
-																							{BEGIN cellblock_grid_cell_field4}
+{END cellblock_grid_cell_field4}
+																							{BEGIN cellblock_grid_cell_field5}
 {
-	cellId: 'cell_field4',
+	cellId: 'cell_field5',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -521,10 +576,10 @@ pdfDocument = {
               "alignment": '{$entryUserName_align}',
   },
 
-{END cellblock_grid_cell_field4}
-																							{BEGIN cellblock_grid_cell_field5}
+{END cellblock_grid_cell_field5}
+																							{BEGIN cellblock_grid_cell_field6}
 {
-	cellId: 'cell_field5',
+	cellId: 'cell_field6',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -547,7 +602,7 @@ pdfDocument = {
               "alignment": '{$entryTime_align}',
   },
 
-{END cellblock_grid_cell_field5}
+{END cellblock_grid_cell_field6}
 											],
 				{END row_grid_1}
 		
@@ -701,6 +756,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field5}
+																							{BEGIN cellblock_grid_footcell_field6}
+{
+	cellId: 'footcell_field6',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field6}
 											],
 				{END row_grid_2}
 		

@@ -175,7 +175,7 @@ $tdataresearchappointment[".rowHighlite"] = true;
 
 
 
-
+												
 
 $tdataresearchappointment[".ajaxCodeSnippetAdded"] = false;
 
@@ -229,10 +229,12 @@ $tdataresearchappointment[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY researchAppointmentNo";
 $tdataresearchappointment[".strOrderBy"] = $tstrOrderBy;
 
 $tdataresearchappointment[".orderindexes"] = array();
+	$tdataresearchappointment[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "researchAppointmentNo");
+
 
 
 $tdataresearchappointment[".sqlHead"] = "SELECT id,  	researchProjectID,  	researchAppointmentNo,  	researchAppointmentPeriod,  	researchAppointmentDate,  	entryUserName,  	entryTime";
@@ -1344,7 +1346,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "id,  	researchProjectID,  	researchAppointmentNo,  	researchAppointmentPeriod,  	researchAppointmentDate,  	entryUserName,  	entryTime";
 $proto0["m_strFrom"] = "FROM researchAppointment";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY researchAppointmentNo";
 	
 				;
 			$proto0["cipherer"] = null;
@@ -1520,6 +1522,19 @@ $obj = new SQLFromListItem($proto20);
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto24=array();
+						$obj = new SQLField(array(
+	"m_strName" => "researchAppointmentNo",
+	"m_strTable" => "researchAppointment",
+	"m_srcTableName" => "researchAppointment"
+));
+
+$proto24["m_column"]=$obj;
+$proto24["m_bAsc"] = 1;
+$proto24["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto24);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="researchAppointment";		
 $obj = new SQLQuery($proto0);
 

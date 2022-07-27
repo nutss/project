@@ -1,0 +1,413 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel researcher search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label researcher id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN projectID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projectID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="projectID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="projectID" data-fieldname="projectID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_projectID}">
+		{$label researcher projectID }	</label>
+	<div class="r-search-option">
+		{$searchtype_projectID}
+	</div>
+	<div class="r-search-field">
+		{$projectID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$projectID_editcontrol1}
+	</div>
+	
+</div>
+
+{END projectID_fieldblock}
+											
+{BEGIN researchProjectNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectNumber}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="researchProjectNumber" data-fieldname="researchProjectNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectNumber}">
+		{$label researcher researchProjectNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectNumber}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectNumber_fieldblock}
+											
+{BEGIN researchType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="researchType" data-fieldname="researchType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchType}">
+		{$label researcher researchType }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchType}
+	</div>
+	<div class="r-search-field">
+		{$researchType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchType_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchType_fieldblock}
+											
+{BEGIN researchProjectName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="researchProjectName" data-fieldname="researchProjectName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectName}">
+		{$label researcher researchProjectName }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectName}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectName_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectName_fieldblock}
+											
+{BEGIN researchProjectAffiliationName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectAffiliationName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="researchProjectAffiliationName" data-fieldname="researchProjectAffiliationName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectAffiliationName}">
+		{$label researcher researchProjectAffiliationName }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectAffiliationName}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationName_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectAffiliationName_fieldblock}
+											
+{BEGIN researchProjectSubAffiliationName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectSubAffiliationName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectSubAffiliationName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="researchProjectSubAffiliationName" data-fieldname="researchProjectSubAffiliationName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectSubAffiliationName}">
+		{$label researcher researchProjectSubAffiliationName }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectSubAffiliationName}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectSubAffiliationName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectSubAffiliationName_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectSubAffiliationName_fieldblock}
+											
+{BEGIN researchProjectAffiliationMobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationMobile}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectAffiliationMobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="researchProjectAffiliationMobile" data-fieldname="researchProjectAffiliationMobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectAffiliationMobile}">
+		{$label researcher researchProjectAffiliationMobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectAffiliationMobile}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationMobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationMobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectAffiliationMobile_fieldblock}
+											
+{BEGIN researchProjectAffiliationTelephone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationTelephone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectAffiliationTelephone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="researchProjectAffiliationTelephone" data-fieldname="researchProjectAffiliationTelephone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectAffiliationTelephone}">
+		{$label researcher researchProjectAffiliationTelephone }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectAffiliationTelephone}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationTelephone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationTelephone_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectAffiliationTelephone_fieldblock}
+											
+{BEGIN researchProjectAffiliationEmail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_researchProjectAffiliationEmail}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="researchProjectAffiliationEmail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="researchProjectAffiliationEmail" data-fieldname="researchProjectAffiliationEmail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_researchProjectAffiliationEmail}">
+		{$label researcher researchProjectAffiliationEmail }	</label>
+	<div class="r-search-option">
+		{$searchtype_researchProjectAffiliationEmail}
+	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationEmail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$researchProjectAffiliationEmail_editcontrol1}
+	</div>
+	
+</div>
+
+{END researchProjectAffiliationEmail_fieldblock}
+											
+{BEGIN entryUserName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryUserName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryUserName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="entryUserName" data-fieldname="entryUserName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryUserName}">
+		{$label researcher entryUserName }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryUserName}
+	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryUserName_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryUserName_fieldblock}
+											
+{BEGIN entryTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryTime}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="entryTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="entryTime" data-fieldname="entryTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entryTime}">
+		{$label researcher entryTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_entryTime}
+	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entryTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END entryTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

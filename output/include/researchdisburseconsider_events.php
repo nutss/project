@@ -14,6 +14,10 @@
 	// fill list of events
 
 
+		$this->events["BeforeShowEdit"]=true;
+
+		$this->events["AfterEdit"]=true;
+
 
 	}
 
@@ -106,6 +110,181 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before display
+function BeforeShowEdit(&$xt, &$templatefile, $values, $pageObject)
+{
+
+						$pageObject->hideField("researchConsiderGroupAuthorized");
+		
+				if(strpos($_SESSION["GroupName"],"<Admin>")){
+
+						$pageObject->showField("researchConsiderValue");
+				}
+				else{
+
+						if(strpos($_SESSION["GroupName"],$values["researchConsiderGroupAuthorized"])!== false){
+
+								$pageObject->showField("researchConsiderValue");
+						}
+						else{
+								$pageObject->hideField("researchConsiderValue");
+						}
+				}
+				
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function BeforeShowEdit
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, $pageObject)
+{
+
+			
+	DisburseCalStatusAll($values["researchDisburseID"]);
+	
+	if ($values["researchConsiderValue"] <> $oldvalues["researchConsiderValue"]){
+
+		Mail2DisburseConsiderAlert($_SESSION["MailSettings"],$values);
+	}
+
+
+	
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
 		
 		
 		

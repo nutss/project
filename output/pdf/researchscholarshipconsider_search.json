@@ -194,6 +194,9 @@ pdfDocument = {
 				
 			{"text":{$researchRegisterDescCheck_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
 				
+				
+			{"text":{$researchConsiderGroupAuthorized_pdfvalue},"hidden":"{$item_hide_integrated_search_field11}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
